@@ -43,7 +43,7 @@ def secs(d0):
     return delta.total_seconds()
 
 def dump1(u,issues):
-    token = "insert " # <===
+    token = "e8e9b24173c6c37a6b5afafb2612b2ed6a74dd00" # <===
     request = urllib2.Request(u, headers={"Authorization" : "token "+token})
     v = urllib2.urlopen(request).read()
     w = json.loads(v)
@@ -79,13 +79,33 @@ def dump(u,issues):
 def launchDump():
     page = 1
     issues = dict()
+    f=open("ProjectScrapingIssue.txt","w")
+    #issues2=dict()
     while(True):
         doNext = dump('https://api.github.com/repos/SuperCh-SE-NCSU/ProjectScraping/issues/events?page=' + str(page), issues)
         print("page "+ str(page))
         page += 1
         if not doNext : break
+    #print issues
+    #with open('ProjectScraping.json','wb') as fp:
+    #    json.dump(issues,fp,skipkeys=False, ensure_ascii=False)
+    #rint json.dumps(issues)
+    #with open('ProjectScraping.json','wb') as fp:
+    #    json.dump(issues,fp)
     for issue, events in issues.iteritems():
-        print("ISSUE " + str(issue))
-        for event in events: print(event.show())
-        print('')
+        print("ISSUE " + str(issue)+"\n")
+        f.write("ISSUE "+str(issue)+"\n")
+        for event in events:
+            f.write(event.show()+"\n")
+            f.write('\n')
+            print(event.show())
+            print('')
+
+    f.close()
+        #issues2[str(issue)]=events
+    #with open('ProjectScraping.json','wb') as fp:
+    #    json.dump(issues2,fp)
+    
+
+    
 launchDump() 
