@@ -43,7 +43,7 @@ def secs(d0):
     return delta.total_seconds()
 
 def dump1(u,issues):
-    token = "e8e9b24173c6c37a6b5afafb2612b2ed6a74dd00" # <===
+    token = "insert token number here" # <===
     request = urllib2.Request(u, headers={"Authorization" : "token "+token})
     v = urllib2.urlopen(request).read()
     w = json.loads(v)
@@ -79,11 +79,18 @@ def dump(u,issues):
 def launchDump():
     page = 1
     issues = dict()
+    #feature1: Number of issues
+    numofIssues=0
+    #feature2: Number of different labels
+    numoflabels=0
+    #Number of times each label was used
+    labelnum=dict()
+    
     f=open("ProjectScrapingIssue.txt","w")
     #issues2=dict()
     while(True):
         doNext = dump('https://api.github.com/repos/SuperCh-SE-NCSU/ProjectScraping/issues/events?page=' + str(page), issues)
-        print("page "+ str(page))
+        print("page" + str(page))
         page += 1
         if not doNext : break
     #print issues
@@ -95,11 +102,30 @@ def launchDump():
     for issue, events in issues.iteritems():
         print("ISSUE " + str(issue)+"\n")
         f.write("ISSUE "+str(issue)+"\n")
+        numofIssues=issue
         for event in events:
+            for k,v in event.__dict__.iteritems():
+                if str(k) is 'what':
+                    if str(v) in labelnum.keys():
+                        labelnum[str(v)]=labelnum[str(v)]+1
+                    else:
+                        labelnum[str(v)]=1
+                #if v != None:
+                #    print(str(k)+" : "+str(v)) 
+            #print(type(event))
+            #print(event['issue']['number'])
+            #if event.get('label'):
+            #    print(event['label']['name'])
             f.write(event.show()+"\n")
             f.write('\n')
             print(event.show())
             print('')
+            
+    numoflabels=len(labelnum)
+    print('Num of issues:',numofIssues)
+    print('Num of labels:',numoflabels)
+    for key, elem in labelnum.items():
+        print(key, elem)        
 
     f.close()
         #issues2[str(issue)]=events
