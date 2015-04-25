@@ -86,7 +86,7 @@ def launchDump():
     #Number of times each label was used
     labelnum=dict()
     
-    f=open("ProjectScrapingIssue.txt","w")
+    f=open("Group6.txt","w")
     #issues2=dict()
     while(True):
         doNext = dump('https://api.github.com/repos/SuperCh-SE-NCSU/ProjectScraping/issues/events?page=' + str(page), issues)
