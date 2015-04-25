@@ -43,7 +43,7 @@ def secs(d0):
     return delta.total_seconds()
 
 def dump1(u,issues):
-    token = "insert token number here" # <===
+    token = "3a21a2db327a8ddcc81137870f68d69189040bab" # <===
     request = urllib2.Request(u, headers={"Authorization" : "token "+token})
     v = urllib2.urlopen(request).read()
     w = json.loads(v)
@@ -85,6 +85,7 @@ def launchDump():
     numoflabels=0
     #Number of times each label was used
     labelnum=dict()
+    milestonenum=dict()
     
     f=open("Group6.txt","w")
     #issues2=dict()
@@ -102,6 +103,7 @@ def launchDump():
     for issue, events in issues.iteritems():
         print("ISSUE " + str(issue)+"\n")
         f.write("ISSUE "+str(issue)+"\n")
+        milestonetrue=True
         numofIssues=issue
         for event in events:
             for k,v in event.__dict__.iteritems():
@@ -110,6 +112,13 @@ def launchDump():
                         labelnum[str(v)]=labelnum[str(v)]+1
                     else:
                         labelnum[str(v)]=1
+                if str(k) is 'milestone':
+                    if str(v) in milestonenum.keys():
+                        if milestonetrue==True:
+                            milestonenum[str(v)]=milestonenum[str(v)]+1
+                            milestonetrue=False
+                    else:
+                        milestonenum[str(v)]=1
                 #if v != None:
                 #    print(str(k)+" : "+str(v)) 
             #print(type(event))
@@ -122,10 +131,33 @@ def launchDump():
             print('')
             
     numoflabels=len(labelnum)
+    print('feature 1')
     print('Num of issues:',numofIssues)
+    print('-----------------------------')
+    print('featue 2')
     print('Num of labels:',numoflabels)
+    print('-----------------------------')
+    print('feature 3')
+    print('Num of millstones:',len(milestonenum))
+    for key, elem in milestonenum.items():
+        print(key, elem)
+    print('-----------------------------')
+    print('feature 4')
+    print('Number of times each label was used')
     for key, elem in labelnum.items():
-        print(key, elem)        
+        print(key, elem)
+    print('-----------------------------')
+    print('feature 10')
+    print('Percentage of issues using milestones')
+    sumMile=0
+    noneMile=0
+    for key, elem in milestonenum.items():
+        if key=='None':
+            noneMile=elem
+        else:
+            sumMile=sumMile+elem
+    print(sumMile*1.0/(sumMile+noneMile))
+    print('-----------------------------')
 
     f.close()
         #issues2[str(issue)]=events
