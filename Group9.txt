@@ -1,0 +1,744 @@
+ISSUE 1
+action : labeled,	what : feature complete,	when : 1423610498.0,	user : duh102
+
+action : unlabeled,	what : feature request,	when : 1423610497.0,	user : duh102
+
+action : unlabeled,	what : help wanted,	when : 1423610461.0,	user : duh102
+
+action : labeled,	what : feature request,	when : 1423607806.0,	user : duh102
+
+action : labeled,	what : help wanted,	when : 1423607806.0,	user : duh102
+
+ISSUE 2
+action : labeled,	what : feature complete,	when : 1423798637.0,	user : duh102
+
+action : unlabeled,	what : feature QA,	when : 1423798635.0,	user : duh102
+
+action : unlabeled,	what : help wanted,	when : 1423714448.0,	user : duh102
+
+action : labeled,	what : help wanted,	when : 1423710681.0,	user : duh102
+
+action : unlabeled,	what : feature request,	when : 1423674022.0,	user : duh102
+
+action : unlabeled,	what : feature dev,	when : 1423674021.0,	user : duh102
+
+action : labeled,	what : feature QA,	when : 1423674020.0,	user : duh102
+
+action : labeled,	what : feature dev,	when : 1423669337.0,	user : duh102
+
+action : labeled,	what : feature request,	when : 1423607942.0,	user : duh102
+
+ISSUE 4
+action : labeled,	what : feature request,	when : 1423610508.0,	user : macluo
+
+ISSUE 5
+action : labeled,	what : feature complete,	when : 1423798662.0,	user : duh102
+
+action : unlabeled,	what : feature QA,	when : 1423798660.0,	user : duh102
+
+action : unlabeled,	what : feature request,	when : 1423771206.0,	user : duh102
+
+action : unlabeled,	what : feature dev,	when : 1423771154.0,	user : duh102
+
+action : labeled,	what : feature QA,	when : 1423771153.0,	user : duh102
+
+action : labeled,	what : feature dev,	when : 1423770994.0,	user : duh102
+
+action : labeled,	what : feature request,	when : 1423668647.0,	user : duh102
+
+ISSUE 6
+action : unlabeled,	what : feature QA,	when : 1424448497.0,	user : duh102
+
+action : labeled,	what : feature complete,	when : 1424448497.0,	user : duh102
+
+action : unlabeled,	what : feature dev,	when : 1424323024.0,	user : duh102
+
+action : labeled,	what : feature dev,	when : 1424231823.0,	user : duh102
+
+action : unlabeled,	what : feature dev,	when : 1424033162.0,	user : duh102
+
+action : labeled,	what : feature QA,	when : 1424033162.0,	user : duh102
+
+action : unlabeled,	what : help wanted,	when : 1424033160.0,	user : duh102
+
+action : labeled,	what : help wanted,	when : 1423950009.0,	user : duh102
+
+action : unlabeled,	what : feature request,	when : 1423844444.0,	user : duh102
+
+action : labeled,	what : feature dev,	when : 1423844443.0,	user : duh102
+
+action : labeled,	what : feature request,	when : 1423668757.0,	user : duh102
+
+ISSUE 7
+action : unlabeled,	what : feature dev,	when : 1424838935.0,	user : macluo,	milestone : v0.1
+
+action : labeled,	what : feature QA,	when : 1424838935.0,	user : macluo,	milestone : v0.1
+
+action : unlabeled,	what : help wanted,	when : 1424836839.0,	user : macluo,	milestone : v0.1
+
+action : labeled,	what : help wanted,	when : 1424820982.0,	user : macluo,	milestone : v0.1
+
+action : unlabeled,	what : feature request,	when : 1424366709.0,	user : macluo,	milestone : v0.1
+
+action : labeled,	what : feature dev,	when : 1424366709.0,	user : macluo,	milestone : v0.1
+
+action : labeled,	what : feature request,	when : 1423668790.0,	user : duh102,	milestone : v0.1
+
+ISSUE 8
+action : unlabeled,	what : feature QA,	when : 1424323617.0,	user : duh102
+
+action : labeled,	what : feature complete,	when : 1424323617.0,	user : duh102
+
+action : labeled,	what : feature QA,	when : 1424033291.0,	user : duh102
+
+action : unlabeled,	what : feature request,	when : 1424033290.0,	user : duh102
+
+action : labeled,	what : feature request,	when : 1423668839.0,	user : duh102
+
+ISSUE 9
+action : unlabeled,	what : feature QA,	when : 1424448558.0,	user : duh102
+
+action : labeled,	what : feature complete,	when : 1424448558.0,	user : duh102
+
+action : unlabeled,	what : feature dev,	when : 1424323006.0,	user : duh102
+
+action : labeled,	what : feature dev,	when : 1424270433.0,	user : duh102
+
+action : labeled,	what : feature QA,	when : 1423668887.0,	user : duh102
+
+ISSUE 10
+action : unlabeled,	what : feature dev,	when : 1424111045.0,	user : macluo
+
+action : labeled,	what : feature QA,	when : 1424111042.0,	user : macluo
+
+action : labeled,	what : trailModel.JS,	when : 1424038219.0,	user : macluo
+
+action : labeled,	what : backtrack.JS,	when : 1424030977.0,	user : macluo
+
+action : unlabeled,	what : feature request,	when : 1424009662.0,	user : macluo
+
+action : labeled,	what : feature dev,	when : 1423782184.0,	user : duh102
+
+action : labeled,	what : feature request,	when : 1423668942.0,	user : duh102
+
+ISSUE 11
+action : labeled,	what : feature complete,	when : 1424032999.0,	user : duh102
+
+action : unlabeled,	what : feature dev,	when : 1424032998.0,	user : duh102
+
+action : labeled,	what : feature dev,	when : 1423968959.0,	user : duh102
+
+action : unlabeled,	what : feature request,	when : 1423968958.0,	user : duh102
+
+action : labeled,	what : feature request,	when : 1423668992.0,	user : duh102
+
+ISSUE 12
+action : labeled,	what : feature complete,	when : 1423935313.0,	user : duh102
+
+action : unlabeled,	what : feature dev,	when : 1423935313.0,	user : duh102
+
+action : labeled,	what : feature dev,	when : 1423851757.0,	user : duh102
+
+ISSUE 13
+action : unlabeled,	what : 3. feature QA,	when : 1426192393.0,	user : macluo
+
+action : labeled,	what : 4. feature complete,	when : 1426192393.0,	user : macluo
+
+action : unlabeled,	what : feature dev,	when : 1424228106.0,	user : macluo
+
+action : labeled,	what : feature QA,	when : 1424228098.0,	user : macluo
+
+action : unlabeled,	what : feature request,	when : 1424029619.0,	user : macluo
+
+action : labeled,	what : feature dev,	when : 1424029615.0,	user : macluo
+
+action : labeled,	what : feature request,	when : 1424026355.0,	user : duh102
+
+ISSUE 14
+action : labeled,	what : feature request,	when : 1424038291.0,	user : meneal
+
+ISSUE 15
+action : unlabeled,	what : feature QA,	when : 1424038617.0,	user : meneal
+
+action : labeled,	what : question,	when : 1424038605.0,	user : meneal
+
+action : labeled,	what : feature QA,	when : 1424038415.0,	user : meneal
+
+ISSUE 16
+action : labeled,	what : question,	when : 1424038497.0,	user : meneal
+
+ISSUE 17
+action : labeled,	what : feature request,	when : 1424038936.0,	user : macluo
+
+ISSUE 18
+action : labeled,	what : branch list,	when : 1424053207.0,	user : meneal
+
+ISSUE 19
+action : labeled,	what : testing,	when : 1424055412.0,	user : meneal
+
+ISSUE 20
+action : unlabeled,	what : feature QA,	when : 1424448540.0,	user : duh102
+
+action : labeled,	what : feature complete,	when : 1424448540.0,	user : duh102
+
+action : unlabeled,	what : feature dev,	when : 1424322987.0,	user : duh102
+
+action : labeled,	what : feature QA,	when : 1424322987.0,	user : duh102
+
+action : labeled,	what : feature dev,	when : 1424108916.0,	user : duh102
+
+action : unlabeled,	what : feature request,	when : 1424108915.0,	user : duh102
+
+action : labeled,	what : feature request,	when : 1424057134.0,	user : duh102
+
+ISSUE 21
+action : unlabeled,	what : deployment,	when : 1424815986.0,	user : meneal,	milestone : v0.1
+
+action : labeled,	what : deployment,	when : 1424095735.0,	user : meneal,	milestone : v0.1
+
+action : labeled,	what : testing,	when : 1424095735.0,	user : meneal,	milestone : v0.1
+
+action : labeled,	what : branch,	when : 1424095735.0,	user : meneal,	milestone : v0.1
+
+ISSUE 22
+action : labeled,	what : resources,	when : 1424120865.0,	user : meneal
+
+ISSUE 23
+action : unlabeled,	what : feature QA,	when : 1425421444.0,	user : duh102,	milestone : v0.2
+
+action : unlabeled,	what : feature dev,	when : 1425421444.0,	user : duh102,	milestone : v0.2
+
+action : labeled,	what : feature complete,	when : 1425421444.0,	user : duh102,	milestone : v0.2
+
+action : labeled,	what : feature dev,	when : 1425396457.0,	user : duh102,	milestone : v0.2
+
+action : labeled,	what : feature QA,	when : 1425396457.0,	user : duh102,	milestone : v0.2
+
+ISSUE 25
+action : labeled,	what : question,	when : 1424390986.0,	user : duh102
+
+ISSUE 26
+action : labeled,	what : bug,	when : 1424443060.0,	user : meneal
+
+ISSUE 27
+action : labeled,	what : feature dev,	when : 1424448940.0,	user : duh102
+
+ISSUE 28
+action : unlabeled,	what : feature request,	when : 1424838977.0,	user : macluo
+
+action : labeled,	what : feature dev,	when : 1424838977.0,	user : macluo
+
+action : labeled,	what : feature request,	when : 1424640252.0,	user : macluo
+
+ISSUE 29
+action : labeled,	what : bug,	when : 1424702112.0,	user : meneal
+
+ISSUE 30
+action : labeled,	what : deployment,	when : 1424816038.0,	user : meneal,	milestone : v0.1
+
+action : labeled,	what : branch,	when : 1424816038.0,	user : meneal,	milestone : v0.1
+
+ISSUE 31
+action : labeled,	what : testing,	when : 1424816447.0,	user : meneal
+
+action : labeled,	what : bug,	when : 1424816447.0,	user : meneal
+
+ISSUE 32
+action : labeled,	what : feature request,	when : 1425067426.0,	user : duh102,	milestone : v0.2
+
+ISSUE 33
+action : unlabeled,	what : 1. feature request,	when : 1427598282.0,	user : duh102
+
+action : labeled,	what : wontfix,	when : 1427598282.0,	user : duh102
+
+action : labeled,	what : feature request,	when : 1425103298.0,	user : macluo
+
+ISSUE 34
+action : unlabeled,	what : feature QA,	when : 1425421396.0,	user : duh102,	milestone : v0.2
+
+action : labeled,	what : feature complete,	when : 1425421396.0,	user : duh102,	milestone : v0.2
+
+action : unlabeled,	what : feature request,	when : 1425332198.0,	user : duh102,	milestone : v0.2
+
+action : labeled,	what : feature QA,	when : 1425332198.0,	user : duh102,	milestone : v0.2
+
+action : labeled,	what : feature request,	when : 1425067717.0,	user : duh102,	milestone : v0.2
+
+ISSUE 35
+action : unlabeled,	what : 2a. feature dev,	when : 1426114499.0,	user : macluo,	milestone : v0.3
+
+action : labeled,	what : 3. feature QA,	when : 1426114499.0,	user : macluo,	milestone : v0.3
+
+action : unlabeled,	what : 1. feature request,	when : 1426091522.0,	user : macluo,	milestone : v0.3
+
+action : labeled,	what : 2a. feature dev,	when : 1426091522.0,	user : macluo,	milestone : v0.3
+
+action : labeled,	what : feature request,	when : 1425103319.0,	user : macluo,	milestone : v0.3
+
+ISSUE 36
+action : unlabeled,	what : 3. feature QA,	when : 1426249400.0,	user : duh102,	milestone : v0.3
+
+action : labeled,	what : 4. feature complete,	when : 1426249400.0,	user : duh102,	milestone : v0.3
+
+action : unlabeled,	what : 2a. feature dev,	when : 1426187760.0,	user : duh102,	milestone : v0.3
+
+action : labeled,	what : 3. feature QA,	when : 1426187760.0,	user : duh102,	milestone : v0.3
+
+action : unlabeled,	what : 1. feature request,	when : 1426182430.0,	user : duh102,	milestone : v0.3
+
+action : labeled,	what : 2a. feature dev,	when : 1426182430.0,	user : duh102,	milestone : v0.3
+
+action : labeled,	what : feature request,	when : 1425103334.0,	user : macluo,	milestone : v0.3
+
+ISSUE 37
+action : unlabeled,	what : 2a. feature dev,	when : 1426443129.0,	user : duh102,	milestone : v0.3
+
+action : labeled,	what : 4. feature complete,	when : 1426443129.0,	user : duh102,	milestone : v0.3
+
+action : unlabeled,	what : 1. feature request,	when : 1426200160.0,	user : duh102,	milestone : v0.3
+
+action : labeled,	what : 2a. feature dev,	when : 1426200160.0,	user : duh102,	milestone : v0.3
+
+action : labeled,	what : feature request,	when : 1425103355.0,	user : macluo,	milestone : v0.3
+
+ISSUE 38
+action : unlabeled,	what : 2a. feature dev,	when : 1426089991.0,	user : macluo,	milestone : v0.3
+
+action : labeled,	what : 3. feature QA,	when : 1426089991.0,	user : macluo,	milestone : v0.3
+
+action : unlabeled,	what : 1. feature request,	when : 1425823917.0,	user : macluo,	milestone : v0.3
+
+action : labeled,	what : 2a. feature dev,	when : 1425823917.0,	user : macluo,	milestone : v0.3
+
+action : labeled,	what : feature request,	when : 1425103364.0,	user : macluo,	milestone : v0.3
+
+ISSUE 39
+action : unlabeled,	what : 3. feature QA,	when : 1426192522.0,	user : macluo
+
+action : labeled,	what : 4. feature complete,	when : 1426192522.0,	user : macluo
+
+action : unlabeled,	what : bug,	when : 1425102807.0,	user : macluo
+
+action : labeled,	what : feature QA,	when : 1425102807.0,	user : macluo
+
+action : labeled,	what : bug,	when : 1425098527.0,	user : duh102
+
+ISSUE 40
+action : unlabeled,	what : 3. feature QA,	when : 1426518653.0,	user : duh102,	milestone : v0.3
+
+action : labeled,	what : 4. feature complete,	when : 1426518653.0,	user : duh102,	milestone : v0.3
+
+action : unlabeled,	what : 2a. feature dev,	when : 1426459366.0,	user : duh102,	milestone : v0.3
+
+action : labeled,	what : 3. feature QA,	when : 1426459366.0,	user : duh102,	milestone : v0.3
+
+action : labeled,	what : feature dev,	when : 1425419333.0,	user : meneal,	milestone : v0.3
+
+ISSUE 41
+action : unlabeled,	what : 3. feature QA,	when : 1426449238.0,	user : macluo
+
+action : labeled,	what : 4. feature complete,	when : 1426449238.0,	user : macluo
+
+action : unlabeled,	what : 2a. feature dev,	when : 1426287566.0,	user : macluo
+
+action : labeled,	what : 3. feature QA,	when : 1426287566.0,	user : macluo
+
+action : unlabeled,	what : 1. feature request,	when : 1426253823.0,	user : macluo
+
+action : labeled,	what : 2a. feature dev,	when : 1426253823.0,	user : macluo
+
+action : labeled,	what : 1. feature request,	when : 1425611717.0,	user : macluo
+
+ISSUE 42
+action : labeled,	what : testing,	when : 1425748153.0,	user : macluo,	milestone : v0.2
+
+ISSUE 43
+action : unlabeled,	what : 3. feature QA,	when : 1426449207.0,	user : macluo
+
+action : labeled,	what : 4. feature complete,	when : 1426449207.0,	user : macluo
+
+action : unlabeled,	what : 2a. feature dev,	when : 1426442745.0,	user : macluo
+
+action : labeled,	what : 3. feature QA,	when : 1426442745.0,	user : macluo
+
+action : unlabeled,	what : 1. feature request,	when : 1426433868.0,	user : macluo
+
+action : labeled,	what : 2a. feature dev,	when : 1426433868.0,	user : macluo
+
+action : labeled,	what : 1. feature request,	when : 1426373481.0,	user : macluo
+
+ISSUE 44
+action : unlabeled,	what : 3. feature QA,	when : 1427028913.0,	user : macluo,	milestone : v0.4
+
+action : labeled,	what : 4. feature complete,	when : 1427028913.0,	user : macluo,	milestone : v0.4
+
+action : unlabeled,	what : 2a. feature dev,	when : 1426908776.0,	user : macluo,	milestone : v0.4
+
+action : labeled,	what : 3. feature QA,	when : 1426908776.0,	user : macluo,	milestone : v0.4
+
+action : unlabeled,	what : 1. feature request,	when : 1426562750.0,	user : macluo,	milestone : v0.4
+
+action : labeled,	what : 2a. feature dev,	when : 1426562750.0,	user : macluo,	milestone : v0.4
+
+action : labeled,	what : 1. feature request,	when : 1426374012.0,	user : macluo,	milestone : v0.4
+
+ISSUE 45
+action : labeled,	what : 5. bug,	when : 1426377803.0,	user : meneal
+
+ISSUE 46
+action : labeled,	what : 5. bug,	when : 1426442570.0,	user : meneal
+
+ISSUE 47
+action : unlabeled,	what : 3. feature QA,	when : 1427575008.0,	user : duh102
+
+action : labeled,	what : 4. feature complete,	when : 1427575008.0,	user : duh102
+
+action : unlabeled,	what : 1. feature request,	when : 1427568225.0,	user : duh102
+
+action : labeled,	what : 3. feature QA,	when : 1427568225.0,	user : duh102
+
+action : labeled,	what : 1. feature request,	when : 1426449036.0,	user : macluo
+
+ISSUE 48
+action : labeled,	what : 2a. feature dev,	when : 1426512414.0,	user : meneal,	milestone : v0.4
+
+ISSUE 49
+action : unlabeled,	what : 3. feature QA,	when : 1426653125.0,	user : duh102,	milestone : v0.4
+
+action : labeled,	what : 4. feature complete,	when : 1426653125.0,	user : duh102,	milestone : v0.4
+
+action : unlabeled,	what : 2a. feature dev,	when : 1426543948.0,	user : duh102,	milestone : v0.4
+
+action : labeled,	what : 3. feature QA,	when : 1426543948.0,	user : duh102,	milestone : v0.4
+
+action : labeled,	what : 2a. feature dev,	when : 1426513355.0,	user : meneal,	milestone : v0.4
+
+ISSUE 50
+action : labeled,	what : 2a. feature dev,	when : 1426513501.0,	user : meneal,	milestone : v0.4
+
+ISSUE 51
+action : unlabeled,	what : 3. feature QA,	when : 1427230399.0,	user : duh102,	milestone : v0.5
+
+action : labeled,	what : 4. feature complete,	when : 1427230399.0,	user : duh102,	milestone : v0.5
+
+action : unlabeled,	what : 2a. feature dev,	when : 1427156172.0,	user : duh102,	milestone : v0.5
+
+action : labeled,	what : 3. feature QA,	when : 1427156172.0,	user : duh102,	milestone : v0.5
+
+action : unlabeled,	what : 1. feature request,	when : 1427139925.0,	user : duh102,	milestone : v0.5
+
+action : labeled,	what : 2a. feature dev,	when : 1427139925.0,	user : duh102,	milestone : v0.5
+
+action : labeled,	what : 1. feature request,	when : 1426540582.0,	user : macluo,	milestone : v0.5
+
+ISSUE 52
+action : labeled,	what : 4. feature complete,	when : 1426855071.0,	user : duh102,	milestone : v0.4
+
+ISSUE 53
+action : unlabeled,	what : 3. feature QA,	when : 1427083790.0,	user : macluo,	milestone : v0.4
+
+action : labeled,	what : 4. feature complete,	when : 1427083790.0,	user : macluo,	milestone : v0.4
+
+action : unlabeled,	what : 2a. feature dev,	when : 1427079191.0,	user : macluo,	milestone : v0.4
+
+action : labeled,	what : 3. feature QA,	when : 1427079191.0,	user : macluo,	milestone : v0.4
+
+action : unlabeled,	what : 1. feature request,	when : 1427028923.0,	user : macluo,	milestone : v0.4
+
+action : labeled,	what : 2a. feature dev,	when : 1427028923.0,	user : macluo,	milestone : v0.4
+
+action : labeled,	what : 1. feature request,	when : 1426698843.0,	user : macluo,	milestone : v0.4
+
+ISSUE 54
+action : unlabeled,	what : 2a. feature dev,	when : 1426907767.0,	user : duh102
+
+action : labeled,	what : 4. feature complete,	when : 1426907767.0,	user : duh102
+
+action : unlabeled,	what : 1. feature request,	when : 1426904690.0,	user : duh102
+
+action : labeled,	what : 2a. feature dev,	when : 1426904690.0,	user : duh102
+
+action : labeled,	what : 1. feature request,	when : 1426880988.0,	user : meneal
+
+ISSUE 55
+action : labeled,	what : 5. bug,	when : 1426881084.0,	user : meneal
+
+ISSUE 56
+action : unlabeled,	what : 3. feature QA,	when : 1427230445.0,	user : duh102,	milestone : v0.5
+
+action : labeled,	what : 4. feature complete,	when : 1427230445.0,	user : duh102,	milestone : v0.5
+
+action : unlabeled,	what : 2a. feature dev,	when : 1427203840.0,	user : duh102,	milestone : v0.5
+
+action : labeled,	what : 3. feature QA,	when : 1427203840.0,	user : duh102,	milestone : v0.5
+
+action : unlabeled,	what : 1. feature request,	when : 1427139800.0,	user : duh102,	milestone : v0.5
+
+action : labeled,	what : 2a. feature dev,	when : 1427139800.0,	user : duh102,	milestone : v0.5
+
+action : labeled,	what : 1. feature request,	when : 1427082417.0,	user : macluo,	milestone : v0.5
+
+ISSUE 58
+action : unlabeled,	what : 3. feature QA,	when : 1427575022.0,	user : duh102,	milestone : v0.5
+
+action : labeled,	what : 4. feature complete,	when : 1427575022.0,	user : duh102,	milestone : v0.5
+
+action : unlabeled,	what : 2a. feature dev,	when : 1427478333.0,	user : duh102,	milestone : v0.5
+
+action : labeled,	what : 3. feature QA,	when : 1427478333.0,	user : duh102,	milestone : v0.5
+
+action : unlabeled,	what : 1. feature request,	when : 1427464953.0,	user : duh102,	milestone : v0.5
+
+action : labeled,	what : 2a. feature dev,	when : 1427464953.0,	user : duh102,	milestone : v0.5
+
+action : labeled,	what : 1. feature request,	when : 1427230885.0,	user : duh102,	milestone : v0.5
+
+ISSUE 59
+action : unlabeled,	what : 1. feature request,	when : 1427574994.0,	user : duh102,	milestone : v0.5
+
+action : labeled,	what : 4. feature complete,	when : 1427574994.0,	user : duh102,	milestone : v0.5
+
+action : labeled,	what : 1. feature request,	when : 1427230950.0,	user : duh102,	milestone : v0.5
+
+ISSUE 60
+action : unlabeled,	what : 1. feature request,	when : 1427233295.0,	user : duh102,	milestone : v0.5
+
+action : labeled,	what : 4. feature complete,	when : 1427233295.0,	user : duh102,	milestone : v0.5
+
+action : labeled,	what : 1. feature request,	when : 1427230985.0,	user : duh102,	milestone : v0.5
+
+ISSUE 61
+action : unlabeled,	what : 1. feature request,	when : 1427574966.0,	user : duh102,	milestone : v0.5
+
+action : labeled,	what : 4. feature complete,	when : 1427574966.0,	user : duh102,	milestone : v0.5
+
+action : labeled,	what : 1. feature request,	when : 1427233505.0,	user : duh102,	milestone : v0.5
+
+ISSUE 62
+action : unlabeled,	what : 1. feature request,	when : 1427598251.0,	user : duh102,	milestone : v0.5
+
+action : labeled,	what : 4. feature complete,	when : 1427598251.0,	user : duh102,	milestone : v0.5
+
+action : labeled,	what : 1. feature request,	when : 1427235008.0,	user : duh102,	milestone : v0.5
+
+ISSUE 63
+action : labeled,	what : 2b. help wanted,	when : 1427252042.0,	user : macluo
+
+ISSUE 64
+action : unlabeled,	what : 2a. feature dev,	when : 1427504269.0,	user : duh102,	milestone : v0.5
+
+action : labeled,	what : 4. feature complete,	when : 1427504269.0,	user : duh102,	milestone : v0.5
+
+action : unlabeled,	what : 1. feature request,	when : 1427408428.0,	user : duh102,	milestone : v0.5
+
+action : labeled,	what : 2a. feature dev,	when : 1427408428.0,	user : duh102,	milestone : v0.5
+
+action : labeled,	what : 1. feature request,	when : 1427330177.0,	user : duh102,	milestone : v0.5
+
+ISSUE 65
+action : unlabeled,	what : 5. bug,	when : 1427403198.0,	user : duh102,	milestone : v0.5
+
+action : labeled,	what : 4. feature complete,	when : 1427403198.0,	user : duh102,	milestone : v0.5
+
+action : labeled,	what : 5. bug,	when : 1427334864.0,	user : duh102,	milestone : v0.5
+
+ISSUE 66
+action : labeled,	what : 2a. feature dev,	when : 1427337921.0,	user : meneal,	milestone : v0.6 Cleanup
+
+ISSUE 67
+action : labeled,	what : 5. bug,	when : 1427403230.0,	user : duh102,	milestone : v0.5
+
+ISSUE 68
+action : unlabeled,	what : 1. feature request,	when : 1427588298.0,	user : duh102,	milestone : v0.5
+
+action : labeled,	what : 4. feature complete,	when : 1427588298.0,	user : duh102,	milestone : v0.5
+
+action : labeled,	what : 1. feature request,	when : 1427406849.0,	user : ktspence,	milestone : v0.5
+
+ISSUE 69
+action : unlabeled,	what : 3. feature QA,	when : 1427512298.0,	user : macluo
+
+action : labeled,	what : 4. feature complete,	when : 1427512298.0,	user : macluo
+
+action : unlabeled,	what : 2a. feature dev,	when : 1427464187.0,	user : macluo
+
+action : labeled,	what : 3. feature QA,	when : 1427464187.0,	user : macluo
+
+action : labeled,	what : 2a. feature dev,	when : 1427463070.0,	user : macluo
+
+ISSUE 70
+action : unlabeled,	what : 3. feature QA,	when : 1427566873.0,	user : macluo
+
+action : labeled,	what : 4. feature complete,	when : 1427566873.0,	user : macluo
+
+action : unlabeled,	what : 2a. feature dev,	when : 1427510258.0,	user : macluo
+
+action : labeled,	what : 3. feature QA,	when : 1427510258.0,	user : macluo
+
+action : unlabeled,	what : 1. feature request,	when : 1427491882.0,	user : macluo
+
+action : labeled,	what : 2a. feature dev,	when : 1427491882.0,	user : macluo
+
+action : labeled,	what : 1. feature request,	when : 1427465293.0,	user : macluo
+
+ISSUE 71
+action : unlabeled,	what : 1. feature request,	when : 1427588136.0,	user : duh102,	milestone : v0.6 Cleanup
+
+action : labeled,	what : 4. feature complete,	when : 1427588136.0,	user : duh102,	milestone : v0.6 Cleanup
+
+action : labeled,	what : 1. feature request,	when : 1427575285.0,	user : duh102,	milestone : v0.6 Cleanup
+
+ISSUE 72
+action : labeled,	what : 5. bug,	when : 1427575329.0,	user : duh102,	milestone : v0.6 Cleanup
+
+ISSUE 73
+action : unlabeled,	what : 1. feature request,	when : 1427598123.0,	user : duh102,	milestone : v0.6 Cleanup
+
+action : labeled,	what : 4. feature complete,	when : 1427598123.0,	user : duh102,	milestone : v0.6 Cleanup
+
+action : labeled,	what : 1. feature request,	when : 1427575423.0,	user : duh102,	milestone : v0.6 Cleanup
+
+ISSUE 74
+action : unlabeled,	what : 1. feature request,	when : 1427591588.0,	user : duh102,	milestone : v0.6 Cleanup
+
+action : labeled,	what : 4. feature complete,	when : 1427591588.0,	user : duh102,	milestone : v0.6 Cleanup
+
+action : labeled,	what : 1. feature request,	when : 1427575463.0,	user : duh102,	milestone : v0.6 Cleanup
+
+ISSUE 75
+action : unlabeled,	what : 3. feature QA,	when : 1427675527.0,	user : macluo,	milestone : v0.6 Cleanup
+
+action : labeled,	what : 4. feature complete,	when : 1427675527.0,	user : macluo,	milestone : v0.6 Cleanup
+
+action : unlabeled,	what : 2a. feature dev,	when : 1427649182.0,	user : macluo,	milestone : v0.6 Cleanup
+
+action : labeled,	what : 3. feature QA,	when : 1427649182.0,	user : macluo,	milestone : v0.6 Cleanup
+
+action : unlabeled,	what : 1. feature request,	when : 1427598627.0,	user : macluo,	milestone : v0.6 Cleanup
+
+action : labeled,	what : 2a. feature dev,	when : 1427598627.0,	user : macluo,	milestone : v0.6 Cleanup
+
+action : labeled,	what : 1. feature request,	when : 1427575923.0,	user : duh102,	milestone : v0.6 Cleanup
+
+ISSUE 76
+action : unlabeled,	what : 2a. feature dev,	when : 1427721751.0,	user : duh102,	milestone : v0.6 Cleanup
+
+action : labeled,	what : 4. feature complete,	when : 1427721751.0,	user : duh102,	milestone : v0.6 Cleanup
+
+action : labeled,	what : 2a. feature dev,	when : 1427576115.0,	user : ktspence,	milestone : v0.6 Cleanup
+
+ISSUE 77
+action : unlabeled,	what : 1. feature request,	when : 1428108978.0,	user : duh102,	milestone : v0.6 Cleanup
+
+action : labeled,	what : 4. feature complete,	when : 1428108978.0,	user : duh102,	milestone : v0.6 Cleanup
+
+action : labeled,	what : 1. feature request,	when : 1427578252.0,	user : duh102,	milestone : v0.6 Cleanup
+
+ISSUE 78
+action : labeled,	what : 5. bug,	when : 1427578240.0,	user : duh102,	milestone : v0.6 Cleanup
+
+ISSUE 79
+action : unlabeled,	what : 2a. feature dev,	when : 1427590162.0,	user : duh102
+
+action : labeled,	what : 4. feature complete,	when : 1427590162.0,	user : duh102
+
+action : labeled,	what : 2a. feature dev,	when : 1427589070.0,	user : meneal
+
+ISSUE 80
+action : labeled,	what : 5. bug,	when : 1427594731.0,	user : meneal
+
+ISSUE 81
+action : unlabeled,	what : 2a. feature dev,	when : 1427804193.0,	user : duh102,	milestone : v0.6 Cleanup
+
+action : labeled,	what : 4. feature complete,	when : 1427804193.0,	user : duh102,	milestone : v0.6 Cleanup
+
+action : labeled,	what : 2a. feature dev,	when : 1427599971.0,	user : ktspence,	milestone : v0.6 Cleanup
+
+ISSUE 82
+action : unlabeled,	what : 3. feature QA,	when : 1427675607.0,	user : macluo
+
+action : labeled,	what : 4. feature complete,	when : 1427675607.0,	user : macluo
+
+action : unlabeled,	what : 2a. feature dev,	when : 1427649429.0,	user : macluo
+
+action : labeled,	what : 3. feature QA,	when : 1427649429.0,	user : macluo
+
+action : unlabeled,	what : 1. feature request,	when : 1427649063.0,	user : macluo
+
+action : labeled,	what : 2a. feature dev,	when : 1427649063.0,	user : macluo
+
+action : labeled,	what : 1. feature request,	when : 1427641457.0,	user : duh102
+
+ISSUE 83
+action : labeled,	what : 5. bug,	when : 1427661438.0,	user : duh102,	milestone : v0.6 Cleanup
+
+ISSUE 84
+action : labeled,	what : 4. feature complete,	when : 1427804231.0,	user : duh102,	milestone : v0.6 Cleanup
+
+action : unlabeled,	what : 2a. feature dev,	when : 1427804202.0,	user : duh102,	milestone : v0.6 Cleanup
+
+action : labeled,	what : 2a. feature dev,	when : 1427777926.0,	user : ktspence,	milestone : v0.6 Cleanup
+
+ISSUE 85
+action : labeled,	what : 4. feature complete,	when : 1427804231.0,	user : duh102,	milestone : v0.6 Cleanup
+
+action : unlabeled,	what : 2a. feature dev,	when : 1427804202.0,	user : duh102,	milestone : v0.6 Cleanup
+
+action : labeled,	what : 2a. feature dev,	when : 1427782840.0,	user : ktspence,	milestone : v0.6 Cleanup
+
+ISSUE 86
+action : labeled,	what : 4. feature complete,	when : 1427804231.0,	user : duh102,	milestone : v0.6 Cleanup
+
+action : unlabeled,	what : 2a. feature dev,	when : 1427804202.0,	user : duh102,	milestone : v0.6 Cleanup
+
+action : labeled,	what : 2a. feature dev,	when : 1427782955.0,	user : ktspence,	milestone : v0.6 Cleanup
+
+ISSUE 87
+action : unlabeled,	what : 1. feature request,	when : 1427825587.0,	user : duh102
+
+action : labeled,	what : 4. feature complete,	when : 1427825587.0,	user : duh102
+
+action : labeled,	what : 1. feature request,	when : 1427810196.0,	user : macluo
+
+ISSUE 88
+action : unlabeled,	what : 2a. feature dev,	when : 1427990766.0,	user : duh102,	milestone : v0.6 Cleanup
+
+action : labeled,	what : 4. feature complete,	when : 1427990766.0,	user : duh102,	milestone : v0.6 Cleanup
+
+action : labeled,	what : 2a. feature dev,	when : 1427838875.0,	user : ktspence,	milestone : v0.6 Cleanup
+
+ISSUE 89
+action : unlabeled,	what : 3. feature QA,	when : 1428013869.0,	user : duh102,	milestone : v0.6 Cleanup
+
+action : labeled,	what : 4. feature complete,	when : 1428013869.0,	user : duh102,	milestone : v0.6 Cleanup
+
+action : unlabeled,	what : 2a. feature dev,	when : 1428002987.0,	user : duh102,	milestone : v0.6 Cleanup
+
+action : labeled,	what : 3. feature QA,	when : 1428002987.0,	user : duh102,	milestone : v0.6 Cleanup
+
+action : labeled,	what : 2a. feature dev,	when : 1427990844.0,	user : duh102,	milestone : v0.6 Cleanup
+
+ISSUE 90
+action : labeled,	what : 4. feature complete,	when : 1428026300.0,	user : duh102
+
+action : unlabeled,	what : 3. feature QA,	when : 1428026294.0,	user : duh102
+
+action : unlabeled,	what : 2a. feature dev,	when : 1428025843.0,	user : duh102
+
+action : labeled,	what : 3. feature QA,	when : 1428025843.0,	user : duh102
+
+action : labeled,	what : 2a. feature dev,	when : 1427991077.0,	user : meneal
+
+ISSUE 91
+action : labeled,	what : 5. bug,	when : 1428075488.0,	user : macluo
+
+ISSUE 92
+action : unlabeled,	what : 3. feature QA,	when : 1428119476.0,	user : macluo
+
+action : labeled,	what : 4. feature complete,	when : 1428119476.0,	user : macluo
+
+action : labeled,	what : 3. feature QA,	when : 1428110892.0,	user : macluo
+
+ISSUE 93
+action : labeled,	what : 5. bug,	when : 1428325462.0,	user : macluo
+
