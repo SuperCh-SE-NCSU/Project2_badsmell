@@ -43,7 +43,7 @@ def secs(d0):
     return delta.total_seconds()
 
 def dump1(u,issues):
-    token = "eed937f4853664c85e8fbe0ad67499bc355c55a3" # <===
+    token = "*" # <===
     request = urllib2.Request(u, headers={"Authorization" : "token "+token})
     v = urllib2.urlopen(request).read()
     w = json.loads(v)
@@ -158,7 +158,7 @@ def launchDump():
             f.write('\n')
             print(event.show())
             print('')
-        if labelt==False:
+        if labelt==True:
             numofissuenotlabeled=numofissuenotlabeled+1
     numoflabels=len(labelnum)
     print('feature 1')
