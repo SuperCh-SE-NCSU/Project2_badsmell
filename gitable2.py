@@ -35,10 +35,7 @@ class L():
     def show(i):
         lst = [str(k)+" : "+str(v) for k,v in i.__dict__.iteritems() if v != None]
         return ',\t'.join(map(str,lst))
-
-#feature10:Percentage of issues using milestone
-issueUseMilestone=0
-
+ 
 def secs(d0):
     d = datetime.datetime(*map(int, re.split('[^\d]', d0)[:-1]))
     epoch = datetime.datetime.utcfromtimestamp(0)
@@ -46,7 +43,7 @@ def secs(d0):
     return delta.total_seconds()
 
 def dump1(u,issues):
-    token = "your token" # <===
+    token = "" # <===
     request = urllib2.Request(u, headers={"Authorization" : "token "+token})
     v = urllib2.urlopen(request).read()
     w = json.loads(v)
@@ -59,16 +56,12 @@ def dump1(u,issues):
         label_name = event['label']['name']
         user = event['actor']['login']
         milestone = event['issue']['milestone']
-        if milestone != None:
-            milestone = milestone['title']
-            global issueUseMilestone
-            issueUseMilestone += 1
+        if milestone != None : milestone = milestone['title']
         eventObj = L(when=created_at,
                     action = action,
                     what = label_name,
                     user = user,
                     milestone = milestone)
-
         all_events = issues.get(issue_id)
         if not all_events: all_events = []
         all_events.append(eventObj)
@@ -92,7 +85,14 @@ def launchDump():
     numoflabels=0
     #Number of times each label was used
     labelnum=dict()
-    
+    milestonenum=dict()
+    #store number of issues each person participating in
+    userParticipateInIssue=dict()
+    #store number of issues handled by each person
+    userHandleWholeIssue=dict()
+    userList=[]
+    #judge issue is handled by same user
+    sameUser=False
     f=open("Group6.txt","w")
     #issues2=dict()
     while(True):
@@ -100,37 +100,100 @@ def launchDump():
         #print("page" + str(page))
         page += 1
         if not doNext : break
+    iterator2=-1
     for issue, events in issues.iteritems():
+        iterator2+=1
         print("ISSUE " + str(issue)+"\n")
         f.write("ISSUE "+str(issue)+"\n")
+        milestonetrue=True
         numofIssues=issue
+        #calculate the iteration times
+        iterator=-1;
         for event in events:
-            #k->key; v->value
+            iterator+=1
             for k,v in event.__dict__.iteritems():
                 if str(k) is 'what':
                     if str(v) in labelnum.keys():
                         labelnum[str(v)]=labelnum[str(v)]+1
                     else:
                         labelnum[str(v)]=1
+                #feature 17
+                if str(k) is 'user':
+                    if str(v) in userList:
+                        userParticipateInIssue[str(v)]+=1
+                    else:
+                        userList.append(str(v))
+                        userParticipateInIssue[str(v)]=0
+                        userHandleWholeIssue[str(v)]=0
+
+                #feature 13, 14
+                if str(k) is 'user':
+                    tempUser=''
+                    if tempUser=='':
+                        tempUser=str(v)
+                        sameUser=True
+                    elif tempUser==str(v):
+                        sameUser=True
+                    else:
+                        sameUser=False
+                        import pdb
+                        pdb.set_trace()
+                    if len(events)==1: userHandleWholeIssue[str(v)]+=1
+                    if iterator==len(events) and sameUser==True and len(events)>1: userHandleWholeIssue[str(v)]+=1
+                    
+                if str(k) is 'milestone':
+                    if str(v) in milestonenum.keys():
+                        if milestonetrue==True:
+                            milestonenum[str(v)]=milestonenum[str(v)]+1
+                            milestonetrue=False
+                    else:
+                        milestonenum[str(v)]=1
+
             f.write(event.show()+"\n")
             f.write('\n')
             print(event.show())
             print('')
-    f.close()        
-    print ('==============Statistics==================')
+          
     numoflabels=len(labelnum)
+    print('feature 1')
     print('Num of issues:',numofIssues)
+    print('-----------------------------')
+    print('featue 2')
     print('Num of labels:',numoflabels)
-    global issueUseMilestone
-    print('Issues using milestone', issueUseMilestone)
+    print('-----------------------------')
+    print('feature 3')
+    print('Num of millstones:',len(milestonenum))
+    for key, elem in milestonenum.items():
+        print(key, elem)
+    print('-----------------------------')
+    print('feature 4')
+    print('Number of times each label was used')
     for key, elem in labelnum.items():
-        print(key, elem)        
+        print(key, elem)
+    print('-----------------------------')
+    print('feature 10')
+    print('Percentage of issues using milestones')
+    sumMile=0
+    noneMile=0
+    for key, elem in milestonenum.items():
+        if key=='None':
+            noneMile=elem
+        else:
+            sumMile=sumMile+elem
+    print(sumMile*1.0/(sumMile+noneMile))
+    print('-----------------------------')
+    print('feature 13, 14')
+    print('"Unusually small" number of issues handled by one person(<10%)')
+    print('"Unusually large" number of issues handled by one person(>70%)')
+    for key, value in userHandleWholeIssue.items():
+        print(key, value, value*1.0/numofIssues)
+    print('-----------------------------')
+    print('feature 17')
+    print('Issue participating times of each user')
+    for key, value in userParticipateInIssue.items():
+        print(key, value)
 
-    
-        #issues2[str(issue)]=events
-    #with open('ProjectScraping.json','wb') as fp:
-    #    json.dump(issues2,fp)
-    
-
+    f.close()
+     
     
 launchDump() 
