@@ -22,6 +22,7 @@ from __future__ import print_function
 import urllib2
 import json
 import re,datetime
+import math
 import sys
 class L():
     "Anonymous container"
@@ -43,7 +44,7 @@ def secs(d0):
     return delta.total_seconds()
 
 def dump1(u,issues):
-    token = "" # <===
+    token = "ca1cd448933062af92b7f3de85089a3ba546372e" # <===
     request = urllib2.Request(u, headers={"Authorization" : "token "+token})
     v = urllib2.urlopen(request).read()
     w = json.loads(v)
@@ -86,13 +87,17 @@ def launchDump():
     #Number of times each label was used
     labelnum=dict()
     milestonenum=dict()
-    #store number of issues each person participating in
+    #feature17: store number of issues each person participating in
     userParticipateInIssue=dict()
-    #store number of issues handled by each person
+    #feature13,14: store number of issues handled by each person
     userHandleWholeIssue=dict()
     userList=[]
     #judge issue is handled by same user
     sameUser=False
+    #feature15,16: time interval between two issues' creation
+    timeInterval=[]
+    issueStartTime=[]
+
     f=open("Group6.txt","w")
     #issues2=dict()
     while(True):
@@ -100,6 +105,7 @@ def launchDump():
         #print("page" + str(page))
         page += 1
         if not doNext : break
+    #outer loop iterator
     iterator2=-1
     for issue, events in issues.iteritems():
         iterator2+=1
@@ -107,8 +113,9 @@ def launchDump():
         f.write("ISSUE "+str(issue)+"\n")
         milestonetrue=True
         numofIssues=issue
-        #calculate the iteration times
+        #calculate the iteration times, inner loop
         iterator=-1;
+        tempUser=''
         for event in events:
             iterator+=1
             for k,v in event.__dict__.iteritems():
@@ -128,7 +135,6 @@ def launchDump():
 
                 #feature 13, 14
                 if str(k) is 'user':
-                    tempUser=''
                     if tempUser=='':
                         tempUser=str(v)
                         sameUser=True
@@ -136,11 +142,9 @@ def launchDump():
                         sameUser=True
                     else:
                         sameUser=False
-                        import pdb
-                        pdb.set_trace()
                     if len(events)==1: userHandleWholeIssue[str(v)]+=1
-                    if iterator==len(events) and sameUser==True and len(events)>1: userHandleWholeIssue[str(v)]+=1
-                    
+                    if iterator==len(events)-1 and sameUser==True and len(events)>1: userHandleWholeIssue[str(v)]+=1
+                #feature 3, 10
                 if str(k) is 'milestone':
                     if str(v) in milestonenum.keys():
                         if milestonetrue==True:
@@ -148,6 +152,14 @@ def launchDump():
                             milestonetrue=False
                     else:
                         milestonenum[str(v)]=1
+                #feature 15, 16
+                if str(k) is 'when':
+                    if iterator==len(events)-1:
+                        issueStartTime.append(float(v))
+                        if len(timeInterval) > 0:
+                            timeInterval.append(float(v)-float(issueStartTime[-2]))
+                        else:
+                            timeInterval.append(0.0)
 
             f.write(event.show()+"\n")
             f.write('\n')
@@ -192,7 +204,21 @@ def launchDump():
     print('Issue participating times of each user')
     for key, value in userParticipateInIssue.items():
         print(key, value)
-
+    print('-----------------------------')
+    print('feature 15, 16')
+    print('Time interval between the creation of two issues')
+    intervalSum=0
+    for interval in timeInterval:
+        #print(interval)
+        if interval>0: intervalSum += float(interval)
+    mean = intervalSum/len(timeInterval)
+    stdevSum = 0
+    for i in range(len(timeInterval)):
+        if timeInterval[i]>0: stdevSum += pow((timeInterval[i]-mean),2)
+    stdev=math.sqrt(stdevSum/(len(timeInterval)-1))
+    print ('Number of interval: ',len(timeInterval))
+    print ('Mean value of interval time', mean)
+    print ('Standard deviation of interval time', stdev)
     f.close()
      
     
