@@ -43,25 +43,38 @@ def secs(d0):
     return delta.total_seconds()
 
 def dump1(u,issues):
-    token = "" # <===
+    token = "eed937f4853664c85e8fbe0ad67499bc355c55a3" # <===
     request = urllib2.Request(u, headers={"Authorization" : "token "+token})
     v = urllib2.urlopen(request).read()
     w = json.loads(v)
     if not w: return False
     for event in w:
+        #print(type(event))
         issue_id = event['issue']['number']
+        
         if not event.get('label'): continue
         created_at = secs(event['created_at'])
         action = event['event']
         label_name = event['label']['name']
         user = event['actor']['login']
         milestone = event['issue']['milestone']
+        assignea=event['issue']['assignee']
+        comments=event['issue']['comments']
+        issuecreated_at=secs(event['issue']['created_at'])
+        issueclosed_at=secs(event['issue']['closed_at'])
+        assignee=None
+        
+        if assignea!=None: assignee=assignea['login']
         if milestone != None : milestone = milestone['title']
         eventObj = L(when=created_at,
                     action = action,
                     what = label_name,
                     user = user,
-                    milestone = milestone)
+                    milestone = milestone,
+                    assignee=assignee,
+                     comments=comments,
+                     issuecreated_at=issuecreated_at,
+                     issueclosed_at=issueclosed_at)
         all_events = issues.get(issue_id)
         if not all_events: all_events = []
         all_events.append(eventObj)
@@ -86,7 +99,10 @@ def launchDump():
     #Number of times each label was used
     labelnum=dict()
     milestonenum=dict()
-    
+    createtime=list()
+    numofiss_nocomments=0
+    numberofissuemonth=list()
+    numofissuenotlabeled=0
     f=open("ProjectScrapingIssue.txt","w")
     #issues2=dict()
     while(True):
@@ -104,6 +120,9 @@ def launchDump():
         print("ISSUE " + str(issue)+"\n")
         f.write("ISSUE "+str(issue)+"\n")
         milestonetrue=True
+        commentsi=True
+        createat=True
+        labelt=True
         numofIssues=issue
         for event in events:
             for k,v in event.__dict__.iteritems():
@@ -112,6 +131,7 @@ def launchDump():
                         labelnum[str(v)]=labelnum[str(v)]+1
                     else:
                         labelnum[str(v)]=1
+                    labelt=False
                 if str(k) is 'milestone':
                     if str(v) in milestonenum.keys():
                         if milestonetrue==True:
@@ -119,6 +139,15 @@ def launchDump():
                             milestonetrue=False
                     else:
                         milestonenum[str(v)]=1
+                if str(k) is 'comments':
+                    if commentsi==True:
+                        if v==0:
+                            numofiss_nocomments=numofiss_nocomments+1
+                        commentsi=False
+                if str(k) is 'when':
+                    if createat==True:
+                        createtime.append(v)
+                        createat=False
                 #if v != None:
                 #    print(str(k)+" : "+str(v)) 
             #print(type(event))
@@ -129,7 +158,8 @@ def launchDump():
             f.write('\n')
             print(event.show())
             print('')
-            
+        if labelt==False:
+            numofissuenotlabeled=numofissuenotlabeled+1
     numoflabels=len(labelnum)
     print('feature 1')
     print('Num of issues:',numofIssues)
@@ -146,6 +176,31 @@ def launchDump():
     print('Number of times each label was used')
     for key, elem in labelnum.items():
         print(key, elem)
+    print('-----------------------------')
+    print('feature 5')
+    print('Number of issues without comments:',numofiss_nocomments)
+    print('-----------------------------')
+    print('feature 6')
+    endtime=0
+    print(createtime)
+    
+    for ctime in createtime:
+        if endtime==0:
+            mothissue=0
+            endtime=ctime+60*60*24*7
+            print(endtime)
+        if ctime<endtime:
+            mothissue=mothissue+1
+        else:
+            numberofissuemonth.append(mothissue)
+            mothissue=1
+            endtime=ctime+60*60*24*7
+            print(endtime)
+            
+    print('Number of issues every month:',numberofissuemonth)
+    print('-----------------------------')
+    print('feature 9')
+    print('issues not labeled:',numofissuenotlabeled)
     print('-----------------------------')
     print('feature 10')
     print('Percentage of issues using milestones')
