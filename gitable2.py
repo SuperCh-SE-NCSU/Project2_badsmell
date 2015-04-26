@@ -22,6 +22,7 @@ from __future__ import print_function
 import urllib2
 import json
 import re,datetime
+import math
 import sys
 class L():
     "Anonymous container"
@@ -43,38 +44,25 @@ def secs(d0):
     return delta.total_seconds()
 
 def dump1(u,issues):
-    token = "*" # <===
+    token = "ca1cd448933062af92b7f3de85089a3ba546372e" # <===
     request = urllib2.Request(u, headers={"Authorization" : "token "+token})
     v = urllib2.urlopen(request).read()
     w = json.loads(v)
     if not w: return False
     for event in w:
-        #print(type(event))
         issue_id = event['issue']['number']
-        
         if not event.get('label'): continue
         created_at = secs(event['created_at'])
         action = event['event']
         label_name = event['label']['name']
         user = event['actor']['login']
         milestone = event['issue']['milestone']
-        assignea=event['issue']['assignee']
-        comments=event['issue']['comments']
-        issuecreated_at=secs(event['issue']['created_at'])
-        issueclosed_at=secs(event['issue']['closed_at'])
-        assignee=None
-        
-        if assignea!=None: assignee=assignea['login']
         if milestone != None : milestone = milestone['title']
         eventObj = L(when=created_at,
                     action = action,
                     what = label_name,
                     user = user,
-                    milestone = milestone,
-                    assignee=assignee,
-                     comments=comments,
-                     issuecreated_at=issuecreated_at,
-                     issueclosed_at=issueclosed_at)
+                    milestone = milestone)
         all_events = issues.get(issue_id)
         if not all_events: all_events = []
         all_events.append(eventObj)
@@ -99,43 +87,64 @@ def launchDump():
     #Number of times each label was used
     labelnum=dict()
     milestonenum=dict()
+    #feature17: store number of issues each person participating in
+    userParticipateInIssue=dict()
+    #feature13,14: store number of issues handled by each person
+    userHandleWholeIssue=dict()
+    userList=[]
+    #judge issue is handled by same user
+    sameUser=False
+    #feature15,16: time interval between two issues' creation
+    timeInterval=[]
+    issueStartTime=[]
 
-    createtime=list()
-    numofiss_nocomments=0
-    numberofissuemonth=list()
-    numofissuenotlabeled=0
-
-    
     f=open("Group6.txt","w")
-
     #issues2=dict()
     while(True):
         doNext = dump('https://api.github.com/repos/SuperCh-SE-NCSU/ProjectScraping/issues/events?page=' + str(page), issues)
-        print("page" + str(page))
+        #print("page" + str(page))
         page += 1
         if not doNext : break
-    #print issues
-    #with open('ProjectScraping.json','wb') as fp:
-    #    json.dump(issues,fp,skipkeys=False, ensure_ascii=False)
-    #rint json.dumps(issues)
-    #with open('ProjectScraping.json','wb') as fp:
-    #    json.dump(issues,fp)
+    #outer loop iterator
+    iterator2=-1
     for issue, events in issues.iteritems():
+        iterator2+=1
         print("ISSUE " + str(issue)+"\n")
         f.write("ISSUE "+str(issue)+"\n")
         milestonetrue=True
-        commentsi=True
-        createat=True
-        labelt=True
         numofIssues=issue
+        #calculate the iteration times, inner loop
+        iterator=-1;
+        tempUser=''
         for event in events:
+            iterator+=1
             for k,v in event.__dict__.iteritems():
                 if str(k) is 'what':
                     if str(v) in labelnum.keys():
                         labelnum[str(v)]=labelnum[str(v)]+1
                     else:
                         labelnum[str(v)]=1
-                    labelt=False
+                #feature 17
+                if str(k) is 'user':
+                    if str(v) in userList:
+                        userParticipateInIssue[str(v)]+=1
+                    else:
+                        userList.append(str(v))
+                        userParticipateInIssue[str(v)]=0
+                        userHandleWholeIssue[str(v)]=0
+
+                #feature 13, 14
+                if str(k) is 'user':
+                    if tempUser=='':
+                        tempUser=str(v)
+                        sameUser=True
+                    elif tempUser==str(v):
+                        sameUser=True
+                    else:
+                        sameUser=False
+                    if len(events)==1: userHandleWholeIssue[str(v)]+=1
+                    if iterator==len(events)-1 and sameUser==True and len(events)>1: userHandleWholeIssue[str(v)]+=1
+                #feature 3, 10
                 if str(k) is 'milestone':
                     if str(v) in milestonenum.keys():
                         if milestonetrue==True:
@@ -143,27 +152,20 @@ def launchDump():
                             milestonetrue=False
                     else:
                         milestonenum[str(v)]=1
-                if str(k) is 'comments':
-                    if commentsi==True:
-                        if v==0:
-                            numofiss_nocomments=numofiss_nocomments+1
-                        commentsi=False
+                #feature 15, 16
                 if str(k) is 'when':
-                    if createat==True:
-                        createtime.append(v)
-                        createat=False
-                #if v != None:
-                #    print(str(k)+" : "+str(v)) 
-            #print(type(event))
-            #print(event['issue']['number'])
-            #if event.get('label'):
-            #    print(event['label']['name'])
+                    if iterator==len(events)-1:
+                        issueStartTime.append(float(v))
+                        if len(timeInterval) > 0:
+                            timeInterval.append(float(v)-float(issueStartTime[-2]))
+                        else:
+                            timeInterval.append(0.0)
+
             f.write(event.show()+"\n")
             f.write('\n')
             print(event.show())
             print('')
-        if labelt==True:
-            numofissuenotlabeled=numofissuenotlabeled+1
+          
     numoflabels=len(labelnum)
     print('feature 1')
     print('Num of issues:',numofIssues)
@@ -181,31 +183,6 @@ def launchDump():
     for key, elem in labelnum.items():
         print(key, elem)
     print('-----------------------------')
-    print('feature 5')
-    print('Number of issues without comments:',numofiss_nocomments)
-    print('-----------------------------')
-    print('feature 6')
-    endtime=0
-    print(createtime)
-    
-    for ctime in createtime:
-        if endtime==0:
-            mothissue=0
-            endtime=ctime+60*60*24*7
-            print(endtime)
-        if ctime<endtime:
-            mothissue=mothissue+1
-        else:
-            numberofissuemonth.append(mothissue)
-            mothissue=1
-            endtime=ctime+60*60*24*7
-            print(endtime)
-            
-    print('Number of issues every month:',numberofissuemonth)
-    print('-----------------------------')
-    print('feature 9')
-    print('issues not labeled:',numofissuenotlabeled)
-    print('-----------------------------')
     print('feature 10')
     print('Percentage of issues using milestones')
     sumMile=0
@@ -217,12 +194,32 @@ def launchDump():
             sumMile=sumMile+elem
     print(sumMile*1.0/(sumMile+noneMile))
     print('-----------------------------')
-
+    print('feature 13, 14')
+    print('"Unusually small" number of issues handled by one person(<10%)')
+    print('"Unusually large" number of issues handled by one person(>70%)')
+    for key, value in userHandleWholeIssue.items():
+        print(key, value, value*1.0/numofIssues)
+    print('-----------------------------')
+    print('feature 17')
+    print('Issue participating times of each user')
+    for key, value in userParticipateInIssue.items():
+        print(key, value)
+    print('-----------------------------')
+    print('feature 15, 16')
+    print('Time interval between the creation of two issues')
+    intervalSum=0
+    for interval in timeInterval:
+        #print(interval)
+        if interval>0: intervalSum += float(interval)
+    mean = intervalSum/len(timeInterval)
+    stdevSum = 0
+    for i in range(len(timeInterval)):
+        if timeInterval[i]>0: stdevSum += pow((timeInterval[i]-mean),2)
+    stdev=math.sqrt(stdevSum/(len(timeInterval)-1))
+    print ('Number of interval: ',len(timeInterval))
+    print ('Mean value of interval time', mean)
+    print ('Standard deviation of interval time', stdev)
     f.close()
-        #issues2[str(issue)]=events
-    #with open('ProjectScraping.json','wb') as fp:
-    #    json.dump(issues2,fp)
-    
-
+     
     
 launchDump() 
