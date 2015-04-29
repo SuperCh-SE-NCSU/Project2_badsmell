@@ -18,11 +18,20 @@ Copy the value for that key and paste it on line marked "token" in the attached 
 3) Run the python file.
 python gitable.py
 """
+
 from __future__ import print_function
+import matplotlib.pyplot as plt
 import urllib2
 import json
 import re,datetime
 import sys
+import math
+import matplotlib.pyplot as plt
+
+def showFigure(x):
+    plt.plot(range(len(x)), x, 'ro-')   
+    plt.show()
+
 class L():
     "Anonymous container"
     def __init__(i,**fields) :
@@ -43,7 +52,7 @@ def secs(d0):
     return delta.total_seconds()
 
 def dump1(u,issues):
-    token = "*" # <===
+    token = "" 
     request = urllib2.Request(u, headers={"Authorization" : "token "+token})
     v = urllib2.urlopen(request).read()
     w = json.loads(v)
@@ -51,17 +60,24 @@ def dump1(u,issues):
     for event in w:
         #print(type(event))
         issue_id = event['issue']['number']
-        
-        if not event.get('label'): continue
+        #label_name=None
+        if not event.get('label'):
+            continue
+            
+        #continue
+        #   
+        #else:
+        #    label_name='null'
         created_at = secs(event['created_at'])
         action = event['event']
-        label_name = event['label']['name']
+        label_name=event['label']['name']
         user = event['actor']['login']
         milestone = event['issue']['milestone']
         assignea=event['issue']['assignee']
         comments=event['issue']['comments']
         issuecreated_at=secs(event['issue']['created_at'])
         issueclosed_at=secs(event['issue']['closed_at'])
+        duration=issueclosed_at-issuecreated_at
         assignee=None
         
         if assignea!=None: assignee=assignea['login']
@@ -72,9 +88,10 @@ def dump1(u,issues):
                     user = user,
                     milestone = milestone,
                     assignee=assignee,
-                     comments=comments,
-                     issuecreated_at=issuecreated_at,
-                     issueclosed_at=issueclosed_at)
+                    comments=comments,
+                    issuecreated_at=issuecreated_at,
+                    issueclosed_at=issueclosed_at,
+                    duration=duration)
         all_events = issues.get(issue_id)
         if not all_events: all_events = []
         all_events.append(eventObj)
@@ -100,9 +117,11 @@ def launchDump():
     labelnum=dict()
     milestonenum=dict()
 
-    createtime=list()
+    createtime=dict()
     numofiss_nocomments=0
-    numberofissuemonth=list()
+    numberofissueWeek=list()
+    timeduration=list()
+    
     numofissuenotlabeled=0
 
     
@@ -127,6 +146,7 @@ def launchDump():
         commentsi=True
         createat=True
         labelt=True
+        tduration=True
         numofIssues=issue
         for event in events:
             for k,v in event.__dict__.iteritems():
@@ -148,10 +168,13 @@ def launchDump():
                         if v==0:
                             numofiss_nocomments=numofiss_nocomments+1
                         commentsi=False
-                if str(k) is 'when':
+                if str(k) is 'issuecreated_at':
                     if createat==True:
-                        createtime.append(v)
+                        createtime[issue]=v
                         createat=False
+                if str(k) is 'duration':
+                    if tduration==True:
+                        timeduration.append(v)
                 #if v != None:
                 #    print(str(k)+" : "+str(v)) 
             #print(type(event))
@@ -164,6 +187,9 @@ def launchDump():
             print('')
         if labelt==True:
             numofissuenotlabeled=numofissuenotlabeled+1
+        if createat==True:
+            createtime[issue]=0
+        
     numoflabels=len(labelnum)
     print('feature 1')
     print('Num of issues:',numofIssues)
@@ -184,27 +210,57 @@ def launchDump():
     print('feature 5')
     print('Number of issues without comments:',numofiss_nocomments)
     print('-----------------------------')
+    
     print('feature 6')
     endtime=0
-    print(createtime)
+    #print(len(createtime))
+    #print(createtime)
+    #plt.plot(createtime.keys(),createtime.values(),'ro-')
+        
+    #plt.show()
     
-    for ctime in createtime:
+    for k,v in createtime.items():
         if endtime==0:
-            mothissue=0
-            endtime=ctime+60*60*24*7
-            print(endtime)
-        if ctime<endtime:
-            mothissue=mothissue+1
+            numofissueweek=0
+            endtime=v+60*60*24*7
+            #print(endtime)
+        if v<endtime:
+            numofissueweek=numofissueweek+1
         else:
-            numberofissuemonth.append(mothissue)
-            mothissue=1
-            endtime=ctime+60*60*24*7
-            print(endtime)
-            
-    print('Number of issues every month:',numberofissuemonth)
+            numberofissueWeek.append(numofissueweek)
+            numofissueweek=1
+            endtime=endtime+60*60*24*7
+            #print(endtime)
+    numberofissueWeek.append(numofissueweek)
+    print('Number of issues every month:',numberofissueWeek)
     print('-----------------------------')
+    
+    print('feature 7')
+    print('mean and standard deviation')
+    mean=0
+    for timed in timeduration:
+        mean=mean+timed
+    mean=mean/len(timeduration)
+    standard=0
+    for timed in timeduration:
+        standard=standard+(timed-mean)*(timed-mean)
+    standard=math.sqrt(standard/len(timeduration))
+    print('mean: ',mean)
+    print('standard: ',standard)
+    print('-----------------------------')
+
+    print('feature 8')
+   
+    numofdura=0
+    for timed in timeduration:
+        if math.fabs(timed-mean)>1.5*standard:
+            numofdura=numofdura+1
+    
+    print('Number of issues with unusually long time:',numofdura)
+    print('-----------------------------')    
+    
     print('feature 9')
-    print('issues not labeled:',numofissuenotlabeled)
+    print('issues not labeled:',numofIssues-len(issues))
     print('-----------------------------')
     print('feature 10')
     print('Percentage of issues using milestones')
