@@ -6,7 +6,10 @@ We selected three projects (our project is one of them), and extracted all the i
 1. Projects with more issues are preferred.<br/>
 2. Projects with more labels are proferred.
 ##Anonymization
+We labelled these three projects as Project1, Project2, Project3. And there is no clue telling about the the content of these projects in the features we extracted.<br/>
+So it is hard to tell what these projects are about.
 ##Tables
+Each project will take one column and 16 rows to show 16 features extracted for each of them.
 ##Data
 
 ### Features:
