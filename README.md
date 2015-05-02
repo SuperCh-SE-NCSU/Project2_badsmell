@@ -2,6 +2,9 @@
 Bad smells 
 
 ##Collection
+We selected three projects (our project is one of them), and extracted all the issues from these projects. <br/>
+1. Projects with more issues are preferred.<br/>
+2. Projects with more labels are proferred.
 ##Anonymization
 ##Tables
 ##Data
