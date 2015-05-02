@@ -18,10 +18,10 @@ The values in the table represent the number of rows of data collected for that 
 |4|Time interval between the creation of two issues|
 |5|Total number of labels|
 |6|Number of times each label was used|
-|7|Mean and standard deviation of times spent in each label|
+|7|Mean and standard deviation of time spent in each label|
 |8|"Unusually long" time a label|
 |9|Mean and standard deviation number of labels assigned to each issue|
-|10|Total number of milestones|
+|10|Number of times each milestone was used|
 |11|Percentage of issues using labels|
 |12|Percentage of issues using milestones|
 |13|Percentage of issues using assignees|
@@ -57,13 +57,13 @@ The links to the entire data set for this extractor can be found here
 
 **6. Number of times each label was used**
 
-**7. Mean and standard deviation of times spent in each label**
+**7. Mean and standard deviation of time spent in each label**
 
 **8. "Unusually long" time a label**
 
 **9. Mean and standard deviation number of labels assigned to each issue**
 
-**10. Total number of milestones**
+**10. Number of times each milestone was used**
 
 **11. Percentage of issues using labels**
 
@@ -199,29 +199,69 @@ Number of times each label was used:
           2a. feature dev 58
 ```
 
-**7. Mean and standard deviation of times spent in each label**
+**7. Mean and standard deviation of time spent in each label**
 
 This feature will show us mean and standard deviation of times spending in each label. And it will help us to analyse in depth. 
-Result
+
+#####Result
+We calculated mean and standard deviation of time spent in each label.
+
+```  
+Total number of labels:
+  Project1:
+          mean:       717715.441667
+          standard:   735405.992596
+  Project2:
+          mean:       683042.074766
+          standard:   1003264.24323
+  Project3:
+          mean:       428354.733945
+          standard:   458374.563866
+```
 
 **8. "Unusually long" time a label**
 
 "Unusually long" time means 1.5 or 2 standard deviations time in a label. In normal distribution, 1.5 or 2 standard deviations means the data point is quite far away from the mean value. In this case, unusually long time a label may indicate team do little stuff during this time period.
 
-Result
+#####Result
+We counted number of labels with unusually long time, which means 1.5 or 2 standard deviations time compatring to mean value.
+
+```  
+Total number of labels:
+  Project1: 14
+  Project2: 10
+  Project3: 29
+```
 
 **9. Mean and standard deviation number of labels assigned to each issue**
 
 This feature will show us mean and standard deviation of number of labels assigned to each issue. And in this feature, we consider label and issue together, we want to find out the reasonable of the setting of labels. Also, we want to find out whether team members used to add corresponding labels to issues or not.
 
-Result
+#####Result
+We calculated mean and standard deviation number of labels assigned to each issue.
 
-**10. Total number of milestones**
+```  
+Total number of labels:
+  Project1:
+          Mean value          84452.1587302
+          Standard deviation  173010.600703
+  Project2:
+          Mean value          90650.6617647
+          Standard deviation  252940.849578
+  Project3:
+          Mean value          65775.3888889
+          Standard deviation  159966.183254
+```
+
+**10. Number of times each milestone was used**
 
 We are interesting in number of milestones. And each milestone usually represents one stage in development cycle. We can analyse which software development method each team used.
 
+#####Result
+We counted the number of times each milestone was used. And we sorted the result incrementally.
+
+``` 
  Project1: 
-          feature:              3
           Num of millstones: 6
           Final release: 6
           V2: 8
@@ -231,9 +271,8 @@ We are interesting in number of milestones. And each milestone usually represent
           V1: 19
           
   Project2:
-          feature 3
           Small Scale Test and Comparison 4
-          Num of millstones: 5
+          Num of millstones 5
           None 12
           Large Scale Test 13
           Final 17
@@ -241,14 +280,15 @@ We are interesting in number of milestones. And each milestone usually represent
           Basic Service and Test 23
           
   Project3:
-        v0.1 4
-        v0.2 5
-        v0.3 6
-        Num of millstones: 7
-        v0.4 7
-        v0.5 12
-        v0.6 Cleanup 16
-None 46
+          v0.1 4
+          v0.2 5
+          v0.3 6
+          Num of millstones: 7
+          v0.4 7
+          v0.5 12
+          v0.6 Cleanup 16
+          None 46
+```
 
 **11. Percentage of issues using labels** [maybe merge with No.9]
 
