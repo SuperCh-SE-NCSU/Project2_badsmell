@@ -26,7 +26,7 @@ import json
 import re,datetime
 import sys
 import math
-import matplotlib.pyplot as plt
+import numpy as np
 
 def showFigure(x):
     plt.plot(range(len(x)), x, 'ro-')   
@@ -115,6 +115,7 @@ def launchDump():
     numoflabels=0
     #Number of times each label was used
     labelnum=dict()
+    assignques=dict()
     milestonenum=dict()
 
     createtime=dict()
@@ -129,7 +130,9 @@ def launchDump():
 
     #issues2=dict()
     while(True):
-        doNext = dump('https://api.github.com/repos/SuperCh-SE-NCSU/ProjectScraping/issues/events?page=' + str(page), issues)
+        #doNext = dump('https://api.github.com/repos/SuperCh-SE-NCSU/ProjectScraping/issues/events?page=' + str(page), issues)
+        #doNext=dump('https://api.github.com/repos/CSC510/SQLvsNOSQL/issues/events?page=' + str(page),issues)
+        doNext=dump('https://api.github.com/repos/CSC510-2015-Axitron/maze/issues/events?page=' + str(page), issues)
         print("page" + str(page))
         page += 1
         if not doNext : break
@@ -146,6 +149,7 @@ def launchDump():
         commentsi=True
         createat=True
         labelt=True
+        assigneet=True
         tduration=True
         numofIssues=issue
         for event in events:
@@ -156,6 +160,14 @@ def launchDump():
                     else:
                         labelnum[str(v)]=1
                     labelt=False
+                if str(k) is 'assignee':
+                    if assigneet==True:
+                        if str(v) in assignques.keys():
+                            assignques[str(v)]=assignques[str(v)]+1
+                        else:
+                            assignques[str(v)]=1
+                        assigneet=False
+                    
                 if str(k) is 'milestone':
                     if str(v) in milestonenum.keys():
                         if milestonetrue==True:
@@ -232,7 +244,7 @@ def launchDump():
             endtime=endtime+60*60*24*7
             #print(endtime)
     numberofissueWeek.append(numofissueweek)
-    print('Number of issues every month:',numberofissueWeek)
+    print('Number of issues every week:',numberofissueWeek)
     print('-----------------------------')
     
     print('feature 7')
@@ -273,12 +285,51 @@ def launchDump():
             sumMile=sumMile+elem
     print(sumMile*1.0/(sumMile+noneMile))
     print('-----------------------------')
+    print('feature 11')
+    print('Percentage of issues using assignees')
+    print('participants')
+    print(assignques)
+    nonassign=float(0)
+    sumassign=float(0)
+    for tkey, telem in assignques.items():
+        if tkey=='None':
+            nonassign=telem
+        sumassign=sumassign+telem
+    print('Percentage of issues using assignees:',1-nonassign/sumassign)
 
     f.close()
         #issues2[str(issue)]=events
     #with open('ProjectScraping.json','wb') as fp:
     #    json.dump(issues2,fp)
-    
 
+    #badsmell
+    #badsmell 1: the distribution of number of issues distributed each week is not well
+    plt.figure()
     
+    n_groups=len(numberofissueWeek)
+    meansone=range(1,n_groups,1)
+    weekcount=numberofissueWeek
+
+    fig,ax=plt.subplots()
+    index = np.arange(n_groups)  
+    bar_width = 0.35  
+ 
+    opacity = 0.4  
+    rects1 = plt.bar(index+bar_width, weekcount, bar_width,alpha=opacity, color='b',label=    'Number of issues')  
+    #rects2 = fbadsmell1.bar(index + bar_width, means_women, bar_width,alpha=opacity,col    or='r',label='Women')  
+ 
+    plt.xlabel('Week')  
+    plt.ylabel('Number of Issues')  
+    plt.title('Number of Issues Every Week')  
+    #fbadsmell1.xticks(index + bar_width, ('A', 'B', 'C', 'D', 'E'))  
+    #fbadsmell1.ylim(0,40)  
+    plt.legend()  
+       
+ 
+    plt.show()
+
+    #early warning
+    fearly=plt.figure()
+    plt.plot(createtime.keys(),createtime.values(),'ro-')
+    plt.show()
 launchDump() 

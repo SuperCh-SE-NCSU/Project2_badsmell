@@ -1,303 +1,744 @@
+ISSUE 1
+what : feature complete,	when : 1423610498.0,	issuecreated_at : 1423607806.0,	assignee : duh102,	comments : 4,	duration : 8903.0,	issueclosed_at : 1423616709.0,	action : labeled,	user : duh102
+
+what : feature request,	when : 1423610497.0,	issuecreated_at : 1423607806.0,	assignee : duh102,	comments : 4,	duration : 8903.0,	issueclosed_at : 1423616709.0,	action : unlabeled,	user : duh102
+
+what : help wanted,	when : 1423610461.0,	issuecreated_at : 1423607806.0,	assignee : duh102,	comments : 4,	duration : 8903.0,	issueclosed_at : 1423616709.0,	action : unlabeled,	user : duh102
+
+what : feature request,	when : 1423607806.0,	issuecreated_at : 1423607806.0,	assignee : duh102,	comments : 4,	duration : 8903.0,	issueclosed_at : 1423616709.0,	action : labeled,	user : duh102
+
+what : help wanted,	when : 1423607806.0,	issuecreated_at : 1423607806.0,	assignee : duh102,	comments : 4,	duration : 8903.0,	issueclosed_at : 1423616709.0,	action : labeled,	user : duh102
+
 ISSUE 2
-what : develop,	when : 1423975189.0,	issuecreated_at : 1423779397.0,	comments : 3,	milestone : V1,	duration : 2328305.0,	issueclosed_at : 1426107702.0,	action : labeled,	user : dragonfly90
+what : feature complete,	when : 1423798637.0,	issuecreated_at : 1423607942.0,	assignee : duh102,	comments : 6,	duration : 190701.0,	issueclosed_at : 1423798643.0,	action : labeled,	user : duh102
 
-ISSUE 3
-what : Solved,	when : 1424987553.0,	issuecreated_at : 1423975340.0,	comments : 3,	milestone : V1,	duration : 1012209.0,	issueclosed_at : 1424987549.0,	action : labeled,	user : Winbobob
+what : feature QA,	when : 1423798635.0,	issuecreated_at : 1423607942.0,	assignee : duh102,	comments : 6,	duration : 190701.0,	issueclosed_at : 1423798643.0,	action : unlabeled,	user : duh102
 
-what : develop,	when : 1423975359.0,	issuecreated_at : 1423975340.0,	comments : 3,	milestone : V1,	duration : 1012209.0,	issueclosed_at : 1424987549.0,	action : labeled,	user : dragonfly90
+what : help wanted,	when : 1423714448.0,	issuecreated_at : 1423607942.0,	assignee : duh102,	comments : 6,	duration : 190701.0,	issueclosed_at : 1423798643.0,	action : unlabeled,	user : duh102
+
+what : help wanted,	when : 1423710681.0,	issuecreated_at : 1423607942.0,	assignee : duh102,	comments : 6,	duration : 190701.0,	issueclosed_at : 1423798643.0,	action : labeled,	user : duh102
+
+what : feature request,	when : 1423674022.0,	issuecreated_at : 1423607942.0,	assignee : duh102,	comments : 6,	duration : 190701.0,	issueclosed_at : 1423798643.0,	action : unlabeled,	user : duh102
+
+what : feature dev,	when : 1423674021.0,	issuecreated_at : 1423607942.0,	assignee : duh102,	comments : 6,	duration : 190701.0,	issueclosed_at : 1423798643.0,	action : unlabeled,	user : duh102
+
+what : feature QA,	when : 1423674020.0,	issuecreated_at : 1423607942.0,	assignee : duh102,	comments : 6,	duration : 190701.0,	issueclosed_at : 1423798643.0,	action : labeled,	user : duh102
+
+what : feature dev,	when : 1423669337.0,	issuecreated_at : 1423607942.0,	assignee : duh102,	comments : 6,	duration : 190701.0,	issueclosed_at : 1423798643.0,	action : labeled,	user : duh102
+
+what : feature request,	when : 1423607942.0,	issuecreated_at : 1423607942.0,	assignee : duh102,	comments : 6,	duration : 190701.0,	issueclosed_at : 1423798643.0,	action : labeled,	user : duh102
 
 ISSUE 4
-what : test,	when : 1424019915.0,	issuecreated_at : 1424019915.0,	comments : 2,	milestone : V1,	duration : 2087830.0,	issueclosed_at : 1426107745.0,	action : labeled,	user : dragonfly90
+what : feature request,	when : 1423610508.0,	issuecreated_at : 1423610508.0,	comments : 5,	duration : 848449.0,	issueclosed_at : 1424458957.0,	action : labeled,	user : macluo
 
 ISSUE 5
-what : Solved,	when : 1424107334.0,	issuecreated_at : 1424019988.0,	comments : 1,	milestone : Beta Launch ,	duration : 82098.0,	issueclosed_at : 1424102086.0,	action : labeled,	user : Winbobob
+what : feature complete,	when : 1423798662.0,	issuecreated_at : 1423668647.0,	assignee : duh102,	comments : 1,	duration : 130018.0,	issueclosed_at : 1423798665.0,	action : labeled,	user : duh102
 
-what : Solved,	when : 1424103079.0,	issuecreated_at : 1424019988.0,	comments : 1,	milestone : Beta Launch ,	duration : 82098.0,	issueclosed_at : 1424102086.0,	action : unlabeled,	user : alannsp
+what : feature QA,	when : 1423798660.0,	issuecreated_at : 1423668647.0,	assignee : duh102,	comments : 1,	duration : 130018.0,	issueclosed_at : 1423798665.0,	action : unlabeled,	user : duh102
 
-what : Solved,	when : 1424103075.0,	issuecreated_at : 1424019988.0,	comments : 1,	milestone : Beta Launch ,	duration : 82098.0,	issueclosed_at : 1424102086.0,	action : labeled,	user : alannsp
+what : feature request,	when : 1423771206.0,	issuecreated_at : 1423668647.0,	assignee : duh102,	comments : 1,	duration : 130018.0,	issueclosed_at : 1423798665.0,	action : unlabeled,	user : duh102
 
-what : Solved,	when : 1424103075.0,	issuecreated_at : 1424019988.0,	comments : 1,	milestone : Beta Launch ,	duration : 82098.0,	issueclosed_at : 1424102086.0,	action : unlabeled,	user : alannsp
+what : feature dev,	when : 1423771154.0,	issuecreated_at : 1423668647.0,	assignee : duh102,	comments : 1,	duration : 130018.0,	issueclosed_at : 1423798665.0,	action : unlabeled,	user : duh102
 
-what : bug,	when : 1424103074.0,	issuecreated_at : 1424019988.0,	comments : 1,	milestone : Beta Launch ,	duration : 82098.0,	issueclosed_at : 1424102086.0,	action : unlabeled,	user : alannsp
+what : feature QA,	when : 1423771153.0,	issuecreated_at : 1423668647.0,	assignee : duh102,	comments : 1,	duration : 130018.0,	issueclosed_at : 1423798665.0,	action : labeled,	user : duh102
 
-what : bug,	when : 1424103074.0,	issuecreated_at : 1424019988.0,	comments : 1,	milestone : Beta Launch ,	duration : 82098.0,	issueclosed_at : 1424102086.0,	action : labeled,	user : alannsp
+what : feature dev,	when : 1423770994.0,	issuecreated_at : 1423668647.0,	assignee : duh102,	comments : 1,	duration : 130018.0,	issueclosed_at : 1423798665.0,	action : labeled,	user : duh102
 
-what : help wanted,	when : 1424100813.0,	issuecreated_at : 1424019988.0,	comments : 1,	milestone : Beta Launch ,	duration : 82098.0,	issueclosed_at : 1424102086.0,	action : unlabeled,	user : Winbobob
-
-what : Solved,	when : 1424100810.0,	issuecreated_at : 1424019988.0,	comments : 1,	milestone : Beta Launch ,	duration : 82098.0,	issueclosed_at : 1424102086.0,	action : labeled,	user : Winbobob
-
-what : help wanted,	when : 1424019988.0,	issuecreated_at : 1424019988.0,	comments : 1,	milestone : Beta Launch ,	duration : 82098.0,	issueclosed_at : 1424102086.0,	action : labeled,	user : dragonfly90
+what : feature request,	when : 1423668647.0,	issuecreated_at : 1423668647.0,	assignee : duh102,	comments : 1,	duration : 130018.0,	issueclosed_at : 1423798665.0,	action : labeled,	user : duh102
 
 ISSUE 6
-what : develop,	when : 1424035745.0,	issuecreated_at : 1424035745.0,	comments : 0,	milestone : V1,	duration : 2072034.0,	issueclosed_at : 1426107779.0,	action : labeled,	user : dragonfly90
+what : feature QA,	when : 1424448497.0,	issuecreated_at : 1423668757.0,	assignee : duh102,	comments : 13,	duration : 779742.0,	issueclosed_at : 1424448499.0,	action : unlabeled,	user : duh102
+
+what : feature complete,	when : 1424448497.0,	issuecreated_at : 1423668757.0,	assignee : duh102,	comments : 13,	duration : 779742.0,	issueclosed_at : 1424448499.0,	action : labeled,	user : duh102
+
+what : feature dev,	when : 1424323024.0,	issuecreated_at : 1423668757.0,	assignee : duh102,	comments : 13,	duration : 779742.0,	issueclosed_at : 1424448499.0,	action : unlabeled,	user : duh102
+
+what : feature dev,	when : 1424231823.0,	issuecreated_at : 1423668757.0,	assignee : duh102,	comments : 13,	duration : 779742.0,	issueclosed_at : 1424448499.0,	action : labeled,	user : duh102
+
+what : feature dev,	when : 1424033162.0,	issuecreated_at : 1423668757.0,	assignee : duh102,	comments : 13,	duration : 779742.0,	issueclosed_at : 1424448499.0,	action : unlabeled,	user : duh102
+
+what : feature QA,	when : 1424033162.0,	issuecreated_at : 1423668757.0,	assignee : duh102,	comments : 13,	duration : 779742.0,	issueclosed_at : 1424448499.0,	action : labeled,	user : duh102
+
+what : help wanted,	when : 1424033160.0,	issuecreated_at : 1423668757.0,	assignee : duh102,	comments : 13,	duration : 779742.0,	issueclosed_at : 1424448499.0,	action : unlabeled,	user : duh102
+
+what : help wanted,	when : 1423950009.0,	issuecreated_at : 1423668757.0,	assignee : duh102,	comments : 13,	duration : 779742.0,	issueclosed_at : 1424448499.0,	action : labeled,	user : duh102
+
+what : feature request,	when : 1423844444.0,	issuecreated_at : 1423668757.0,	assignee : duh102,	comments : 13,	duration : 779742.0,	issueclosed_at : 1424448499.0,	action : unlabeled,	user : duh102
+
+what : feature dev,	when : 1423844443.0,	issuecreated_at : 1423668757.0,	assignee : duh102,	comments : 13,	duration : 779742.0,	issueclosed_at : 1424448499.0,	action : labeled,	user : duh102
+
+what : feature request,	when : 1423668757.0,	issuecreated_at : 1423668757.0,	assignee : duh102,	comments : 13,	duration : 779742.0,	issueclosed_at : 1424448499.0,	action : labeled,	user : duh102
 
 ISSUE 7
-what : Solved,	when : 1427054321.0,	issuecreated_at : 1424035829.0,	comments : 3,	milestone : V2,	duration : 3018518.0,	issueclosed_at : 1427054347.0,	action : labeled,	user : Winbobob
+what : feature dev,	when : 1424838935.0,	issuecreated_at : 1423668790.0,	assignee : macluo,	comments : 14,	milestone : v0.1,	duration : 1332352.0,	issueclosed_at : 1425001142.0,	action : unlabeled,	user : macluo
 
-what : design,	when : 1424035852.0,	issuecreated_at : 1424035829.0,	comments : 3,	milestone : V2,	duration : 3018518.0,	issueclosed_at : 1427054347.0,	action : labeled,	user : dragonfly90
+what : feature QA,	when : 1424838935.0,	issuecreated_at : 1423668790.0,	assignee : macluo,	comments : 14,	milestone : v0.1,	duration : 1332352.0,	issueclosed_at : 1425001142.0,	action : labeled,	user : macluo
+
+what : help wanted,	when : 1424836839.0,	issuecreated_at : 1423668790.0,	assignee : macluo,	comments : 14,	milestone : v0.1,	duration : 1332352.0,	issueclosed_at : 1425001142.0,	action : unlabeled,	user : macluo
+
+what : help wanted,	when : 1424820982.0,	issuecreated_at : 1423668790.0,	assignee : macluo,	comments : 14,	milestone : v0.1,	duration : 1332352.0,	issueclosed_at : 1425001142.0,	action : labeled,	user : macluo
+
+what : feature request,	when : 1424366709.0,	issuecreated_at : 1423668790.0,	assignee : macluo,	comments : 14,	milestone : v0.1,	duration : 1332352.0,	issueclosed_at : 1425001142.0,	action : unlabeled,	user : macluo
+
+what : feature dev,	when : 1424366709.0,	issuecreated_at : 1423668790.0,	assignee : macluo,	comments : 14,	milestone : v0.1,	duration : 1332352.0,	issueclosed_at : 1425001142.0,	action : labeled,	user : macluo
+
+what : feature request,	when : 1423668790.0,	issuecreated_at : 1423668790.0,	assignee : macluo,	comments : 14,	milestone : v0.1,	duration : 1332352.0,	issueclosed_at : 1425001142.0,	action : labeled,	user : duh102
 
 ISSUE 8
-what : design,	when : 1424100702.0,	issuecreated_at : 1424100702.0,	comments : 1,	milestone : V1,	duration : 2007166.0,	issueclosed_at : 1426107868.0,	action : labeled,	user : Winbobob
+what : feature QA,	when : 1424323617.0,	issuecreated_at : 1423668830.0,	assignee : duh102,	comments : 3,	duration : 654797.0,	issueclosed_at : 1424323627.0,	action : unlabeled,	user : duh102
 
-what : develop,	when : 1424100702.0,	issuecreated_at : 1424100702.0,	comments : 1,	milestone : V1,	duration : 2007166.0,	issueclosed_at : 1426107868.0,	action : labeled,	user : Winbobob
+what : feature complete,	when : 1424323617.0,	issuecreated_at : 1423668830.0,	assignee : duh102,	comments : 3,	duration : 654797.0,	issueclosed_at : 1424323627.0,	action : labeled,	user : duh102
+
+what : feature QA,	when : 1424033291.0,	issuecreated_at : 1423668830.0,	assignee : duh102,	comments : 3,	duration : 654797.0,	issueclosed_at : 1424323627.0,	action : labeled,	user : duh102
+
+what : feature request,	when : 1424033290.0,	issuecreated_at : 1423668830.0,	assignee : duh102,	comments : 3,	duration : 654797.0,	issueclosed_at : 1424323627.0,	action : unlabeled,	user : duh102
+
+what : feature request,	when : 1423668839.0,	issuecreated_at : 1423668830.0,	assignee : duh102,	comments : 3,	duration : 654797.0,	issueclosed_at : 1424323627.0,	action : labeled,	user : duh102
 
 ISSUE 9
-what : Solved,	when : 1424107425.0,	issuecreated_at : 1424102059.0,	comments : 1,	milestone : Beta Launch ,	duration : 5370.0,	issueclosed_at : 1424107429.0,	action : labeled,	user : Winbobob
+what : feature QA,	when : 1424448558.0,	issuecreated_at : 1423668887.0,	assignee : duh102,	comments : 5,	duration : 779672.0,	issueclosed_at : 1424448559.0,	action : unlabeled,	user : duh102
 
-what : develop,	when : 1424102059.0,	issuecreated_at : 1424102059.0,	comments : 1,	milestone : Beta Launch ,	duration : 5370.0,	issueclosed_at : 1424107429.0,	action : labeled,	user : Winbobob
+what : feature complete,	when : 1424448558.0,	issuecreated_at : 1423668887.0,	assignee : duh102,	comments : 5,	duration : 779672.0,	issueclosed_at : 1424448559.0,	action : labeled,	user : duh102
 
-what : help wanted,	when : 1424102059.0,	issuecreated_at : 1424102059.0,	comments : 1,	milestone : Beta Launch ,	duration : 5370.0,	issueclosed_at : 1424107429.0,	action : labeled,	user : Winbobob
+what : feature dev,	when : 1424323006.0,	issuecreated_at : 1423668887.0,	assignee : duh102,	comments : 5,	duration : 779672.0,	issueclosed_at : 1424448559.0,	action : unlabeled,	user : duh102
+
+what : feature dev,	when : 1424270433.0,	issuecreated_at : 1423668887.0,	assignee : duh102,	comments : 5,	duration : 779672.0,	issueclosed_at : 1424448559.0,	action : labeled,	user : duh102
+
+what : feature QA,	when : 1423668887.0,	issuecreated_at : 1423668887.0,	assignee : duh102,	comments : 5,	duration : 779672.0,	issueclosed_at : 1424448559.0,	action : labeled,	user : duh102
 
 ISSUE 10
-what : Solved,	when : 1424106054.0,	issuecreated_at : 1424104507.0,	comments : 2,	milestone : Beta Launch ,	duration : 1555.0,	issueclosed_at : 1424106062.0,	action : labeled,	user : Winbobob
+what : feature dev,	when : 1424111045.0,	issuecreated_at : 1423668942.0,	assignee : macluo,	comments : 12,	duration : 697731.0,	issueclosed_at : 1424366673.0,	action : unlabeled,	user : macluo
 
-what : help wanted,	when : 1424104507.0,	issuecreated_at : 1424104507.0,	comments : 2,	milestone : Beta Launch ,	duration : 1555.0,	issueclosed_at : 1424106062.0,	action : labeled,	user : Winbobob
+what : feature QA,	when : 1424111042.0,	issuecreated_at : 1423668942.0,	assignee : macluo,	comments : 12,	duration : 697731.0,	issueclosed_at : 1424366673.0,	action : labeled,	user : macluo
+
+what : trailModel.JS,	when : 1424038219.0,	issuecreated_at : 1423668942.0,	assignee : macluo,	comments : 12,	duration : 697731.0,	issueclosed_at : 1424366673.0,	action : labeled,	user : macluo
+
+what : backtrack.JS,	when : 1424030977.0,	issuecreated_at : 1423668942.0,	assignee : macluo,	comments : 12,	duration : 697731.0,	issueclosed_at : 1424366673.0,	action : labeled,	user : macluo
+
+what : feature request,	when : 1424009662.0,	issuecreated_at : 1423668942.0,	assignee : macluo,	comments : 12,	duration : 697731.0,	issueclosed_at : 1424366673.0,	action : unlabeled,	user : macluo
+
+what : feature dev,	when : 1423782184.0,	issuecreated_at : 1423668942.0,	assignee : macluo,	comments : 12,	duration : 697731.0,	issueclosed_at : 1424366673.0,	action : labeled,	user : duh102
+
+what : feature request,	when : 1423668942.0,	issuecreated_at : 1423668942.0,	assignee : macluo,	comments : 12,	duration : 697731.0,	issueclosed_at : 1424366673.0,	action : labeled,	user : duh102
 
 ISSUE 11
-what : help wanted,	when : 1424107098.0,	issuecreated_at : 1424106054.0,	comments : 1,	milestone : Beta Launch ,	duration : 795809.0,	issueclosed_at : 1424901863.0,	action : labeled,	user : alannsp
+what : feature complete,	when : 1424032999.0,	issuecreated_at : 1423668992.0,	assignee : duh102,	comments : 2,	duration : 364093.0,	issueclosed_at : 1424033085.0,	action : labeled,	user : duh102
+
+what : feature dev,	when : 1424032998.0,	issuecreated_at : 1423668992.0,	assignee : duh102,	comments : 2,	duration : 364093.0,	issueclosed_at : 1424033085.0,	action : unlabeled,	user : duh102
+
+what : feature dev,	when : 1423968959.0,	issuecreated_at : 1423668992.0,	assignee : duh102,	comments : 2,	duration : 364093.0,	issueclosed_at : 1424033085.0,	action : labeled,	user : duh102
+
+what : feature request,	when : 1423968958.0,	issuecreated_at : 1423668992.0,	assignee : duh102,	comments : 2,	duration : 364093.0,	issueclosed_at : 1424033085.0,	action : unlabeled,	user : duh102
+
+what : feature request,	when : 1423668992.0,	issuecreated_at : 1423668992.0,	assignee : duh102,	comments : 2,	duration : 364093.0,	issueclosed_at : 1424033085.0,	action : labeled,	user : duh102
 
 ISSUE 12
-what : Solved,	when : 1425077391.0,	issuecreated_at : 1424107315.0,	comments : 1,	milestone : Beta Launch ,	duration : 794524.0,	issueclosed_at : 1424901839.0,	action : labeled,	user : Winbobob
+what : feature complete,	when : 1423935313.0,	issuecreated_at : 1423851757.0,	assignee : duh102,	comments : 0,	duration : 83564.0,	issueclosed_at : 1423935321.0,	action : labeled,	user : duh102
 
-what : design,	when : 1424107315.0,	issuecreated_at : 1424107315.0,	comments : 1,	milestone : Beta Launch ,	duration : 794524.0,	issueclosed_at : 1424901839.0,	action : labeled,	user : Winbobob
+what : feature dev,	when : 1423935313.0,	issuecreated_at : 1423851757.0,	assignee : duh102,	comments : 0,	duration : 83564.0,	issueclosed_at : 1423935321.0,	action : unlabeled,	user : duh102
+
+what : feature dev,	when : 1423851757.0,	issuecreated_at : 1423851757.0,	assignee : duh102,	comments : 0,	duration : 83564.0,	issueclosed_at : 1423935321.0,	action : labeled,	user : duh102
 
 ISSUE 13
-what : Solved,	when : 1424987482.0,	issuecreated_at : 1424109447.0,	comments : 1,	milestone : V1,	duration : 878029.0,	issueclosed_at : 1424987476.0,	action : labeled,	user : Winbobob
+what : 3. feature QA,	when : 1426192393.0,	issuecreated_at : 1424026355.0,	assignee : macluo,	comments : 2,	duration : 613278.0,	issueclosed_at : 1424639633.0,	action : unlabeled,	user : macluo
 
-what : help wanted,	when : 1424109447.0,	issuecreated_at : 1424109447.0,	comments : 1,	milestone : V1,	duration : 878029.0,	issueclosed_at : 1424987476.0,	action : labeled,	user : dragonfly90
+what : 4. feature complete,	when : 1426192393.0,	issuecreated_at : 1424026355.0,	assignee : macluo,	comments : 2,	duration : 613278.0,	issueclosed_at : 1424639633.0,	action : labeled,	user : macluo
+
+what : feature dev,	when : 1424228106.0,	issuecreated_at : 1424026355.0,	assignee : macluo,	comments : 2,	duration : 613278.0,	issueclosed_at : 1424639633.0,	action : unlabeled,	user : macluo
+
+what : feature QA,	when : 1424228098.0,	issuecreated_at : 1424026355.0,	assignee : macluo,	comments : 2,	duration : 613278.0,	issueclosed_at : 1424639633.0,	action : labeled,	user : macluo
+
+what : feature request,	when : 1424029619.0,	issuecreated_at : 1424026355.0,	assignee : macluo,	comments : 2,	duration : 613278.0,	issueclosed_at : 1424639633.0,	action : unlabeled,	user : macluo
+
+what : feature dev,	when : 1424029615.0,	issuecreated_at : 1424026355.0,	assignee : macluo,	comments : 2,	duration : 613278.0,	issueclosed_at : 1424639633.0,	action : labeled,	user : macluo
+
+what : feature request,	when : 1424026355.0,	issuecreated_at : 1424026355.0,	assignee : macluo,	comments : 2,	duration : 613278.0,	issueclosed_at : 1424639633.0,	action : labeled,	user : duh102
 
 ISSUE 14
-what : design,	when : 1424109925.0,	issuecreated_at : 1424109925.0,	comments : 2,	milestone : V1,	duration : 1997961.0,	issueclosed_at : 1426107886.0,	action : labeled,	user : dragonfly90
+what : feature request,	when : 1424038291.0,	issuecreated_at : 1424038291.0,	comments : 1,	duration : 2701.0,	issueclosed_at : 1424040992.0,	action : labeled,	user : meneal
 
 ISSUE 15
-what : duplicate,	when : 1424110098.0,	issuecreated_at : 1424110067.0,	comments : 1,	milestone : V1,	duration : 1997849.0,	issueclosed_at : 1426107916.0,	action : unlabeled,	user : dragonfly90
+what : feature QA,	when : 1424038617.0,	issuecreated_at : 1424038415.0,	comments : 6,	duration : 57152.0,	issueclosed_at : 1424095567.0,	action : unlabeled,	user : meneal
 
-what : duplicate,	when : 1424110095.0,	issuecreated_at : 1424110067.0,	comments : 1,	milestone : V1,	duration : 1997849.0,	issueclosed_at : 1426107916.0,	action : labeled,	user : dragonfly90
+what : question,	when : 1424038605.0,	issuecreated_at : 1424038415.0,	comments : 6,	duration : 57152.0,	issueclosed_at : 1424095567.0,	action : labeled,	user : meneal
 
-what : test,	when : 1424110083.0,	issuecreated_at : 1424110067.0,	comments : 1,	milestone : V1,	duration : 1997849.0,	issueclosed_at : 1426107916.0,	action : labeled,	user : dragonfly90
+what : feature QA,	when : 1424038415.0,	issuecreated_at : 1424038415.0,	comments : 6,	duration : 57152.0,	issueclosed_at : 1424095567.0,	action : labeled,	user : meneal
 
 ISSUE 16
-what : Solved,	when : 1424300904.0,	issuecreated_at : 1424110107.0,	comments : 1,	milestone : Beta Launch ,	duration : 190791.0,	issueclosed_at : 1424300898.0,	action : labeled,	user : Winbobob
-
-what : question,	when : 1424110107.0,	issuecreated_at : 1424110107.0,	comments : 1,	milestone : Beta Launch ,	duration : 190791.0,	issueclosed_at : 1424300898.0,	action : labeled,	user : alannsp
+what : question,	when : 1424038497.0,	issuecreated_at : 1424038497.0,	assignee : meneal,	comments : 5,	duration : 57295.0,	issueclosed_at : 1424095792.0,	action : labeled,	user : meneal
 
 ISSUE 17
-what : design,	when : 1424110751.0,	issuecreated_at : 1424110743.0,	comments : 1,	milestone : V1,	duration : 1997189.0,	issueclosed_at : 1426107932.0,	action : labeled,	user : dragonfly90
+what : feature request,	when : 1424038936.0,	issuecreated_at : 1424038936.0,	comments : 2,	duration : 238986.0,	issueclosed_at : 1424277922.0,	action : labeled,	user : macluo
 
 ISSUE 18
-what : design,	when : 1424111949.0,	issuecreated_at : 1424111949.0,	assignee : Winbobob,	comments : 2,	milestone : V1,	duration : 1995992.0,	issueclosed_at : 1426107941.0,	action : labeled,	user : Winbobob
+what : branch list,	when : 1424053207.0,	issuecreated_at : 1424052954.0,	comments : 10,	duration : 2675.0,	issueclosed_at : 1424055629.0,	action : labeled,	user : meneal
 
 ISSUE 19
-what : design,	when : 1424112021.0,	issuecreated_at : 1424112021.0,	comments : 1,	milestone : V1,	duration : 1995942.0,	issueclosed_at : 1426107963.0,	action : labeled,	user : dragonfly90
+what : testing,	when : 1424055412.0,	issuecreated_at : 1424055412.0,	assignee : meneal,	comments : 1,	duration : 40356.0,	issueclosed_at : 1424095768.0,	action : labeled,	user : meneal
 
 ISSUE 20
-what : Solved,	when : 1424987082.0,	issuecreated_at : 1424112426.0,	comments : 1,	milestone : V1,	duration : 874651.0,	issueclosed_at : 1424987077.0,	action : labeled,	user : Winbobob
+what : feature QA,	when : 1424448540.0,	issuecreated_at : 1424057134.0,	assignee : duh102,	comments : 12,	duration : 391407.0,	issueclosed_at : 1424448541.0,	action : unlabeled,	user : duh102
 
-what : design,	when : 1424112426.0,	issuecreated_at : 1424112426.0,	comments : 1,	milestone : V1,	duration : 874651.0,	issueclosed_at : 1424987077.0,	action : labeled,	user : alannsp
+what : feature complete,	when : 1424448540.0,	issuecreated_at : 1424057134.0,	assignee : duh102,	comments : 12,	duration : 391407.0,	issueclosed_at : 1424448541.0,	action : labeled,	user : duh102
+
+what : feature dev,	when : 1424322987.0,	issuecreated_at : 1424057134.0,	assignee : duh102,	comments : 12,	duration : 391407.0,	issueclosed_at : 1424448541.0,	action : unlabeled,	user : duh102
+
+what : feature QA,	when : 1424322987.0,	issuecreated_at : 1424057134.0,	assignee : duh102,	comments : 12,	duration : 391407.0,	issueclosed_at : 1424448541.0,	action : labeled,	user : duh102
+
+what : feature dev,	when : 1424108916.0,	issuecreated_at : 1424057134.0,	assignee : duh102,	comments : 12,	duration : 391407.0,	issueclosed_at : 1424448541.0,	action : labeled,	user : duh102
+
+what : feature request,	when : 1424108915.0,	issuecreated_at : 1424057134.0,	assignee : duh102,	comments : 12,	duration : 391407.0,	issueclosed_at : 1424448541.0,	action : unlabeled,	user : duh102
+
+what : feature request,	when : 1424057134.0,	issuecreated_at : 1424057134.0,	assignee : duh102,	comments : 12,	duration : 391407.0,	issueclosed_at : 1424448541.0,	action : labeled,	user : duh102
 
 ISSUE 21
-what : Solved,	when : 1424667676.0,	issuecreated_at : 1424146832.0,	assignee : Winbobob,	comments : 1,	milestone : Beta Launch ,	duration : 520847.0,	issueclosed_at : 1424667679.0,	action : labeled,	user : Winbobob
+what : deployment,	when : 1424815986.0,	issuecreated_at : 1424095735.0,	assignee : meneal,	comments : 11,	milestone : v0.1,	duration : 720239.0,	issueclosed_at : 1424815974.0,	action : unlabeled,	user : meneal
 
-what : design,	when : 1424146832.0,	issuecreated_at : 1424146832.0,	assignee : Winbobob,	comments : 1,	milestone : Beta Launch ,	duration : 520847.0,	issueclosed_at : 1424667679.0,	action : labeled,	user : Winbobob
+what : deployment,	when : 1424095735.0,	issuecreated_at : 1424095735.0,	assignee : meneal,	comments : 11,	milestone : v0.1,	duration : 720239.0,	issueclosed_at : 1424815974.0,	action : labeled,	user : meneal
 
-what : help wanted,	when : 1424146832.0,	issuecreated_at : 1424146832.0,	assignee : Winbobob,	comments : 1,	milestone : Beta Launch ,	duration : 520847.0,	issueclosed_at : 1424667679.0,	action : labeled,	user : Winbobob
+what : testing,	when : 1424095735.0,	issuecreated_at : 1424095735.0,	assignee : meneal,	comments : 11,	milestone : v0.1,	duration : 720239.0,	issueclosed_at : 1424815974.0,	action : labeled,	user : meneal
+
+what : branch,	when : 1424095735.0,	issuecreated_at : 1424095735.0,	assignee : meneal,	comments : 11,	milestone : v0.1,	duration : 720239.0,	issueclosed_at : 1424815974.0,	action : labeled,	user : meneal
 
 ISSUE 22
-what : Solved,	when : 1424300786.0,	issuecreated_at : 1424203690.0,	assignee : Winbobob,	comments : 3,	milestone : Beta Launch ,	duration : 438020.0,	issueclosed_at : 1424641710.0,	action : labeled,	user : Winbobob
-
-what : bug,	when : 1424203690.0,	issuecreated_at : 1424203690.0,	assignee : Winbobob,	comments : 3,	milestone : Beta Launch ,	duration : 438020.0,	issueclosed_at : 1424641710.0,	action : labeled,	user : dragonfly90
+what : resources,	when : 1424120865.0,	issuecreated_at : 1424120865.0,	comments : 2,	duration : 948927.0,	issueclosed_at : 1425069792.0,	action : labeled,	user : meneal
 
 ISSUE 23
-what : Solved,	when : 1424300626.0,	issuecreated_at : 1424297794.0,	assignee : Winbobob,	comments : 1,	milestone : Beta Launch ,	duration : 2937.0,	issueclosed_at : 1424300731.0,	action : labeled,	user : Winbobob
+what : feature QA,	when : 1425421444.0,	issuecreated_at : 1424381140.0,	assignee : ktspence,	comments : 5,	milestone : v0.2,	duration : 1040294.0,	issueclosed_at : 1425421434.0,	action : unlabeled,	user : duh102
 
-what : develop,	when : 1424297794.0,	issuecreated_at : 1424297794.0,	assignee : Winbobob,	comments : 1,	milestone : Beta Launch ,	duration : 2937.0,	issueclosed_at : 1424300731.0,	action : labeled,	user : Winbobob
+what : feature dev,	when : 1425421444.0,	issuecreated_at : 1424381140.0,	assignee : ktspence,	comments : 5,	milestone : v0.2,	duration : 1040294.0,	issueclosed_at : 1425421434.0,	action : unlabeled,	user : duh102
 
-ISSUE 24
-what : Solved,	when : 1424711748.0,	issuecreated_at : 1424301155.0,	comments : 5,	milestone : Beta Launch ,	duration : 410599.0,	issueclosed_at : 1424711754.0,	action : labeled,	user : Winbobob
+what : feature complete,	when : 1425421444.0,	issuecreated_at : 1424381140.0,	assignee : ktspence,	comments : 5,	milestone : v0.2,	duration : 1040294.0,	issueclosed_at : 1425421434.0,	action : labeled,	user : duh102
 
-what : design,	when : 1424301155.0,	issuecreated_at : 1424301155.0,	comments : 5,	milestone : Beta Launch ,	duration : 410599.0,	issueclosed_at : 1424711754.0,	action : labeled,	user : Winbobob
+what : feature dev,	when : 1425396457.0,	issuecreated_at : 1424381140.0,	assignee : ktspence,	comments : 5,	milestone : v0.2,	duration : 1040294.0,	issueclosed_at : 1425421434.0,	action : labeled,	user : duh102
 
-what : develop,	when : 1424301155.0,	issuecreated_at : 1424301155.0,	comments : 5,	milestone : Beta Launch ,	duration : 410599.0,	issueclosed_at : 1424711754.0,	action : labeled,	user : Winbobob
+what : feature QA,	when : 1425396457.0,	issuecreated_at : 1424381140.0,	assignee : ktspence,	comments : 5,	milestone : v0.2,	duration : 1040294.0,	issueclosed_at : 1425421434.0,	action : labeled,	user : duh102
 
 ISSUE 25
-what : Solved,	when : 1424627992.0,	issuecreated_at : 1424383209.0,	assignee : Winbobob,	comments : 2,	milestone : Beta Launch ,	duration : 244774.0,	issueclosed_at : 1424627983.0,	action : labeled,	user : Winbobob
-
-what : design,	when : 1424383209.0,	issuecreated_at : 1424383209.0,	assignee : Winbobob,	comments : 2,	milestone : Beta Launch ,	duration : 244774.0,	issueclosed_at : 1424627983.0,	action : labeled,	user : Winbobob
-
-what : develop,	when : 1424383209.0,	issuecreated_at : 1424383209.0,	assignee : Winbobob,	comments : 2,	milestone : Beta Launch ,	duration : 244774.0,	issueclosed_at : 1424627983.0,	action : labeled,	user : Winbobob
+what : question,	when : 1424390986.0,	issuecreated_at : 1424390986.0,	comments : 9,	duration : 678806.0,	issueclosed_at : 1425069792.0,	action : labeled,	user : duh102
 
 ISSUE 26
-what : Solved,	when : 1424641742.0,	issuecreated_at : 1424473810.0,	comments : 1,	milestone : Beta Launch ,	duration : 167932.0,	issueclosed_at : 1424641742.0,	action : labeled,	user : Winbobob
-
-what : help wanted,	when : 1424473810.0,	issuecreated_at : 1424473810.0,	comments : 1,	milestone : Beta Launch ,	duration : 167932.0,	issueclosed_at : 1424641742.0,	action : labeled,	user : dragonfly90
+what : bug,	when : 1424443060.0,	issuecreated_at : 1424443060.0,	assignee : duh102,	comments : 1,	duration : 5705.0,	issueclosed_at : 1424448765.0,	action : labeled,	user : meneal
 
 ISSUE 27
-what : Solved,	when : 1424711644.0,	issuecreated_at : 1424641844.0,	comments : 0,	milestone : Beta Launch ,	duration : 69812.0,	issueclosed_at : 1424711656.0,	action : labeled,	user : Winbobob
-
-what : develop,	when : 1424641844.0,	issuecreated_at : 1424641844.0,	comments : 0,	milestone : Beta Launch ,	duration : 69812.0,	issueclosed_at : 1424711656.0,	action : labeled,	user : Winbobob
+what : feature dev,	when : 1424448940.0,	issuecreated_at : 1424448940.0,	assignee : duh102,	comments : 3,	duration : 816090.0,	issueclosed_at : 1425265030.0,	action : labeled,	user : duh102
 
 ISSUE 28
-what : Solved,	when : 1424707744.0,	issuecreated_at : 1424641984.0,	comments : 2,	milestone : Beta Launch ,	duration : 65762.0,	issueclosed_at : 1424707746.0,	action : labeled,	user : Winbobob
+what : feature request,	when : 1424838977.0,	issuecreated_at : 1424640252.0,	assignee : macluo,	comments : 2,	duration : 760622.0,	issueclosed_at : 1425400874.0,	action : unlabeled,	user : macluo
 
-what : help wanted,	when : 1424667627.0,	issuecreated_at : 1424641984.0,	comments : 2,	milestone : Beta Launch ,	duration : 65762.0,	issueclosed_at : 1424707746.0,	action : labeled,	user : Winbobob
+what : feature dev,	when : 1424838977.0,	issuecreated_at : 1424640252.0,	assignee : macluo,	comments : 2,	duration : 760622.0,	issueclosed_at : 1425400874.0,	action : labeled,	user : macluo
 
-what : design,	when : 1424642322.0,	issuecreated_at : 1424641984.0,	comments : 2,	milestone : Beta Launch ,	duration : 65762.0,	issueclosed_at : 1424707746.0,	action : labeled,	user : Winbobob
-
-what : develop,	when : 1424642322.0,	issuecreated_at : 1424641984.0,	comments : 2,	milestone : Beta Launch ,	duration : 65762.0,	issueclosed_at : 1424707746.0,	action : labeled,	user : Winbobob
+what : feature request,	when : 1424640252.0,	issuecreated_at : 1424640252.0,	assignee : macluo,	comments : 2,	duration : 760622.0,	issueclosed_at : 1425400874.0,	action : labeled,	user : macluo
 
 ISSUE 29
-what : Solved,	when : 1424986061.0,	issuecreated_at : 1424711973.0,	assignee : Winbobob,	comments : 3,	milestone : V1,	duration : 274090.0,	issueclosed_at : 1424986063.0,	action : labeled,	user : Winbobob
-
-what : design,	when : 1424711973.0,	issuecreated_at : 1424711973.0,	assignee : Winbobob,	comments : 3,	milestone : V1,	duration : 274090.0,	issueclosed_at : 1424986063.0,	action : labeled,	user : Winbobob
-
-what : develop,	when : 1424711973.0,	issuecreated_at : 1424711973.0,	assignee : Winbobob,	comments : 3,	milestone : V1,	duration : 274090.0,	issueclosed_at : 1424986063.0,	action : labeled,	user : Winbobob
+what : bug,	when : 1424702112.0,	issuecreated_at : 1424702112.0,	comments : 8,	duration : 31395.0,	issueclosed_at : 1424733507.0,	action : labeled,	user : meneal
 
 ISSUE 30
-what : test,	when : 1424897983.0,	issuecreated_at : 1424897983.0,	comments : 2,	milestone : V1,	duration : 1313615.0,	issueclosed_at : 1426211598.0,	action : labeled,	user : dragonfly90
+what : deployment,	when : 1424816038.0,	issuecreated_at : 1424816038.0,	assignee : meneal,	comments : 4,	milestone : v0.1,	duration : 269668.0,	issueclosed_at : 1425085706.0,	action : labeled,	user : meneal
+
+what : branch,	when : 1424816038.0,	issuecreated_at : 1424816038.0,	assignee : meneal,	comments : 4,	milestone : v0.1,	duration : 269668.0,	issueclosed_at : 1425085706.0,	action : labeled,	user : meneal
 
 ISSUE 31
-what : develop,	when : 1424904573.0,	issuecreated_at : 1424904573.0,	comments : 3,	milestone : V1,	duration : 1307063.0,	issueclosed_at : 1426211636.0,	action : labeled,	user : dragonfly90
+what : testing,	when : 1424816447.0,	issuecreated_at : 1424816447.0,	comments : 17,	duration : 1719740.0,	issueclosed_at : 1426536187.0,	action : labeled,	user : meneal
+
+what : bug,	when : 1424816447.0,	issuecreated_at : 1424816447.0,	comments : 17,	duration : 1719740.0,	issueclosed_at : 1426536187.0,	action : labeled,	user : meneal
 
 ISSUE 32
-what : Solved,	when : 1424970458.0,	issuecreated_at : 1424924115.0,	comments : 1,	milestone : V1,	duration : 46371.0,	issueclosed_at : 1424970486.0,	action : labeled,	user : Winbobob
-
-what : help wanted,	when : 1424924116.0,	issuecreated_at : 1424924115.0,	comments : 1,	milestone : V1,	duration : 46371.0,	issueclosed_at : 1424970486.0,	action : labeled,	user : dragonfly90
+what : feature request,	when : 1425067426.0,	issuecreated_at : 1425067426.0,	assignee : meneal,	comments : 2,	milestone : v0.2,	duration : 351366.0,	issueclosed_at : 1425418792.0,	action : labeled,	user : duh102
 
 ISSUE 33
-what : design,	when : 1424925791.0,	issuecreated_at : 1424925791.0,	comments : 2,	milestone : V1,	duration : 1285860.0,	issueclosed_at : 1426211651.0,	action : labeled,	user : dragonfly90
+what : 1. feature request,	when : 1427598282.0,	issuecreated_at : 1425067706.0,	comments : 3,	duration : 2530579.0,	issueclosed_at : 1427598285.0,	action : unlabeled,	user : duh102
 
-what : develop,	when : 1424925791.0,	issuecreated_at : 1424925791.0,	comments : 2,	milestone : V1,	duration : 1285860.0,	issueclosed_at : 1426211651.0,	action : labeled,	user : dragonfly90
+what : wontfix,	when : 1427598282.0,	issuecreated_at : 1425067706.0,	comments : 3,	duration : 2530579.0,	issueclosed_at : 1427598285.0,	action : labeled,	user : duh102
+
+what : feature request,	when : 1425103298.0,	issuecreated_at : 1425067706.0,	comments : 3,	duration : 2530579.0,	issueclosed_at : 1427598285.0,	action : labeled,	user : macluo
 
 ISSUE 34
-what : help wanted,	when : 1424987404.0,	issuecreated_at : 1424987389.0,	comments : 2,	milestone : V1,	duration : 1224321.0,	issueclosed_at : 1426211710.0,	action : labeled,	user : dragonfly90
+what : feature QA,	when : 1425421396.0,	issuecreated_at : 1425067716.0,	assignee : duh102,	comments : 2,	milestone : v0.2,	duration : 353674.0,	issueclosed_at : 1425421390.0,	action : unlabeled,	user : duh102
 
-what : bug,	when : 1424987404.0,	issuecreated_at : 1424987389.0,	comments : 2,	milestone : V1,	duration : 1224321.0,	issueclosed_at : 1426211710.0,	action : labeled,	user : dragonfly90
+what : feature complete,	when : 1425421396.0,	issuecreated_at : 1425067716.0,	assignee : duh102,	comments : 2,	milestone : v0.2,	duration : 353674.0,	issueclosed_at : 1425421390.0,	action : labeled,	user : duh102
+
+what : feature request,	when : 1425332198.0,	issuecreated_at : 1425067716.0,	assignee : duh102,	comments : 2,	milestone : v0.2,	duration : 353674.0,	issueclosed_at : 1425421390.0,	action : unlabeled,	user : duh102
+
+what : feature QA,	when : 1425332198.0,	issuecreated_at : 1425067716.0,	assignee : duh102,	comments : 2,	milestone : v0.2,	duration : 353674.0,	issueclosed_at : 1425421390.0,	action : labeled,	user : duh102
+
+what : feature request,	when : 1425067717.0,	issuecreated_at : 1425067716.0,	assignee : duh102,	comments : 2,	milestone : v0.2,	duration : 353674.0,	issueclosed_at : 1425421390.0,	action : labeled,	user : duh102
 
 ISSUE 35
-what : Solved,	when : 1427054408.0,	issuecreated_at : 1425248248.0,	comments : 2,	milestone : V2,	duration : 1806161.0,	issueclosed_at : 1427054409.0,	action : labeled,	user : Winbobob
+what : 2a. feature dev,	when : 1426114499.0,	issuecreated_at : 1425067879.0,	assignee : macluo,	comments : 2,	milestone : v0.3,	duration : 1063466.0,	issueclosed_at : 1426131345.0,	action : unlabeled,	user : macluo
 
-what : help wanted,	when : 1425248248.0,	issuecreated_at : 1425248248.0,	comments : 2,	milestone : V2,	duration : 1806161.0,	issueclosed_at : 1427054409.0,	action : labeled,	user : dragonfly90
+what : 3. feature QA,	when : 1426114499.0,	issuecreated_at : 1425067879.0,	assignee : macluo,	comments : 2,	milestone : v0.3,	duration : 1063466.0,	issueclosed_at : 1426131345.0,	action : labeled,	user : macluo
 
-what : enhancement,	when : 1425248248.0,	issuecreated_at : 1425248248.0,	comments : 2,	milestone : V2,	duration : 1806161.0,	issueclosed_at : 1427054409.0,	action : labeled,	user : dragonfly90
+what : 1. feature request,	when : 1426091522.0,	issuecreated_at : 1425067879.0,	assignee : macluo,	comments : 2,	milestone : v0.3,	duration : 1063466.0,	issueclosed_at : 1426131345.0,	action : unlabeled,	user : macluo
+
+what : 2a. feature dev,	when : 1426091522.0,	issuecreated_at : 1425067879.0,	assignee : macluo,	comments : 2,	milestone : v0.3,	duration : 1063466.0,	issueclosed_at : 1426131345.0,	action : labeled,	user : macluo
+
+what : feature request,	when : 1425103319.0,	issuecreated_at : 1425067879.0,	assignee : macluo,	comments : 2,	milestone : v0.3,	duration : 1063466.0,	issueclosed_at : 1426131345.0,	action : labeled,	user : macluo
 
 ISSUE 36
-what : Solved,	when : 1427054428.0,	issuecreated_at : 1425345174.0,	comments : 2,	duration : 1709259.0,	issueclosed_at : 1427054433.0,	action : labeled,	user : Winbobob
+what : 3. feature QA,	when : 1426249400.0,	issuecreated_at : 1425067938.0,	assignee : duh102,	comments : 5,	milestone : v0.3,	duration : 1181458.0,	issueclosed_at : 1426249396.0,	action : unlabeled,	user : duh102
 
-what : Solved,	when : 1425348913.0,	issuecreated_at : 1425345174.0,	comments : 2,	duration : 1709259.0,	issueclosed_at : 1427054433.0,	action : unlabeled,	user : Winbobob
+what : 4. feature complete,	when : 1426249400.0,	issuecreated_at : 1425067938.0,	assignee : duh102,	comments : 5,	milestone : v0.3,	duration : 1181458.0,	issueclosed_at : 1426249396.0,	action : labeled,	user : duh102
 
-what : Solved,	when : 1425348906.0,	issuecreated_at : 1425345174.0,	comments : 2,	duration : 1709259.0,	issueclosed_at : 1427054433.0,	action : labeled,	user : Winbobob
+what : 2a. feature dev,	when : 1426187760.0,	issuecreated_at : 1425067938.0,	assignee : duh102,	comments : 5,	milestone : v0.3,	duration : 1181458.0,	issueclosed_at : 1426249396.0,	action : unlabeled,	user : duh102
 
-what : question,	when : 1425345174.0,	issuecreated_at : 1425345174.0,	comments : 2,	duration : 1709259.0,	issueclosed_at : 1427054433.0,	action : labeled,	user : dragonfly90
+what : 3. feature QA,	when : 1426187760.0,	issuecreated_at : 1425067938.0,	assignee : duh102,	comments : 5,	milestone : v0.3,	duration : 1181458.0,	issueclosed_at : 1426249396.0,	action : labeled,	user : duh102
+
+what : 1. feature request,	when : 1426182430.0,	issuecreated_at : 1425067938.0,	assignee : duh102,	comments : 5,	milestone : v0.3,	duration : 1181458.0,	issueclosed_at : 1426249396.0,	action : unlabeled,	user : duh102
+
+what : 2a. feature dev,	when : 1426182430.0,	issuecreated_at : 1425067938.0,	assignee : duh102,	comments : 5,	milestone : v0.3,	duration : 1181458.0,	issueclosed_at : 1426249396.0,	action : labeled,	user : duh102
+
+what : feature request,	when : 1425103334.0,	issuecreated_at : 1425067938.0,	assignee : duh102,	comments : 5,	milestone : v0.3,	duration : 1181458.0,	issueclosed_at : 1426249396.0,	action : labeled,	user : macluo
 
 ISSUE 37
-what : Solved,	when : 1427054565.0,	issuecreated_at : 1425399032.0,	comments : 3,	milestone : System test and Report,	duration : 1655536.0,	issueclosed_at : 1427054568.0,	action : labeled,	user : Winbobob
+what : 2a. feature dev,	when : 1426443129.0,	issuecreated_at : 1425068011.0,	assignee : duh102,	comments : 8,	milestone : v0.3,	duration : 1375119.0,	issueclosed_at : 1426443130.0,	action : unlabeled,	user : duh102
 
-what : question,	when : 1425401250.0,	issuecreated_at : 1425399032.0,	comments : 3,	milestone : System test and Report,	duration : 1655536.0,	issueclosed_at : 1427054568.0,	action : labeled,	user : Winbobob
+what : 4. feature complete,	when : 1426443129.0,	issuecreated_at : 1425068011.0,	assignee : duh102,	comments : 8,	milestone : v0.3,	duration : 1375119.0,	issueclosed_at : 1426443130.0,	action : labeled,	user : duh102
+
+what : 1. feature request,	when : 1426200160.0,	issuecreated_at : 1425068011.0,	assignee : duh102,	comments : 8,	milestone : v0.3,	duration : 1375119.0,	issueclosed_at : 1426443130.0,	action : unlabeled,	user : duh102
+
+what : 2a. feature dev,	when : 1426200160.0,	issuecreated_at : 1425068011.0,	assignee : duh102,	comments : 8,	milestone : v0.3,	duration : 1375119.0,	issueclosed_at : 1426443130.0,	action : labeled,	user : duh102
+
+what : feature request,	when : 1425103355.0,	issuecreated_at : 1425068011.0,	assignee : duh102,	comments : 8,	milestone : v0.3,	duration : 1375119.0,	issueclosed_at : 1426443130.0,	action : labeled,	user : macluo
 
 ISSUE 38
-what : Solved,	when : 1427054593.0,	issuecreated_at : 1425417428.0,	comments : 2,	duration : 794363.0,	issueclosed_at : 1426211791.0,	action : labeled,	user : Winbobob
+what : 2a. feature dev,	when : 1426089991.0,	issuecreated_at : 1425068776.0,	assignee : macluo,	comments : 4,	milestone : v0.3,	duration : 1022531.0,	issueclosed_at : 1426091307.0,	action : unlabeled,	user : macluo
 
-what : bug,	when : 1425417428.0,	issuecreated_at : 1425417428.0,	comments : 2,	duration : 794363.0,	issueclosed_at : 1426211791.0,	action : labeled,	user : dragonfly90
+what : 3. feature QA,	when : 1426089991.0,	issuecreated_at : 1425068776.0,	assignee : macluo,	comments : 4,	milestone : v0.3,	duration : 1022531.0,	issueclosed_at : 1426091307.0,	action : labeled,	user : macluo
+
+what : 1. feature request,	when : 1425823917.0,	issuecreated_at : 1425068776.0,	assignee : macluo,	comments : 4,	milestone : v0.3,	duration : 1022531.0,	issueclosed_at : 1426091307.0,	action : unlabeled,	user : macluo
+
+what : 2a. feature dev,	when : 1425823917.0,	issuecreated_at : 1425068776.0,	assignee : macluo,	comments : 4,	milestone : v0.3,	duration : 1022531.0,	issueclosed_at : 1426091307.0,	action : labeled,	user : macluo
+
+what : feature request,	when : 1425103364.0,	issuecreated_at : 1425068776.0,	assignee : macluo,	comments : 4,	milestone : v0.3,	duration : 1022531.0,	issueclosed_at : 1426091307.0,	action : labeled,	user : macluo
 
 ISSUE 39
-what : bug,	when : 1425757620.0,	issuecreated_at : 1425757602.0,	comments : 4,	milestone : V1,	duration : 454158.0,	issueclosed_at : 1426211760.0,	action : labeled,	user : dragonfly90
+what : 3. feature QA,	when : 1426192522.0,	issuecreated_at : 1425098527.0,	comments : 2,	duration : 68778.0,	issueclosed_at : 1425167305.0,	action : unlabeled,	user : macluo
+
+what : 4. feature complete,	when : 1426192522.0,	issuecreated_at : 1425098527.0,	comments : 2,	duration : 68778.0,	issueclosed_at : 1425167305.0,	action : labeled,	user : macluo
+
+what : bug,	when : 1425102807.0,	issuecreated_at : 1425098527.0,	comments : 2,	duration : 68778.0,	issueclosed_at : 1425167305.0,	action : unlabeled,	user : macluo
+
+what : feature QA,	when : 1425102807.0,	issuecreated_at : 1425098527.0,	comments : 2,	duration : 68778.0,	issueclosed_at : 1425167305.0,	action : labeled,	user : macluo
+
+what : bug,	when : 1425098527.0,	issuecreated_at : 1425098527.0,	comments : 2,	duration : 68778.0,	issueclosed_at : 1425167305.0,	action : labeled,	user : duh102
 
 ISSUE 40
-what : Solved,	when : 1427054665.0,	issuecreated_at : 1425962491.0,	comments : 1,	milestone : V2,	duration : 1092175.0,	issueclosed_at : 1427054666.0,	action : labeled,	user : Winbobob
+what : 3. feature QA,	when : 1426518653.0,	issuecreated_at : 1425419086.0,	assignee : duh102,	comments : 63,	milestone : v0.3,	duration : 1099563.0,	issueclosed_at : 1426518649.0,	action : unlabeled,	user : duh102
 
-what : design,	when : 1425962491.0,	issuecreated_at : 1425962491.0,	comments : 1,	milestone : V2,	duration : 1092175.0,	issueclosed_at : 1427054666.0,	action : labeled,	user : dragonfly90
+what : 4. feature complete,	when : 1426518653.0,	issuecreated_at : 1425419086.0,	assignee : duh102,	comments : 63,	milestone : v0.3,	duration : 1099563.0,	issueclosed_at : 1426518649.0,	action : labeled,	user : duh102
 
-what : enhancement,	when : 1425962491.0,	issuecreated_at : 1425962491.0,	comments : 1,	milestone : V2,	duration : 1092175.0,	issueclosed_at : 1427054666.0,	action : labeled,	user : dragonfly90
+what : 2a. feature dev,	when : 1426459366.0,	issuecreated_at : 1425419086.0,	assignee : duh102,	comments : 63,	milestone : v0.3,	duration : 1099563.0,	issueclosed_at : 1426518649.0,	action : unlabeled,	user : duh102
+
+what : 3. feature QA,	when : 1426459366.0,	issuecreated_at : 1425419086.0,	assignee : duh102,	comments : 63,	milestone : v0.3,	duration : 1099563.0,	issueclosed_at : 1426518649.0,	action : labeled,	user : duh102
+
+what : feature dev,	when : 1425419333.0,	issuecreated_at : 1425419086.0,	assignee : duh102,	comments : 63,	milestone : v0.3,	duration : 1099563.0,	issueclosed_at : 1426518649.0,	action : labeled,	user : meneal
 
 ISSUE 41
-what : help wanted,	when : 1427054691.0,	issuecreated_at : 1426211865.0,	comments : 12,	milestone : V2,	duration : 1037100.0,	issueclosed_at : 1427248965.0,	action : labeled,	user : Winbobob
+what : 3. feature QA,	when : 1426449238.0,	issuecreated_at : 1425611717.0,	assignee : macluo,	comments : 3,	duration : 761104.0,	issueclosed_at : 1426372821.0,	action : unlabeled,	user : macluo
 
-what : bug,	when : 1426211865.0,	issuecreated_at : 1426211865.0,	comments : 12,	milestone : V2,	duration : 1037100.0,	issueclosed_at : 1427248965.0,	action : labeled,	user : dragonfly90
+what : 4. feature complete,	when : 1426449238.0,	issuecreated_at : 1425611717.0,	assignee : macluo,	comments : 3,	duration : 761104.0,	issueclosed_at : 1426372821.0,	action : labeled,	user : macluo
+
+what : 2a. feature dev,	when : 1426287566.0,	issuecreated_at : 1425611717.0,	assignee : macluo,	comments : 3,	duration : 761104.0,	issueclosed_at : 1426372821.0,	action : unlabeled,	user : macluo
+
+what : 3. feature QA,	when : 1426287566.0,	issuecreated_at : 1425611717.0,	assignee : macluo,	comments : 3,	duration : 761104.0,	issueclosed_at : 1426372821.0,	action : labeled,	user : macluo
+
+what : 1. feature request,	when : 1426253823.0,	issuecreated_at : 1425611717.0,	assignee : macluo,	comments : 3,	duration : 761104.0,	issueclosed_at : 1426372821.0,	action : unlabeled,	user : macluo
+
+what : 2a. feature dev,	when : 1426253823.0,	issuecreated_at : 1425611717.0,	assignee : macluo,	comments : 3,	duration : 761104.0,	issueclosed_at : 1426372821.0,	action : labeled,	user : macluo
+
+what : 1. feature request,	when : 1425611717.0,	issuecreated_at : 1425611717.0,	assignee : macluo,	comments : 3,	duration : 761104.0,	issueclosed_at : 1426372821.0,	action : labeled,	user : macluo
 
 ISSUE 42
-what : Solved,	when : 1427054867.0,	issuecreated_at : 1426217995.0,	comments : 1,	milestone : V2,	duration : 836874.0,	issueclosed_at : 1427054869.0,	action : labeled,	user : Winbobob
-
-what : design,	when : 1426217996.0,	issuecreated_at : 1426217995.0,	comments : 1,	milestone : V2,	duration : 836874.0,	issueclosed_at : 1427054869.0,	action : labeled,	user : dragonfly90
+what : testing,	when : 1425748153.0,	issuecreated_at : 1425748153.0,	comments : 1,	milestone : v0.2,	duration : 132.0,	issueclosed_at : 1425748285.0,	action : labeled,	user : macluo
 
 ISSUE 43
-what : bug,	when : 1426218781.0,	issuecreated_at : 1426218781.0,	comments : 1,	milestone : V2,	duration : 835102.0,	issueclosed_at : 1427053883.0,	action : labeled,	user : dragonfly90
+what : 3. feature QA,	when : 1426449207.0,	issuecreated_at : 1426373481.0,	assignee : macluo,	comments : 4,	duration : 75056.0,	issueclosed_at : 1426448537.0,	action : unlabeled,	user : macluo
+
+what : 4. feature complete,	when : 1426449207.0,	issuecreated_at : 1426373481.0,	assignee : macluo,	comments : 4,	duration : 75056.0,	issueclosed_at : 1426448537.0,	action : labeled,	user : macluo
+
+what : 2a. feature dev,	when : 1426442745.0,	issuecreated_at : 1426373481.0,	assignee : macluo,	comments : 4,	duration : 75056.0,	issueclosed_at : 1426448537.0,	action : unlabeled,	user : macluo
+
+what : 3. feature QA,	when : 1426442745.0,	issuecreated_at : 1426373481.0,	assignee : macluo,	comments : 4,	duration : 75056.0,	issueclosed_at : 1426448537.0,	action : labeled,	user : macluo
+
+what : 1. feature request,	when : 1426433868.0,	issuecreated_at : 1426373481.0,	assignee : macluo,	comments : 4,	duration : 75056.0,	issueclosed_at : 1426448537.0,	action : unlabeled,	user : macluo
+
+what : 2a. feature dev,	when : 1426433868.0,	issuecreated_at : 1426373481.0,	assignee : macluo,	comments : 4,	duration : 75056.0,	issueclosed_at : 1426448537.0,	action : labeled,	user : macluo
+
+what : 1. feature request,	when : 1426373481.0,	issuecreated_at : 1426373481.0,	assignee : macluo,	comments : 4,	duration : 75056.0,	issueclosed_at : 1426448537.0,	action : labeled,	user : macluo
 
 ISSUE 44
-what : Solved,	when : 1427249095.0,	issuecreated_at : 1426283683.0,	comments : 3,	duration : 965432.0,	issueclosed_at : 1427249115.0,	action : labeled,	user : Winbobob
+what : 3. feature QA,	when : 1427028913.0,	issuecreated_at : 1426374012.0,	assignee : macluo,	comments : 11,	milestone : v0.4,	duration : 654885.0,	issueclosed_at : 1427028897.0,	action : unlabeled,	user : macluo
+
+what : 4. feature complete,	when : 1427028913.0,	issuecreated_at : 1426374012.0,	assignee : macluo,	comments : 11,	milestone : v0.4,	duration : 654885.0,	issueclosed_at : 1427028897.0,	action : labeled,	user : macluo
+
+what : 2a. feature dev,	when : 1426908776.0,	issuecreated_at : 1426374012.0,	assignee : macluo,	comments : 11,	milestone : v0.4,	duration : 654885.0,	issueclosed_at : 1427028897.0,	action : unlabeled,	user : macluo
+
+what : 3. feature QA,	when : 1426908776.0,	issuecreated_at : 1426374012.0,	assignee : macluo,	comments : 11,	milestone : v0.4,	duration : 654885.0,	issueclosed_at : 1427028897.0,	action : labeled,	user : macluo
+
+what : 1. feature request,	when : 1426562750.0,	issuecreated_at : 1426374012.0,	assignee : macluo,	comments : 11,	milestone : v0.4,	duration : 654885.0,	issueclosed_at : 1427028897.0,	action : unlabeled,	user : macluo
+
+what : 2a. feature dev,	when : 1426562750.0,	issuecreated_at : 1426374012.0,	assignee : macluo,	comments : 11,	milestone : v0.4,	duration : 654885.0,	issueclosed_at : 1427028897.0,	action : labeled,	user : macluo
+
+what : 1. feature request,	when : 1426374012.0,	issuecreated_at : 1426374012.0,	assignee : macluo,	comments : 11,	milestone : v0.4,	duration : 654885.0,	issueclosed_at : 1427028897.0,	action : labeled,	user : macluo
 
 ISSUE 45
-what : Solved,	when : 1427054767.0,	issuecreated_at : 1426393450.0,	comments : 1,	milestone : V2,	duration : 661319.0,	issueclosed_at : 1427054769.0,	action : labeled,	user : Winbobob
+what : 5. bug,	when : 1426377803.0,	issuecreated_at : 1426377803.0,	assignee : macluo,	comments : 6,	duration : 177690.0,	issueclosed_at : 1426555493.0,	action : labeled,	user : meneal
 
-what : bug,	when : 1426393450.0,	issuecreated_at : 1426393450.0,	comments : 1,	milestone : V2,	duration : 661319.0,	issueclosed_at : 1427054769.0,	action : labeled,	user : dragonfly90
+ISSUE 46
+what : 5. bug,	when : 1426442570.0,	issuecreated_at : 1426442570.0,	comments : 3,	duration : 75.0,	issueclosed_at : 1426442645.0,	action : labeled,	user : meneal
 
 ISSUE 47
-what : Solved,	when : 1427249139.0,	issuecreated_at : 1427131511.0,	comments : 2,	milestone : System test and Report,	duration : 117642.0,	issueclosed_at : 1427249153.0,	action : labeled,	user : Winbobob
+what : 3. feature QA,	when : 1427575008.0,	issuecreated_at : 1426449036.0,	comments : 12,	duration : 1125976.0,	issueclosed_at : 1427575012.0,	action : unlabeled,	user : duh102
 
-what : bug,	when : 1427131511.0,	issuecreated_at : 1427131511.0,	comments : 2,	milestone : System test and Report,	duration : 117642.0,	issueclosed_at : 1427249153.0,	action : labeled,	user : dragonfly90
+what : 4. feature complete,	when : 1427575008.0,	issuecreated_at : 1426449036.0,	comments : 12,	duration : 1125976.0,	issueclosed_at : 1427575012.0,	action : labeled,	user : duh102
+
+what : 1. feature request,	when : 1427568225.0,	issuecreated_at : 1426449036.0,	comments : 12,	duration : 1125976.0,	issueclosed_at : 1427575012.0,	action : unlabeled,	user : duh102
+
+what : 3. feature QA,	when : 1427568225.0,	issuecreated_at : 1426449036.0,	comments : 12,	duration : 1125976.0,	issueclosed_at : 1427575012.0,	action : labeled,	user : duh102
+
+what : 1. feature request,	when : 1426449036.0,	issuecreated_at : 1426449036.0,	comments : 12,	duration : 1125976.0,	issueclosed_at : 1427575012.0,	action : labeled,	user : macluo
 
 ISSUE 48
-what : design,	when : 1427255223.0,	issuecreated_at : 1427255172.0,	comments : 1,	milestone : System test and Report,	duration : 237020.0,	issueclosed_at : 1427492192.0,	action : labeled,	user : dragonfly90
-
-what : test,	when : 1427255223.0,	issuecreated_at : 1427255172.0,	comments : 1,	milestone : System test and Report,	duration : 237020.0,	issueclosed_at : 1427492192.0,	action : labeled,	user : dragonfly90
+what : 2a. feature dev,	when : 1426512414.0,	issuecreated_at : 1426512414.0,	comments : 25,	milestone : v0.4,	duration : 368300.0,	issueclosed_at : 1426880714.0,	action : labeled,	user : meneal
 
 ISSUE 49
-what : help wanted,	when : 1427255354.0,	issuecreated_at : 1427255354.0,	comments : 1,	milestone : System test and Report,	duration : 236807.0,	issueclosed_at : 1427492161.0,	action : labeled,	user : dragonfly90
+what : 3. feature QA,	when : 1426653125.0,	issuecreated_at : 1426513355.0,	assignee : duh102,	comments : 26,	milestone : v0.4,	duration : 139766.0,	issueclosed_at : 1426653121.0,	action : unlabeled,	user : duh102
+
+what : 4. feature complete,	when : 1426653125.0,	issuecreated_at : 1426513355.0,	assignee : duh102,	comments : 26,	milestone : v0.4,	duration : 139766.0,	issueclosed_at : 1426653121.0,	action : labeled,	user : duh102
+
+what : 2a. feature dev,	when : 1426543948.0,	issuecreated_at : 1426513355.0,	assignee : duh102,	comments : 26,	milestone : v0.4,	duration : 139766.0,	issueclosed_at : 1426653121.0,	action : unlabeled,	user : duh102
+
+what : 3. feature QA,	when : 1426543948.0,	issuecreated_at : 1426513355.0,	assignee : duh102,	comments : 26,	milestone : v0.4,	duration : 139766.0,	issueclosed_at : 1426653121.0,	action : labeled,	user : duh102
+
+what : 2a. feature dev,	when : 1426513355.0,	issuecreated_at : 1426513355.0,	assignee : duh102,	comments : 26,	milestone : v0.4,	duration : 139766.0,	issueclosed_at : 1426653121.0,	action : labeled,	user : meneal
 
 ISSUE 50
-what : bug,	when : 1427308924.0,	issuecreated_at : 1427308924.0,	comments : 1,	milestone : System test and Report,	duration : 21101.0,	issueclosed_at : 1427330025.0,	action : labeled,	user : dragonfly90
+what : 2a. feature dev,	when : 1426513501.0,	issuecreated_at : 1426513501.0,	assignee : duh102,	comments : 5,	milestone : v0.4,	duration : 300924.0,	issueclosed_at : 1426814425.0,	action : labeled,	user : meneal
 
 ISSUE 51
-what : design,	when : 1427311328.0,	issuecreated_at : 1427311328.0,	comments : 1,	milestone : System test and Report,	duration : 266086.0,	issueclosed_at : 1427577414.0,	action : labeled,	user : dragonfly90
+what : 3. feature QA,	when : 1427230399.0,	issuecreated_at : 1426540582.0,	assignee : duh102,	comments : 18,	milestone : v0.5,	duration : 689812.0,	issueclosed_at : 1427230394.0,	action : unlabeled,	user : duh102
 
-what : develop,	when : 1427311328.0,	issuecreated_at : 1427311328.0,	comments : 1,	milestone : System test and Report,	duration : 266086.0,	issueclosed_at : 1427577414.0,	action : labeled,	user : dragonfly90
+what : 4. feature complete,	when : 1427230399.0,	issuecreated_at : 1426540582.0,	assignee : duh102,	comments : 18,	milestone : v0.5,	duration : 689812.0,	issueclosed_at : 1427230394.0,	action : labeled,	user : duh102
+
+what : 2a. feature dev,	when : 1427156172.0,	issuecreated_at : 1426540582.0,	assignee : duh102,	comments : 18,	milestone : v0.5,	duration : 689812.0,	issueclosed_at : 1427230394.0,	action : unlabeled,	user : duh102
+
+what : 3. feature QA,	when : 1427156172.0,	issuecreated_at : 1426540582.0,	assignee : duh102,	comments : 18,	milestone : v0.5,	duration : 689812.0,	issueclosed_at : 1427230394.0,	action : labeled,	user : duh102
+
+what : 1. feature request,	when : 1427139925.0,	issuecreated_at : 1426540582.0,	assignee : duh102,	comments : 18,	milestone : v0.5,	duration : 689812.0,	issueclosed_at : 1427230394.0,	action : unlabeled,	user : duh102
+
+what : 2a. feature dev,	when : 1427139925.0,	issuecreated_at : 1426540582.0,	assignee : duh102,	comments : 18,	milestone : v0.5,	duration : 689812.0,	issueclosed_at : 1427230394.0,	action : labeled,	user : duh102
+
+what : 1. feature request,	when : 1426540582.0,	issuecreated_at : 1426540582.0,	assignee : duh102,	comments : 18,	milestone : v0.5,	duration : 689812.0,	issueclosed_at : 1427230394.0,	action : labeled,	user : macluo
 
 ISSUE 52
-what : design,	when : 1427311388.0,	issuecreated_at : 1427311368.0,	comments : 1,	milestone : System test and Report,	duration : 266015.0,	issueclosed_at : 1427577383.0,	action : labeled,	user : dragonfly90
+what : 4. feature complete,	when : 1426855071.0,	issuecreated_at : 1426645307.0,	assignee : ktspence,	comments : 2,	milestone : v0.4,	duration : 209757.0,	issueclosed_at : 1426855064.0,	action : labeled,	user : duh102
 
-what : duplicate,	when : 1427311388.0,	issuecreated_at : 1427311368.0,	comments : 1,	milestone : System test and Report,	duration : 266015.0,	issueclosed_at : 1427577383.0,	action : labeled,	user : dragonfly90
+ISSUE 53
+what : 3. feature QA,	when : 1427083790.0,	issuecreated_at : 1426698843.0,	assignee : macluo,	comments : 38,	milestone : v0.4,	duration : 382835.0,	issueclosed_at : 1427081678.0,	action : unlabeled,	user : macluo
+
+what : 4. feature complete,	when : 1427083790.0,	issuecreated_at : 1426698843.0,	assignee : macluo,	comments : 38,	milestone : v0.4,	duration : 382835.0,	issueclosed_at : 1427081678.0,	action : labeled,	user : macluo
+
+what : 2a. feature dev,	when : 1427079191.0,	issuecreated_at : 1426698843.0,	assignee : macluo,	comments : 38,	milestone : v0.4,	duration : 382835.0,	issueclosed_at : 1427081678.0,	action : unlabeled,	user : macluo
+
+what : 3. feature QA,	when : 1427079191.0,	issuecreated_at : 1426698843.0,	assignee : macluo,	comments : 38,	milestone : v0.4,	duration : 382835.0,	issueclosed_at : 1427081678.0,	action : labeled,	user : macluo
+
+what : 1. feature request,	when : 1427028923.0,	issuecreated_at : 1426698843.0,	assignee : macluo,	comments : 38,	milestone : v0.4,	duration : 382835.0,	issueclosed_at : 1427081678.0,	action : unlabeled,	user : macluo
+
+what : 2a. feature dev,	when : 1427028923.0,	issuecreated_at : 1426698843.0,	assignee : macluo,	comments : 38,	milestone : v0.4,	duration : 382835.0,	issueclosed_at : 1427081678.0,	action : labeled,	user : macluo
+
+what : 1. feature request,	when : 1426698843.0,	issuecreated_at : 1426698843.0,	assignee : macluo,	comments : 38,	milestone : v0.4,	duration : 382835.0,	issueclosed_at : 1427081678.0,	action : labeled,	user : macluo
 
 ISSUE 54
-what : design,	when : 1427763094.0,	issuecreated_at : 1427763094.0,	assignee : Winbobob,	comments : 4,	milestone : Final release,	duration : 394622.0,	issueclosed_at : 1428157716.0,	action : labeled,	user : dragonfly90
+what : 2a. feature dev,	when : 1426907767.0,	issuecreated_at : 1426880966.0,	assignee : duh102,	comments : 19,	duration : 26790.0,	issueclosed_at : 1426907756.0,	action : unlabeled,	user : duh102
+
+what : 4. feature complete,	when : 1426907767.0,	issuecreated_at : 1426880966.0,	assignee : duh102,	comments : 19,	duration : 26790.0,	issueclosed_at : 1426907756.0,	action : labeled,	user : duh102
+
+what : 1. feature request,	when : 1426904690.0,	issuecreated_at : 1426880966.0,	assignee : duh102,	comments : 19,	duration : 26790.0,	issueclosed_at : 1426907756.0,	action : unlabeled,	user : duh102
+
+what : 2a. feature dev,	when : 1426904690.0,	issuecreated_at : 1426880966.0,	assignee : duh102,	comments : 19,	duration : 26790.0,	issueclosed_at : 1426907756.0,	action : labeled,	user : duh102
+
+what : 1. feature request,	when : 1426880988.0,	issuecreated_at : 1426880966.0,	assignee : duh102,	comments : 19,	duration : 26790.0,	issueclosed_at : 1426907756.0,	action : labeled,	user : meneal
 
 ISSUE 55
-what : design,	when : 1427763408.0,	issuecreated_at : 1427763408.0,	assignee : dragonfly90,	comments : 0,	milestone : Final release,	duration : 440278.0,	issueclosed_at : 1428203686.0,	action : labeled,	user : dragonfly90
+what : 5. bug,	when : 1426881084.0,	issuecreated_at : 1426881084.0,	comments : 3,	duration : 7327.0,	issueclosed_at : 1426888411.0,	action : labeled,	user : meneal
 
 ISSUE 56
-what : Solved,	when : 1427938886.0,	issuecreated_at : 1427834397.0,	assignee : Winbobob,	comments : 1,	milestone : Final release,	duration : 104484.0,	issueclosed_at : 1427938881.0,	action : labeled,	user : Winbobob
+what : 3. feature QA,	when : 1427230445.0,	issuecreated_at : 1427082417.0,	assignee : duh102,	comments : 18,	milestone : v0.5,	duration : 148024.0,	issueclosed_at : 1427230441.0,	action : unlabeled,	user : duh102
 
-what : bug,	when : 1427834397.0,	issuecreated_at : 1427834397.0,	assignee : Winbobob,	comments : 1,	milestone : Final release,	duration : 104484.0,	issueclosed_at : 1427938881.0,	action : labeled,	user : dragonfly90
+what : 4. feature complete,	when : 1427230445.0,	issuecreated_at : 1427082417.0,	assignee : duh102,	comments : 18,	milestone : v0.5,	duration : 148024.0,	issueclosed_at : 1427230441.0,	action : labeled,	user : duh102
 
-ISSUE 57
-what : bug,	when : 1427834482.0,	issuecreated_at : 1427834482.0,	assignee : dragonfly90,	comments : 1,	milestone : Final release,	duration : 371162.0,	issueclosed_at : 1428205644.0,	action : labeled,	user : dragonfly90
+what : 2a. feature dev,	when : 1427203840.0,	issuecreated_at : 1427082417.0,	assignee : duh102,	comments : 18,	milestone : v0.5,	duration : 148024.0,	issueclosed_at : 1427230441.0,	action : unlabeled,	user : duh102
+
+what : 3. feature QA,	when : 1427203840.0,	issuecreated_at : 1427082417.0,	assignee : duh102,	comments : 18,	milestone : v0.5,	duration : 148024.0,	issueclosed_at : 1427230441.0,	action : labeled,	user : duh102
+
+what : 1. feature request,	when : 1427139800.0,	issuecreated_at : 1427082417.0,	assignee : duh102,	comments : 18,	milestone : v0.5,	duration : 148024.0,	issueclosed_at : 1427230441.0,	action : unlabeled,	user : duh102
+
+what : 2a. feature dev,	when : 1427139800.0,	issuecreated_at : 1427082417.0,	assignee : duh102,	comments : 18,	milestone : v0.5,	duration : 148024.0,	issueclosed_at : 1427230441.0,	action : labeled,	user : duh102
+
+what : 1. feature request,	when : 1427082417.0,	issuecreated_at : 1427082417.0,	assignee : duh102,	comments : 18,	milestone : v0.5,	duration : 148024.0,	issueclosed_at : 1427230441.0,	action : labeled,	user : macluo
+
+ISSUE 58
+what : 3. feature QA,	when : 1427575022.0,	issuecreated_at : 1427230880.0,	assignee : duh102,	comments : 7,	milestone : v0.5,	duration : 344144.0,	issueclosed_at : 1427575024.0,	action : unlabeled,	user : duh102
+
+what : 4. feature complete,	when : 1427575022.0,	issuecreated_at : 1427230880.0,	assignee : duh102,	comments : 7,	milestone : v0.5,	duration : 344144.0,	issueclosed_at : 1427575024.0,	action : labeled,	user : duh102
+
+what : 2a. feature dev,	when : 1427478333.0,	issuecreated_at : 1427230880.0,	assignee : duh102,	comments : 7,	milestone : v0.5,	duration : 344144.0,	issueclosed_at : 1427575024.0,	action : unlabeled,	user : duh102
+
+what : 3. feature QA,	when : 1427478333.0,	issuecreated_at : 1427230880.0,	assignee : duh102,	comments : 7,	milestone : v0.5,	duration : 344144.0,	issueclosed_at : 1427575024.0,	action : labeled,	user : duh102
+
+what : 1. feature request,	when : 1427464953.0,	issuecreated_at : 1427230880.0,	assignee : duh102,	comments : 7,	milestone : v0.5,	duration : 344144.0,	issueclosed_at : 1427575024.0,	action : unlabeled,	user : duh102
+
+what : 2a. feature dev,	when : 1427464953.0,	issuecreated_at : 1427230880.0,	assignee : duh102,	comments : 7,	milestone : v0.5,	duration : 344144.0,	issueclosed_at : 1427575024.0,	action : labeled,	user : duh102
+
+what : 1. feature request,	when : 1427230885.0,	issuecreated_at : 1427230880.0,	assignee : duh102,	comments : 7,	milestone : v0.5,	duration : 344144.0,	issueclosed_at : 1427575024.0,	action : labeled,	user : duh102
+
+ISSUE 59
+what : 1. feature request,	when : 1427574994.0,	issuecreated_at : 1427230944.0,	assignee : meneal,	comments : 1,	milestone : v0.5,	duration : 344055.0,	issueclosed_at : 1427574999.0,	action : unlabeled,	user : duh102
+
+what : 4. feature complete,	when : 1427574994.0,	issuecreated_at : 1427230944.0,	assignee : meneal,	comments : 1,	milestone : v0.5,	duration : 344055.0,	issueclosed_at : 1427574999.0,	action : labeled,	user : duh102
+
+what : 1. feature request,	when : 1427230950.0,	issuecreated_at : 1427230944.0,	assignee : meneal,	comments : 1,	milestone : v0.5,	duration : 344055.0,	issueclosed_at : 1427574999.0,	action : labeled,	user : duh102
+
+ISSUE 60
+what : 1. feature request,	when : 1427233295.0,	issuecreated_at : 1427230981.0,	assignee : macluo,	comments : 2,	milestone : v0.5,	duration : 1431.0,	issueclosed_at : 1427232412.0,	action : unlabeled,	user : duh102
+
+what : 4. feature complete,	when : 1427233295.0,	issuecreated_at : 1427230981.0,	assignee : macluo,	comments : 2,	milestone : v0.5,	duration : 1431.0,	issueclosed_at : 1427232412.0,	action : labeled,	user : duh102
+
+what : 1. feature request,	when : 1427230985.0,	issuecreated_at : 1427230981.0,	assignee : macluo,	comments : 2,	milestone : v0.5,	duration : 1431.0,	issueclosed_at : 1427232412.0,	action : labeled,	user : duh102
 
 ISSUE 61
-what : Solved,	when : 1427937597.0,	issuecreated_at : 1427937597.0,	assignee : dragonfly90,	comments : 0,	milestone : Final release,	duration : 268173.0,	issueclosed_at : 1428205770.0,	action : labeled,	user : dragonfly90
+what : 1. feature request,	when : 1427574966.0,	issuecreated_at : 1427233505.0,	assignee : meneal,	comments : 0,	milestone : v0.5,	duration : 341477.0,	issueclosed_at : 1427574982.0,	action : unlabeled,	user : duh102
 
-what : invalid,	when : 1427937597.0,	issuecreated_at : 1427937597.0,	assignee : dragonfly90,	comments : 0,	milestone : Final release,	duration : 268173.0,	issueclosed_at : 1428205770.0,	action : labeled,	user : dragonfly90
+what : 4. feature complete,	when : 1427574966.0,	issuecreated_at : 1427233505.0,	assignee : meneal,	comments : 0,	milestone : v0.5,	duration : 341477.0,	issueclosed_at : 1427574982.0,	action : labeled,	user : duh102
+
+what : 1. feature request,	when : 1427233505.0,	issuecreated_at : 1427233505.0,	assignee : meneal,	comments : 0,	milestone : v0.5,	duration : 341477.0,	issueclosed_at : 1427574982.0,	action : labeled,	user : duh102
 
 ISSUE 62
-what : test,	when : 1428158030.0,	issuecreated_at : 1428158030.0,	comments : 2,	duration : 171637.0,	issueclosed_at : 1428329667.0,	action : labeled,	user : dragonfly90
+what : 1. feature request,	when : 1427598251.0,	issuecreated_at : 1427233761.0,	assignee : meneal,	comments : 20,	milestone : v0.5,	duration : 364028.0,	issueclosed_at : 1427597789.0,	action : unlabeled,	user : duh102
+
+what : 4. feature complete,	when : 1427598251.0,	issuecreated_at : 1427233761.0,	assignee : meneal,	comments : 20,	milestone : v0.5,	duration : 364028.0,	issueclosed_at : 1427597789.0,	action : labeled,	user : duh102
+
+what : 1. feature request,	when : 1427235008.0,	issuecreated_at : 1427233761.0,	assignee : meneal,	comments : 20,	milestone : v0.5,	duration : 364028.0,	issueclosed_at : 1427597789.0,	action : labeled,	user : duh102
 
 ISSUE 63
-what : question,	when : 1428158809.0,	issuecreated_at : 1428158809.0,	comments : 0,	duration : 178076.0,	issueclosed_at : 1428336885.0,	action : labeled,	user : dragonfly90
+what : 2b. help wanted,	when : 1427252042.0,	issuecreated_at : 1427252042.0,	comments : 2,	duration : 240208.0,	issueclosed_at : 1427492250.0,	action : labeled,	user : macluo
 
 ISSUE 64
-what : bug,	when : 1428170848.0,	issuecreated_at : 1428170682.0,	comments : 2,	duration : 166252.0,	issueclosed_at : 1428336934.0,	action : labeled,	user : dragonfly90
+what : 2a. feature dev,	when : 1427504269.0,	issuecreated_at : 1427330177.0,	assignee : duh102,	comments : 3,	milestone : v0.5,	duration : 174089.0,	issueclosed_at : 1427504266.0,	action : unlabeled,	user : duh102
 
-what : enhancement,	when : 1428170840.0,	issuecreated_at : 1428170682.0,	comments : 2,	duration : 166252.0,	issueclosed_at : 1428336934.0,	action : labeled,	user : dragonfly90
+what : 4. feature complete,	when : 1427504269.0,	issuecreated_at : 1427330177.0,	assignee : duh102,	comments : 3,	milestone : v0.5,	duration : 174089.0,	issueclosed_at : 1427504266.0,	action : labeled,	user : duh102
+
+what : 1. feature request,	when : 1427408428.0,	issuecreated_at : 1427330177.0,	assignee : duh102,	comments : 3,	milestone : v0.5,	duration : 174089.0,	issueclosed_at : 1427504266.0,	action : unlabeled,	user : duh102
+
+what : 2a. feature dev,	when : 1427408428.0,	issuecreated_at : 1427330177.0,	assignee : duh102,	comments : 3,	milestone : v0.5,	duration : 174089.0,	issueclosed_at : 1427504266.0,	action : labeled,	user : duh102
+
+what : 1. feature request,	when : 1427330177.0,	issuecreated_at : 1427330177.0,	assignee : duh102,	comments : 3,	milestone : v0.5,	duration : 174089.0,	issueclosed_at : 1427504266.0,	action : labeled,	user : duh102
 
 ISSUE 65
-what : enhancement,	when : 1428200086.0,	issuecreated_at : 1428200078.0,	comments : 1,	milestone : Final release,	duration : 5722.0,	issueclosed_at : 1428205800.0,	action : labeled,	user : Winbobob
+what : 5. bug,	when : 1427403198.0,	issuecreated_at : 1427334863.0,	assignee : duh102,	comments : 8,	milestone : v0.5,	duration : 68333.0,	issueclosed_at : 1427403196.0,	action : unlabeled,	user : duh102
+
+what : 4. feature complete,	when : 1427403198.0,	issuecreated_at : 1427334863.0,	assignee : duh102,	comments : 8,	milestone : v0.5,	duration : 68333.0,	issueclosed_at : 1427403196.0,	action : labeled,	user : duh102
+
+what : 5. bug,	when : 1427334864.0,	issuecreated_at : 1427334863.0,	assignee : duh102,	comments : 8,	milestone : v0.5,	duration : 68333.0,	issueclosed_at : 1427403196.0,	action : labeled,	user : duh102
 
 ISSUE 66
-what : develop,	when : 1428250364.0,	issuecreated_at : 1428250364.0,	comments : 1,	duration : 122784.0,	issueclosed_at : 1428373148.0,	action : labeled,	user : dragonfly90
+what : 2a. feature dev,	when : 1427337921.0,	issuecreated_at : 1427337921.0,	assignee : meneal,	comments : 2,	milestone : v0.6 Cleanup,	duration : 489217.0,	issueclosed_at : 1427827138.0,	action : labeled,	user : meneal
 
 ISSUE 67
-what : help wanted,	when : 1428264547.0,	issuecreated_at : 1428264547.0,	assignee : Winbobob,	comments : 2,	duration : 103773.0,	issueclosed_at : 1428368320.0,	action : labeled,	user : dragonfly90
+what : 5. bug,	when : 1427403230.0,	issuecreated_at : 1427403230.0,	assignee : ktspence,	comments : 2,	milestone : v0.5,	duration : 3372.0,	issueclosed_at : 1427406602.0,	action : labeled,	user : duh102
 
 ISSUE 68
-what : question,	when : 1428343293.0,	issuecreated_at : 1428343282.0,	comments : 5,	duration : 95909.0,	issueclosed_at : 1428439191.0,	action : labeled,	user : dragonfly90
+what : 1. feature request,	when : 1427588298.0,	issuecreated_at : 1427406829.0,	assignee : ktspence,	comments : 1,	milestone : v0.5,	duration : 71.0,	issueclosed_at : 1427406900.0,	action : unlabeled,	user : duh102
+
+what : 4. feature complete,	when : 1427588298.0,	issuecreated_at : 1427406829.0,	assignee : ktspence,	comments : 1,	milestone : v0.5,	duration : 71.0,	issueclosed_at : 1427406900.0,	action : labeled,	user : duh102
+
+what : 1. feature request,	when : 1427406849.0,	issuecreated_at : 1427406829.0,	assignee : ktspence,	comments : 1,	milestone : v0.5,	duration : 71.0,	issueclosed_at : 1427406900.0,	action : labeled,	user : ktspence
 
 ISSUE 69
-what : enhancement,	when : 1428440030.0,	issuecreated_at : 1428344167.0,	comments : 1,	duration : 95869.0,	issueclosed_at : 1428440036.0,	action : labeled,	user : Winbobob
+what : 3. feature QA,	when : 1427512298.0,	issuecreated_at : 1427463062.0,	assignee : macluo,	comments : 3,	duration : 48271.0,	issueclosed_at : 1427511333.0,	action : unlabeled,	user : macluo
+
+what : 4. feature complete,	when : 1427512298.0,	issuecreated_at : 1427463062.0,	assignee : macluo,	comments : 3,	duration : 48271.0,	issueclosed_at : 1427511333.0,	action : labeled,	user : macluo
+
+what : 2a. feature dev,	when : 1427464187.0,	issuecreated_at : 1427463062.0,	assignee : macluo,	comments : 3,	duration : 48271.0,	issueclosed_at : 1427511333.0,	action : unlabeled,	user : macluo
+
+what : 3. feature QA,	when : 1427464187.0,	issuecreated_at : 1427463062.0,	assignee : macluo,	comments : 3,	duration : 48271.0,	issueclosed_at : 1427511333.0,	action : labeled,	user : macluo
+
+what : 2a. feature dev,	when : 1427463070.0,	issuecreated_at : 1427463062.0,	assignee : macluo,	comments : 3,	duration : 48271.0,	issueclosed_at : 1427511333.0,	action : labeled,	user : macluo
+
+ISSUE 70
+what : 3. feature QA,	when : 1427566873.0,	issuecreated_at : 1427465293.0,	comments : 3,	duration : 101548.0,	issueclosed_at : 1427566841.0,	action : unlabeled,	user : macluo
+
+what : 4. feature complete,	when : 1427566873.0,	issuecreated_at : 1427465293.0,	comments : 3,	duration : 101548.0,	issueclosed_at : 1427566841.0,	action : labeled,	user : macluo
+
+what : 2a. feature dev,	when : 1427510258.0,	issuecreated_at : 1427465293.0,	comments : 3,	duration : 101548.0,	issueclosed_at : 1427566841.0,	action : unlabeled,	user : macluo
+
+what : 3. feature QA,	when : 1427510258.0,	issuecreated_at : 1427465293.0,	comments : 3,	duration : 101548.0,	issueclosed_at : 1427566841.0,	action : labeled,	user : macluo
+
+what : 1. feature request,	when : 1427491882.0,	issuecreated_at : 1427465293.0,	comments : 3,	duration : 101548.0,	issueclosed_at : 1427566841.0,	action : unlabeled,	user : macluo
+
+what : 2a. feature dev,	when : 1427491882.0,	issuecreated_at : 1427465293.0,	comments : 3,	duration : 101548.0,	issueclosed_at : 1427566841.0,	action : labeled,	user : macluo
+
+what : 1. feature request,	when : 1427465293.0,	issuecreated_at : 1427465293.0,	comments : 3,	duration : 101548.0,	issueclosed_at : 1427566841.0,	action : labeled,	user : macluo
+
+ISSUE 71
+what : 1. feature request,	when : 1427588136.0,	issuecreated_at : 1427575279.0,	assignee : meneal,	comments : 4,	milestone : v0.6 Cleanup,	duration : 12527.0,	issueclosed_at : 1427587806.0,	action : unlabeled,	user : duh102
+
+what : 4. feature complete,	when : 1427588136.0,	issuecreated_at : 1427575279.0,	assignee : meneal,	comments : 4,	milestone : v0.6 Cleanup,	duration : 12527.0,	issueclosed_at : 1427587806.0,	action : labeled,	user : duh102
+
+what : 1. feature request,	when : 1427575285.0,	issuecreated_at : 1427575279.0,	assignee : meneal,	comments : 4,	milestone : v0.6 Cleanup,	duration : 12527.0,	issueclosed_at : 1427587806.0,	action : labeled,	user : duh102
+
+ISSUE 72
+what : 5. bug,	when : 1427575329.0,	issuecreated_at : 1427575329.0,	assignee : macluo,	comments : 3,	milestone : v0.6 Cleanup,	duration : 2434.0,	issueclosed_at : 1427577763.0,	action : labeled,	user : duh102
+
+ISSUE 73
+what : 1. feature request,	when : 1427598123.0,	issuecreated_at : 1427575419.0,	comments : 1,	milestone : v0.6 Cleanup,	duration : 19107.0,	issueclosed_at : 1427594526.0,	action : unlabeled,	user : duh102
+
+what : 4. feature complete,	when : 1427598123.0,	issuecreated_at : 1427575419.0,	comments : 1,	milestone : v0.6 Cleanup,	duration : 19107.0,	issueclosed_at : 1427594526.0,	action : labeled,	user : duh102
+
+what : 1. feature request,	when : 1427575423.0,	issuecreated_at : 1427575419.0,	comments : 1,	milestone : v0.6 Cleanup,	duration : 19107.0,	issueclosed_at : 1427594526.0,	action : labeled,	user : duh102
+
+ISSUE 74
+what : 1. feature request,	when : 1427591588.0,	issuecreated_at : 1427575457.0,	comments : 1,	milestone : v0.6 Cleanup,	duration : 15092.0,	issueclosed_at : 1427590549.0,	action : unlabeled,	user : duh102
+
+what : 4. feature complete,	when : 1427591588.0,	issuecreated_at : 1427575457.0,	comments : 1,	milestone : v0.6 Cleanup,	duration : 15092.0,	issueclosed_at : 1427590549.0,	action : labeled,	user : duh102
+
+what : 1. feature request,	when : 1427575463.0,	issuecreated_at : 1427575457.0,	comments : 1,	milestone : v0.6 Cleanup,	duration : 15092.0,	issueclosed_at : 1427590549.0,	action : labeled,	user : duh102
+
+ISSUE 75
+what : 3. feature QA,	when : 1427675527.0,	issuecreated_at : 1427575923.0,	assignee : macluo,	comments : 3,	milestone : v0.6 Cleanup,	duration : 99584.0,	issueclosed_at : 1427675507.0,	action : unlabeled,	user : macluo
+
+what : 4. feature complete,	when : 1427675527.0,	issuecreated_at : 1427575923.0,	assignee : macluo,	comments : 3,	milestone : v0.6 Cleanup,	duration : 99584.0,	issueclosed_at : 1427675507.0,	action : labeled,	user : macluo
+
+what : 2a. feature dev,	when : 1427649182.0,	issuecreated_at : 1427575923.0,	assignee : macluo,	comments : 3,	milestone : v0.6 Cleanup,	duration : 99584.0,	issueclosed_at : 1427675507.0,	action : unlabeled,	user : macluo
+
+what : 3. feature QA,	when : 1427649182.0,	issuecreated_at : 1427575923.0,	assignee : macluo,	comments : 3,	milestone : v0.6 Cleanup,	duration : 99584.0,	issueclosed_at : 1427675507.0,	action : labeled,	user : macluo
+
+what : 1. feature request,	when : 1427598627.0,	issuecreated_at : 1427575923.0,	assignee : macluo,	comments : 3,	milestone : v0.6 Cleanup,	duration : 99584.0,	issueclosed_at : 1427675507.0,	action : unlabeled,	user : macluo
+
+what : 2a. feature dev,	when : 1427598627.0,	issuecreated_at : 1427575923.0,	assignee : macluo,	comments : 3,	milestone : v0.6 Cleanup,	duration : 99584.0,	issueclosed_at : 1427675507.0,	action : labeled,	user : macluo
+
+what : 1. feature request,	when : 1427575923.0,	issuecreated_at : 1427575923.0,	assignee : macluo,	comments : 3,	milestone : v0.6 Cleanup,	duration : 99584.0,	issueclosed_at : 1427675507.0,	action : labeled,	user : duh102
+
+ISSUE 76
+what : 2a. feature dev,	when : 1427721751.0,	issuecreated_at : 1427576086.0,	assignee : ktspence,	comments : 3,	milestone : v0.6 Cleanup,	duration : 23678.0,	issueclosed_at : 1427599764.0,	action : unlabeled,	user : duh102
+
+what : 4. feature complete,	when : 1427721751.0,	issuecreated_at : 1427576086.0,	assignee : ktspence,	comments : 3,	milestone : v0.6 Cleanup,	duration : 23678.0,	issueclosed_at : 1427599764.0,	action : labeled,	user : duh102
+
+what : 2a. feature dev,	when : 1427576115.0,	issuecreated_at : 1427576086.0,	assignee : ktspence,	comments : 3,	milestone : v0.6 Cleanup,	duration : 23678.0,	issueclosed_at : 1427599764.0,	action : labeled,	user : ktspence
+
+ISSUE 77
+what : 1. feature request,	when : 1428108978.0,	issuecreated_at : 1427576489.0,	assignee : duh102,	comments : 5,	milestone : v0.6 Cleanup,	duration : 532484.0,	issueclosed_at : 1428108973.0,	action : unlabeled,	user : duh102
+
+what : 4. feature complete,	when : 1428108978.0,	issuecreated_at : 1427576489.0,	assignee : duh102,	comments : 5,	milestone : v0.6 Cleanup,	duration : 532484.0,	issueclosed_at : 1428108973.0,	action : labeled,	user : duh102
+
+what : 1. feature request,	when : 1427578252.0,	issuecreated_at : 1427576489.0,	assignee : duh102,	comments : 5,	milestone : v0.6 Cleanup,	duration : 532484.0,	issueclosed_at : 1428108973.0,	action : labeled,	user : duh102
+
+ISSUE 78
+what : 5. bug,	when : 1427578240.0,	issuecreated_at : 1427576725.0,	comments : 1,	milestone : v0.6 Cleanup,	duration : 1506.0,	issueclosed_at : 1427578231.0,	action : labeled,	user : duh102
+
+ISSUE 79
+what : 2a. feature dev,	when : 1427590162.0,	issuecreated_at : 1427589070.0,	assignee : duh102,	comments : 7,	duration : 1075.0,	issueclosed_at : 1427590145.0,	action : unlabeled,	user : duh102
+
+what : 4. feature complete,	when : 1427590162.0,	issuecreated_at : 1427589070.0,	assignee : duh102,	comments : 7,	duration : 1075.0,	issueclosed_at : 1427590145.0,	action : labeled,	user : duh102
+
+what : 2a. feature dev,	when : 1427589070.0,	issuecreated_at : 1427589070.0,	assignee : duh102,	comments : 7,	duration : 1075.0,	issueclosed_at : 1427590145.0,	action : labeled,	user : meneal
+
+ISSUE 80
+what : 5. bug,	when : 1427594731.0,	issuecreated_at : 1427594731.0,	assignee : macluo,	comments : 2,	duration : 54660.0,	issueclosed_at : 1427649391.0,	action : labeled,	user : meneal
+
+ISSUE 81
+what : 2a. feature dev,	when : 1427804193.0,	issuecreated_at : 1427599961.0,	comments : 2,	milestone : v0.6 Cleanup,	duration : 166414.0,	issueclosed_at : 1427766375.0,	action : unlabeled,	user : duh102
+
+what : 4. feature complete,	when : 1427804193.0,	issuecreated_at : 1427599961.0,	comments : 2,	milestone : v0.6 Cleanup,	duration : 166414.0,	issueclosed_at : 1427766375.0,	action : labeled,	user : duh102
+
+what : 2a. feature dev,	when : 1427599971.0,	issuecreated_at : 1427599961.0,	comments : 2,	milestone : v0.6 Cleanup,	duration : 166414.0,	issueclosed_at : 1427766375.0,	action : labeled,	user : ktspence
+
+ISSUE 82
+what : 3. feature QA,	when : 1427675607.0,	issuecreated_at : 1427641457.0,	assignee : macluo,	comments : 1,	duration : 34153.0,	issueclosed_at : 1427675610.0,	action : unlabeled,	user : macluo
+
+what : 4. feature complete,	when : 1427675607.0,	issuecreated_at : 1427641457.0,	assignee : macluo,	comments : 1,	duration : 34153.0,	issueclosed_at : 1427675610.0,	action : labeled,	user : macluo
+
+what : 2a. feature dev,	when : 1427649429.0,	issuecreated_at : 1427641457.0,	assignee : macluo,	comments : 1,	duration : 34153.0,	issueclosed_at : 1427675610.0,	action : unlabeled,	user : macluo
+
+what : 3. feature QA,	when : 1427649429.0,	issuecreated_at : 1427641457.0,	assignee : macluo,	comments : 1,	duration : 34153.0,	issueclosed_at : 1427675610.0,	action : labeled,	user : macluo
+
+what : 1. feature request,	when : 1427649063.0,	issuecreated_at : 1427641457.0,	assignee : macluo,	comments : 1,	duration : 34153.0,	issueclosed_at : 1427675610.0,	action : unlabeled,	user : macluo
+
+what : 2a. feature dev,	when : 1427649063.0,	issuecreated_at : 1427641457.0,	assignee : macluo,	comments : 1,	duration : 34153.0,	issueclosed_at : 1427675610.0,	action : labeled,	user : macluo
+
+what : 1. feature request,	when : 1427641457.0,	issuecreated_at : 1427641457.0,	assignee : macluo,	comments : 1,	duration : 34153.0,	issueclosed_at : 1427675610.0,	action : labeled,	user : duh102
+
+ISSUE 83
+what : 5. bug,	when : 1427661438.0,	issuecreated_at : 1427661438.0,	comments : 1,	milestone : v0.6 Cleanup,	duration : 7514.0,	issueclosed_at : 1427668952.0,	action : labeled,	user : duh102
+
+ISSUE 84
+what : 4. feature complete,	when : 1427804231.0,	issuecreated_at : 1427777926.0,	assignee : ktspence,	comments : 0,	milestone : v0.6 Cleanup,	duration : 10.0,	issueclosed_at : 1427777936.0,	action : labeled,	user : duh102
+
+what : 2a. feature dev,	when : 1427804202.0,	issuecreated_at : 1427777926.0,	assignee : ktspence,	comments : 0,	milestone : v0.6 Cleanup,	duration : 10.0,	issueclosed_at : 1427777936.0,	action : unlabeled,	user : duh102
+
+what : 2a. feature dev,	when : 1427777926.0,	issuecreated_at : 1427777926.0,	assignee : ktspence,	comments : 0,	milestone : v0.6 Cleanup,	duration : 10.0,	issueclosed_at : 1427777936.0,	action : labeled,	user : ktspence
+
+ISSUE 85
+what : 4. feature complete,	when : 1427804231.0,	issuecreated_at : 1427782840.0,	assignee : ktspence,	comments : 0,	milestone : v0.6 Cleanup,	duration : 160.0,	issueclosed_at : 1427783000.0,	action : labeled,	user : duh102
+
+what : 2a. feature dev,	when : 1427804202.0,	issuecreated_at : 1427782840.0,	assignee : ktspence,	comments : 0,	milestone : v0.6 Cleanup,	duration : 160.0,	issueclosed_at : 1427783000.0,	action : unlabeled,	user : duh102
+
+what : 2a. feature dev,	when : 1427782840.0,	issuecreated_at : 1427782840.0,	assignee : ktspence,	comments : 0,	milestone : v0.6 Cleanup,	duration : 160.0,	issueclosed_at : 1427783000.0,	action : labeled,	user : ktspence
+
+ISSUE 86
+what : 4. feature complete,	when : 1427804231.0,	issuecreated_at : 1427782955.0,	assignee : ktspence,	comments : 0,	milestone : v0.6 Cleanup,	duration : 45.0,	issueclosed_at : 1427783000.0,	action : labeled,	user : duh102
+
+what : 2a. feature dev,	when : 1427804202.0,	issuecreated_at : 1427782955.0,	assignee : ktspence,	comments : 0,	milestone : v0.6 Cleanup,	duration : 45.0,	issueclosed_at : 1427783000.0,	action : unlabeled,	user : duh102
+
+what : 2a. feature dev,	when : 1427782955.0,	issuecreated_at : 1427782955.0,	assignee : ktspence,	comments : 0,	milestone : v0.6 Cleanup,	duration : 45.0,	issueclosed_at : 1427783000.0,	action : labeled,	user : ktspence
+
+ISSUE 87
+what : 1. feature request,	when : 1427825587.0,	issuecreated_at : 1427810190.0,	assignee : duh102,	comments : 3,	duration : 15383.0,	issueclosed_at : 1427825573.0,	action : unlabeled,	user : duh102
+
+what : 4. feature complete,	when : 1427825587.0,	issuecreated_at : 1427810190.0,	assignee : duh102,	comments : 3,	duration : 15383.0,	issueclosed_at : 1427825573.0,	action : labeled,	user : duh102
+
+what : 1. feature request,	when : 1427810196.0,	issuecreated_at : 1427810190.0,	assignee : duh102,	comments : 3,	duration : 15383.0,	issueclosed_at : 1427825573.0,	action : labeled,	user : macluo
+
+ISSUE 88
+what : 2a. feature dev,	when : 1427990766.0,	issuecreated_at : 1427838875.0,	assignee : ktspence,	comments : 1,	milestone : v0.6 Cleanup,	duration : 151888.0,	issueclosed_at : 1427990763.0,	action : unlabeled,	user : duh102
+
+what : 4. feature complete,	when : 1427990766.0,	issuecreated_at : 1427838875.0,	assignee : ktspence,	comments : 1,	milestone : v0.6 Cleanup,	duration : 151888.0,	issueclosed_at : 1427990763.0,	action : labeled,	user : duh102
+
+what : 2a. feature dev,	when : 1427838875.0,	issuecreated_at : 1427838875.0,	assignee : ktspence,	comments : 1,	milestone : v0.6 Cleanup,	duration : 151888.0,	issueclosed_at : 1427990763.0,	action : labeled,	user : ktspence
+
+ISSUE 89
+what : 3. feature QA,	when : 1428013869.0,	issuecreated_at : 1427990844.0,	comments : 11,	milestone : v0.6 Cleanup,	duration : 23021.0,	issueclosed_at : 1428013865.0,	action : unlabeled,	user : duh102
+
+what : 4. feature complete,	when : 1428013869.0,	issuecreated_at : 1427990844.0,	comments : 11,	milestone : v0.6 Cleanup,	duration : 23021.0,	issueclosed_at : 1428013865.0,	action : labeled,	user : duh102
+
+what : 2a. feature dev,	when : 1428002987.0,	issuecreated_at : 1427990844.0,	comments : 11,	milestone : v0.6 Cleanup,	duration : 23021.0,	issueclosed_at : 1428013865.0,	action : unlabeled,	user : duh102
+
+what : 3. feature QA,	when : 1428002987.0,	issuecreated_at : 1427990844.0,	comments : 11,	milestone : v0.6 Cleanup,	duration : 23021.0,	issueclosed_at : 1428013865.0,	action : labeled,	user : duh102
+
+what : 2a. feature dev,	when : 1427990844.0,	issuecreated_at : 1427990844.0,	comments : 11,	milestone : v0.6 Cleanup,	duration : 23021.0,	issueclosed_at : 1428013865.0,	action : labeled,	user : duh102
+
+ISSUE 90
+what : 4. feature complete,	when : 1428026300.0,	issuecreated_at : 1427991077.0,	assignee : meneal,	comments : 11,	duration : 34897.0,	issueclosed_at : 1428025974.0,	action : labeled,	user : duh102
+
+what : 3. feature QA,	when : 1428026294.0,	issuecreated_at : 1427991077.0,	assignee : meneal,	comments : 11,	duration : 34897.0,	issueclosed_at : 1428025974.0,	action : unlabeled,	user : duh102
+
+what : 2a. feature dev,	when : 1428025843.0,	issuecreated_at : 1427991077.0,	assignee : meneal,	comments : 11,	duration : 34897.0,	issueclosed_at : 1428025974.0,	action : unlabeled,	user : duh102
+
+what : 3. feature QA,	when : 1428025843.0,	issuecreated_at : 1427991077.0,	assignee : meneal,	comments : 11,	duration : 34897.0,	issueclosed_at : 1428025974.0,	action : labeled,	user : duh102
+
+what : 2a. feature dev,	when : 1427991077.0,	issuecreated_at : 1427991077.0,	assignee : meneal,	comments : 11,	duration : 34897.0,	issueclosed_at : 1428025974.0,	action : labeled,	user : meneal
+
+ISSUE 91
+what : 5. bug,	when : 1428075488.0,	issuecreated_at : 1428075488.0,	assignee : macluo,	comments : 6,	duration : 35024.0,	issueclosed_at : 1428110512.0,	action : labeled,	user : macluo
+
+ISSUE 92
+what : 3. feature QA,	when : 1428119476.0,	issuecreated_at : 1428110892.0,	comments : 0,	duration : 8572.0,	issueclosed_at : 1428119464.0,	action : unlabeled,	user : macluo
+
+what : 4. feature complete,	when : 1428119476.0,	issuecreated_at : 1428110892.0,	comments : 0,	duration : 8572.0,	issueclosed_at : 1428119464.0,	action : labeled,	user : macluo
+
+what : 3. feature QA,	when : 1428110892.0,	issuecreated_at : 1428110892.0,	comments : 0,	duration : 8572.0,	issueclosed_at : 1428119464.0,	action : labeled,	user : macluo
+
+ISSUE 93
+what : 5. bug,	when : 1428325462.0,	issuecreated_at : 1428325462.0,	assignee : macluo,	comments : 1,	duration : 24400.0,	issueclosed_at : 1428349862.0,	action : labeled,	user : macluo
 
