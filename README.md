@@ -116,7 +116,7 @@ This issue is quite interesting.  We want to find out that which period is most 
 We divided the total number of issues monthly, and get an array for each project.
 
 ```  
-Number of issues every month:
+Number of issues every week:
   Project1: [24, 9, 4, 2, 5, 6, 5, 8]
   Project2: [10, 12, 4, 1, 1, 1, 1, 37, 1]
   Project3: [21, 8, 9, 2, 9, 10, 26, 5]
@@ -207,7 +207,7 @@ This feature will show us mean and standard deviation of times spending in each 
 We calculated mean and standard deviation of time spent in each label.
 
 ```  
-Total number of labels:
+Mean and standard deviation of time spent in each label:
   Project1:
           mean:       717715.441667
           standard:   735405.992596
@@ -227,7 +227,7 @@ Total number of labels:
 We counted number of labels with unusually long time, which means 1.5 or 2 standard deviations time compatring to mean value.
 
 ```  
-Total number of labels:
+"Unusually long" time a label:
   Project1: 14
   Project2: 10
   Project3: 29
@@ -241,7 +241,7 @@ This feature will show us mean and standard deviation of number of labels assign
 We calculated mean and standard deviation number of labels assigned to each issue.
 
 ```  
-Total number of labels:
+Mean and standard deviation number of labels assigned to each issue:
   Project1:
           Mean value          84452.1587302
           Standard deviation  173010.600703
@@ -261,6 +261,7 @@ We are interesting in number of milestones. And each milestone usually represent
 We counted the number of times each milestone was used. And we sorted the result incrementally.
 
 ``` 
+Number of times each milestone was used:
  Project1: 
           Num of millstones: 6
           Final release: 6
@@ -290,29 +291,61 @@ We counted the number of times each milestone was used. And we sorted the result
           None 46
 ```
 
-**11. Percentage of issues using labels** [maybe merge with No.9]
+**11. Percentage of issues using labels**
 
 We want to see how many issues used labels.
 
-Result
+#####Result
+We calculated percentage of issues using labels.
+
+```  
+Percentage of issues using labels:
+  Project1: 91.3% in 69 issues
+  Project2: 73.1% in 93 issues
+  Project3: 96.8% in 93 issues
+```
 
 **12. Percentage of issues using milestones**
 
 We want to see how many issues used milestones.
 
-Result
+#####Result
+We calculated percentage of issues using milestones.
+
+```  
+Percentage of issues using milestones:
+  Project1: 83.6% in 69 issues
+  Project2: 82.6% in 93 issues
+  Project3: 52.1% in 93 issues
+```
 
 **13. Percentage of issues using assignees**
 
 We are interested in how many issues used assignees. And if the percentage of issues using assignees is high, which means responsibility distribution is clear.
 
-Result
+#####Result
+We also calculated percentage of issues using milestones.
+
+```  
+Percentage of issues using milestones:
+  Project1: 19.1% in 69 issues
+  Project2: 60.3% in 93 issues
+  Project3: 72.2% in 93 issues
+```
 
 **14. "Unusually small" number of issues handled by one person(<10%)**
 
-Number of issues handles by one person is less than 10% indicates this person is a "passenger". And it means responsibility distribution of this team may be uneven.
+A issue handled by one person means this issue is opened and closed by same person and no other guys write comments below this issue. Number of issues handles by one person is less than 10% indicates this person is a "passenger". And it means responsibility distribution of this team may be uneven.
 
-Result
+#####Result
+We also calculated percentage of issues using milestones.
+
+```  
+Percentage of issues using milestones:
+  Project1: 19.1% in 69 issues
+  Project2: 60.3% in 93 issues
+  Project3: 72.2% in 93 issues
+```
 
 **15. "Unusually large" number of commits handle by one person(>70%)**
 
@@ -322,9 +355,28 @@ Result
 
 **16. Issue participating times of each user**
 
+This feature calculates each user's frequency of attendency.
 
+#####Result
+We calculated issue participating times of each user.
 
-Result
+```  
+Percentage of issues using milestones:
+  Project1: 
+          user 1: 56
+          user 2: 54
+          user 3: 7
+  Project2:
+          user 1: 1
+          user 2: 4
+          user 3: 20
+          user 4: 78
+  Project3:
+          user 1: 187
+          user 2: 101
+          user 3: 29
+          user 4: 6
+```
 
 ##Bad smells detector
 ##Bad smells results
