@@ -11,4 +11,6 @@ Bad smells
 ##Bad smells detector
 ##Bad smells results
 ##Early warning
+Description
+We use the trend of time when issues are created and closed to do early warning 
 ##Early warning results
