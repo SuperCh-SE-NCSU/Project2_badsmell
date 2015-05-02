@@ -10,6 +10,8 @@ We labelled these three projects as Project1, Project2, Project3. And there is n
 So it is hard to tell what these projects are about.
 ##Tables
 Each project will take one column and 16 rows to show 16 features extracted for each of them.
+One thing that you need pay attention to is the numbers related to different features may have different units. For example,
+time has units of days. while number has no units.
 ##Data
 
 ### Features:
