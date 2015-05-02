@@ -78,8 +78,7 @@ The links to the entire data set for this extractor can be found here
 **16. Issue participating times of each user**
 
 
-##Feature detection
-##Feature detection results
+##Feature detection & Results
 ##Bad smells detector
 ##Bad smells results
 ##Early warning
