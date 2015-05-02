@@ -25,8 +25,8 @@ The values in the table represent the number of rows of data collected for that 
 |11|Percentage of issues using labels|
 |12|Percentage of issues using milestones|
 |13|Percentage of issues using assignees|
-|14|"Unusually small" number of issues handled by one person(<10%)|
-|15|"Unusually large" number of commits handle by one person(>70%)|
+|14|"Unusually small" number of issues handled only by one person|
+|15|"Unusually large" number of issues handle by one person|
 |16|Issue participating times of each user|
 
 ##Data samples
@@ -71,9 +71,9 @@ The links to the entire data set for this extractor can be found here
 
 **13. Percentage of issues using assignees**
 
-**14. "Unusually small" number of issues handled by one person(<10%)**
+**14. "Unusually small" number of issues handled only by one person**
 
-**15. "Unusually large" number of commits handle by one person(>70%)**
+**15. "Unusually large" number of issues handle by one person**
 
 **16. Issue participating times of each user**
 
@@ -324,7 +324,7 @@ Percentage of issues using milestones:
 We are interested in how many issues used assignees. And if the percentage of issues using assignees is high, which means responsibility distribution is clear.
 
 #####Result
-We also calculated percentage of issues using milestones.
+We also calculated percentage of issues using assignees.
 
 ```  
 Percentage of issues using milestones:
@@ -333,23 +333,34 @@ Percentage of issues using milestones:
   Project3: 72.2% in 93 issues
 ```
 
-**14. "Unusually small" number of issues handled by one person(<10%)**
+**14. "Unusually small" number of issues handled only by one person**
 
-A issue handled by one person means this issue is opened and closed by same person and no other guys write comments below this issue. Number of issues handles by one person is less than 10% indicates this person is a "passenger". And it means responsibility distribution of this team may be uneven.
+A issue handled only by one person means this issue is opened and closed by same person and no other guys write comments below this issue. We define number of issues handles only by one person less than 10% indicates this person is a "passenger". And it means responsibility distribution of this team may be uneven.
 
 #####Result
 We also calculated percentage of issues using milestones.
 
 ```  
-Percentage of issues using milestones:
-  Project1: 19.1% in 69 issues
-  Project2: 60.3% in 93 issues
-  Project3: 72.2% in 93 issues
+Unusually small" number of issues handled only by one person:
+ Project1: 
+          user 1: 40.6
+          user 2: 54
+          user 3: 7
+  Project2:
+          user 1: 1
+          user 2: 4
+          user 3: 20
+          user 4: 78
+  Project3:
+          user 1: 187
+          user 2: 101
+          user 3: 29
+          user 4: 6
 ```
 
-**15. "Unusually large" number of commits handle by one person(>70%)**
+**15. "Unusually large" number of issues handle by one person**
 
-Number of issues handles by one person is more than 70% indicates this person is a "great dictator". And it also means responsibility distribution of this team may be uneven.
+We define number of issues handles only by one person more than 70% indicates this person is a "great dictator". And it also means responsibility distribution of this team may be uneven.
 
 Result
 
@@ -361,7 +372,7 @@ This feature calculates each user's frequency of attendency.
 We calculated issue participating times of each user.
 
 ```  
-Percentage of issues using milestones:
+Issue participating times of each user:
   Project1: 
           user 1: 56
           user 2: 54
