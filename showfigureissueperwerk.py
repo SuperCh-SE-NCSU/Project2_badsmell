@@ -16,12 +16,13 @@ index = np.arange(n_groups)
 bar_width = 0.35  
  
 opacity = 0.4  
-rects1 = plt.bar(index+bar_width, weekcount, bar_width,alpha=opacity, color='b',label=    'Number of issues')  
+rects1 = plt.bar(index+bar_width, weekcount, bar_width,alpha=opacity, color='b',label='Number of issues')  
     #rects2 = fbadsmell1.bar(index + bar_width, means_women, bar_width,alpha=opacity,col    or='r',label='Women')  
  
 plt.xlabel('Week')  
 plt.ylabel('Number of Issues')  
-plt.title('Number of Issues Every Week')  
+plt.title('Number of Issues Every Week')
+plt.plot(index+bar_width+bar_width/2,numberofissueWeek1,'r-')
 #fbadsmell1.xticks(index + bar_width, ('A', 'B', 'C', 'D', 'E'))  
 #fbadsmell1.ylim(0,40)  
 plt.legend()  
@@ -43,7 +44,8 @@ rects1 = plt.bar(index+bar_width, weekcount, bar_width,alpha=opacity, color='b',
  
 plt.xlabel('Week')  
 plt.ylabel('Number of Issues')  
-plt.title('Number of Issues Every Week')  
+plt.title('Number of Issues Every Week')
+plt.plot(index+bar_width+bar_width/2,numberofissueWeek2,'r-')
 #fbadsmell1.xticks(index + bar_width, ('A', 'B', 'C', 'D', 'E'))  
 #fbadsmell1.ylim(0,40)  
 plt.legend()  
@@ -65,7 +67,8 @@ rects1 = plt.bar(index+bar_width, weekcount, bar_width,alpha=opacity, color='b',
  
 plt.xlabel('Week')  
 plt.ylabel('Number of Issues')  
-plt.title('Number of Issues Every Week')  
+plt.title('Number of Issues Every Week')
+plt.plot(index+bar_width+bar_width/2,numberofissueWeek3,'r-')
 #fbadsmell1.xticks(index + bar_width, ('A', 'B', 'C', 'D', 'E'))  
 #fbadsmell1.ylim(0,40)  
 plt.legend()  
