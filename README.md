@@ -91,23 +91,27 @@ We also want to know how many issues are actually no comments below. This featur
 Result
 
 **3. Number of issues each week**
+This issue is quite interesting.  We want to find out that which period is most likely to create issues, beginning or near the deadline. And we can analyse the results, which will help to optimize the development schedule.
 
 Result
 
 **4. Time interval between the creation of two issues**
+"Time interval between two issues" is also related to last feature. And it is quite possible that the creation of issues is uneven. We can analyse and find out turn points during which the frequency of creating issues changes dramatically.
 
 Result
 
 **5. Total number of labels**
+We want to know the total number of labels each team created. Different number of labels reflect different kinds of situations and different levels of priorities each team will set.
 
 Result
 
 **6. Number of times each label was used**
+We can figure out which kind of label was used a lot of times, and which kind of label was seldom used. And the results will reflect whether the quantity and the setting of labels are reasonable or not.
 
 Result
 
 **7. Mean and standard deviation of times spent in each label**
-
+This feature will show us time differences  spending in each label.
 Result
 
 **8. "Unusually long" time a label**
