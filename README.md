@@ -2,16 +2,8 @@
 Bad smells 
 
 ##Collection
-We selected three projects (our project is one of them), and extracted all the issues from these projects. <br/>
-1. Projects with more issues are preferred.<br/>
-2. Projects with more labels are proferred.
 ##Anonymization
-We labelled these three projects as Project1, Project2, Project3. And there is no clue telling about the the content of these projects in the features we extracted.<br/>
-So it is hard to tell what these projects are about.
 ##Tables
-Each project will take one column and 16 rows to show 16 features extracted for each of them.
-One thing that you need pay attention to is the numbers related to different features may have different units. For example,
-time has units of days. while number has no units.
 ##Data
 
 ### Features:
@@ -135,36 +127,51 @@ Result
 
 Result
 
-**9. Mean and standard deviation number of labels assigned to each issue**<br/>
+**9. Mean and standard deviation number of labels assigned to each issue**
+
 This feature will show us mean and standard deviation of number of labels assigned to each issue. And in this feature, we consider label and issue together, we want to find out the reasonable of the setting of labels. Also, we want to find out whether team members used to add corresponding labels to issues or not.
 
 Result
 
-**10. Total number of milestones**<br/>
+**10. Total number of milestones**
+
+We are interesting in number of milestones. And each milestone usually represents one stage in development cycle. We can analyse which software development method each team used.
 
 Result
 
-**11. Percentage of issues using labels**<br/>
+**11. Percentage of issues using labels** [maybe merge with No.9]
+
+We want to see how many issues used labels.
 
 Result
 
-**12. Percentage of issues using milestones**<br/>
+**12. Percentage of issues using milestones**
+
+We want to see how many issues used milestones.
 
 Result
 
-**13. Percentage of issues using assignees**<br/>
+**13. Percentage of issues using assignees**
+
+We are interested in how many issues used assignees. And if the percentage of issues using assignees is high, which means responsibility distribution is clear.
 
 Result
 
-**14. "Unusually small" number of issues handled by one person(<10%)**<br/>
+**14. "Unusually small" number of issues handled by one person(<10%)**
+
+Number of issues handles by one person is less than 10% indicates this person is a "passenger". And it means responsibility distribution of this team may be uneven.
 
 Result
 
-**15. "Unusually large" number of commits handle by one person(>70%)**<br/>
+**15. "Unusually large" number of commits handle by one person(>70%)**
+
+Number of issues handles by one person is more than 70% indicates this person is a "great dictator". And it also means responsibility distribution of this team may be uneven.
 
 Result
 
-**16. Issue participating times of each user**<br/>
+**16. Issue participating times of each user**
+
+
 
 Result
 
