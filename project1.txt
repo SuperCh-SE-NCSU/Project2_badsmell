@@ -1,0 +1,73 @@
+feature 1
+Num of issues: 69
+-----------------------------
+featue 2
+Num of labels: 10
+-----------------------------
+feature 3
+Num of millstones: 6
+None 11
+Final release 6
+Beta Launch  15
+V1 19
+V2 8
+System test and Report 8
+-----------------------------
+feature 4
+Number of times each label was used
+develop 15
+question 5
+invalid 1
+Solved 36
+duplicate 3
+design 21
+help wanted 15
+test 5
+bug 14
+enhancement 5
+-----------------------------
+feature 5
+Number of issues without comments: 5
+-----------------------------
+feature 6
+Number of issues every month: [24, 9, 4, 2, 5, 6, 5, 8]
+-----------------------------
+feature 7
+mean and standard deviation
+mean:  717715.441667
+standard:  735405.992596
+-----------------------------
+feature 8
+Number of issues with unusually long time: 14
+-----------------------------
+feature 9
+issues not labeled: 6
+-----------------------------
+feature 10
+Percentage of issues using milestones
+0.835820895522
+-----------------------------
+feature 11
+Percentage of issues using assignees
+participants
+{'Winbobob': 9, 'dragonfly90': 3, 'None': 51}
+Percentage of issues using assignees: 0.190476190476
+-----------------------------
+feature 12, 13
+"Unusually small" number of issues handled by one person(<10%)
+"Unusually large" number of issues handled by one person(>70%)
+dragonfly90 28 0.405797101449
+Winbobob 16 0.231884057971
+alannsp 1 0.0144927536232
+-----------------------------
+feature 14, 15
+Time interval between the creation of two issues
+Number of interval:  63
+Mean value of interval time 84452.1587302
+Standard deviation of interval time 173010.600703
+-----------------------------
+feature 16
+Issue participating times of each user
+dragonfly90 54
+Winbobob 56
+alannsp 7

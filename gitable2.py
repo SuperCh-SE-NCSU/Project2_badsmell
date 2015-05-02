@@ -44,7 +44,7 @@ def secs(d0):
     return delta.total_seconds()
 
 def dump1(u,issues):
-    token = "ca1cd448933062af92b7f3de85089a3ba546372e" # <===
+    token = "" # <===
     request = urllib2.Request(u, headers={"Authorization" : "token "+token})
     v = urllib2.urlopen(request).read()
     w = json.loads(v)
@@ -101,7 +101,9 @@ def launchDump():
     f=open("Group6.txt","w")
     #issues2=dict()
     while(True):
-        doNext = dump('https://api.github.com/repos/SuperCh-SE-NCSU/ProjectScraping/issues/events?page=' + str(page), issues)
+        #doNext = dump('https://api.github.com/repos/SuperCh-SE-NCSU/ProjectScraping/issues/events?page=' + str(page), issues)
+        #doNext=dump('https://api.github.com/repos/CSC510/SQLvsNOSQL/issues/events?page=' + str(page),issues)
+        doNext=dump('https://api.github.com/repos/CSC510-2015-Axitron/maze/issues/events?page=' + str(page), issues)
         #print("page" + str(page))
         page += 1
         if not doNext : break
@@ -167,45 +169,14 @@ def launchDump():
             print('')
           
     numoflabels=len(labelnum)
-    print('feature 1')
-    print('Num of issues:',numofIssues)
-    print('-----------------------------')
-    print('featue 2')
-    print('Num of labels:',numoflabels)
-    print('-----------------------------')
-    print('feature 3')
-    print('Num of millstones:',len(milestonenum))
-    for key, elem in milestonenum.items():
-        print(key, elem)
-    print('-----------------------------')
-    print('feature 4')
-    print('Number of times each label was used')
-    for key, elem in labelnum.items():
-        print(key, elem)
-    print('-----------------------------')
-    print('feature 10')
-    print('Percentage of issues using milestones')
-    sumMile=0
-    noneMile=0
-    for key, elem in milestonenum.items():
-        if key=='None':
-            noneMile=elem
-        else:
-            sumMile=sumMile+elem
-    print(sumMile*1.0/(sumMile+noneMile))
-    print('-----------------------------')
-    print('feature 13, 14')
+ 
+    print('feature 12, 13')
     print('"Unusually small" number of issues handled by one person(<10%)')
     print('"Unusually large" number of issues handled by one person(>70%)')
     for key, value in userHandleWholeIssue.items():
         print(key, value, value*1.0/numofIssues)
     print('-----------------------------')
-    print('feature 17')
-    print('Issue participating times of each user')
-    for key, value in userParticipateInIssue.items():
-        print(key, value)
-    print('-----------------------------')
-    print('feature 15, 16')
+    print('feature 14, 15')
     print('Time interval between the creation of two issues')
     intervalSum=0
     for interval in timeInterval:
@@ -219,6 +190,12 @@ def launchDump():
     print ('Number of interval: ',len(timeInterval))
     print ('Mean value of interval time', mean)
     print ('Standard deviation of interval time', stdev)
+    print('-----------------------------')
+    print('feature 16')
+    print('Issue participating times of each user')
+    for key, value in userParticipateInIssue.items():
+        print(key, value)
+   
     f.close()
      
     
