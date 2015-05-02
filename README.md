@@ -79,6 +79,73 @@ The links to the entire data set for this extractor can be found here
 
 
 ##Feature detection & Results
+
+**1. Total number of issues**
+This feature is quite straightforward. We decide to find the total number of issues of each team. And this feature can reflect briefly how team members communicate during the development period.
+
+Result
+
+**2. Number of issues without comments**
+We also want to know how many issues are actually no comments below. This feature goes deeper comparing to the first feature. And according to this feature, we can find out which issue actually makes the difference.
+
+Result
+
+**3. Number of issues each week**
+
+Result
+
+**4. Time interval between the creation of two issues**
+
+Result
+
+**5. Total number of labels**
+
+Result
+
+**6. Number of times each label was used**
+
+Result
+
+**7. Mean and standard deviation of times spent in each label**
+
+Result
+
+**8. "Unusually long" time a label**
+
+Result
+
+**9. Mean and standard deviation number of labels assigned to each issue**
+
+Result
+
+**10. Total number of milestones**
+
+Result
+
+**11. Percentage of issues using labels**
+
+Result
+
+**12. Percentage of issues using milestones**
+
+Result
+
+**13. Percentage of issues using assignees**
+
+Result
+
+**14. "Unusually small" number of issues handled by one person(<10%)**
+
+Result
+
+**15. "Unusually large" number of commits handle by one person(>70%)**
+
+Result
+
+**16. Issue participating times of each user**
+
+Result
+
 ##Bad smells detector
 ##Bad smells results
 ##Early warning
