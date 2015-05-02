@@ -84,7 +84,15 @@ The links to the entire data set for this extractor can be found here
 
 This feature is quite straightforward. We decide to find the total number of issues of each team. And this feature can reflect briefly how team members communicate during the development period.
 
-Result
+#####Result
+We counted total number of issues of each project. And here is the result.
+
+```  
+Number of issues:
+  Project1: 69
+  Project2: 93
+  Project3: 93
+```
 
 **2. Number of issues without comments**
 
