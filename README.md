@@ -80,73 +80,75 @@ The links to the entire data set for this extractor can be found here
 
 ##Feature detection & Results
 
-**1. Total number of issues**
+**1. Total number of issues**<br/>
 This feature is quite straightforward. We decide to find the total number of issues of each team. And this feature can reflect briefly how team members communicate during the development period.
 
 Result
 
-**2. Number of issues without comments**
+**2. Number of issues without comments**<br/>
 We also want to know how many issues are actually no comments below. This feature goes deeper comparing to the first feature. And according to this feature, we can find out which issue actually makes the difference.
 
 Result
 
-**3. Number of issues each week**
+**3. Number of issues each week**<br/>
 This issue is quite interesting.  We want to find out that which period is most likely to create issues, beginning or near the deadline. And we can analyse the results, which will help to optimize the development schedule.
 
 Result
 
-**4. Time interval between the creation of two issues**
+**4. Time interval between the creation of two issues**<br/>
 "Time interval between two issues" is also related to last feature. And it is quite possible that the creation of issues is uneven. We can analyse and find out turn points during which the frequency of creating issues changes dramatically.
 
 Result
 
-**5. Total number of labels**
+**5. Total number of labels**<br/>
 We want to know the total number of labels each team created. Different number of labels reflect different kinds of situations and different levels of priorities each team will set.
 
 Result
 
-**6. Number of times each label was used**
+**6. Number of times each label was used**<br/>
 We can figure out which kind of label was used a lot of times, and which kind of label was seldom used. And the results will reflect whether the quantity and the setting of labels are reasonable or not.
 
 Result
 
-**7. Mean and standard deviation of times spent in each label**
-This feature will show us time differences  spending in each label.
+**7. Mean and standard deviation of times spent in each label**<br/>
+This feature will show us mean and standard deviation of times spending in each label. And it will help us to analyse in depth. 
 Result
 
-**8. "Unusually long" time a label**
-
-Result
-
-**9. Mean and standard deviation number of labels assigned to each issue**
+**8. "Unusually long" time a label**<br/>
+"Unusually long" time means 1.5 or 2 standard deviations time in a label. In normal distribution, 1.5 or 2 standard deviations means the data point is quite far away from the mean value. In this case, unusually long time a label may indicate team do little stuff during this time period.
 
 Result
 
-**10. Total number of milestones**
+**9. Mean and standard deviation number of labels assigned to each issue**<br/>
+This feature will show us mean and standard deviation of number of labels assigned to each issue. And in this feature, we consider label and issue together, we want to find out the reasonable of the setting of labels. Also, we want to find out whether team members used to add corresponding labels to issues or not.
 
 Result
 
-**11. Percentage of issues using labels**
+**10. Total number of milestones**<br/>
 
 Result
 
-**12. Percentage of issues using milestones**
+**11. Percentage of issues using labels**<br/>
 
 Result
 
-**13. Percentage of issues using assignees**
+**12. Percentage of issues using milestones**<br/>
 
 Result
 
-**14. "Unusually small" number of issues handled by one person(<10%)**
+**13. Percentage of issues using assignees**<br/>
 
 Result
 
-**15. "Unusually large" number of commits handle by one person(>70%)**
+**14. "Unusually small" number of issues handled by one person(<10%)**<br/>
 
 Result
 
-**16. Issue participating times of each user**
+**15. "Unusually large" number of commits handle by one person(>70%)**<br/>
+
+Result
+
+**16. Issue participating times of each user**<br/>
 
 Result
 
