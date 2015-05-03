@@ -262,7 +262,7 @@ We counted the number of times each milestone was used.
           V2 8
           System test and Report 8
  ```
-![Project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project2_milestones.png)
+![Project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project2_milestone.png)
  ```
   Project2:
           None 12
@@ -271,7 +271,7 @@ We counted the number of times each milestone was used.
           Basic Service and Test 23
           Large Scale Test 13
 ```
-![Project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project3_milestones.png)
+![Project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project3_milestone.png)
 ```
   Project3:
           None 46
