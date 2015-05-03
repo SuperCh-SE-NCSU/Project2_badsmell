@@ -18,15 +18,14 @@ The values in the table represent the number of rows of data collected for that 
 |4|Total number of labels|
 |5|Number of times each label was used|
 |6|Mean and standard deviation of time spent in each issue|
-|7|"Unusually long" time a label|
+|7|Number of issues with "unusually long" time|
 |8|Mean and standard deviation number of labels assigned to each issue|
 |9|Number of times each milestone was used|
 |10|Percentage of issues using labels|
 |11|Percentage of issues using milestones|
 |12|Percentage of issues using assignees|
-|13|"Unusually small" number of issues handled only by one person|
-|14|"Unusually large" number of issues handle by one person|
-|15|Issue participating times of each user|
+|13|"Unusually small or large" number of commits made by one person|
+|14|Issue participating times of each user|
 
 ##Data samples
 
@@ -44,7 +43,7 @@ The values in the table represent the number of rows of data collected for that 
 
 **6. Mean and standard deviation of time spent in each issue**
 
-**7. "Unusually long" time a label**
+**7. Number of issues with "unusually long" time**
 
 **8. Mean and standard deviation number of labels assigned to each issue**
 
@@ -56,11 +55,9 @@ The values in the table represent the number of rows of data collected for that 
 
 **12. Percentage of issues using assignees**
 
-**13. "Unusually small" number of issues handled only by one person**
+**13. "Unusually small or large" number of commits made by one person**
 
-**14. "Unusually large" number of issues handle by one person**
-
-**15. Issue participating times of each user**
+**14. Issue participating times of each user**
 
 ## Feature detection & Result
 
@@ -216,7 +213,7 @@ Mean and standard deviation of time spent in each issue:
           standard:   458374.563866
 ```
 
-####7. "Unusually long" time a label
+####7. Number of issues with "unusually long" time
 
 "Unusually long" time means 1.5 or 2 standard deviations time in a label. In normal distribution, 1.5 or 2 standard deviations means the data point is quite far away from the mean value. In this case, unusually long time a label may indicate team do little stuff during this time period.
 
@@ -226,7 +223,7 @@ Mean and standard deviation of time spent in each issue:
 We counted number of labels with unusually long time, which means 1.5 or 2 standard deviations time compatring to mean value.
 
 ```  
-"Unusually long" time a label:
+Number of issues with "unusually long" time:
   Project1: 14
   Project2: 10
   Project3: 29
@@ -342,42 +339,34 @@ Percentage of issues using milestones:
   Project3: 72.2% in 93 issues
 ```
 
-####13. "Unusually small" number of issues handled only by one person
+####13. "Unusually small or large" number of commits made by one person
 
-A issue handled only by one person means this issue is opened and closed by same person and no other guys write comments below this issue. We define number of issues handles only by one person less than 10% indicates this person is a "passenger". And it means responsibility distribution of this team may be uneven.
+We define number of commits made by one person less than certain percentage of total commits indicates this person is a "passenger". And the number of commits made by one person more than certain percentage of total commits indicates this person is a "great dictator".The result can also indicate whether responsibility distribution of this team is uneven or not.
 
 <b>Scripts are found here</b>
 
 #####Result
-We also calculated percentage of issues using milestones.
+We count the number of commits each user made, and calaulate the percentage.
 
 ```  
-Unusually small" number of issues handled only by one person:
+Unusually small or large" number of issues handled only by one person:
  Project1: 
-          user 1: 40.6
-          user 2: 54
-          user 3: 7
+          user 1: 193	42.4%
+          user 2: 180	39.5%
+          user 3: 82	18.1%
   Project2:
-          user 1: 1
-          user 2: 4
-          user 3: 20
-          user 4: 78
+          user 1: 48	33.3%
+          user 2: 48	33.3%
+          user 3: 26	18.1%
+          user 4: 22	15.3%
   Project3:
-          user 1: 187
-          user 2: 101
-          user 3: 29
-          user 4: 6
+          user 1: 151	39.9%
+          user 2: 127	33.6%
+          user 3: 62	16.4%
+          user 4: 38	10.1%
 ```
 
-####14. "Unusually large" number of issues handle by one person
-
-We define number of issues handles only by one person more than 70% indicates this person is a "great dictator". And it also means responsibility distribution of this team may be uneven.
-
-<b>Scripts are found here</b>
-
-Result
-
-####15. Issue participating times of each user
+####14. Issue participating times of each user
 
 This feature calculates each user's frequency of attendency.
 
@@ -735,11 +724,43 @@ Issue number is normal in this week.
 ```
 
 ###Issue Assignee Detector
-According to the ```Issue Without Comment Detector```, we found that there are many issues without having comments below. So if issue creator assigned the issue to himself/herself or other team members, we think this situation will be better. Since assignee means who this issue is assigned to, and he/she have to handle it. If there are not enough assignees assigned to issues, another bad smell will occur. We named it [weeklyIssueDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/bad_smell_detector/weeklyIssueDetector.py) Below are pseudocode of algorithm we use to detect bad smells.
+According to the ```Issue Without Comment Detector```, we found that there are many issues without having comments below. So if issue creator assigned the issue to himself/herself or other team members, we think this situation will be better. Since assignee means who this issue is assigned to, and he/she have to handle it. If one team member is assigned to too many or too few issues, another bad smell will occur. We named it [issueAssigneeDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/57672e3292594dc22788de81a6f06d887bbca0fb/bad_smell_detector/issueAssigneeDetector.py) Below are pseudocode of algorithm we use to detect bad smells.
+```
+if userName == 'None': 
+	These are issues not assigned to any team member.
+if userName != 'None' and eachUserAssignTimes > 1.5*assignTotalTimes/userNum:
+ 	Badsmell: This user assigned too many times.
+if userName != 'None' and eachUserAssignTimes < 0.5*assignTotalTimes/userNum:
+ 	Badsmell: This user assigned too few times.
+otherwise:
+ 	The assigned times of this user is normal.
+``` 	
+ 	
+####Result
 
-
-
-
+Project 1
+```
+('assignTotalTimes:', 63)
+Badsmell: user1 assigned too few times.
+Badsmell: user2 assigned too few times.
+Badsmell: user3 assigned too few times.
+```
+Project 2
+```
+('assignTotalTimes:', 68)
+Badsmell: user1 assigned too few times.
+The assigned times of user2 is normal.
+The assigned times of user3 is normal.
+The assigned times of user4 is normal.
+```
+Project 3
+```
+('assignTotalTimes:', 90)
+Badsmell: user1 assigned too few times.
+The assigned times of user2 is normal.
+The assigned times of user3 is normal.
+Badsmell: user4 assigned too few times.
+```
 
 ##Early warning
 
