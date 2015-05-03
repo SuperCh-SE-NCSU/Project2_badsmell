@@ -143,7 +143,6 @@ We can figure out which kind of label was used a lot of times, and which kind of
 #####Result
 We also counted the number of times each label was used.
 
-![Project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project1_labels.png)
 ```  
   Project1: 
           develop 15
@@ -157,7 +156,7 @@ We also counted the number of times each label was used.
           bug 14
           enhancement 5
 ```
-![Project2](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project2_labels.png)
+![Project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project1_labels.png)
 ```
   Project2:
           Test Problem 23
@@ -168,7 +167,7 @@ We also counted the number of times each label was used.
           bug 6
           Design Problem 12
 ```
-![Project3](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project3_labels.png)
+![Project2](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project2_labels.png)
 ```
   Project3:
           feature dev 27
@@ -193,6 +192,7 @@ We also counted the number of times each label was used.
           bug 5
           resources 1
 ```
+![Project3](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project3_labels.png)
 
 ####6. Mean and standard deviation of time spent in each label
 
@@ -263,7 +263,6 @@ We are interesting in number of milestones. And each milestone usually represent
 #####Result
 We counted the number of times each milestone was used.
 
-![Project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project1_milestones.png)
 ``` 
  Project1: 
           None 11
@@ -273,7 +272,7 @@ We counted the number of times each milestone was used.
           V2 8
           System test and Report 8
  ```
-![Project2](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project2_milestone.png)
+![Project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project1_milestones.png)
  ```
   Project2:
           None 12
@@ -282,7 +281,7 @@ We counted the number of times each milestone was used.
           Basic Service and Test 23
           Large Scale Test 13
 ```
-![Project3](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project3_milestone.png)
+![Project2](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project2_milestone.png)
 ```
   Project3:
           None 46
@@ -293,6 +292,7 @@ We counted the number of times each milestone was used.
           v0.2 5
           v0.3 6
 ```
+![Project3](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project3_milestone.png)
 
 ####10. Percentage of issues using labels
 
