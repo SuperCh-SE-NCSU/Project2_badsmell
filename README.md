@@ -494,7 +494,7 @@ Project 3
 ...
 ```
 
-###Issue Time Interval Detector [need Liang's data]
+##Issue Without Comment Detector
 During the development cycle, team members will post some issues in order to communicate other members. However, the time interval between two issue creation may vary dramatically. This detector can analyse time interval to decide whether it is too long or too short. The result can reflect the process of each team. And we named it [issueTimeIntervalDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/bad_smell_detector/issueTimeIntervalDetector.py)
 
 ####Result
