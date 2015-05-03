@@ -17,16 +17,15 @@ The values in the table represent the number of rows of data collected for that 
 |3|Number of issues each week|
 |4|Total number of labels|
 |5|Number of times each label was used|
-|6|Mean and standard deviation of time spent in each label|
-|7|"Unusually long" time a label|
+|6|Mean and standard deviation of time spent in each issue|
+|7|Number of issues with "unusually long" time|
 |8|Mean and standard deviation number of labels assigned to each issue|
 |9|Number of times each milestone was used|
 |10|Percentage of issues using labels|
 |11|Percentage of issues using milestones|
 |12|Percentage of issues using assignees|
-|13|"Unusually small" number of issues handled only by one person|
-|14|"Unusually large" number of issues handle by one person|
-|15|Issue participating times of each user|
+|13|"Unusually small or large" number of commits made by one person|
+|14|Issue participating times of each user|
 
 ##Data samples
 
@@ -42,9 +41,9 @@ The values in the table represent the number of rows of data collected for that 
 
 **5. Number of times each label was used**
 
-**6. Mean and standard deviation of time spent in each label**
+**6. Mean and standard deviation of time spent in each issue**
 
-**7. "Unusually long" time a label**
+**7. Number of issues with "unusually long" time**
 
 **8. Mean and standard deviation number of labels assigned to each issue**
 
@@ -56,11 +55,9 @@ The values in the table represent the number of rows of data collected for that 
 
 **12. Percentage of issues using assignees**
 
-**13. "Unusually small" number of issues handled only by one person**
+**13. "Unusually small or large" number of commits made by one person**
 
-**14. "Unusually large" number of issues handle by one person**
-
-**15. Issue participating times of each user**
+**14. Issue participating times of each user**
 
 ## Feature detection & Result
 
@@ -194,17 +191,17 @@ We also counted the number of times each label was used.
 ```
 ![Project3](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project3_labels.png)
 
-####6. Mean and standard deviation of time spent in each label
+####6. Mean and standard deviation of time spent in each issue
 
-This feature will show us mean and standard deviation of times spending in each label. And it will help us to analyse in depth. 
+This feature will show us mean and standard deviation of times spending in each issue. And it will help us to analyse in depth. 
 
 <b>Scripts are found here</b>
 
 #####Result
-We calculated mean and standard deviation of time spent in each label.
+We calculated mean and standard deviation of time spent in each issue.
 
 ```  
-Mean and standard deviation of time spent in each label:
+Mean and standard deviation of time spent in each issue:
   Project1:
           mean:       717715.441667
           standard:   735405.992596
@@ -216,7 +213,7 @@ Mean and standard deviation of time spent in each label:
           standard:   458374.563866
 ```
 
-####7. "Unusually long" time a label
+####7. Number of issues with "unusually long" time
 
 "Unusually long" time means 1.5 or 2 standard deviations time in a label. In normal distribution, 1.5 or 2 standard deviations means the data point is quite far away from the mean value. In this case, unusually long time a label may indicate team do little stuff during this time period.
 
@@ -226,7 +223,7 @@ Mean and standard deviation of time spent in each label:
 We counted number of labels with unusually long time, which means 1.5 or 2 standard deviations time compatring to mean value.
 
 ```  
-"Unusually long" time a label:
+Number of issues with "unusually long" time:
   Project1: 14
   Project2: 10
   Project3: 29
@@ -342,42 +339,34 @@ Percentage of issues using milestones:
   Project3: 72.2% in 93 issues
 ```
 
-####13. "Unusually small" number of issues handled only by one person
+####13. "Unusually small or large" number of commits made by one person
 
-A issue handled only by one person means this issue is opened and closed by same person and no other guys write comments below this issue. We define number of issues handles only by one person less than 10% indicates this person is a "passenger". And it means responsibility distribution of this team may be uneven.
+We define number of commits made by one person less than certain percentage of total commits indicates this person is a "passenger". And the number of commits made by one person more than certain percentage of total commits indicates this person is a "great dictator".The result can also indicate whether responsibility distribution of this team is uneven or not.
 
 <b>Scripts are found here</b>
 
 #####Result
-We also calculated percentage of issues using milestones.
+We count the number of commits each user made, and calaulate the percentage.
 
 ```  
-Unusually small" number of issues handled only by one person:
+Unusually small or large" number of issues handled only by one person:
  Project1: 
-          user 1: 40.6
-          user 2: 54
-          user 3: 7
+          user 1: 193	42.4%
+          user 2: 180	39.5%
+          user 3: 82	18.1%
   Project2:
-          user 1: 1
-          user 2: 4
-          user 3: 20
-          user 4: 78
+          user 1: 48	33.3%
+          user 2: 48	33.3%
+          user 3: 26	18.1%
+          user 4: 22	15.3%
   Project3:
-          user 1: 187
-          user 2: 101
-          user 3: 29
-          user 4: 6
+          user 1: 151	39.9%
+          user 2: 127	33.6%
+          user 3: 62	16.4%
+          user 4: 38	10.1%
 ```
 
-####14. "Unusually large" number of issues handle by one person
-
-We define number of issues handles only by one person more than 70% indicates this person is a "great dictator". And it also means responsibility distribution of this team may be uneven.
-
-<b>Scripts are found here</b>
-
-Result
-
-####15. Issue participating times of each user
+####14. Issue participating times of each user
 
 This feature calculates each user's frequency of attendency.
 
@@ -406,17 +395,17 @@ Issue participating times of each user:
 
 ## Bad smells detector & Result 
 
-###Issue Time Interval Detector [need Liang's data]
-During the development cycle, team members will post some issues in order to communicate other members. However, the time interval between two issue creation may vary dramatically. This detector can analyse time interval to decide whether it is too long or too short. The result can reflect the process of each team. And we named it [issueTimeIntervalDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/bad_smell_detector/issueTimeIntervalDetector.py) Below are pseudocode of algorithm we use to detect bad smells.
+###Issue Time Duration Detector
+During the development cycle, team members will post some issues in order to communicate other members. However, the time duration between two issue creation may vary dramatically. This detector can analyse time duration to decide whether it is too long or too short. The result can reflect the process of each team. And we named it [issueTimeDurationDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/bad_smell_detector/issueTimeDurationDetector.py) Below are pseudocode of algorithm we use to detect bad smells.
 ```
-if issueTimeInterval > mean + 2*std_dev:
-    Badsmell: Too long time interval between this issue and the last.
+if issueTimeDuration > mean + 2*std_dev:
+    Badsmell: Too long time duration of this issuet.
 
-if issueTimeInterval < mean - 2*std_dev:
-    Badsmell: Too little time interval between this issue and the last.
+if issueTimeDuration < mean - 2*std_dev:
+    Badsmell: Too little time duration of this issue.
 
 Otherwise:
-    Issue interval time is normal this time
+    This issue duration time is normal.
 ```
 
 ####Result
@@ -424,74 +413,105 @@ Because the result are too long, we eliminate some normal results and leave some
 
 Project 1
 ```
-('mean:', 72013.56451612903)
-('std_dev:', 209839.24439541661)
+('Time duration:', [2328305.0, 1012209.0, 2087830.0, 82098.0, 2072034.0, 3018518.0, 2007166.0, 5370.0, 1555.0, 795809.0, 794524.0, 878029.0, 1997961.0, 1997849.0, 190791.0, 1997189.0, 1995992.0, 1995942.0, 874651.0, 520847.0, 438020.0, 2937.0, 410599.0, 244774.0, 167932.0, 69812.0, 65762.0, 274090.0, 1313615.0, 1307063.0, 46371.0, 1285860.0, 1224321.0, 1806161.0, 1709259.0, 1655536.0, 794363.0, 454158.0, 1092175.0, 1037100.0, 836874.0, 835102.0, 965432.0, 661319.0, 117642.0, 237020.0, 236807.0, 21101.0, 266086.0, 266015.0, 394622.0, 440278.0, 104484.0, 371162.0, 268173.0, 171637.0, 178076.0, 166252.0, 5722.0, 122784.0, 103773.0, 95909.0, 95869.0])
+('mean:', 778043.11111111112)
+('std_dev:', 756411.46628143825)
+----------------------------------------------
+0. Badsmell: Too long time duration of this issue.
+1. This issue duration time is normal.
+2. This issue duration time is normal.
+3. This issue duration time is normal.
+4. This issue duration time is normal.
+5. Badsmell: Too long time duration of this issue.
+6. This issue duration time is normal.
+7. This issue duration time is normal.
+8. This issue duration time is normal.
 ...
-38. Issue interval time is normal this time
-39. Issue interval time is normal this time
-40. Issue interval time is normal this time
-41. Badsmell: Too long time interval between this issue and the last.
-42. Badsmell: Too little time interval between this issue and the last.
-43. Badsmell: Too long time interval between this issue and the last.
-44. Issue interval time is normal this time
-45. Issue interval time is normal this time
-46. Issue interval time is normal this time
-47. Issue interval time is normal this time
-48. Issue interval time is normal this time
-...
+58. This issue duration time is normal.
+59. This issue duration time is normal.
+60. This issue duration time is normal.
+61. This issue duration time is normal.
+62. This issue duration time is normal.
 ```
 Project 2
 ```
-('mean:', 90169.373134328358)
-('std_dev:', 255257.2690866554)
+('Time duration:', [452566.0, 2117.0, 118312.0, 692389.0, 1443489.0, 1340439.0, 1339892.0, 4900.0, 330655.0, 1240.0, 261292.0, 3998953.0, 3811513.0, 195055.0, 947929.0, 220160.0, 847199.0, 57.0, 727599.0, 260.0, 656970.0, 609779.0, 3375203.0, 572373.0, 563915.0, 3365954.0, 2665954.0, 1289566.0, 235200.0, 44567.0, 300288.0, 12363.0, 148989.0, 148929.0, 148878.0, 148871.0, 148785.0, 178366.0, 141561.0, 169665.0, 42856.0, 106163.0, 94340.0, 176315.0, 67353.0, 97188.0, 852.0, 14143.0, 67240.0, 1008703.0, 65783.0, 65545.0, 62044.0, 61913.0, 65097.0, 63912.0, 63092.0, 1005495.0, 59255.0, 59512.0, 58368.0, 1000300.0, 5297.0, 3737.0, 22948.0, 965320.0, 442454.0, 2229.0])
+('mean:', 550141.8529411765)
+('std_dev:', 909676.13128271012)
+----------------------------------------------
+0. This issue duration time is normal.
+1. This issue duration time is normal.
+2. This issue duration time is normal.
+3. This issue duration time is normal.
+4. This issue duration time is normal.
+5. This issue duration time is normal.
+6. This issue duration time is normal.
+7. This issue duration time is normal.
+8. This issue duration time is normal.
+9. This issue duration time is normal.
+10. This issue duration time is normal.
+11. Badsmell: Too long time duration of this issue.
+12. Badsmell: Too long time duration of this issue.
+13. This issue duration time is normal.
+14. This issue duration time is normal.
+15. This issue duration time is normal.
+16. This issue duration time is normal.
+17. This issue duration time is normal.
+18. This issue duration time is normal.
+19. This issue duration time is normal.
+20. This issue duration time is normal.
+21. This issue duration time is normal.
+22. Badsmell: Too long time duration of this issue.
+23. This issue duration time is normal.
+24. This issue duration time is normal.
+25. Badsmell: Too long time duration of this issue.
+26. Badsmell: Too long time duration of this issue.
+27. This issue duration time is normal.
+28. This issue duration time is normal.
+29. This issue duration time is normal.
+30. This issue duration time is normal.
+31. This issue duration time is normal.
+32. This issue duration time is normal.
 ...
-20. Issue interval time is normal this time
-21. Issue interval time is normal this time
-22. Issue interval time is normal this time
-23. Issue interval time is normal this time
-24. Issue interval time is normal this time
-25. Badsmell: Too long time interval between this issue and the last.
-26. Badsmell: Too long time interval between this issue and the last.
-27. Issue interval time is normal this time
-28. Issue interval time is normal this time
-29. Issue interval time is normal this time
-30. Issue interval time is normal this time
-...
-63. Issue interval time is normal this time
-64. Issue interval time is normal this time
-65. Issue interval time is normal this time
-66. Badsmell: Too long time interval between this issue and the last.
-...
+65. This issue duration time is normal.
+66. This issue duration time is normal.
+67. This issue duration time is normal.
 ```
 Project 3
 ```
-('mean:', 53007.370786516854)
-('std_dev:', 197722.12811823591)
+('Time duration:', [8903.0, 190701.0, 848449.0, 130018.0, 779742.0, 1332352.0, 654797.0, 779672.0, 697731.0, 364093.0, 83564.0, 613278.0, 2701.0, 57152.0, 57295.0, 238986.0, 2675.0, 40356.0, 391407.0, 720239.0, 948927.0, 1040294.0, 678806.0, 5705.0, 816090.0, 760622.0, 31395.0, 269668.0, 1719740.0, 351366.0, 2530579.0, 353674.0, 1063466.0, 1181458.0, 1375119.0, 1022531.0, 68778.0, 1099563.0, 761104.0, 132.0, 75056.0, 654885.0, 177690.0, 75.0, 1125976.0, 368300.0, 139766.0, 300924.0, 689812.0, 209757.0, 382835.0, 26790.0, 7327.0, 148024.0, 344144.0, 344055.0, 1431.0, 341477.0, 364028.0, 240208.0, 174089.0, 68333.0, 489217.0, 3372.0, 71.0, 48271.0, 101548.0, 12527.0, 2434.0, 19107.0, 15092.0, 99584.0, 23678.0, 532484.0, 1506.0, 1075.0, 54660.0, 166414.0, 34153.0, 7514.0, 10.0, 160.0, 45.0, 15383.0, 151888.0, 23021.0, 34897.0, 35024.0, 8572.0, 24400.0])
+('mean:', 357380.18888888886)
+('std_dev:', 458485.98025573732)
+----------------------------------------------
+0. This issue duration time is normal.
+1. This issue duration time is normal.
+2. This issue duration time is normal.
+3. This issue duration time is normal.
+4. This issue duration time is normal.
+5. Badsmell: Too long time duration of this issue.
+6. This issue duration time is normal.
+7. This issue duration time is normal.
+8. This issue duration time is normal.
 ...
-15. Issue interval time is normal this time
-16. Issue interval time is normal this time
-17. Issue interval time is normal this time
-18. Issue interval time is normal this time
-19. Issue interval time is normal this time
-20. Badsmell: Too long time interval between this issue and the last.
-21. Badsmell: Too little time interval between this issue and the last.
-22. Issue interval time is normal this time
-23. Issue interval time is normal this time
-24. Issue interval time is normal this time
-25. Issue interval time is normal this time
+24. This issue duration time is normal.
+25. This issue duration time is normal.
+26. This issue duration time is normal.
+27. This issue duration time is normal.
+28. Badsmell: Too long time duration of this issue.
+29. This issue duration time is normal.
+30. Badsmell: Too long time duration of this issue.
+31. This issue duration time is normal.
+32. This issue duration time is normal.
+33. This issue duration time is normal.
+34. Badsmell: Too long time duration of this issue.
+35. This issue duration time is normal.
+36. This issue duration time is normal.
+37. This issue duration time is normal.
 ...
-35. Issue interval time is normal this time
-36. Issue interval time is normal this time
-37. Issue interval time is normal this time
-38. Issue interval time is normal this time
-39. Badsmell: Too long time interval between this issue and the last.
-40. Issue interval time is normal this time
-41. Issue interval time is normal this time
-42. Issue interval time is normal this time
-43. Issue interval time is normal this time
-44. Issue interval time is normal this time
-45. Issue interval time is normal this time
-...
+86. This issue duration time is normal.
+87. This issue duration time is normal.
+88. This issue duration time is normal.
+89. This issue duration time is normal.
 ```
 
 ##Issue Without Comment Detector
@@ -703,11 +723,44 @@ Badsmell: Too many issues in this week.
 Issue number is normal in this week.
 ```
 
+###Issue Assignee Detector
+According to the ```Issue Without Comment Detector```, we found that there are many issues without having comments below. So if issue creator assigned the issue to himself/herself or other team members, we think this situation will be better. Since assignee means who this issue is assigned to, and he/she have to handle it. If one team member is assigned to too many or too few issues, another bad smell will occur. We named it [issueAssigneeDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/57672e3292594dc22788de81a6f06d887bbca0fb/bad_smell_detector/issueAssigneeDetector.py) Below are pseudocode of algorithm we use to detect bad smells.
+```
+if userName == 'None': 
+	These are issues not assigned to any team member.
+if userName != 'None' and eachUserAssignTimes > 1.5*assignTotalTimes/userNum:
+ 	Badsmell: This user assigned too many times.
+if userName != 'None' and eachUserAssignTimes < 0.5*assignTotalTimes/userNum:
+ 	Badsmell: This user assigned too few times.
+otherwise:
+ 	The assigned times of this user is normal.
+``` 	
+ 	
+####Result
 
-
-
-
-
+Project 1
+```
+('assignTotalTimes:', 63)
+Badsmell: user1 assigned too few times.
+Badsmell: user2 assigned too few times.
+Badsmell: user3 assigned too few times.
+```
+Project 2
+```
+('assignTotalTimes:', 68)
+Badsmell: user1 assigned too few times.
+The assigned times of user2 is normal.
+The assigned times of user3 is normal.
+The assigned times of user4 is normal.
+```
+Project 3
+```
+('assignTotalTimes:', 90)
+Badsmell: user1 assigned too few times.
+The assigned times of user2 is normal.
+The assigned times of user3 is normal.
+Badsmell: user4 assigned too few times.
+```
 
 ##Early Warning
 
