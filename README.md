@@ -15,19 +15,18 @@ The values in the table represent the number of rows of data collected for that 
 |1|Total number of issues|
 |2|Number of issues without comments|
 |3|Number of issues each week|
-|4|Time interval between the creation of two issues|
-|5|Total number of labels|
-|6|Number of times each label was used|
-|7|Mean and standard deviation of time spent in each label|
-|8|"Unusually long" time a label|
-|9|Mean and standard deviation number of labels assigned to each issue|
-|10|Number of times each milestone was used|
-|11|Percentage of issues using labels|
-|12|Percentage of issues using milestones|
-|13|Percentage of issues using assignees|
-|14|"Unusually small" number of issues handled only by one person|
-|15|"Unusually large" number of issues handle by one person|
-|16|Issue participating times of each user|
+|4|Total number of labels|
+|5|Number of times each label was used|
+|6|Mean and standard deviation of time spent in each label|
+|7|"Unusually long" time a label|
+|8|Mean and standard deviation number of labels assigned to each issue|
+|9|Number of times each milestone was used|
+|10|Percentage of issues using labels|
+|11|Percentage of issues using milestones|
+|12|Percentage of issues using assignees|
+|13|"Unusually small" number of issues handled only by one person|
+|14|"Unusually large" number of issues handle by one person|
+|15|Issue participating times of each user|
 
 ##Data samples
 
@@ -51,31 +50,29 @@ The links to the entire data set for this extractor can be found here
 
 **3. Number of issues each week**
 
-**4. Time interval between the creation of two issues**
+**4. Total number of labels**
 
-**5. Total number of labels**
+**5. Number of times each label was used**
 
-**6. Number of times each label was used**
+**6. Mean and standard deviation of time spent in each label**
 
-**7. Mean and standard deviation of time spent in each label**
+**7. "Unusually long" time a label**
 
-**8. "Unusually long" time a label**
+**8. Mean and standard deviation number of labels assigned to each issue**
 
-**9. Mean and standard deviation number of labels assigned to each issue**
+**9. Number of times each milestone was used**
 
-**10. Number of times each milestone was used**
+**10. Percentage of issues using labels**
 
-**11. Percentage of issues using labels**
+**11. Percentage of issues using milestones**
 
-**12. Percentage of issues using milestones**
+**12. Percentage of issues using assignees**
 
-**13. Percentage of issues using assignees**
+**13. "Unusually small" number of issues handled only by one person**
 
-**14. "Unusually small" number of issues handled only by one person**
+**14. "Unusually large" number of issues handle by one person**
 
-**15. "Unusually large" number of issues handle by one person**
-
-**16. Issue participating times of each user**
+**15. Issue participating times of each user**
 
 
 ##Feature detection & Results
@@ -122,15 +119,7 @@ Number of issues every week:
   Project3: [21, 8, 9, 2, 9, 10, 26, 5]
 ```
 
-**4. Time interval between the creation of two issues**
-
-"Time interval between two issues" is also related to last feature. And it is quite possible that the creation of issues is uneven. We can analyse and find out turn points during which the frequency of creating issues changes dramatically.
-
-????
-???? have some problem
-????
-
-**5. Total number of labels**
+**4. Total number of labels**
 
 We want to know the total number of labels each team created. Different number of labels reflect different kinds of situations and different levels of priorities each team will set.
 
@@ -144,7 +133,7 @@ Total number of labels:
   Project3: 21
 ```
 
-**6. Number of times each label was used**
+**5. Number of times each label was used**
 
 We can figure out which kind of label was used a lot of times, and which kind of label was seldom used. And the results will reflect whether the quantity and the setting of labels are reasonable or not.
 
@@ -199,7 +188,7 @@ Number of times each label was used:
           2a. feature dev 58
 ```
 
-**7. Mean and standard deviation of time spent in each label**
+**6. Mean and standard deviation of time spent in each label**
 
 This feature will show us mean and standard deviation of times spending in each label. And it will help us to analyse in depth. 
 
@@ -219,7 +208,7 @@ Mean and standard deviation of time spent in each label:
           standard:   458374.563866
 ```
 
-**8. "Unusually long" time a label**
+**7. "Unusually long" time a label**
 
 "Unusually long" time means 1.5 or 2 standard deviations time in a label. In normal distribution, 1.5 or 2 standard deviations means the data point is quite far away from the mean value. In this case, unusually long time a label may indicate team do little stuff during this time period.
 
@@ -233,7 +222,7 @@ We counted number of labels with unusually long time, which means 1.5 or 2 stand
   Project3: 29
 ```
 
-**9. Mean and standard deviation number of labels assigned to each issue**
+**8. Mean and standard deviation number of labels assigned to each issue**
 
 This feature will show us mean and standard deviation of number of labels assigned to each issue. And in this feature, we consider label and issue together, we want to find out the reasonable of the setting of labels. Also, we want to find out whether team members used to add corresponding labels to issues or not.
 
@@ -253,7 +242,7 @@ Mean and standard deviation number of labels assigned to each issue:
           Standard deviation  159966.183254
 ```
 
-**10. Number of times each milestone was used**
+*9. Number of times each milestone was used**
 
 We are interesting in number of milestones. And each milestone usually represents one stage in development cycle. We can analyse which software development method each team used.
 
@@ -291,7 +280,7 @@ Number of times each milestone was used:
           None 46
 ```
 
-**11. Percentage of issues using labels**
+**10. Percentage of issues using labels**
 
 We want to see how many issues used labels.
 
@@ -305,7 +294,7 @@ Percentage of issues using labels:
   Project3: 96.8% in 93 issues
 ```
 
-**12. Percentage of issues using milestones**
+**11. Percentage of issues using milestones**
 
 We want to see how many issues used milestones.
 
@@ -319,7 +308,7 @@ Percentage of issues using milestones:
   Project3: 52.1% in 93 issues
 ```
 
-**13. Percentage of issues using assignees**
+**12. Percentage of issues using assignees**
 
 We are interested in how many issues used assignees. And if the percentage of issues using assignees is high, which means responsibility distribution is clear.
 
@@ -333,7 +322,7 @@ Percentage of issues using milestones:
   Project3: 72.2% in 93 issues
 ```
 
-**14. "Unusually small" number of issues handled only by one person**
+**13. "Unusually small" number of issues handled only by one person**
 
 A issue handled only by one person means this issue is opened and closed by same person and no other guys write comments below this issue. We define number of issues handles only by one person less than 10% indicates this person is a "passenger". And it means responsibility distribution of this team may be uneven.
 
@@ -358,13 +347,13 @@ Unusually small" number of issues handled only by one person:
           user 4: 6
 ```
 
-**15. "Unusually large" number of issues handle by one person**
+**14. "Unusually large" number of issues handle by one person**
 
 We define number of issues handles only by one person more than 70% indicates this person is a "great dictator". And it also means responsibility distribution of this team may be uneven.
 
 Result
 
-**16. Issue participating times of each user**
+**15. Issue participating times of each user**
 
 This feature calculates each user's frequency of attendency.
 
