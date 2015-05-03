@@ -19,7 +19,7 @@ Then the Statistical measures like the min, max, accumulation, mean and standard
 We extracted all the issues from the three projects by running code from the given file ```gitable.py```.
 Then we extracted 16 features that we defined from the issues for these three projects.
 
-### Features
+#### Features
 
 The values in the table represent the number of rows of data collected for that particular feature.
 
@@ -42,7 +42,7 @@ The values in the table represent the number of rows of data collected for that 
 
 ##Data samples
 
-### Features
+#### Features
 
 **1. Total number of issues**
 
@@ -408,7 +408,7 @@ Issue participating times of each user:
 
 ## Bad smells detector & Result 
 
-###Issue Time Duration Detector
+###1. Issue Time Duration Detector
 During the development cycle, team members will post some issues in order to communicate other members. However, the time duration between two issue creation may vary dramatically. This detector can analyse time duration to decide whether it is too long or too short. The result can reflect the process of each team. And we named it [issueTimeDurationDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/bad_smell_detector/issueTimeDurationDetector.py) Below are pseudocode of algorithm we use to detect bad smells.
 ```
 if issueTimeDuration > mean + 2*std_dev:
@@ -527,7 +527,7 @@ Project 3
 89. This issue duration time is normal.
 ```
 
-##Issue Without Comment Detector
+###2. Issue Without Comment Detector
 We found that some issues were created without comment. If the radio of issues without comments out of total issues is higher than certain threshold, we claim it is a bad smell. We named it [issueWithoutCommentDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/bad_smell_detector/issueWithoutCommentDetector.py) Since issue can help team member to communicate with each other. So many issues without comment may indicate that writing issues only aims to deal with professor's rubrics. Below are pseudocode of algorithm we use to detect bad smells.
 ```
 if the radio of issueWithoutComment out of totalNumOfIssue > 20%:
@@ -557,7 +557,7 @@ Project 3
 Normal
 ```
 
-###Label Usage Detector
+###3. Label Usage Detector
 We can add one or more labels to each issue or each pull request in order to remind other team members. We found that some teams have many labels, but some labels were used only one or two times. So we consider this is another kind of bad smell. We named it [labelUsageDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/bad_smell_detector/labelUsageDetector.py) The cause of this bad smell may be the setting of a label is not reasonable. Team members should rename it, merge it into another label or delete it. Below are pseudocode of algorithm we use to detect bad smells.(We do not detect whether a label was used too many times or not. Since label like "Solved" can be used almost every issue. And we think it is fine to do so.)
 ```
 if labelUsage < mean - std_dev:
@@ -631,7 +631,7 @@ The usage of [bug] is normal.
 The usage of [resources] is normal.
 ```
 
-###User Participate Detector
+###4. User Participate Detector
 In a good team, the difference of each member's degree of participation, in other words, the difference of each member's contribution should not be too large. Otherwise, there must be "great dictator" or "passenger" in this team, which can become another bad smell. We named it [userParticipateDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/bad_smell_detector/userParticipateDetector.py) Below are pseudocode of algorithm we use to detect bad smells. <b>(We consider not only commit times of each member, but also the issue participant times of each member.)</b>
 ```
 ratio1=eachMemberIssueParticipateTimes[i]*1.0/sumOfIssueParticipateTimes
@@ -676,7 +676,7 @@ Badsmell: This user is likely to be a 'passenger'.
 Badsmell: This user is likely to be a 'passenger'.
 ```
 
-###Weekly Issue Detector
+###5. Weekly Issue Detector
 We are also interesting in the amount of weekly issues of each team. And the result can reflect which period is the most active period of each team. If one week had too many or too little issues been created, we consider it can be a bad smell. Since one team may catch up the schedule in one week. We named it [weeklyIssueDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/bad_smell_detector/weeklyIssueDetector.py) Below are pseudocode of algorithm we use to detect bad smells.
 ```
 if weeklyIssue > mean + std_dev:
@@ -736,7 +736,7 @@ Badsmell: Too many issues in this week.
 Issue number is normal in this week.
 ```
 
-###Issue Assignee Detector
+###6. Issue Assignee Detector
 According to the ```Issue Without Comment Detector```, we found that there are many issues without having comments below. So if issue creator assigned the issue to himself/herself or other team members, we think this situation will be better. Since assignee means who this issue is assigned to, and he/she have to handle it. If one team member is assigned to too many or too few issues, another bad smell will occur. We named it [issueAssigneeDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/57672e3292594dc22788de81a6f06d887bbca0fb/bad_smell_detector/issueAssigneeDetector.py) Below are pseudocode of algorithm we use to detect bad smells.
 ```
 if userName == 'None': 
