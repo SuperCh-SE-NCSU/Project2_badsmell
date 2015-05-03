@@ -53,7 +53,7 @@ def secs(d0):
     return delta.total_seconds()
 
 def dump1(u,issues):
-    token = "ecdca92128429d1ea7bcec9f5341703b68942fa4" 
+    token = "" 
     request = urllib2.Request(u, headers={"Authorization" : "token "+token})
     v = urllib2.urlopen(request).read()
     w = json.loads(v)
@@ -122,7 +122,7 @@ def launchDump():
     createtime=dict()
     numofiss_nocomments=0
     numberofissueWeek=list()
-    timeduration=list()
+    timeduration=dict()
     
     numofissuenotlabeled=0
 
@@ -182,7 +182,7 @@ def launchDump():
                         createat=False
                 if str(k) is 'duration':
                     if tduration==True:
-                        timeduration.append(v)
+                        timeduration[int(issue)]=v
                 #if v != None:
                 #    print(str(k)+" : "+str(v)) 
             #print(type(event))
@@ -200,5 +200,6 @@ def launchDump():
     print(createtime)
     with open('createtimeproject3.json', 'w') as outfile:
         json.dump(createtime, outfile)
-        
+    with open('duration3.json','w') as doutfile:
+        json.dump(timeduration,doutfile)
 launchDump() 
