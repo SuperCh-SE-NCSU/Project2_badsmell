@@ -51,9 +51,9 @@ Sample data table:
 |b71398d37c208a57e006753bcd6fd7ccee89357a|2015-04-15 20:25:37 UTC|
 
 The links to the entire data set for this extractor can be found here
-* [Project 1](features/uneven_commits/feature_results/project_1_commits.csv)
-* [Project 2](features/uneven_commits/feature_results/project_2_commits.csv)
-* [Project 3](features/uneven_commits/feature_results/project_3_commits.csv)
+* [Project 1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/master/Data/dataset1.csv)
+* [Project 2](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/master/Data/dataset2.csv)
+* [Project 3](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/master/Data/dataset3.csv)
 
 **2. Number of issues without comments**
 
