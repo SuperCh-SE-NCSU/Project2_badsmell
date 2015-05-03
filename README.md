@@ -598,6 +598,55 @@ The usage of [bug] is normal.
 The usage of [resources] is normal.
 ```
 
+###User Participate Detector
+In a good team, the difference of each member's degree of participation, in other words, the difference of each member's contribution should not be too large. Otherwise, there must be "great dictator" or "passenger" in this team, which can become another bad smell. We named it [userParticipateDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/bad_smell_detector/userParticipateDetector.py) Below are pseudocode of algorithm we use to detect bad smells. <b>(We consider not only commit times of each member, but also the issue participant times of each member.)</b>
+```
+ratio1=eachMemberIssueParticipateTimes[i]*1.0/sumOfIssueParticipateTimes
+ratio2=eachMemberCommitTimes[i]*1.0/sumOfCommitTimes
+if ratio1 < 10% or ratio2 < 10%:
+  	Badsmell: This user is likely be a 'passenger'.
+if ratio1 > 75% or ratio2 > 75%:
+		Badsmell: This user is likely be a 'great dictator'.
+otherwise:
+		The participant of this user is normal.
+```
+
+####Result
+
+Project 1
+```
+('eachMemberIssueParticipateTimes', [56, 54, 7])
+('eachMemberCommitTimes', [193, 180, 82])
+The participant of this user is normal.
+The participant of this user is normal.
+Badsmell: This user is likely to be a 'passenger'.
+```
+Project 2
+```
+('eachMemberIssueParticipateTimes', [78, 20, 4, 1])
+('eachMemberCommitTimes', [48, 48, 26, 22])
+Badsmell: This user is likely be a 'great dictator'.
+The participant of this user is normal.
+Badsmell: This user is likely to be a 'passenger'.
+Badsmell: This user is likely to be a 'passenger'.
+```
+Project 3
+```
+('eachMemberIssueParticipateTimes', [187, 101, 29, 6])
+('eachMemberCommitTimes', [151, 127, 62, 38])
+The participant of this user is normal.
+The participant of this user is normal.
+Badsmell: This user is likely to be a 'passenger'.
+Badsmell: This user is likely to be a 'passenger'.
+```
+
+
+
+
+
+
+
+
 
 
 ##Early warning
