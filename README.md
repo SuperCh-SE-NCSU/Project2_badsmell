@@ -45,11 +45,11 @@ The values in the table represent the number of rows of data collected for that 
 
 Sample data table: 
 
-| Commit Sha |date|  
+| Total number of issues |Project|  
 |----------- |----|
-|0734a1482f009b4c6c8dbe16e34daf3c75567373|2015-04-15 21:40:03 UTC|
-|b71398d37c208a57e006753bcd6fd7ccee89357a|2015-04-15 20:25:37 UTC|
-
+|69|Project1|
+|93|Project2|
+|93|Project3|
 The links to the entire data set for this extractor can be found here
 * [Project 1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/master/Data/dataset1.csv)
 * [Project 2](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/master/Data/dataset2.csv)
