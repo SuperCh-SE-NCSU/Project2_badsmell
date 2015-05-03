@@ -12,11 +12,10 @@ interval=list()
 
 meaninterval=float(0)       #mean of interval
 threshold=float(60*60*12)   #threshold for early warning extractor
-thresholdnumbelow=ArithmeticError
-thresholdnumup=1
-
-belowinterval=0
-upinterval=0
+thresholdnumbelow=4         #threshold indicating the team may be rushing
+thresholdnumup=1            #threshold indicating the team may be following behind the schedule
+belowinterval=0             #the number of intervals below mean-threshold
+upinterval=0                #the number of intervals above mean+2*threshold
 for i in range(1,len(keylist)-1):
     interval.append(data[str(keylist[i]).encode('utf-8')]-data[str(keylist[i-1]).encode('utf-8')])
 
