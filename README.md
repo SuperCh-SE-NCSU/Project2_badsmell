@@ -12,8 +12,7 @@ So it is hard to tell what these projects are about.
 ##Tables
 Data of desired features was collected from the issues and was stored in a CSV file.
 Each project will take one column and 16 rows to show 16 features extracted for each of them.
-One thing that you need pay attention to is the numbers related to different features may have different units. For example,
-time has units of days. while number has no units.
+One thing that you need pay attention to is the units of the numbers related to different features are omitted here. For example, time should has units of days.
 Then the Statistical measures like the min, max, mean and standard deviation of the data set were extracted. Some values are set to detect bad smells based on the comparison of these results and set values.
 ##Data
 We extracted all the issues from the three projects by running code from the given file gitable.py.
