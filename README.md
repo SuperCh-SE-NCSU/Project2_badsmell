@@ -75,8 +75,8 @@ We counted total number of issues of each project. And here is the result.
 
 ```  
 Number of issues:
-  Project1: 69
-  Project2: 93
+  Project1: 67
+  Project2: 80
   Project3: 93
 ```
 
@@ -305,8 +305,8 @@ We calculated percentage of issues using labels.
 
 ```  
 Percentage of issues using labels:
-  Project1: 91.3% in 69 issues
-  Project2: 73.1% in 93 issues
+  Project1: 91.1% in 67 issues
+  Project2: 68.8% in 80 issues
   Project3: 96.8% in 93 issues
 ```
 
@@ -404,11 +404,85 @@ Issue participating times of each user:
           user 4: 6
 ```
 
-##Bad smells detector
+## Bad smells detector & Result
 
 ###Issue Time Interval Detector
 During the development cycle, team members will post some issues in order to communicate other members. However, the time interval between two issue creation may vary dramatically. This detector can analyse time interval to decide whether it is too long or too short. The result can reflect the process of each team. And we named it [issueTimeIntervalDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/bad_smell_detector/issueTimeIntervalDetector.py)
 
+####Result
+Because the result are too long, we eliminate some normal results and leave some bad smells.
+
+Project 1
+```
+('mean:', 72013.56451612903)
+('std_dev:', 209839.24439541661)
+...
+38. Issue interval time is normal this time
+39. Issue interval time is normal this time
+40. Issue interval time is normal this time
+41. Badsmell: Too long time interval between this issue and the last.
+42. Badsmell: Too little time interval between this issue and the last.
+43. Badsmell: Too long time interval between this issue and the last.
+44. Issue interval time is normal this time
+45. Issue interval time is normal this time
+46. Issue interval time is normal this time
+47. Issue interval time is normal this time
+48. Issue interval time is normal this time
+...
+```
+Project 2
+```
+('mean:', 90169.373134328358)
+('std_dev:', 255257.2690866554)
+...
+20. Issue interval time is normal this time
+21. Issue interval time is normal this time
+22. Issue interval time is normal this time
+23. Issue interval time is normal this time
+24. Issue interval time is normal this time
+25. Badsmell: Too long time interval between this issue and the last.
+26. Badsmell: Too long time interval between this issue and the last.
+27. Issue interval time is normal this time
+28. Issue interval time is normal this time
+29. Issue interval time is normal this time
+30. Issue interval time is normal this time
+...
+63. Issue interval time is normal this time
+64. Issue interval time is normal this time
+65. Issue interval time is normal this time
+66. Badsmell: Too long time interval between this issue and the last.
+...
+```
+Project 3
+```
+('mean:', 53007.370786516854)
+('std_dev:', 197722.12811823591)
+...
+15. Issue interval time is normal this time
+16. Issue interval time is normal this time
+17. Issue interval time is normal this time
+18. Issue interval time is normal this time
+19. Issue interval time is normal this time
+20. Badsmell: Too long time interval between this issue and the last.
+21. Badsmell: Too little time interval between this issue and the last.
+22. Issue interval time is normal this time
+23. Issue interval time is normal this time
+24. Issue interval time is normal this time
+25. Issue interval time is normal this time
+...
+35. Issue interval time is normal this time
+36. Issue interval time is normal this time
+37. Issue interval time is normal this time
+38. Issue interval time is normal this time
+39. Badsmell: Too long time interval between this issue and the last.
+40. Issue interval time is normal this time
+41. Issue interval time is normal this time
+42. Issue interval time is normal this time
+43. Issue interval time is normal this time
+44. Issue interval time is normal this time
+45. Issue interval time is normal this time
+...
+```
 ##Bad smells results
 ##Early warning
 **Interval of created time of two adjacent issues**
