@@ -404,10 +404,20 @@ Issue participating times of each user:
           user 4: 6
 ```
 
-## Bad smells detector & Result
+## Bad smells detector & Result 
 
-###Issue Time Interval Detector
-During the development cycle, team members will post some issues in order to communicate other members. However, the time interval between two issue creation may vary dramatically. This detector can analyse time interval to decide whether it is too long or too short. The result can reflect the process of each team. And we named it [issueTimeIntervalDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/bad_smell_detector/issueTimeIntervalDetector.py)
+###Issue Time Interval Detector [need Liang's data]
+During the development cycle, team members will post some issues in order to communicate other members. However, the time interval between two issue creation may vary dramatically. This detector can analyse time interval to decide whether it is too long or too short. The result can reflect the process of each team. And we named it [issueTimeIntervalDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/bad_smell_detector/issueTimeIntervalDetector.py) Below are pseudocode of algorithm we use to detect bad smells.
+```
+issueTimeInterval > mean + 2*std_dev:
+    Badsmell: Too long time interval between this issue and the last.
+
+issueTimeInterval < mean - 2*std_dev:
+    Badsmell: Too little time interval between this issue and the last.
+
+Otherwise:
+    Issue interval time is normal this time
+```
 
 ####Result
 Because the result are too long, we eliminate some normal results and leave some bad smells.
@@ -483,6 +493,11 @@ Project 3
 45. Issue interval time is normal this time
 ...
 ```
+
+###Issue Time Interval Detector [need Liang's data]
+During the development cycle, team members will post some issues in order to communicate other members. However, the time interval between two issue creation may vary dramatically. This detector can analyse time interval to decide whether it is too long or too short. The result can reflect the process of each team. And we named it [issueTimeIntervalDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/bad_smell_detector/issueTimeIntervalDetector.py)
+
+####Result
 ##Bad smells results
 ##Early warning
 **Interval of created time of two adjacent issues**
