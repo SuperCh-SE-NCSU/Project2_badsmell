@@ -50,12 +50,14 @@ for i in range(0,len(interval)-1):
 ##Early warning results
 For project 1, the interval of created time of two adjacent issue is described in the following graph.
 ![Project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/earlywarning/project1_interval.png)
+
 The early warning detecting result is as following:
 ```
 ('the team may be falling behind the schedule before issue', 37)
 ```
 For project 2, the interval of created time of two adjacent issue is described in the following graph.
 ![Project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/earlywarning/project2_interval.png)
+
 The early warning detecting result is as following:
 ```
 ('the team may be pushing before issue', 10)
@@ -70,6 +72,7 @@ The early warning detecting result is as following:
 ```
 For project 3, the interval of created time of two adjacent issue is described in the following graph.
 ![Project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/earlywarning/project3_interval.png)
+
 The early warning detecting result is as following:
 ```
 ('the team may be falling behind the schedule before issue', 10)
