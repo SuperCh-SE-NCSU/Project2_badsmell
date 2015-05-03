@@ -709,9 +709,9 @@ Issue number is normal in this week.
 
 
 
-##Early warning
+##Early Warning
 
-**Issue Interval early Warning**
+**Issue Interval Early Warning**
 
 **Description**
 
@@ -746,39 +746,89 @@ for i in range(0,len(interval)-1):
         print('the team may be falling behind the schedule before issue',i)
         upinterval=0
 ```
-[Code Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/earlywarning)
-##Early warning results
+[Code Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/earlywarning/earlyWarningExtractorInterval.py)
+
+**Issue Duration Early Warning**
+Issue Duration early Warning is based on the trend of duration of issue. If the team spend much more time in closing the issue than before, the team may be struggling or waiting. It means we should notify the team to work harder. The detection method is also based on threshold. We implement the issue duration early warning in the code below:
+```python
+sumtime=0
+timethreshold=60*60*24*12
+for i in range(0,len(xa)-1,1):
+    if ya[i]>2000000:
+        sumtime=sumtime+ya[i]
+    else:
+        sumtime=0
+    if sumtime>timethreshold:
+        print('The team may be struggling at this moment, issue: '+str(i))
+        sumtime=0
+```
+[Code Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/earlywarning/earlyWarningExtractorDuration.py)
+
+##Early Warning Results
+
+**Issue Interval Early Warning Results**
 
 For project 1, the interval of created time of two adjacent issue is described in the following graph.
 ![Project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/earlywarning/project1_interval.png)
 
 The early warning detecting result is as following:
 ```
-('the team may be falling behind the schedule before issue', 37)
+the team may be falling behind the schedule before issue 37
 ```
 For project 2, the interval of created time of two adjacent issue is described in the following graph.
-![Project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/earlywarning/project2_interval.png)
+![Project2](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/earlywarning/project2_interval.png)
 
 The early warning detecting result is as following:
 ```
-('the team may be pushing before issue', 10)
-('the team may be falling behind the schedule before issue', 26)
-('the team may be falling behind the schedule before issue', 28)
-('the team may be pushing before issue', 35)
-('the team may be pushing before issue', 40)
-('the team may be pushing before issue', 49)
-('the team may be pushing before issue', 54)
-('the team may be pushing before issue', 59)
-('the team may be pushing before issue', 64)
+the team may be pushing before issue 10
+the team may be falling behind the schedule before issue 26
+the team may be falling behind the schedule before issue 28
+the team may be pushing before issue 35
+the team may be pushing before issue 40
+the team may be pushing before issue 49
+the team may be pushing before issue 54
+the team may be pushing before issue 59
+the team may be pushing before issue 64
 ```
 For project 3, the interval of created time of two adjacent issue is described in the following graph.
-![Project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/earlywarning/project3_interval.png)
+![Project3](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/earlywarning/project3_interval.png)
 
 The early warning detecting result is as following:
 ```
-('the team may be falling behind the schedule before issue', 10)
-('the team may be falling behind the schedule before issue', 37)
-('the team may be falling behind the schedule before issue', 52)
-('the team may be pushing before issue', 58)
-('the team may be pushing before issue', 71)
+the team may be falling behind the schedule before issue 10
+the team may be falling behind the schedule before issue 37
+the team may be falling behind the schedule before issue 52
+the team may be pushing before issue 58
+the team may be pushing before issue 71
+```
+
+**Issue Duration Early Warning Results**
+
+For project1, the duration of issues is shown in the following graph.
+![Project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/earlywarning/project1_duration.png)
+The early warning detecting result is as following:
+```
+The team may be struggling at this moment, issue: 0
+The team may be struggling at this moment, issue: 2
+The team may be struggling at this moment, issue: 4
+The team may be struggling at this moment, issue: 5
+The team may be struggling at this moment, issue: 6
+```
+
+For project2, the duration of issues is shown in the following graph.
+![Project2](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/earlywarning/project2_duration.png)
+The early warning detecting result is as following:
+```
+The team may be struggling at this moment, issue: 11
+The team may be struggling at this moment, issue: 12
+The team may be struggling at this moment, issue: 22
+The team may be struggling at this moment, issue: 25
+The team may be struggling at this moment, issue: 26
+```
+
+For project3, the duration of issues is shown in the following graph.
+![Project3](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/earlywarning/project3_duration.png)
+The early warning detecting result is as following:
+```
+The team may be struggling at this moment, issue: 30
 ```
