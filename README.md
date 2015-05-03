@@ -21,8 +21,6 @@ Then we extracted 16 features that we defined from the issues for these three pr
 
 #### Features
 
-The values in the table represent the number of rows of data collected for that particular feature.
-
 |Number|Feature|
 |------|-------|
 |1|Total number of issues|
