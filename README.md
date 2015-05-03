@@ -112,12 +112,18 @@ This issue is quite interesting.  We want to find out that which period is most 
 #####Result
 We divided the total number of issues monthly, and get an array for each project.
 
-```  
-Number of issues every week:
+```
   Project1: [24, 9, 4, 2, 5, 6, 5, 8]
+```
+![Project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project1_numberofissues_week.png)
+```
   Project2: [10, 12, 4, 1, 1, 1, 1, 37, 1]
+```
+![Project2](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project2_numberofissues_week.png)
+```
   Project3: [21, 8, 9, 2, 9, 10, 26, 5]
 ```
+![Project3](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project3_numberofissues_week.png)
 
 **4. Total number of labels**
 
@@ -154,7 +160,7 @@ We also counted the number of times each label was used.
           bug 14
           enhancement 5
 ```
-![Project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project2_labels.png)
+![Project2](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project2_labels.png)
 ```
   Project2:
           Test Problem 23
@@ -165,7 +171,7 @@ We also counted the number of times each label was used.
           bug 6
           Design Problem 12
 ```
-![Project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project3_labels.png)
+![Project3](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project3_labels.png)
 ```
   Project3:
           feature dev 27
@@ -262,7 +268,7 @@ We counted the number of times each milestone was used.
           V2 8
           System test and Report 8
  ```
-![Project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project2_milestone.png)
+![Project2](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project2_milestone.png)
  ```
   Project2:
           None 12
@@ -271,7 +277,7 @@ We counted the number of times each milestone was used.
           Basic Service and Test 23
           Large Scale Test 13
 ```
-![Project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project3_milestone.png)
+![Project3](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project3_milestone.png)
 ```
   Project3:
           None 46
