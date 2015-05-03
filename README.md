@@ -606,9 +606,9 @@ ratio2=eachMemberCommitTimes[i]*1.0/sumOfCommitTimes
 if ratio1 < 10% or ratio2 < 10%:
   	Badsmell: This user is likely be a 'passenger'.
 if ratio1 > 75% or ratio2 > 75%:
-		Badsmell: This user is likely be a 'great dictator'.
+	Badsmell: This user is likely be a 'great dictator'.
 otherwise:
-		The participant of this user is normal.
+	The participant of this user is normal.
 ```
 
 ####Result
@@ -617,6 +617,7 @@ Project 1
 ```
 ('eachMemberIssueParticipateTimes', [56, 54, 7])
 ('eachMemberCommitTimes', [193, 180, 82])
+----------------------------------------------
 The participant of this user is normal.
 The participant of this user is normal.
 Badsmell: This user is likely to be a 'passenger'.
@@ -625,6 +626,7 @@ Project 2
 ```
 ('eachMemberIssueParticipateTimes', [78, 20, 4, 1])
 ('eachMemberCommitTimes', [48, 48, 26, 22])
+----------------------------------------------
 Badsmell: This user is likely be a 'great dictator'.
 The participant of this user is normal.
 Badsmell: This user is likely to be a 'passenger'.
@@ -634,14 +636,72 @@ Project 3
 ```
 ('eachMemberIssueParticipateTimes', [187, 101, 29, 6])
 ('eachMemberCommitTimes', [151, 127, 62, 38])
+----------------------------------------------
 The participant of this user is normal.
 The participant of this user is normal.
 Badsmell: This user is likely to be a 'passenger'.
 Badsmell: This user is likely to be a 'passenger'.
 ```
 
+###Weekly Issue Detector
+We are also interesting in the amount of weekly issues of each team. And the result can reflect which period is the most active period of each team. If one week had too many or too little issues been created, we consider it can be a bad smell. Since one team may catch up the schedule in one week. We named it [weeklyIssueDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/bad_smell_detector/weeklyIssueDetector.py) Below are pseudocode of algorithm we use to detect bad smells.
+```
+if weeklyIssue > mean + std_dev:
+	Badsmell: Too many issues in this week.
+if weeklyIssue < mean - std_dev:
+	Badsmell: Too little issues in this week.
+otherwise:
+	Issue number is normal in this week.
+```
 
+####Result
 
+Project 1
+```
+('weeklyIssue:', [24, 9, 4, 2, 5, 6, 5, 8])
+('mean:', 7.875)
+('std_dev:', 6.4311254847032799)
+----------------------------------------------
+Badsmell: Too many issues in this week.
+Issue number is normal in this week.
+Issue number is normal in this week.
+Issue number is normal in this week.
+Issue number is normal in this week.
+Issue number is normal in this week.
+Issue number is normal in this week.
+Issue number is normal in this week.
+```
+Project 2
+```
+('weeklyIssue:', [10, 12, 4, 1, 1, 1, 1, 37, 1])
+('mean:', 7.5555555555555554)
+('std_dev:', 11.156573658721083)
+----------------------------------------------
+Issue number is normal in this week.
+Issue number is normal in this week.
+Issue number is normal in this week.
+Issue number is normal in this week.
+Issue number is normal in this week.
+Issue number is normal in this week.
+Issue number is normal in this week.
+Badsmell: Too many issues in this week.
+Issue number is normal in this week.
+```
+Project 3
+```
+('weeklyIssue:', [21, 8, 9, 2, 9, 10, 26, 5])
+('mean:', 11.25)
+('std_dev:', 7.5787531956120588)
+----------------------------------------------
+Badsmell: Too many issues in this week.
+Issue number is normal in this week.
+Issue number is normal in this week.
+Badsmell: Too little issues in this week.
+Issue number is normal in this week.
+Issue number is normal in this week.
+Badsmell: Too many issues in this week.
+Issue number is normal in this week.
+```
 
 
 
