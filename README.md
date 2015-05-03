@@ -409,10 +409,10 @@ Issue participating times of each user:
 ###Issue Time Interval Detector [need Liang's data]
 During the development cycle, team members will post some issues in order to communicate other members. However, the time interval between two issue creation may vary dramatically. This detector can analyse time interval to decide whether it is too long or too short. The result can reflect the process of each team. And we named it [issueTimeIntervalDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/bad_smell_detector/issueTimeIntervalDetector.py) Below are pseudocode of algorithm we use to detect bad smells.
 ```
-issueTimeInterval > mean + 2*std_dev:
+if issueTimeInterval > mean + 2*std_dev:
     Badsmell: Too long time interval between this issue and the last.
 
-issueTimeInterval < mean - 2*std_dev:
+if issueTimeInterval < mean - 2*std_dev:
     Badsmell: Too little time interval between this issue and the last.
 
 Otherwise:
@@ -495,7 +495,13 @@ Project 3
 ```
 
 ##Issue Without Comment Detector
-We found that some issues were created without comment. If the radio of issues without comments out of total issues is higher than certain threshold, we claim it is a bad smell. We named it [issueWithoutCommentDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/bad_smell_detector/issueWithoutCommentDetector.py) Since issue can help team member to communicate with each other. So many issues without comment means writing issues only aims to deal with professor's rubric.
+We found that some issues were created without comment. If the radio of issues without comments out of total issues is higher than certain threshold, we claim it is a bad smell. We named it [issueWithoutCommentDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/bad_smell_detector/issueWithoutCommentDetector.py) Since issue can help team member to communicate with each other. So many issues without comment means writing issues only aims to deal with professor's rubric. Below are pseudocode of algorithm we use to detect bad smells.
+```
+if the radio of issueWithoutComment out of totalNumOfIssue > 20%:
+    Badsmell: Too many issues without comments.
+otherwise:
+		The number of issues without comments is normal.
+```
 
 ####Result
 ##Bad smells results
