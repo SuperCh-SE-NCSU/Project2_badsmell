@@ -23,9 +23,9 @@ def issueAssigneeDetector():
 
  	for i in range(len(eachUserAssignTimes)):
  		if userName[i] == 'None': return userName[i]
- 		if userName[i] != 'None' and eachUserAssignTimes[i] > (1.0/userNum)*assignTotalTimes*0.8:
+ 		if userName[i] != 'None' and eachUserAssignTimes[i] > (1.0/userNum)*assignTotalTimes*1.5:
  			print('Badsmell: '+userName[i]+' assigned too many times.')
- 		elif userName[i] != 'None' and eachUserAssignTimes[i] < (1.0/userNum)*assignTotalTimes*0.8:
+ 		elif userName[i] != 'None' and eachUserAssignTimes[i] < (1.0/userNum)*assignTotalTimes*0.5:
  			print('Badsmell: '+userName[i]+' assigned too few times.')
  		else:
  			print('The assigned times of '+userName[i]+' is normal.')
