@@ -10,10 +10,8 @@ Then the gitable.py file is used to extract the issues and labels for each proje
 We labelled these three projects as Project1, Project2, Project3. And there is no clue telling about the the content of these projects in the features we extracted.<br/>
 So it is hard to tell what these projects are about.
 ##Tables
-Data of desired features was collected from the issues and was stored in a CSV file.
-Each project will take one column and 16 rows to show 16 features extracted for each of them.
-One thing that you need pay attention to is the units of the numbers related to different features are omitted here. For example, time should has units of days.
-Then the Statistical measures like the min, max, mean and standard deviation of the data set were extracted. Some values are set to detect bad smells based on the comparison of these results and set values.
+Data extracted from issues are stored in a CSV file.
+Then the Statistical measures like the min, max, accumulation, mean and standard deviation of the data set were extracted, which are the features that we want. All the features are represented by numbers, then Some values are set to detect bad smells based on the comparison of the results and these values.
 ##Data
 We extracted all the issues from the three projects by running code from the given file gitable.py.
 Then we extracted 16 features that we defined from the issues for these three projects.
