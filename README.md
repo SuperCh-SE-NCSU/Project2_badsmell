@@ -827,7 +827,7 @@ The team may be struggling at this moment, issue: 26
 ```
 
 For project3, the duration of issues is shown in the following graph.
-![Project3](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/earlywarning/project3_duration.png)
+![Project2](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/earlywarning/project2_duration.png)
 The early warning detecting result is as following:
 ```
 The team may be struggling at this moment, issue: 30
