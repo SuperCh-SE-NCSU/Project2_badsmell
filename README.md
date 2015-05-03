@@ -524,6 +524,191 @@ Project 3
 Normal
 ```
 
+###Label Usage Detector
+We can add one or more labels to each issue or each pull request in order to remind other team members. We found that some teams have many labels, but some labels were used only one or two times. So we consider this is another kind of bad smell. We named it [labelUsageDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/bad_smell_detector/labelUsageDetector.py) The cause of this bad smell may be the setting of a label is not reasonable. Team members should rename it, merge it into another label or delete it. Below are pseudocode of algorithm we use to detect bad smells.(We do not detect whether a label was used too many times or not. Since label like "Solved" can be used almost every issue. And we think it is fine to do so.)
+```
+if labelUsage < mean - std_dev:
+    Badsmell: This label was used too little times.
+otherwise:
+    The usage of this label is normal.
+```
+
+####Result
+
+Project 1
+```
+('labelName', ['develop', 'question', 'invalid', 'Solved', 'duplicate', 'design', 'helpwanted', 'test', 'bug', 'enhancement'])
+('labelUsage', [15, 5, 1, 36, 3, 21, 15, 5, 14, 5])
+('mean:', 12.0)
+('std_dev:', 10.139033484509261)
+----------------------------------------------
+The usage of [develop] is normal.
+The usage of [question] is normal.
+Badsmell: [invalid] was used too little times.
+The usage of [Solved] is normal.
+The usage of [duplicate] is normal.
+The usage of [design] is normal.
+The usage of [helpwanted] is normal.
+The usage of [test] is normal.
+The usage of [bug] is normal.
+The usage of [enhancement] is normal.
+```
+Project 2
+```
+('labelName', ['Test Problem', 'info!', 'Configure Problem', 'help wanted', 'wontfix', 'bug', 'Design Problem'])
+('labelUsage', [23, 33, 3, 29, 1, 6, 12])
+('mean:', 15.285714285714286)
+('std_dev:', 12.032269536711752)
+----------------------------------------------
+The usage of [Test Problem] is normal.
+The usage of [info!] is normal.
+Badsmell: [Configure Problem] was used too little times.
+The usage of [help wanted] is normal.
+Badsmell: [wontfix] was used too little times.
+The usage of [bug] is normal.
+The usage of [Design Problem] is normal.
+```
+Project 3
+```
+('labelName', ['feature dev', '4. feature complete', '2a. feature dev', '5. bug', 'wontfix', '2b. help wanted', 'feature QA', 'testing', 'question', 'backtrack.JS', '1. feature request', 'feature request', 'trailModel.JS', '3. feature QA', 'help wanted', 'branch', 'deployment', 'branch list', 'feature complete', 'bug', 'resources'])
+('labelUsage', [27, 42, 58, 12, 1, 1, 22, 4, 3, 1, 51, 33, 1, 40, 8, 2, 3, 1, 11, 5, 1])
+('mean:', 15.571428571428571)
+('std_dev:', 18.175261650232763)
+----------------------------------------------
+The usage of [feature dev] is normal.
+The usage of [4. feature complete] is normal.
+The usage of [2a. feature dev] is normal.
+The usage of [5. bug] is normal.
+The usage of [wontfix] is normal.
+The usage of [2b. help wanted] is normal.
+The usage of [feature QA] is normal.
+The usage of [testing] is normal.
+The usage of [question] is normal.
+The usage of [backtrack.JS] is normal.
+The usage of [1. feature request] is normal.
+The usage of [feature request] is normal.
+The usage of [trailModel.JS] is normal.
+The usage of [3. feature QA] is normal.
+The usage of [help wanted] is normal.
+The usage of [branch] is normal.
+The usage of [deployment] is normal.
+The usage of [branch list] is normal.
+The usage of [feature complete] is normal.
+The usage of [bug] is normal.
+The usage of [resources] is normal.
+```
+
+###User Participate Detector
+In a good team, the difference of each member's degree of participation, in other words, the difference of each member's contribution should not be too large. Otherwise, there must be "great dictator" or "passenger" in this team, which can become another bad smell. We named it [userParticipateDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/bad_smell_detector/userParticipateDetector.py) Below are pseudocode of algorithm we use to detect bad smells. <b>(We consider not only commit times of each member, but also the issue participant times of each member.)</b>
+```
+ratio1=eachMemberIssueParticipateTimes[i]*1.0/sumOfIssueParticipateTimes
+ratio2=eachMemberCommitTimes[i]*1.0/sumOfCommitTimes
+if ratio1 < 10% or ratio2 < 10%:
+  	Badsmell: This user is likely be a 'passenger'.
+if ratio1 > 75% or ratio2 > 75%:
+	Badsmell: This user is likely be a 'great dictator'.
+otherwise:
+	The participant of this user is normal.
+```
+
+####Result
+
+Project 1
+```
+('eachMemberIssueParticipateTimes', [56, 54, 7])
+('eachMemberCommitTimes', [193, 180, 82])
+----------------------------------------------
+The participant of this user is normal.
+The participant of this user is normal.
+Badsmell: This user is likely to be a 'passenger'.
+```
+Project 2
+```
+('eachMemberIssueParticipateTimes', [78, 20, 4, 1])
+('eachMemberCommitTimes', [48, 48, 26, 22])
+----------------------------------------------
+Badsmell: This user is likely be a 'great dictator'.
+The participant of this user is normal.
+Badsmell: This user is likely to be a 'passenger'.
+Badsmell: This user is likely to be a 'passenger'.
+```
+Project 3
+```
+('eachMemberIssueParticipateTimes', [187, 101, 29, 6])
+('eachMemberCommitTimes', [151, 127, 62, 38])
+----------------------------------------------
+The participant of this user is normal.
+The participant of this user is normal.
+Badsmell: This user is likely to be a 'passenger'.
+Badsmell: This user is likely to be a 'passenger'.
+```
+
+###Weekly Issue Detector
+We are also interesting in the amount of weekly issues of each team. And the result can reflect which period is the most active period of each team. If one week had too many or too little issues been created, we consider it can be a bad smell. Since one team may catch up the schedule in one week. We named it [weeklyIssueDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/bad_smell_detector/weeklyIssueDetector.py) Below are pseudocode of algorithm we use to detect bad smells.
+```
+if weeklyIssue > mean + std_dev:
+	Badsmell: Too many issues in this week.
+if weeklyIssue < mean - std_dev:
+	Badsmell: Too little issues in this week.
+otherwise:
+	Issue number is normal in this week.
+```
+
+####Result
+
+Project 1
+```
+('weeklyIssue:', [24, 9, 4, 2, 5, 6, 5, 8])
+('mean:', 7.875)
+('std_dev:', 6.4311254847032799)
+----------------------------------------------
+Badsmell: Too many issues in this week.
+Issue number is normal in this week.
+Issue number is normal in this week.
+Issue number is normal in this week.
+Issue number is normal in this week.
+Issue number is normal in this week.
+Issue number is normal in this week.
+Issue number is normal in this week.
+```
+Project 2
+```
+('weeklyIssue:', [10, 12, 4, 1, 1, 1, 1, 37, 1])
+('mean:', 7.5555555555555554)
+('std_dev:', 11.156573658721083)
+----------------------------------------------
+Issue number is normal in this week.
+Issue number is normal in this week.
+Issue number is normal in this week.
+Issue number is normal in this week.
+Issue number is normal in this week.
+Issue number is normal in this week.
+Issue number is normal in this week.
+Badsmell: Too many issues in this week.
+Issue number is normal in this week.
+```
+Project 3
+```
+('weeklyIssue:', [21, 8, 9, 2, 9, 10, 26, 5])
+('mean:', 11.25)
+('std_dev:', 7.5787531956120588)
+----------------------------------------------
+Badsmell: Too many issues in this week.
+Issue number is normal in this week.
+Issue number is normal in this week.
+Badsmell: Too little issues in this week.
+Issue number is normal in this week.
+Issue number is normal in this week.
+Badsmell: Too many issues in this week.
+Issue number is normal in this week.
+```
+
+
+
+
+
+
+
 ##Early warning
 
 **Issue Interval early Warning**
