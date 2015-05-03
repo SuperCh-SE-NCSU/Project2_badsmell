@@ -734,7 +734,8 @@ Badsmell: Too many issues in this week.
 Issue number is normal in this week.
 ```
 
-
+###Issue Assignee Detector
+According to the ```Issue Without Comment Detector```, we found that there are many issues without having comments below. So if issue creator assigned the issue to himself/herself or other team members, we think this situation will be better. Since assignee means who this issue is assigned to, and he/she have to handle it. If there are not enough assignees assigned to issues, another bad smell will occur. We named it [weeklyIssueDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/bad_smell_detector/weeklyIssueDetector.py) Below are pseudocode of algorithm we use to detect bad smells.
 
 
 
