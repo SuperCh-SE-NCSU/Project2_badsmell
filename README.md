@@ -15,6 +15,7 @@ Description
 We use the trend of created time of issues to find the early warning. We assume that the interval of created time of two adjacent issues is stable if the team is developing the project in a good plan. If the team creates many issues in a short time, it means the team is rushing. If the team doesn't create a issue in a long time, it means the team may not work on the project in schedule.
 Assume the number of issues is a function of time: inum=f(t), it will increase linearly as time increases. The differential of f(t) is the interval of created time of two adjacent issues. And the interval should be fluctuating little between a constant. 
 We define the script as following:
+```python
 meaninterval=float(0)       #mean of interval
 threshold=float(60*60*12)   #threshold for early warning extractor
 thresholdnumbelow=4         #threshold indicating the team may be rushing
@@ -38,7 +39,7 @@ for i in range(0,len(interval)-1):
     if upinterval>thresholdnumup:
         print('the team may be falling behind the schedule before issue',i)
         upinterval=0
-
+```
 ##Early warning results
 For project 1, the interval of created time of two adjacent issue is described in the following graph.
 
