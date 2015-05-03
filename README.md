@@ -18,7 +18,7 @@ The values in the table represent the number of rows of data collected for that 
 |4|Total number of labels|
 |5|Number of times each label was used|
 |6|Mean and standard deviation of time spent in each issue|
-|7|"Unusually long" time a label|
+|7|Number of issues with "unusually long" time|
 |8|Mean and standard deviation number of labels assigned to each issue|
 |9|Number of times each milestone was used|
 |10|Percentage of issues using labels|
@@ -43,7 +43,7 @@ The values in the table represent the number of rows of data collected for that 
 
 **6. Mean and standard deviation of time spent in each issue**
 
-**7. "Unusually long" time a label**
+**7. Number of issues with "unusually long" time**
 
 **8. Mean and standard deviation number of labels assigned to each issue**
 
@@ -213,7 +213,7 @@ Mean and standard deviation of time spent in each issue:
           standard:   458374.563866
 ```
 
-####7. "Unusually long" time a label
+####7. Number of issues with "unusually long" time
 
 "Unusually long" time means 1.5 or 2 standard deviations time in a label. In normal distribution, 1.5 or 2 standard deviations means the data point is quite far away from the mean value. In this case, unusually long time a label may indicate team do little stuff during this time period.
 
@@ -223,7 +223,7 @@ Mean and standard deviation of time spent in each issue:
 We counted number of labels with unusually long time, which means 1.5 or 2 standard deviations time compatring to mean value.
 
 ```  
-"Unusually long" time a label:
+Number of issues with "unusually long" time:
   Project1: 14
   Project2: 10
   Project3: 29
