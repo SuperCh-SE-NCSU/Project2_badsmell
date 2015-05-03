@@ -735,11 +735,43 @@ Issue number is normal in this week.
 ```
 
 ###Issue Assignee Detector
-According to the ```Issue Without Comment Detector```, we found that there are many issues without having comments below. So if issue creator assigned the issue to himself/herself or other team members, we think this situation will be better. Since assignee means who this issue is assigned to, and he/she have to handle it. If there are not enough assignees assigned to issues, another bad smell will occur. We named it [weeklyIssueDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/bad_smell_detector/weeklyIssueDetector.py) Below are pseudocode of algorithm we use to detect bad smells.
+According to the ```Issue Without Comment Detector```, we found that there are many issues without having comments below. So if issue creator assigned the issue to himself/herself or other team members, we think this situation will be better. Since assignee means who this issue is assigned to, and he/she have to handle it. If one team member is assigned to too many or too few issues, another bad smell will occur. We named it [issueAssigneeDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/57672e3292594dc22788de81a6f06d887bbca0fb/bad_smell_detector/issueAssigneeDetector.py) Below are pseudocode of algorithm we use to detect bad smells.
+```
+if userName == 'None': 
+	These are issues not assigned to any team member.
+if userName != 'None' and eachUserAssignTimes > 1.5*assignTotalTimes/userNum:
+ 	Badsmell: This user assigned too many times.
+if userName != 'None' and eachUserAssignTimes < 0.5*assignTotalTimes/userNum:
+ 	Badsmell: This user assigned too few times.
+otherwise:
+ 	The assigned times of this user is normal.
+``` 	
+ 	
+####Result
 
-
-
-
+Project 1
+```
+('assignTotalTimes:', 63)
+Badsmell: user1 assigned too few times.
+Badsmell: user2 assigned too few times.
+Badsmell: user3 assigned too few times.
+```
+Project 2
+```
+('assignTotalTimes:', 68)
+Badsmell: user1 assigned too few times.
+The assigned times of user2 is normal.
+The assigned times of user3 is normal.
+The assigned times of user4 is normal.
+```
+Project 3
+```
+('assignTotalTimes:', 90)
+Badsmell: user1 assigned too few times.
+The assigned times of user2 is normal.
+The assigned times of user3 is normal.
+Badsmell: user4 assigned too few times.
+```
 
 ##Early warning
 
