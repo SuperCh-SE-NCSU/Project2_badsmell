@@ -525,7 +525,8 @@ Normal
 ```
 
 ##Early warning
-**Interval of created time of two adjacent issues**
+
+**Issue Interval early Warning**
 
 **Description**
 
@@ -534,7 +535,7 @@ Assume the number of issues is a function of time: inum=f(t), it will increase l
 
 **Script**
 
-We define the script as following:
+We implement the issue interval early warning in the following script:
 ```python
 meaninterval=float(0)       #mean of interval
 threshold=float(60*60*12)   #threshold for early warning extractor
