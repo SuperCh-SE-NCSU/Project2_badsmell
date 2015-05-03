@@ -749,10 +749,12 @@ for i in range(0,len(interval)-1):
 [Code Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/earlywarning/earlyWarningExtractorInterval.py)
 
 **Issue Duration Early Warning**
-Issue Duration early Warning is based on the trend of duration of issue. If the team spend much more time in closing the issue than before, the team may be struggling or waiting. It means we should notify the team to work harder. The detection method is also based on threshold. We implement the issue duration early warning in the code below:
+Issue Duration early Warning is based on the trend of duration of issue. If the team spend much more time in closing the issue than before, the team may be struggling or waiting. TIt means we should notify the team to work harder. There are two methods to implement it. The first detecting method is also based on threshold, the second detecting method is based on the increasing trend of issue duration time in which we need linear regression to fit the trend. We implement the issue duration early warning in the code below:
 ```python
+#method 1: based on threshold
 sumtime=0
 timethreshold=60*60*24*12
+print('method 1')
 for i in range(0,len(xa)-1,1):
     if ya[i]>2000000:
         sumtime=sumtime+ya[i]
@@ -761,6 +763,21 @@ for i in range(0,len(xa)-1,1):
     if sumtime>timethreshold:
         print('The team may be struggling at this moment, issue: '+str(i))
         sumtime=0
+print('-------------------------------')
+
+#method 2: based on the fit linear equation 
+print('method 2')
+km=list()
+for i in range(8,len(xa)-1,1):
+    tempx=xa[(i-8):i]
+    tempy=ya[(i-8):i]
+    m,b = polyfit(tempx, tempy, 1)
+    fit=polyfit(tempx,tempy,1)
+    fit_fn=poly1d(fit)
+    if m>150000:
+        print('The team may be waiting at this moment, issue: '+str(i))
+    km.append(m)
+
 ```
 [Code Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/earlywarning/earlyWarningExtractorDuration.py)
 
@@ -806,29 +823,57 @@ the team may be pushing before issue 71
 
 For project1, the duration of issues is shown in the following graph.
 ![Project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/earlywarning/project1_duration.png)
+
 The early warning detecting result is as following:
 ```
+method 1
 The team may be struggling at this moment, issue: 0
 The team may be struggling at this moment, issue: 2
 The team may be struggling at this moment, issue: 4
 The team may be struggling at this moment, issue: 5
 The team may be struggling at this moment, issue: 6
+-------------------------------
+method 2
+The team may be waiting at this moment, issue: 15
+The team may be waiting at this moment, issue: 16
+The team may be waiting at this moment, issue: 33
+The team may be waiting at this moment, issue: 34
+The team may be waiting at this moment, issue: 35
 ```
 
 For project2, the duration of issues is shown in the following graph.
 ![Project2](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/earlywarning/project2_duration.png)
+
 The early warning detecting result is as following:
+
 ```
+method 1
 The team may be struggling at this moment, issue: 11
 The team may be struggling at this moment, issue: 12
 The team may be struggling at this moment, issue: 22
 The team may be struggling at this moment, issue: 25
 The team may be struggling at this moment, issue: 26
+-------------------------------
+method 2
+The team may be waiting at this moment, issue: 13
+The team may be waiting at this moment, issue: 14
+The team may be waiting at this moment, issue: 15
+The team may be waiting at this moment, issue: 23
+The team may be waiting at this moment, issue: 26
+The team may be waiting at this moment, issue: 27
 ```
 
 For project3, the duration of issues is shown in the following graph.
 ![Project2](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/earlywarning/project2_duration.png)
+
 The early warning detecting result is as following:
 ```
+method 1
 The team may be struggling at this moment, issue: 30
+-------------------------------
+method 2
+The team may be waiting at this moment, issue: 22
+The team may be waiting at this moment, issue: 31
 ```
+
+Actually we found that method 1 and method 2 gives similar result in project 2 and 3. But method 2 works better in project 1. It means that linear regression is good at describing the trend. There is also an interesting trend here, the issue duration time is small near the deadline of the projects. Maybe all the teams are creating new issues to meet the requirements of our professor.
