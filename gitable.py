@@ -52,7 +52,7 @@ def secs(d0):
     return delta.total_seconds()
 
 def dump1(u,issues):
-    token = "" 
+    token = "8174633dcc5c8379a557af139c8589ec63b37327" 
     request = urllib2.Request(u, headers={"Authorization" : "token "+token})
     v = urllib2.urlopen(request).read()
     w = json.loads(v)
@@ -117,7 +117,6 @@ def launchDump():
     labelnum=dict()
     assignques=dict()
     milestonenum=dict()
-
     createtime=dict()
     numofiss_nocomments=0
     numberofissueWeek=list()
@@ -127,7 +126,8 @@ def launchDump():
 
     
     f=open("Group6.txt","w")
-
+    
+ 
     #issues2=dict()
     while(True):
         doNext = dump('https://api.github.com/repos/SuperCh-SE-NCSU/ProjectScraping/issues/events?page=' + str(page), issues)
@@ -142,6 +142,9 @@ def launchDump():
     #rint json.dumps(issues)
     #with open('ProjectScraping.json','wb') as fp:
     #    json.dump(issues,fp)
+    
+    #with open('project1.json', 'w') as outfile:
+    #      json.dump(issues, outfile)
     for issue, events in issues.iteritems():
         print("ISSUE " + str(issue)+"\n")
         f.write("ISSUE "+str(issue)+"\n")

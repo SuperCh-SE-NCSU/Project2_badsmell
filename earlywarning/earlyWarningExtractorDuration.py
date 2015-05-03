@@ -30,6 +30,7 @@ for i in range(2):
     fit_fn=poly1d(fit)
     plt.plot(tempx, fit_fn(tempx), '--k') 
 
+#method 1: based on threshold
 sumtime=0
 timethreshold=60*60*24*12
 print('method 1')
@@ -42,6 +43,8 @@ for i in range(0,len(xa)-1,1):
         print('The team may be struggling at this moment, issue: '+str(i))
         sumtime=0
 print('-------------------------------')
+
+#method 2: based on the fit linear equation 
 print('method 2')
 km=list()
 for i in range(8,len(xa)-1,1):
@@ -53,6 +56,6 @@ for i in range(8,len(xa)-1,1):
     if m>150000:
         print('The team may be waiting at this moment, issue: '+str(i))
     km.append(m)
-print(km)
+
 plt.plot(xa,ya,'r*-')
 plt.show()
