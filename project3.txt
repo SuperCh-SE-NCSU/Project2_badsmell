@@ -1,0 +1,88 @@
+feature 1
+Num of issues: 93
+-----------------------------
+featue 2
+Num of labels: 21
+-----------------------------
+feature 3
+Num of millstones: 7
+None 46
+v0.6 Cleanup 16
+v0.4 7
+v0.5 12
+v0.1 4
+v0.2 5
+v0.3 6
+-----------------------------
+feature 4
+Number of times each label was used
+feature dev 27
+4. feature complete 42
+2a. feature dev 58
+5. bug 12
+wontfix 1
+2b. help wanted 1
+feature QA 22
+testing 4
+question 3
+backtrack.JS 1
+1. feature request 51
+feature request 33
+trailModel.JS 1
+3. feature QA 40
+help wanted 8
+branch 2
+deployment 3
+branch list 1
+feature complete 11
+bug 5
+resources 1
+-----------------------------
+feature 5
+Number of issues without comments: 6
+-----------------------------
+feature 6
+Number of issues every month: [21, 8, 9, 2, 9, 10, 26, 5]
+-----------------------------
+feature 7
+mean and standard deviation
+mean:  428354.733945
+standard:  458374.563866
+-----------------------------
+feature 8
+Number of issues with unusually long time: 29
+-----------------------------
+feature 9
+issues not labeled: 3
+-----------------------------
+feature 10
+Percentage of issues using milestones
+0.520833333333
+-----------------------------
+feature 11
+Percentage of issues using assignees
+participants
+{'meneal': 11, 'macluo': 19, 'None': 25, 'duh102': 26, 'ktspence': 9}
+Percentage of issues using assignees: 0.722222222222
+
+
+feature 12, 13
+"Unusually small" number of issues handled by one person(<10%)
+"Unusually large" number of issues handled by one person(>70%)
+meneal 18 0.193548387097
+macluo 16 0.172043010753
+duh102 31 0.333333333333
+ktspence 0 0.0
+-----------------------------
+feature 14, 15
+Time interval between the creation of two issues
+Number of interval:  90
+Mean value of interval time 65775.3888889
+Standard deviation of interval time 159966.183254
+-----------------------------
+feature 16
+Issue participating times of each user
+meneal 29
+macluo 101
+duh102 187
+ktspence 6

@@ -27,6 +27,7 @@ import re,datetime
 import sys
 import math
 import numpy as np
+import json
 
 def showFigure(x):
     plt.plot(range(len(x)), x, 'ro-')   
@@ -52,7 +53,7 @@ def secs(d0):
     return delta.total_seconds()
 
 def dump1(u,issues):
-    token = "8174633dcc5c8379a557af139c8589ec63b37327" 
+    token = "" 
     request = urllib2.Request(u, headers={"Authorization" : "token "+token})
     v = urllib2.urlopen(request).read()
     w = json.loads(v)
@@ -117,37 +118,29 @@ def launchDump():
     labelnum=dict()
     assignques=dict()
     milestonenum=dict()
+
     createtime=dict()
     numofiss_nocomments=0
     numberofissueWeek=list()
-    timeduration=list()
+    timeduration=dict()
     
     numofissuenotlabeled=0
 
     
-    f=open("Group6.txt","w")
-    
- 
+    #f=open("Group6.txt","w")
+
     #issues2=dict()
     while(True):
-        doNext = dump('https://api.github.com/repos/SuperCh-SE-NCSU/ProjectScraping/issues/events?page=' + str(page), issues)
+        #doNext = dump('https://api.github.com/repos/SuperCh-SE-NCSU/ProjectScraping/issues/events?page=' + str(page), issues)
         #doNext=dump('https://api.github.com/repos/CSC510/SQLvsNOSQL/issues/events?page=' + str(page),issues)
-        #doNext=dump('https://api.github.com/repos/CSC510-2015-Axitron/maze/issues/events?page=' + str(page), issues)
+        doNext=dump('https://api.github.com/repos/CSC510-2015-Axitron/maze/issues/events?page=' + str(page), issues)
         print("page" + str(page))
         page += 1
         if not doNext : break
-    #print issues
-    #with open('ProjectScraping.json','wb') as fp:
-    #    json.dump(issues,fp,skipkeys=False, ensure_ascii=False)
-    #rint json.dumps(issues)
-    #with open('ProjectScraping.json','wb') as fp:
-    #    json.dump(issues,fp)
-    
-    #with open('project1.json', 'w') as outfile:
-    #      json.dump(issues, outfile)
+ 
     for issue, events in issues.iteritems():
         print("ISSUE " + str(issue)+"\n")
-        f.write("ISSUE "+str(issue)+"\n")
+        #f.write("ISSUE "+str(issue)+"\n")
         milestonetrue=True
         commentsi=True
         createat=True
@@ -185,154 +178,28 @@ def launchDump():
                         commentsi=False
                 if str(k) is 'issuecreated_at':
                     if createat==True:
-                        createtime[issue]=v
+                        createtime[int(issue)]=v
                         createat=False
                 if str(k) is 'duration':
                     if tduration==True:
-                        timeduration.append(v)
+                        timeduration[int(issue)]=v
                 #if v != None:
                 #    print(str(k)+" : "+str(v)) 
             #print(type(event))
             #print(event['issue']['number'])
             #if event.get('label'):
             #    print(event['label']['name'])
-            f.write(event.show()+"\n")
-            f.write('\n')
+            #f.write(event.show()+"\n")
+            #f.write('\n')
             print(event.show())
             print('')
         if labelt==True:
             numofissuenotlabeled=numofissuenotlabeled+1
         if createat==True:
-            createtime[issue]=0
-        
-    numoflabels=len(labelnum)
-    print('feature 1')
-    print('Num of issues:',numofIssues)
-    print('-----------------------------')
-    print('featue 2')
-    print('Num of labels:',numoflabels)
-    print('-----------------------------')
-    print('feature 3')
-    print('Num of millstones:',len(milestonenum))
-    for key, elem in milestonenum.items():
-        print(key, elem)
-    print('-----------------------------')
-    print('feature 4')
-    print('Number of times each label was used')
-    for key, elem in labelnum.items():
-        print(key, elem)
-    print('-----------------------------')
-    print('feature 5')
-    print('Number of issues without comments:',numofiss_nocomments)
-    print('-----------------------------')
-    
-    print('feature 6')
-    endtime=0
-    #print(len(createtime))
-    #print(createtime)
-    #plt.plot(createtime.keys(),createtime.values(),'ro-')
-        
-    #plt.show()
-    
-    for k,v in createtime.items():
-        if endtime==0:
-            numofissueweek=0
-            endtime=v+60*60*24*7
-            #print(endtime)
-        if v<endtime:
-            numofissueweek=numofissueweek+1
-        else:
-            numberofissueWeek.append(numofissueweek)
-            numofissueweek=1
-            endtime=endtime+60*60*24*7
-            #print(endtime)
-    numberofissueWeek.append(numofissueweek)
-    print('Number of issues every week:',numberofissueWeek)
-    print('-----------------------------')
-    
-    print('feature 7')
-    print('mean and standard deviation')
-    mean=0
-    for timed in timeduration:
-        mean=mean+timed
-    mean=mean/len(timeduration)
-    standard=0
-    for timed in timeduration:
-        standard=standard+(timed-mean)*(timed-mean)
-    standard=math.sqrt(standard/len(timeduration))
-    print('mean: ',mean)
-    print('standard: ',standard)
-    print('-----------------------------')
-
-    print('feature 8')
-   
-    numofdura=0
-    for timed in timeduration:
-        if math.fabs(timed-mean)>1.5*standard:
-            numofdura=numofdura+1
-    
-    print('Number of issues with unusually long time:',numofdura)
-    print('-----------------------------')    
-    
-    print('feature 9')
-    print('issues not labeled:',numofIssues-len(issues))
-    print('-----------------------------')
-    print('feature 10')
-    print('Percentage of issues using milestones')
-    sumMile=0
-    noneMile=0
-    for key, elem in milestonenum.items():
-        if key=='None':
-            noneMile=elem
-        else:
-            sumMile=sumMile+elem
-    print(sumMile*1.0/(sumMile+noneMile))
-    print('-----------------------------')
-    print('feature 11')
-    print('Percentage of issues using assignees')
-    print('participants')
-    print(assignques)
-    nonassign=float(0)
-    sumassign=float(0)
-    for tkey, telem in assignques.items():
-        if tkey=='None':
-            nonassign=telem
-        sumassign=sumassign+telem
-    print('Percentage of issues using assignees:',1-nonassign/sumassign)
-
-    f.close()
-        #issues2[str(issue)]=events
-    #with open('ProjectScraping.json','wb') as fp:
-    #    json.dump(issues2,fp)
-
-    #badsmell
-    #badsmell 1: the distribution of number of issues distributed each week is not well
-    plt.figure()
-    
-    n_groups=len(numberofissueWeek)
-    meansone=range(1,n_groups,1)
-    weekcount=numberofissueWeek
-
-    fig,ax=plt.subplots()
-    index = np.arange(n_groups)  
-    bar_width = 0.35  
- 
-    opacity = 0.4  
-    rects1 = plt.bar(index+bar_width, weekcount, bar_width,alpha=opacity, color='b',label=    'Number of issues')  
-    #rects2 = fbadsmell1.bar(index + bar_width, means_women, bar_width,alpha=opacity,col    or='r',label='Women')  
- 
-    plt.xlabel('Week')  
-    plt.ylabel('Number of Issues')  
-    plt.title('Number of Issues Every Week')  
-    #fbadsmell1.xticks(index + bar_width, ('A', 'B', 'C', 'D', 'E'))  
-    #fbadsmell1.ylim(0,40)  
-    plt.legend()  
-       
- 
-    plt.show()
-
-    #early warning
-    fearly=plt.figure()
-    plt.plot(createtime.keys(),createtime.values(),'ro-')
-    plt.show()
+            createtime[int(issue)]=0
+    print(createtime)
+    with open('createtimeproject3.json', 'w') as outfile:
+        json.dump(createtime, outfile)
+    with open('duration3.json','w') as doutfile:
+        json.dump(timeduration,doutfile)
 launchDump() 

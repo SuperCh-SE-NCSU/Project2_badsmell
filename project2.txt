@@ -1,0 +1,70 @@
+feature 1
+Num of issues: 93
+-----------------------------
+featue 2
+Num of labels: 7
+-----------------------------
+feature 3
+Num of millstones: 5
+None 12
+Final 17
+Small Scale Test and Comparison 4
+Basic Service and Test 23
+Large Scale Test 13
+-----------------------------
+feature 4
+Number of times each label was used
+Test Problem 23
+info! 33
+Configure Problem 3
+help wanted 29
+wontfix 1
+bug 6
+Design Problem 12
+-----------------------------
+feature 5
+Number of issues without comments: 41
+-----------------------------
+feature 6
+Number of issues every month: [10, 12, 4, 1, 1, 1, 1, 37, 1]
+-----------------------------
+feature 7
+mean and standard deviation
+mean:  683042.074766
+standard:  1003264.24323
+-----------------------------
+feature 8
+Number of issues with unusually long time: 10
+-----------------------------
+feature 9
+issues not labeled: 25
+-----------------------------
+feature 10
+Percentage of issues using milestones
+0.826086956522
+-----------------------------
+feature 11
+Percentage of issues using assignees
+participants
+{'None': 27, 'jessexu20': 8, 'maxlpy': 11, 'jentle': 11, 'Hongyi23': 11}
+Percentage of issues using assignees: 0.602941176471
+feature 12, 13
+"Unusually small" number of issues handled by one person(<10%)
+"Unusually large" number of issues handled by one person(>70%)
+jessexu20 49 0.52688172043
+Hongyi23 3 0.0322580645161
+jentle 1 0.010752688172
+maxlpy 12 0.129032258065
+-----------------------------
+feature 14, 15
+Time interval between the creation of two issues
+Number of interval:  68
+Mean value of interval time 90650.6617647
+Standard deviation of interval time 252940.849578
+-----------------------------
+feature 16
+Issue participating times of each user
+jessexu20 78
+Hongyi23 4
+jentle 1
+maxlpy 20
