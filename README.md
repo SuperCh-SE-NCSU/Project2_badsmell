@@ -17,7 +17,7 @@ The values in the table represent the number of rows of data collected for that 
 |3|Number of issues each week|
 |4|Total number of labels|
 |5|Number of times each label was used|
-|6|Mean and standard deviation of time spent in each label|
+|6|Mean and standard deviation of time spent in each issue|
 |7|"Unusually long" time a label|
 |8|Mean and standard deviation number of labels assigned to each issue|
 |9|Number of times each milestone was used|
@@ -42,7 +42,7 @@ The values in the table represent the number of rows of data collected for that 
 
 **5. Number of times each label was used**
 
-**6. Mean and standard deviation of time spent in each label**
+**6. Mean and standard deviation of time spent in each issue**
 
 **7. "Unusually long" time a label**
 
@@ -194,17 +194,17 @@ We also counted the number of times each label was used.
 ```
 ![Project3](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project3_labels.png)
 
-####6. Mean and standard deviation of time spent in each label
+####6. Mean and standard deviation of time spent in each issue
 
-This feature will show us mean and standard deviation of times spending in each label. And it will help us to analyse in depth. 
+This feature will show us mean and standard deviation of times spending in each issue. And it will help us to analyse in depth. 
 
 <b>Scripts are found here</b>
 
 #####Result
-We calculated mean and standard deviation of time spent in each label.
+We calculated mean and standard deviation of time spent in each issue.
 
 ```  
-Mean and standard deviation of time spent in each label:
+Mean and standard deviation of time spent in each issue:
   Project1:
           mean:       717715.441667
           standard:   735405.992596
@@ -406,17 +406,17 @@ Issue participating times of each user:
 
 ## Bad smells detector & Result 
 
-###Issue Time Interval Detector [need Liang's data]
-During the development cycle, team members will post some issues in order to communicate other members. However, the time interval between two issue creation may vary dramatically. This detector can analyse time interval to decide whether it is too long or too short. The result can reflect the process of each team. And we named it [issueTimeIntervalDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/bad_smell_detector/issueTimeIntervalDetector.py) Below are pseudocode of algorithm we use to detect bad smells.
+###Issue Time Duration Detector [need Liang's data]
+During the development cycle, team members will post some issues in order to communicate other members. However, the time duration between two issue creation may vary dramatically. This detector can analyse time duration to decide whether it is too long or too short. The result can reflect the process of each team. And we named it [issueTimeDurationDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/bad_smell_detector/issueTimeDurationDetector.py) Below are pseudocode of algorithm we use to detect bad smells.
 ```
-if issueTimeInterval > mean + 2*std_dev:
-    Badsmell: Too long time interval between this issue and the last.
+if issueTimeDuration > mean + 2*std_dev:
+    Badsmell: Too long time duration between this issue and the last.
 
-if issueTimeInterval < mean - 2*std_dev:
-    Badsmell: Too little time interval between this issue and the last.
+if issueTimeDuration < mean - 2*std_dev:
+    Badsmell: Too little time duration between this issue and the last.
 
 Otherwise:
-    Issue interval time is normal this time
+    Issue duration time is normal this time
 ```
 
 ####Result
@@ -427,17 +427,17 @@ Project 1
 ('mean:', 72013.56451612903)
 ('std_dev:', 209839.24439541661)
 ...
-38. Issue interval time is normal this time
-39. Issue interval time is normal this time
-40. Issue interval time is normal this time
-41. Badsmell: Too long time interval between this issue and the last.
-42. Badsmell: Too little time interval between this issue and the last.
-43. Badsmell: Too long time interval between this issue and the last.
-44. Issue interval time is normal this time
-45. Issue interval time is normal this time
-46. Issue interval time is normal this time
-47. Issue interval time is normal this time
-48. Issue interval time is normal this time
+38. Issue duration time is normal this time
+39. Issue duration time is normal this time
+40. Issue duration time is normal this time
+41. Badsmell: Too long time duration between this issue and the last.
+42. Badsmell: Too little time duration between this issue and the last.
+43. Badsmell: Too long time duration between this issue and the last.
+44. Issue duration time is normal this time
+45. Issue duration time is normal this time
+46. Issue duration time is normal this time
+47. Issue duration time is normal this time
+48. Issue duration time is normal this time
 ...
 ```
 Project 2
@@ -445,22 +445,22 @@ Project 2
 ('mean:', 90169.373134328358)
 ('std_dev:', 255257.2690866554)
 ...
-20. Issue interval time is normal this time
-21. Issue interval time is normal this time
-22. Issue interval time is normal this time
-23. Issue interval time is normal this time
-24. Issue interval time is normal this time
-25. Badsmell: Too long time interval between this issue and the last.
-26. Badsmell: Too long time interval between this issue and the last.
-27. Issue interval time is normal this time
-28. Issue interval time is normal this time
-29. Issue interval time is normal this time
-30. Issue interval time is normal this time
+20. Issue duration time is normal this time
+21. Issue duration time is normal this time
+22. Issue duration time is normal this time
+23. Issue duration time is normal this time
+24. Issue duration time is normal this time
+25. Badsmell: Too long time duration between this issue and the last.
+26. Badsmell: Too long time duration between this issue and the last.
+27. Issue duration time is normal this time
+28. Issue duration time is normal this time
+29. Issue duration time is normal this time
+30. Issue duration time is normal this time
 ...
-63. Issue interval time is normal this time
-64. Issue interval time is normal this time
-65. Issue interval time is normal this time
-66. Badsmell: Too long time interval between this issue and the last.
+63. Issue duration time is normal this time
+64. Issue duration time is normal this time
+65. Issue duration time is normal this time
+66. Badsmell: Too long time duration between this issue and the last.
 ...
 ```
 Project 3
@@ -468,29 +468,29 @@ Project 3
 ('mean:', 53007.370786516854)
 ('std_dev:', 197722.12811823591)
 ...
-15. Issue interval time is normal this time
-16. Issue interval time is normal this time
-17. Issue interval time is normal this time
-18. Issue interval time is normal this time
-19. Issue interval time is normal this time
-20. Badsmell: Too long time interval between this issue and the last.
-21. Badsmell: Too little time interval between this issue and the last.
-22. Issue interval time is normal this time
-23. Issue interval time is normal this time
-24. Issue interval time is normal this time
-25. Issue interval time is normal this time
+15. Issue duration time is normal this time
+16. Issue duration time is normal this time
+17. Issue duration time is normal this time
+18. Issue duration time is normal this time
+19. Issue duration time is normal this time
+20. Badsmell: Too long time duration between this issue and the last.
+21. Badsmell: Too little time duration between this issue and the last.
+22. Issue duration time is normal this time
+23. Issue duration time is normal this time
+24. Issue duration time is normal this time
+25. Issue duration time is normal this time
 ...
-35. Issue interval time is normal this time
-36. Issue interval time is normal this time
-37. Issue interval time is normal this time
-38. Issue interval time is normal this time
-39. Badsmell: Too long time interval between this issue and the last.
-40. Issue interval time is normal this time
-41. Issue interval time is normal this time
-42. Issue interval time is normal this time
-43. Issue interval time is normal this time
-44. Issue interval time is normal this time
-45. Issue interval time is normal this time
+35. Issue duration time is normal this time
+36. Issue duration time is normal this time
+37. Issue duration time is normal this time
+38. Issue duration time is normal this time
+39. Badsmell: Too long time duration between this issue and the last.
+40. Issue duration time is normal this time
+41. Issue duration time is normal this time
+42. Issue duration time is normal this time
+43. Issue duration time is normal this time
+44. Issue duration time is normal this time
+45. Issue duration time is normal this time
 ...
 ```
 
