@@ -138,7 +138,7 @@ Total number of labels:
 We can figure out which kind of label was used a lot of times, and which kind of label was seldom used. And the results will reflect whether the quantity and the setting of labels are reasonable or not.
 
 #####Result
-We also counted the number of times each label was used and sort the results incrementally.
+We also counted the number of times each label was used.
 
 ![Project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project1_labels.png)
 ```  
@@ -245,42 +245,42 @@ Mean and standard deviation number of labels assigned to each issue:
           Standard deviation  159966.183254
 ```
 
-*9. Number of times each milestone was used**
+**9. Number of times each milestone was used**
 
 We are interesting in number of milestones. And each milestone usually represents one stage in development cycle. We can analyse which software development method each team used.
 
 #####Result
-We counted the number of times each milestone was used. And we sorted the result incrementally.
+We counted the number of times each milestone was used.
 
+![Project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project1_milestones.png)
 ``` 
-Number of times each milestone was used:
  Project1: 
-          Num of millstones: 6
-          Final release: 6
-          V2: 8
-          System test and Report: 8
-          None: 11
-          Beta Launch:  15
-          V1: 19
-          
+          None 11
+          Final release 6
+          Beta Launch  15
+          V1 19
+          V2 8
+          System test and Report 8
+ ```
+![Project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project2_milestones.png)
+ ```
   Project2:
-          Small Scale Test and Comparison 4
-          Num of millstones 5
           None 12
-          Large Scale Test 13
           Final 17
-          Project3: 21
+          Small Scale Test and Comparison 4
           Basic Service and Test 23
-          
+          Large Scale Test 13
+```
+![Project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project3_milestones.png)
+```
   Project3:
+          None 46
+          v0.6 Cleanup 16
+          v0.4 7
+          v0.5 12
           v0.1 4
           v0.2 5
           v0.3 6
-          Num of millstones: 7
-          v0.4 7
-          v0.5 12
-          v0.6 Cleanup 16
-          None 46
 ```
 
 **10. Percentage of issues using labels**
