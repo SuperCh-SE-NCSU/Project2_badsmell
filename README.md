@@ -46,7 +46,7 @@ for i in range(0,len(interval)-1):
         print('the team may be falling behind the schedule before issue',i)
         upinterval=0
 ```
-[Code Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/)
+[Code Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/earlywarning)
 ##Early warning results
 For project 1, the interval of created time of two adjacent issue is described in the following graph.
 ![Project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/earlywarning/project1_interval.png)
