@@ -140,8 +140,8 @@ We can figure out which kind of label was used a lot of times, and which kind of
 #####Result
 We also counted the number of times each label was used and sort the results incrementally.
 
+![Project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project1_labels.png)
 ```  
-Number of times each label was used:
   Project1: 
           invalid 1
           duplicate 3
@@ -153,7 +153,9 @@ Number of times each label was used:
           help wanted 15
           design 21
           Solved 36
-
+```
+![Project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project2_labels.png)
+```
   Project2:
           wontfix 1
           Configure Problem 3
@@ -162,7 +164,9 @@ Number of times each label was used:
           Test Problem 23
           help wanted 29
           info! 33
-
+```
+![Project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project3_labels.png)
+```
   Project3:
           wontfix 1
           2b. help wanted 1
