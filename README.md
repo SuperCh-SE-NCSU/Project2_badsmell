@@ -5,13 +5,16 @@ Bad smells
 We selected three projects (our project is one of them), and extracted all the issues from these projects. <br/>
 1. Projects with more issues are preferred.<br/>
 2. Projects with more labels are proferred.
+Then the gitable.py file is used to extract the issues and labels for each project.
 ##Anonymization
 We labelled these three projects as Project1, Project2, Project3. And there is no clue telling about the the content of these projects in the features we extracted.<br/>
 So it is hard to tell what these projects are about.
 ##Tables
+Data of desired features was collected from the issues and was stored in a CSV file.
 Each project will take one column and 16 rows to show 16 features extracted for each of them.
 One thing that you need pay attention to is the numbers related to different features may have different units. For example,
 time has units of days. while number has no units.
+Then the Statistical measures like the min, max, mean and standard deviation of the data set were extracted. Some values are set to detect bad smells based on the comparison of these results and set values.
 ##Data
 We extracted all the issues from the three projects by running code from the given file gitable.py.
 Then we extracted 16 features that we defined from the issues for these three projects.
