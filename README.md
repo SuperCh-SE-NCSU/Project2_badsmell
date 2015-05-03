@@ -406,17 +406,17 @@ Issue participating times of each user:
 
 ## Bad smells detector & Result 
 
-###Issue Time Duration Detector [need Liang's data]
+###Issue Time Duration Detector
 During the development cycle, team members will post some issues in order to communicate other members. However, the time duration between two issue creation may vary dramatically. This detector can analyse time duration to decide whether it is too long or too short. The result can reflect the process of each team. And we named it [issueTimeDurationDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/bad_smell_detector/issueTimeDurationDetector.py) Below are pseudocode of algorithm we use to detect bad smells.
 ```
 if issueTimeDuration > mean + 2*std_dev:
-    Badsmell: Too long time duration between this issue and the last.
+    Badsmell: Too long time duration of this issuet.
 
 if issueTimeDuration < mean - 2*std_dev:
-    Badsmell: Too little time duration between this issue and the last.
+    Badsmell: Too little time duration of this issue.
 
 Otherwise:
-    Issue duration time is normal this time
+    This issue duration time is normal.
 ```
 
 ####Result
@@ -424,74 +424,105 @@ Because the result are too long, we eliminate some normal results and leave some
 
 Project 1
 ```
-('mean:', 72013.56451612903)
-('std_dev:', 209839.24439541661)
+('Time duration:', [2328305.0, 1012209.0, 2087830.0, 82098.0, 2072034.0, 3018518.0, 2007166.0, 5370.0, 1555.0, 795809.0, 794524.0, 878029.0, 1997961.0, 1997849.0, 190791.0, 1997189.0, 1995992.0, 1995942.0, 874651.0, 520847.0, 438020.0, 2937.0, 410599.0, 244774.0, 167932.0, 69812.0, 65762.0, 274090.0, 1313615.0, 1307063.0, 46371.0, 1285860.0, 1224321.0, 1806161.0, 1709259.0, 1655536.0, 794363.0, 454158.0, 1092175.0, 1037100.0, 836874.0, 835102.0, 965432.0, 661319.0, 117642.0, 237020.0, 236807.0, 21101.0, 266086.0, 266015.0, 394622.0, 440278.0, 104484.0, 371162.0, 268173.0, 171637.0, 178076.0, 166252.0, 5722.0, 122784.0, 103773.0, 95909.0, 95869.0])
+('mean:', 778043.11111111112)
+('std_dev:', 756411.46628143825)
+----------------------------------------------
+0. Badsmell: Too long time duration of this issue.
+1. This issue duration time is normal.
+2. This issue duration time is normal.
+3. This issue duration time is normal.
+4. This issue duration time is normal.
+5. Badsmell: Too long time duration of this issue.
+6. This issue duration time is normal.
+7. This issue duration time is normal.
+8. This issue duration time is normal.
 ...
-38. Issue duration time is normal this time
-39. Issue duration time is normal this time
-40. Issue duration time is normal this time
-41. Badsmell: Too long time duration between this issue and the last.
-42. Badsmell: Too little time duration between this issue and the last.
-43. Badsmell: Too long time duration between this issue and the last.
-44. Issue duration time is normal this time
-45. Issue duration time is normal this time
-46. Issue duration time is normal this time
-47. Issue duration time is normal this time
-48. Issue duration time is normal this time
-...
+58. This issue duration time is normal.
+59. This issue duration time is normal.
+60. This issue duration time is normal.
+61. This issue duration time is normal.
+62. This issue duration time is normal.
 ```
 Project 2
 ```
-('mean:', 90169.373134328358)
-('std_dev:', 255257.2690866554)
+('Time duration:', [452566.0, 2117.0, 118312.0, 692389.0, 1443489.0, 1340439.0, 1339892.0, 4900.0, 330655.0, 1240.0, 261292.0, 3998953.0, 3811513.0, 195055.0, 947929.0, 220160.0, 847199.0, 57.0, 727599.0, 260.0, 656970.0, 609779.0, 3375203.0, 572373.0, 563915.0, 3365954.0, 2665954.0, 1289566.0, 235200.0, 44567.0, 300288.0, 12363.0, 148989.0, 148929.0, 148878.0, 148871.0, 148785.0, 178366.0, 141561.0, 169665.0, 42856.0, 106163.0, 94340.0, 176315.0, 67353.0, 97188.0, 852.0, 14143.0, 67240.0, 1008703.0, 65783.0, 65545.0, 62044.0, 61913.0, 65097.0, 63912.0, 63092.0, 1005495.0, 59255.0, 59512.0, 58368.0, 1000300.0, 5297.0, 3737.0, 22948.0, 965320.0, 442454.0, 2229.0])
+('mean:', 550141.8529411765)
+('std_dev:', 909676.13128271012)
+----------------------------------------------
+0. This issue duration time is normal.
+1. This issue duration time is normal.
+2. This issue duration time is normal.
+3. This issue duration time is normal.
+4. This issue duration time is normal.
+5. This issue duration time is normal.
+6. This issue duration time is normal.
+7. This issue duration time is normal.
+8. This issue duration time is normal.
+9. This issue duration time is normal.
+10. This issue duration time is normal.
+11. Badsmell: Too long time duration of this issue.
+12. Badsmell: Too long time duration of this issue.
+13. This issue duration time is normal.
+14. This issue duration time is normal.
+15. This issue duration time is normal.
+16. This issue duration time is normal.
+17. This issue duration time is normal.
+18. This issue duration time is normal.
+19. This issue duration time is normal.
+20. This issue duration time is normal.
+21. This issue duration time is normal.
+22. Badsmell: Too long time duration of this issue.
+23. This issue duration time is normal.
+24. This issue duration time is normal.
+25. Badsmell: Too long time duration of this issue.
+26. Badsmell: Too long time duration of this issue.
+27. This issue duration time is normal.
+28. This issue duration time is normal.
+29. This issue duration time is normal.
+30. This issue duration time is normal.
+31. This issue duration time is normal.
+32. This issue duration time is normal.
 ...
-20. Issue duration time is normal this time
-21. Issue duration time is normal this time
-22. Issue duration time is normal this time
-23. Issue duration time is normal this time
-24. Issue duration time is normal this time
-25. Badsmell: Too long time duration between this issue and the last.
-26. Badsmell: Too long time duration between this issue and the last.
-27. Issue duration time is normal this time
-28. Issue duration time is normal this time
-29. Issue duration time is normal this time
-30. Issue duration time is normal this time
-...
-63. Issue duration time is normal this time
-64. Issue duration time is normal this time
-65. Issue duration time is normal this time
-66. Badsmell: Too long time duration between this issue and the last.
-...
+65. This issue duration time is normal.
+66. This issue duration time is normal.
+67. This issue duration time is normal.
 ```
 Project 3
 ```
-('mean:', 53007.370786516854)
-('std_dev:', 197722.12811823591)
+('Time duration:', [8903.0, 190701.0, 848449.0, 130018.0, 779742.0, 1332352.0, 654797.0, 779672.0, 697731.0, 364093.0, 83564.0, 613278.0, 2701.0, 57152.0, 57295.0, 238986.0, 2675.0, 40356.0, 391407.0, 720239.0, 948927.0, 1040294.0, 678806.0, 5705.0, 816090.0, 760622.0, 31395.0, 269668.0, 1719740.0, 351366.0, 2530579.0, 353674.0, 1063466.0, 1181458.0, 1375119.0, 1022531.0, 68778.0, 1099563.0, 761104.0, 132.0, 75056.0, 654885.0, 177690.0, 75.0, 1125976.0, 368300.0, 139766.0, 300924.0, 689812.0, 209757.0, 382835.0, 26790.0, 7327.0, 148024.0, 344144.0, 344055.0, 1431.0, 341477.0, 364028.0, 240208.0, 174089.0, 68333.0, 489217.0, 3372.0, 71.0, 48271.0, 101548.0, 12527.0, 2434.0, 19107.0, 15092.0, 99584.0, 23678.0, 532484.0, 1506.0, 1075.0, 54660.0, 166414.0, 34153.0, 7514.0, 10.0, 160.0, 45.0, 15383.0, 151888.0, 23021.0, 34897.0, 35024.0, 8572.0, 24400.0])
+('mean:', 357380.18888888886)
+('std_dev:', 458485.98025573732)
+----------------------------------------------
+0. This issue duration time is normal.
+1. This issue duration time is normal.
+2. This issue duration time is normal.
+3. This issue duration time is normal.
+4. This issue duration time is normal.
+5. Badsmell: Too long time duration of this issue.
+6. This issue duration time is normal.
+7. This issue duration time is normal.
+8. This issue duration time is normal.
 ...
-15. Issue duration time is normal this time
-16. Issue duration time is normal this time
-17. Issue duration time is normal this time
-18. Issue duration time is normal this time
-19. Issue duration time is normal this time
-20. Badsmell: Too long time duration between this issue and the last.
-21. Badsmell: Too little time duration between this issue and the last.
-22. Issue duration time is normal this time
-23. Issue duration time is normal this time
-24. Issue duration time is normal this time
-25. Issue duration time is normal this time
+24. This issue duration time is normal.
+25. This issue duration time is normal.
+26. This issue duration time is normal.
+27. This issue duration time is normal.
+28. Badsmell: Too long time duration of this issue.
+29. This issue duration time is normal.
+30. Badsmell: Too long time duration of this issue.
+31. This issue duration time is normal.
+32. This issue duration time is normal.
+33. This issue duration time is normal.
+34. Badsmell: Too long time duration of this issue.
+35. This issue duration time is normal.
+36. This issue duration time is normal.
+37. This issue duration time is normal.
 ...
-35. Issue duration time is normal this time
-36. Issue duration time is normal this time
-37. Issue duration time is normal this time
-38. Issue duration time is normal this time
-39. Badsmell: Too long time duration between this issue and the last.
-40. Issue duration time is normal this time
-41. Issue duration time is normal this time
-42. Issue duration time is normal this time
-43. Issue duration time is normal this time
-44. Issue duration time is normal this time
-45. Issue duration time is normal this time
-...
+86. This issue duration time is normal.
+87. This issue duration time is normal.
+88. This issue duration time is normal.
+89. This issue duration time is normal.
 ```
 
 ##Issue Without Comment Detector
