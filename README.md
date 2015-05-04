@@ -62,6 +62,10 @@ label_id | name | number of use |
 1 | develop | 15 |
 4 | Solved | 36 |
 
+[project1] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project1/labelInfo1.csv) |
+[project2] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project2/labelInfo2.csv) |
+[project3] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project3/labelInfo3.csv)
+
 ####4. Commit info
 username | number of commit | percentage of use |
 ---- | ---- | ---- |
