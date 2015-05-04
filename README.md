@@ -8,7 +8,7 @@ We selected three projects (our project is one of them), and extracted all the i
 Then the gitable.py file is used to extract the issues, labels, milestones for each project.
 
 ##Anonymization
-We labelled these three projects as Project1, Project2, Project3.In the dataset that we extracted from these projects, we replace the specific usernames with user1,user2,etc. And there is no clue telling about the the content of these projects in the features we extracted.<br/>
+We labelled these three projects as Project1, Project2, Project3 or group1, group2, group3(not the real group numbers).In the dataset that we extracted from these projects, we replace the specific usernames with user1,user2,etc. And there is no clue telling about the the content of these projects in the features we extracted.<br/>
 
 ##Tables
 Data extracted from issues are stored in a CSV file.
