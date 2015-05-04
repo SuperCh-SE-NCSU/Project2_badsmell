@@ -1,328 +1,328 @@
  Issue,action,what,when,user,milestone
 1,  labeled,	  feature complete,	  1423610498.0,	  user1
-,unlabeled,	  feature request,	  1423610497.0,	  user1
-,unlabeled,	  help wanted,	  1423610461.0,	  user1
-,labeled,	  feature request,	  1423607806.0,	  user1
-,labeled,	  help wanted,	  1423607806.0,	  user1
- 2,  labeled,	  feature complete,	  1423798637.0,	  user1
-,unlabeled,	  feature QA,	  1423798635.0,	  user1
-,unlabeled,	  help wanted,	  1423714448.0,	  user1
-,labeled,	  help wanted,	  1423710681.0,	  user1
-,unlabeled,	  feature request,	  1423674022.0,	  user1
-,unlabeled,	  feature dev,	  1423674021.0,	  user1
-,labeled,	  feature QA,	  1423674020.0,	  user1
-,labeled,	  feature dev,	  1423669337.0,	  user1
-,labeled,	  feature request,	  1423607942.0,	  user1
+1,unlabeled,	  feature request,	  1423610497.0,	  user1
+1,unlabeled,	  help wanted,	  1423610461.0,	  user1
+1,labeled,	  feature request,	  1423607806.0,	  user1
+1,labeled,	  help wanted,	  1423607806.0,	  user1
+2,  labeled,	  feature complete,	  1423798637.0,	  user1
+2,unlabeled,	  feature QA,	  1423798635.0,	  user1
+2,unlabeled,	  help wanted,	  1423714448.0,	  user1
+2,labeled,	  help wanted,	  1423710681.0,	  user1
+2,unlabeled,	  feature request,	  1423674022.0,	  user1
+2,unlabeled,	  feature dev,	  1423674021.0,	  user1
+2,labeled,	  feature QA,	  1423674020.0,	  user1
+2,labeled,	  feature dev,	  1423669337.0,	  user1
+2,labeled,	  feature request,	  1423607942.0,	  user1
  4,  labeled,	  feature request,	  1423610508.0,	  user2
  5,  labeled,	  feature complete,	  1423798662.0,	  user1
-,unlabeled,	  feature QA,	  1423798660.0,	  user1
-,unlabeled,	  feature request,	  1423771206.0,	  user1
-,unlabeled,	  feature dev,	  1423771154.0,	  user1
-,labeled,	  feature QA,	  1423771153.0,	  user1
-,labeled,	  feature dev,	  1423770994.0,	  user1
-,labeled,	  feature request,	  1423668647.0,	  user1
+5,unlabeled,	  feature QA,	  1423798660.0,	  user1
+5,unlabeled,	  feature request,	  1423771206.0,	  user1
+5,unlabeled,	  feature dev,	  1423771154.0,	  user1
+5,labeled,	  feature QA,	  1423771153.0,	  user1
+5,labeled,	  feature dev,	  1423770994.0,	  user1
+5,labeled,	  feature request,	  1423668647.0,	  user1
  6,  unlabeled,	  feature QA,	  1424448497.0,	  user1
-,labeled,	  feature complete,	  1424448497.0,	  user1
-,unlabeled,	  feature dev,	  1424323024.0,	  user1
-,labeled,	  feature dev,	  1424231823.0,	  user1
-,unlabeled,	  feature dev,	  1424033162.0,	  user1
-,labeled,	  feature QA,	  1424033162.0,	  user1
-,unlabeled,	  help wanted,	  1424033160.0,	  user1
-,labeled,	  help wanted,	  1423950009.0,	  user1
-,unlabeled,	  feature request,	  1423844444.0,	  user1
-,labeled,	  feature dev,	  1423844443.0,	  user1
-,labeled,	  feature request,	  1423668757.0,	  user1
+6,labeled,	  feature complete,	  1424448497.0,	  user1
+6,unlabeled,	  feature dev,	  1424323024.0,	  user1
+6,labeled,	  feature dev,	  1424231823.0,	  user1
+6,unlabeled,	  feature dev,	  1424033162.0,	  user1
+6,labeled,	  feature QA,	  1424033162.0,	  user1
+6,unlabeled,	  help wanted,	  1424033160.0,	  user1
+6,labeled,	  help wanted,	  1423950009.0,	  user1
+6,unlabeled,	  feature request,	  1423844444.0,	  user1
+6,labeled,	  feature dev,	  1423844443.0,	  user1
+6,labeled,	  feature request,	  1423668757.0,	  user1
  7,  unlabeled,	  feature dev,	  1424838935.0,	  user2,	  v0.1
-,labeled,	  feature QA,	  1424838935.0,	  user2,	  v0.1
-,unlabeled,	  help wanted,	  1424836839.0,	  user2,	  v0.1
-,labeled,	  help wanted,	  1424820982.0,	  user2,	  v0.1
-,unlabeled,	  feature request,	  1424366709.0,	  user2,	  v0.1
-,labeled,	  feature dev,	  1424366709.0,	  user2,	  v0.1
-,labeled,	  feature request,	  1423668790.0,	  user1,	  v0.1
+7,labeled,	  feature QA,	  1424838935.0,	  user2,	  v0.1
+7,unlabeled,	  help wanted,	  1424836839.0,	  user2,	  v0.1
+7,labeled,	  help wanted,	  1424820982.0,	  user2,	  v0.1
+7,unlabeled,	  feature request,	  1424366709.0,	  user2,	  v0.1
+7,labeled,	  feature dev,	  1424366709.0,	  user2,	  v0.1
+7,labeled,	  feature request,	  1423668790.0,	  user1,	  v0.1
  8,  unlabeled,	  feature QA,	  1424323617.0,	  user1
-,labeled,	  feature complete,	  1424323617.0,	  user1
-,labeled,	  feature QA,	  1424033291.0,	  user1
-,unlabeled,	  feature request,	  1424033290.0,	  user1
-,labeled,	  feature request,	  1423668839.0,	  user1
+8,labeled,	  feature complete,	  1424323617.0,	  user1
+8,labeled,	  feature QA,	  1424033291.0,	  user1
+8,unlabeled,	  feature request,	  1424033290.0,	  user1
+8,labeled,	  feature request,	  1423668839.0,	  user1
  9,  unlabeled,	  feature QA,	  1424448558.0,	  user1
-,labeled,	  feature complete,	  1424448558.0,	  user1
-,unlabeled,	  feature dev,	  1424323006.0,	  user1
-,labeled,	  feature dev,	  1424270433.0,	  user1
-,labeled,	  feature QA,	  1423668887.0,	  user1
+9,labeled,	  feature complete,	  1424448558.0,	  user1
+9,unlabeled,	  feature dev,	  1424323006.0,	  user1
+9,labeled,	  feature dev,	  1424270433.0,	  user1
+9,labeled,	  feature QA,	  1423668887.0,	  user1
  10,  unlabeled,	  feature dev,	  1424111045.0,	  user2
-,labeled,	  feature QA,	  1424111042.0,	  user2
-,labeled,	  trailModel.JS,	  1424038219.0,	  user2
-,labeled,	  backtrack.JS,	  1424030977.0,	  user2
-,unlabeled,	  feature request,	  1424009662.0,	  user2
-,labeled,	  feature dev,	  1423782184.0,	  user1
-,labeled,	  feature request,	  1423668942.0,	  user1
+10,labeled,	  feature QA,	  1424111042.0,	  user2
+10,labeled,	  trailModel.JS,	  1424038219.0,	  user2
+10,labeled,	  backtrack.JS,	  1424030977.0,	  user2
+10,unlabeled,	  feature request,	  1424009662.0,	  user2
+10,labeled,	  feature dev,	  1423782184.0,	  user1
+10,labeled,	  feature request,	  1423668942.0,	  user1
  11,  labeled,	  feature complete,	  1424032999.0,	  user1
-,unlabeled,	  feature dev,	  1424032998.0,	  user1
-,labeled,	  feature dev,	  1423968959.0,	  user1
-,unlabeled,	  feature request,	  1423968958.0,	  user1
-,labeled,	  feature request,	  1423668992.0,	  user1
+11,unlabeled,	  feature dev,	  1424032998.0,	  user1
+11,labeled,	  feature dev,	  1423968959.0,	  user1
+11,unlabeled,	  feature request,	  1423968958.0,	  user1
+11,labeled,	  feature request,	  1423668992.0,	  user1
  12,  labeled,	  feature complete,	  1423935313.0,	  user1
-,unlabeled,	  feature dev,	  1423935313.0,	  user1
-,labeled,	  feature dev,	  1423851757.0,	  user1
+12,unlabeled,	  feature dev,	  1423935313.0,	  user1
+12,labeled,	  feature dev,	  1423851757.0,	  user1
  13,  unlabeled,	  3. feature QA,	  1426192393.0,	  user2
-,labeled,	  4. feature complete,	  1426192393.0,	  user2
-,unlabeled,	  feature dev,	  1424228106.0,	  user2
-,labeled,	  feature QA,	  1424228098.0,	  user2
-,unlabeled,	  feature request,	  1424029619.0,	  user2
-,labeled,	  feature dev,	  1424029615.0,	  user2
-,labeled,	  feature request,	  1424026355.0,	  user1
+13,labeled,	  4. feature complete,	  1426192393.0,	  user2
+13,unlabeled,	  feature dev,	  1424228106.0,	  user2
+13,labeled,	  feature QA,	  1424228098.0,	  user2
+13,unlabeled,	  feature request,	  1424029619.0,	  user2
+13,labeled,	  feature dev,	  1424029615.0,	  user2
+13,labeled,	  feature request,	  1424026355.0,	  user1
  14,  labeled,	  feature request,	  1424038291.0,	  user3
  15,  unlabeled,	  feature QA,	  1424038617.0,	  user3
-,labeled,	  question,	  1424038605.0,	  user3
-,labeled,	  feature QA,	  1424038415.0,	  user3
+15,labeled,	  question,	  1424038605.0,	  user3
+15,labeled,	  feature QA,	  1424038415.0,	  user3
  16,  labeled,	  question,	  1424038497.0,	  user3
  17,  labeled,	  feature request,	  1424038936.0,	  user2
  18,  labeled,	  branch list,	  1424053207.0,	  user3
  19,  labeled,	  testing,	  1424055412.0,	  user3
  20,  unlabeled,	  feature QA,	  1424448540.0,	  user1
-,labeled,	  feature complete,	  1424448540.0,	  user1
-,unlabeled,	  feature dev,	  1424322987.0,	  user1
-,labeled,	  feature QA,	  1424322987.0,	  user1
-,labeled,	  feature dev,	  1424108916.0,	  user1
-,unlabeled,	  feature request,	  1424108915.0,	  user1
-,labeled,	  feature request,	  1424057134.0,	  user1
+20,labeled,	  feature complete,	  1424448540.0,	  user1
+20,unlabeled,	  feature dev,	  1424322987.0,	  user1
+20,labeled,	  feature QA,	  1424322987.0,	  user1
+20,labeled,	  feature dev,	  1424108916.0,	  user1
+20,unlabeled,	  feature request,	  1424108915.0,	  user1
+20,labeled,	  feature request,	  1424057134.0,	  user1
  21,  unlabeled,	  deployment,	  1424815986.0,	  user3,	  v0.1
-,labeled,	  deployment,	  1424095735.0,	  user3,	  v0.1
-,labeled,	  testing,	  1424095735.0,	  user3,	  v0.1
-,labeled,	  branch,	  1424095735.0,	  user3,	  v0.1
+21,labeled,	  deployment,	  1424095735.0,	  user3,	  v0.1
+21,labeled,	  testing,	  1424095735.0,	  user3,	  v0.1
+21,labeled,	  branch,	  1424095735.0,	  user3,	  v0.1
  22,  labeled,	  resources,	  1424120865.0,	  user3
  23,  unlabeled,	  feature QA,	  1425421444.0,	  user1,	  v0.2
-,unlabeled,	  feature dev,	  1425421444.0,	  user1,	  v0.2
-,labeled,	  feature complete,	  1425421444.0,	  user1,	  v0.2
-,labeled,	  feature dev,	  1425396457.0,	  user1,	  v0.2
-,labeled,	  feature QA,	  1425396457.0,	  user1,	  v0.2
+23,unlabeled,	  feature dev,	  1425421444.0,	  user1,	  v0.2
+23,labeled,	  feature complete,	  1425421444.0,	  user1,	  v0.2
+23,labeled,	  feature dev,	  1425396457.0,	  user1,	  v0.2
+23,labeled,	  feature QA,	  1425396457.0,	  user1,	  v0.2
  25,  labeled,	  question,	  1424390986.0,	  user1
  26,  labeled,	  bug,	  1424443060.0,	  user3
  27,  labeled,	  feature dev,	  1424448940.0,	  user1
  28,  unlabeled,	  feature request,	  1424838977.0,	  user2
-,labeled,	  feature dev,	  1424838977.0,	  user2
-,labeled,	  feature request,	  1424640252.0,	  user2
+28,labeled,	  feature dev,	  1424838977.0,	  user2
+28,labeled,	  feature request,	  1424640252.0,	  user2
  29,  labeled,	  bug,	  1424702112.0,	  user3
  30,  labeled,	  deployment,	  1424816038.0,	  user3,	  v0.1
-,labeled,	  branch,	  1424816038.0,	  user3,	  v0.1
+30,labeled,	  branch,	  1424816038.0,	  user3,	  v0.1
  31,  labeled,	  testing,	  1424816447.0,	  user3
-,labeled,	  bug,	  1424816447.0,	  user3
+31,labeled,	  bug,	  1424816447.0,	  user3
  32,  labeled,	  feature request,	  1425067426.0,	  user1,	  v0.2
  33,  unlabeled,	  1. feature request,	  1427598282.0,	  user1
-,labeled,	  wontfix,	  1427598282.0,	  user1
-,labeled,	  feature request,	  1425103298.0,	  user2
+33,labeled,	  wontfix,	  1427598282.0,	  user1
+33,labeled,	  feature request,	  1425103298.0,	  user2
  34,  unlabeled,	  feature QA,	  1425421396.0,	  user1,	  v0.2
-,labeled,	  feature complete,	  1425421396.0,	  user1,	  v0.2
-,unlabeled,	  feature request,	  1425332198.0,	  user1,	  v0.2
-,labeled,	  feature QA,	  1425332198.0,	  user1,	  v0.2
-,labeled,	  feature request,	  1425067717.0,	  user1,	  v0.2
+34,labeled,	  feature complete,	  1425421396.0,	  user1,	  v0.2
+34,unlabeled,	  feature request,	  1425332198.0,	  user1,	  v0.2
+34,labeled,	  feature QA,	  1425332198.0,	  user1,	  v0.2
+34,labeled,	  feature request,	  1425067717.0,	  user1,	  v0.2
  35,  unlabeled,	  2a. feature dev,	  1426114499.0,	  user2,	  v0.3
-,labeled,	  3. feature QA,	  1426114499.0,	  user2,	  v0.3
-,unlabeled,	  1. feature request,	  1426091522.0,	  user2,	  v0.3
-,labeled,	  2a. feature dev,	  1426091522.0,	  user2,	  v0.3
-,labeled,	  feature request,	  1425103319.0,	  user2,	  v0.3
+35,labeled,	  3. feature QA,	  1426114499.0,	  user2,	  v0.3
+35,unlabeled,	  1. feature request,	  1426091522.0,	  user2,	  v0.3
+35,labeled,	  2a. feature dev,	  1426091522.0,	  user2,	  v0.3
+35,labeled,	  feature request,	  1425103319.0,	  user2,	  v0.3
  36,  unlabeled,	  3. feature QA,	  1426249400.0,	  user1,	  v0.3
-,labeled,	  4. feature complete,	  1426249400.0,	  user1,	  v0.3
-,unlabeled,	  2a. feature dev,	  1426187760.0,	  user1,	  v0.3
-,labeled,	  3. feature QA,	  1426187760.0,	  user1,	  v0.3
-,unlabeled,	  1. feature request,	  1426182430.0,	  user1,	  v0.3
-,labeled,	  2a. feature dev,	  1426182430.0,	  user1,	  v0.3
-,labeled,	  feature request,	  1425103334.0,	  user2,	  v0.3
+36,labeled,	  4. feature complete,	  1426249400.0,	  user1,	  v0.3
+36,unlabeled,	  2a. feature dev,	  1426187760.0,	  user1,	  v0.3
+36,labeled,	  3. feature QA,	  1426187760.0,	  user1,	  v0.3
+36,unlabeled,	  1. feature request,	  1426182430.0,	  user1,	  v0.3
+36,labeled,	  2a. feature dev,	  1426182430.0,	  user1,	  v0.3
+36,labeled,	  feature request,	  1425103334.0,	  user2,	  v0.3
  37,  unlabeled,	  2a. feature dev,	  1426443129.0,	  user1,	  v0.3
-,labeled,	  4. feature complete,	  1426443129.0,	  user1,	  v0.3
-,unlabeled,	  1. feature request,	  1426200160.0,	  user1,	  v0.3
-,labeled,	  2a. feature dev,	  1426200160.0,	  user1,	  v0.3
-,labeled,	  feature request,	  1425103355.0,	  user2,	  v0.3
+37,labeled,	  4. feature complete,	  1426443129.0,	  user1,	  v0.3
+37,unlabeled,	  1. feature request,	  1426200160.0,	  user1,	  v0.3
+37,labeled,	  2a. feature dev,	  1426200160.0,	  user1,	  v0.3
+37,labeled,	  feature request,	  1425103355.0,	  user2,	  v0.3
  38,  unlabeled,	  2a. feature dev,	  1426089991.0,	  user2,	  v0.3
-,labeled,	  3. feature QA,	  1426089991.0,	  user2,	  v0.3
-,unlabeled,	  1. feature request,	  1425823917.0,	  user2,	  v0.3
-,labeled,	  2a. feature dev,	  1425823917.0,	  user2,	  v0.3
-,labeled,	  feature request,	  1425103364.0,	  user2,	  v0.3
+38,labeled,	  3. feature QA,	  1426089991.0,	  user2,	  v0.3
+38,unlabeled,	  1. feature request,	  1425823917.0,	  user2,	  v0.3
+38,labeled,	  2a. feature dev,	  1425823917.0,	  user2,	  v0.3
+38,labeled,	  feature request,	  1425103364.0,	  user2,	  v0.3
  39,  unlabeled,	  3. feature QA,	  1426192522.0,	  user2
-,labeled,	  4. feature complete,	  1426192522.0,	  user2
-,unlabeled,	  bug,	  1425102807.0,	  user2
-,labeled,	  feature QA,	  1425102807.0,	  user2
-,labeled,	  bug,	  1425098527.0,	  user1
+39,labeled,	  4. feature complete,	  1426192522.0,	  user2
+39,unlabeled,	  bug,	  1425102807.0,	  user2
+39,labeled,	  feature QA,	  1425102807.0,	  user2
+39,labeled,	  bug,	  1425098527.0,	  user1
  40,  unlabeled,	  3. feature QA,	  1426518653.0,	  user1,	  v0.3
-,labeled,	  4. feature complete,	  1426518653.0,	  user1,	  v0.3
-,unlabeled,	  2a. feature dev,	  1426459366.0,	  user1,	  v0.3
-,labeled,	  3. feature QA,	  1426459366.0,	  user1,	  v0.3
+40,labeled,	  4. feature complete,	  1426518653.0,	  user1,	  v0.3
+40,unlabeled,	  2a. feature dev,	  1426459366.0,	  user1,	  v0.3
+40,labeled,	  3. feature QA,	  1426459366.0,	  user1,	  v0.3
 ,labeled,	  feature dev,	  1425419333.0,	  user3,	  v0.3
- 41,  unlabeled,	  3. feature QA,	  1426449238.0,	  user2
-,labeled,	  4. feature complete,	  1426449238.0,	  user2
-,unlabeled,	  2a. feature dev,	  1426287566.0,	  user2
-,labeled,	  3. feature QA,	  1426287566.0,	  user2
-,unlabeled,	  1. feature request,	  1426253823.0,	  user2
-,labeled,	  2a. feature dev,	  1426253823.0,	  user2
-,labeled,	  1. feature request,	  1425611717.0,	  user2
+41,  unlabeled,	  3. feature QA,	  1426449238.0,	  user2
+41,labeled,	  4. feature complete,	  1426449238.0,	  user2
+41,unlabeled,	  2a. feature dev,	  1426287566.0,	  user2
+41,labeled,	  3. feature QA,	  1426287566.0,	  user2
+41,unlabeled,	  1. feature request,	  1426253823.0,	  user2
+41,labeled,	  2a. feature dev,	  1426253823.0,	  user2
+41,labeled,	  1. feature request,	  1425611717.0,	  user2
  42,  labeled,	  testing,	  1425748153.0,	  user2,	  v0.2
  43,  unlabeled,	  3. feature QA,	  1426449207.0,	  user2
-,labeled,	  4. feature complete,	  1426449207.0,	  user2
-,unlabeled,	  2a. feature dev,	  1426442745.0,	  user2
-,labeled,	  3. feature QA,	  1426442745.0,	  user2
-,unlabeled,	  1. feature request,	  1426433868.0,	  user2
-,labeled,	  2a. feature dev,	  1426433868.0,	  user2
-,labeled,	  1. feature request,	  1426373481.0,	  user2
+43,labeled,	  4. feature complete,	  1426449207.0,	  user2
+43,unlabeled,	  2a. feature dev,	  1426442745.0,	  user2
+43,labeled,	  3. feature QA,	  1426442745.0,	  user2
+43,unlabeled,	  1. feature request,	  1426433868.0,	  user2
+43,labeled,	  2a. feature dev,	  1426433868.0,	  user2
+43,labeled,	  1. feature request,	  1426373481.0,	  user2
  44,  unlabeled,	  3. feature QA,	  1427028913.0,	  user2,	  v0.4
-,labeled,	  4. feature complete,	  1427028913.0,	  user2,	  v0.4
-,unlabeled,	  2a. feature dev,	  1426908776.0,	  user2,	  v0.4
-,labeled,	  3. feature QA,	  1426908776.0,	  user2,	  v0.4
-,unlabeled,	  1. feature request,	  1426562750.0,	  user2,	  v0.4
-,labeled,	  2a. feature dev,	  1426562750.0,	  user2,	  v0.4
-,labeled,	  1. feature request,	  1426374012.0,	  user2,	  v0.4
+44,labeled,	  4. feature complete,	  1427028913.0,	  user2,	  v0.4
+44,unlabeled,	  2a. feature dev,	  1426908776.0,	  user2,	  v0.4
+44,labeled,	  3. feature QA,	  1426908776.0,	  user2,	  v0.4
+44,unlabeled,	  1. feature request,	  1426562750.0,	  user2,	  v0.4
+44,labeled,	  2a. feature dev,	  1426562750.0,	  user2,	  v0.4
+44,labeled,	  1. feature request,	  1426374012.0,	  user2,	  v0.4
  45,  labeled,	  5. bug,	  1426377803.0,	  user3
  46,  labeled,	  5. bug,	  1426442570.0,	  user3
  47,  unlabeled,	  3. feature QA,	  1427575008.0,	  user1
-,labeled,	  4. feature complete,	  1427575008.0,	  user1
-,unlabeled,	  1. feature request,	  1427568225.0,	  user1
-,labeled,	  3. feature QA,	  1427568225.0,	  user1
-,labeled,	  1. feature request,	  1426449036.0,	  user2
+47,labeled,	  4. feature complete,	  1427575008.0,	  user1
+47,unlabeled,	  1. feature request,	  1427568225.0,	  user1
+47,labeled,	  3. feature QA,	  1427568225.0,	  user1
+47,labeled,	  1. feature request,	  1426449036.0,	  user2
  48,  labeled,	  2a. feature dev,	  1426512414.0,	  user3,	  v0.4
  49,  unlabeled,	  3. feature QA,	  1426653125.0,	  user1,	  v0.4
-,labeled,	  4. feature complete,	  1426653125.0,	  user1,	  v0.4
-,unlabeled,	  2a. feature dev,	  1426543948.0,	  user1,	  v0.4
-,labeled,	  3. feature QA,	  1426543948.0,	  user1,	  v0.4
-,labeled,	  2a. feature dev,	  1426513355.0,	  user3,	  v0.4
+49,labeled,	  4. feature complete,	  1426653125.0,	  user1,	  v0.4
+49,unlabeled,	  2a. feature dev,	  1426543948.0,	  user1,	  v0.4
+49,labeled,	  3. feature QA,	  1426543948.0,	  user1,	  v0.4
+49,labeled,	  2a. feature dev,	  1426513355.0,	  user3,	  v0.4
  50,  labeled,	  2a. feature dev,	  1426513501.0,	  user3,	  v0.4
  51,  unlabeled,	  3. feature QA,	  1427230399.0,	  user1,	  v0.5
-,labeled,	  4. feature complete,	  1427230399.0,	  user1,	  v0.5
-,unlabeled,	  2a. feature dev,	  1427156172.0,	  user1,	  v0.5
-,labeled,	  3. feature QA,	  1427156172.0,	  user1,	  v0.5
-,unlabeled,	  1. feature request,	  1427139925.0,	  user1,	  v0.5
-,labeled,	  2a. feature dev,	  1427139925.0,	  user1,	  v0.5
-,labeled,	  1. feature request,	  1426540582.0,	  user2,	  v0.5
+51,labeled,	  4. feature complete,	  1427230399.0,	  user1,	  v0.5
+51,unlabeled,	  2a. feature dev,	  1427156172.0,	  user1,	  v0.5
+51,labeled,	  3. feature QA,	  1427156172.0,	  user1,	  v0.5
+51,unlabeled,	  1. feature request,	  1427139925.0,	  user1,	  v0.5
+51,labeled,	  2a. feature dev,	  1427139925.0,	  user1,	  v0.5
+51,labeled,	  1. feature request,	  1426540582.0,	  user2,	  v0.5
  52,  labeled,	  4. feature complete,	  1426855071.0,	  user1,	  v0.4
  53,  unlabeled,	  3. feature QA,	  1427083790.0,	  user2,	  v0.4
-,labeled,	  4. feature complete,	  1427083790.0,	  user2,	  v0.4
-,unlabeled,	  2a. feature dev,	  1427079191.0,	  user2,	  v0.4
-,labeled,	  3. feature QA,	  1427079191.0,	  user2,	  v0.4
-,unlabeled,	  1. feature request,	  1427028923.0,	  user2,	  v0.4
-,labeled,	  2a. feature dev,	  1427028923.0,	  user2,	  v0.4
-,labeled,	  1. feature request,	  1426698843.0,	  user2,	  v0.4
+53,labeled,	  4. feature complete,	  1427083790.0,	  user2,	  v0.4
+53,unlabeled,	  2a. feature dev,	  1427079191.0,	  user2,	  v0.4
+53,labeled,	  3. feature QA,	  1427079191.0,	  user2,	  v0.4
+53,unlabeled,	  1. feature request,	  1427028923.0,	  user2,	  v0.4
+53,labeled,	  2a. feature dev,	  1427028923.0,	  user2,	  v0.4
+53,labeled,	  1. feature request,	  1426698843.0,	  user2,	  v0.4
  54,  unlabeled,	  2a. feature dev,	  1426907767.0,	  user1
-,labeled,	  4. feature complete,	  1426907767.0,	  user1
-,unlabeled,	  1. feature request,	  1426904690.0,	  user1
-,labeled,	  2a. feature dev,	  1426904690.0,	  user1
-,labeled,	  1. feature request,	  1426880988.0,	  user3
+54,labeled,	  4. feature complete,	  1426907767.0,	  user1
+54,unlabeled,	  1. feature request,	  1426904690.0,	  user1
+54,labeled,	  2a. feature dev,	  1426904690.0,	  user1
+54,labeled,	  1. feature request,	  1426880988.0,	  user3
  55,  labeled,	  5. bug,	  1426881084.0,	  user3
  56,  unlabeled,	  3. feature QA,	  1427230445.0,	  user1,	  v0.5
-,labeled,	  4. feature complete,	  1427230445.0,	  user1,	  v0.5
-,unlabeled,	  2a. feature dev,	  1427203840.0,	  user1,	  v0.5
-,labeled,	  3. feature QA,	  1427203840.0,	  user1,	  v0.5
-,unlabeled,	  1. feature request,	  1427139800.0,	  user1,	  v0.5
-,labeled,	  2a. feature dev,	  1427139800.0,	  user1,	  v0.5
-,labeled,	  1. feature request,	  1427082417.0,	  user2,	  v0.5
+56,labeled,	  4. feature complete,	  1427230445.0,	  user1,	  v0.5
+56,unlabeled,	  2a. feature dev,	  1427203840.0,	  user1,	  v0.5
+56,labeled,	  3. feature QA,	  1427203840.0,	  user1,	  v0.5
+56,unlabeled,	  1. feature request,	  1427139800.0,	  user1,	  v0.5
+56,labeled,	  2a. feature dev,	  1427139800.0,	  user1,	  v0.5
+56,labeled,	  1. feature request,	  1427082417.0,	  user2,	  v0.5
  58,  unlabeled,	  3. feature QA,	  1427575022.0,	  user1,	  v0.5
-,labeled,	  4. feature complete,	  1427575022.0,	  user1,	  v0.5
-,unlabeled,	  2a. feature dev,	  1427478333.0,	  user1,	  v0.5
-,labeled,	  3. feature QA,	  1427478333.0,	  user1,	  v0.5
-,unlabeled,	  1. feature request,	  1427464953.0,	  user1,	  v0.5
-,labeled,	  2a. feature dev,	  1427464953.0,	  user1,	  v0.5
-,labeled,	  1. feature request,	  1427230885.0,	  user1,	  v0.5
+58,labeled,	  4. feature complete,	  1427575022.0,	  user1,	  v0.5
+58,unlabeled,	  2a. feature dev,	  1427478333.0,	  user1,	  v0.5
+58,labeled,	  3. feature QA,	  1427478333.0,	  user1,	  v0.5
+58,unlabeled,	  1. feature request,	  1427464953.0,	  user1,	  v0.5
+58,labeled,	  2a. feature dev,	  1427464953.0,	  user1,	  v0.5
+58,labeled,	  1. feature request,	  1427230885.0,	  user1,	  v0.5
  59,  unlabeled,	  1. feature request,	  1427574994.0,	  user1,	  v0.5
-,labeled,	  4. feature complete,	  1427574994.0,	  user1,	  v0.5
-,labeled,	  1. feature request,	  1427230950.0,	  user1,	  v0.5
+59,labeled,	  4. feature complete,	  1427574994.0,	  user1,	  v0.5
+59,labeled,	  1. feature request,	  1427230950.0,	  user1,	  v0.5
  60,  unlabeled,	  1. feature request,	  1427233295.0,	  user1,	  v0.5
-,labeled,	  4. feature complete,	  1427233295.0,	  user1,	  v0.5
-,labeled,	  1. feature request,	  1427230985.0,	  user1,	  v0.5
+60,labeled,	  4. feature complete,	  1427233295.0,	  user1,	  v0.5
+60,labeled,	  1. feature request,	  1427230985.0,	  user1,	  v0.5
  61,  unlabeled,	  1. feature request,	  1427574966.0,	  user1,	  v0.5
-,labeled,	  4. feature complete,	  1427574966.0,	  user1,	  v0.5
-,labeled,	  1. feature request,	  1427233505.0,	  user1,	  v0.5
+61,labeled,	  4. feature complete,	  1427574966.0,	  user1,	  v0.5
+61,labeled,	  1. feature request,	  1427233505.0,	  user1,	  v0.5
  62,  unlabeled,	  1. feature request,	  1427598251.0,	  user1,	  v0.5
-,labeled,	  4. feature complete,	  1427598251.0,	  user1,	  v0.5
-,labeled,	  1. feature request,	  1427235008.0,	  user1,	  v0.5
+62,labeled,	  4. feature complete,	  1427598251.0,	  user1,	  v0.5
+62,labeled,	  1. feature request,	  1427235008.0,	  user1,	  v0.5
  63,  labeled,	  2b. help wanted,	  1427252042.0,	  user2
  64,  unlabeled,	  2a. feature dev,	  1427504269.0,	  user1,	  v0.5
-,labeled,	  4. feature complete,	  1427504269.0,	  user1,	  v0.5
-,unlabeled,	  1. feature request,	  1427408428.0,	  user1,	  v0.5
-,labeled,	  2a. feature dev,	  1427408428.0,	  user1,	  v0.5
-,labeled,	  1. feature request,	  1427330177.0,	  user1,	  v0.5
+64,labeled,	  4. feature complete,	  1427504269.0,	  user1,	  v0.5
+64,unlabeled,	  1. feature request,	  1427408428.0,	  user1,	  v0.5
+64,labeled,	  2a. feature dev,	  1427408428.0,	  user1,	  v0.5
+64,labeled,	  1. feature request,	  1427330177.0,	  user1,	  v0.5
  65,  unlabeled,	  5. bug,	  1427403198.0,	  user1,	  v0.5
-,labeled,	  4. feature complete,	  1427403198.0,	  user1,	  v0.5
-,labeled,	  5. bug,	  1427334864.0,	  user1,	  v0.5
+65,labeled,	  4. feature complete,	  1427403198.0,	  user1,	  v0.5
+65,labeled,	  5. bug,	  1427334864.0,	  user1,	  v0.5
  66,  labeled,	  2a. feature dev,	  1427337921.0,	  user3,	  v0.6 Cleanup
  67,  labeled,	  5. bug,	  1427403230.0,	  user1,	  v0.5
  68,  unlabeled,	  1. feature request,	  1427588298.0,	  user1,	  v0.5
-,labeled,	  4. feature complete,	  1427588298.0,	  user1,	  v0.5
-,labeled,	  1. feature request,	  1427406849.0,	  user4,	  v0.5
+68,labeled,	  4. feature complete,	  1427588298.0,	  user1,	  v0.5
+68,labeled,	  1. feature request,	  1427406849.0,	  user4,	  v0.5
  69,  unlabeled,	  3. feature QA,	  1427512298.0,	  user2
-,labeled,	  4. feature complete,	  1427512298.0,	  user2
-,unlabeled,	  2a. feature dev,	  1427464187.0,	  user2
-,labeled,	  3. feature QA,	  1427464187.0,	  user2
-,labeled,	  2a. feature dev,	  1427463070.0,	  user2
+69,labeled,	  4. feature complete,	  1427512298.0,	  user2
+69,unlabeled,	  2a. feature dev,	  1427464187.0,	  user2
+69,labeled,	  3. feature QA,	  1427464187.0,	  user2
+69,labeled,	  2a. feature dev,	  1427463070.0,	  user2
  70,  unlabeled,	  3. feature QA,	  1427566873.0,	  user2
-,labeled,	  4. feature complete,	  1427566873.0,	  user2
-,unlabeled,	  2a. feature dev,	  1427510258.0,	  user2
-,labeled,	  3. feature QA,	  1427510258.0,	  user2
-,unlabeled,	  1. feature request,	  1427491882.0,	  user2
-,labeled,	  2a. feature dev,	  1427491882.0,	  user2
-,labeled,	  1. feature request,	  1427465293.0,	  user2
+70,labeled,	  4. feature complete,	  1427566873.0,	  user2
+70,unlabeled,	  2a. feature dev,	  1427510258.0,	  user2
+70,labeled,	  3. feature QA,	  1427510258.0,	  user2
+70,unlabeled,	  1. feature request,	  1427491882.0,	  user2
+70,labeled,	  2a. feature dev,	  1427491882.0,	  user2
+70,labeled,	  1. feature request,	  1427465293.0,	  user2
  71,  unlabeled,	  1. feature request,	  1427588136.0,	  user1,	  v0.6 Cleanup
-,labeled,	  4. feature complete,	  1427588136.0,	  user1,	  v0.6 Cleanup
-,labeled,	  1. feature request,	  1427575285.0,	  user1,	  v0.6 Cleanup
+71,labeled,	  4. feature complete,	  1427588136.0,	  user1,	  v0.6 Cleanup
+71,labeled,	  1. feature request,	  1427575285.0,	  user1,	  v0.6 Cleanup
  72,  labeled,	  5. bug,	  1427575329.0,	  user1,	  v0.6 Cleanup
  73,  unlabeled,	  1. feature request,	  1427598123.0,	  user1,	  v0.6 Cleanup
-,labeled,	  4. feature complete,	  1427598123.0,	  user1,	  v0.6 Cleanup
-,labeled,	  1. feature request,	  1427575423.0,	  user1,	  v0.6 Cleanup
+73,labeled,	  4. feature complete,	  1427598123.0,	  user1,	  v0.6 Cleanup
+73,labeled,	  1. feature request,	  1427575423.0,	  user1,	  v0.6 Cleanup
  74,  unlabeled,	  1. feature request,	  1427591588.0,	  user1,	  v0.6 Cleanup
-,labeled,	  4. feature complete,	  1427591588.0,	  user1,	  v0.6 Cleanup
-,labeled,	  1. feature request,	  1427575463.0,	  user1,	  v0.6 Cleanup
+74,labeled,	  4. feature complete,	  1427591588.0,	  user1,	  v0.6 Cleanup
+74,labeled,	  1. feature request,	  1427575463.0,	  user1,	  v0.6 Cleanup
  75,  unlabeled,	  3. feature QA,	  1427675527.0,	  user2,	  v0.6 Cleanup
-,labeled,	  4. feature complete,	  1427675527.0,	  user2,	  v0.6 Cleanup
-,unlabeled,	  2a. feature dev,	  1427649182.0,	  user2,	  v0.6 Cleanup
-,labeled,	  3. feature QA,	  1427649182.0,	  user2,	  v0.6 Cleanup
-,unlabeled,	  1. feature request,	  1427598627.0,	  user2,	  v0.6 Cleanup
-,labeled,	  2a. feature dev,	  1427598627.0,	  user2,	  v0.6 Cleanup
-,labeled,	  1. feature request,	  1427575923.0,	  user1,	  v0.6 Cleanup
+75,labeled,	  4. feature complete,	  1427675527.0,	  user2,	  v0.6 Cleanup
+75,unlabeled,	  2a. feature dev,	  1427649182.0,	  user2,	  v0.6 Cleanup
+75,labeled,	  3. feature QA,	  1427649182.0,	  user2,	  v0.6 Cleanup
+75,unlabeled,	  1. feature request,	  1427598627.0,	  user2,	  v0.6 Cleanup
+75,labeled,	  2a. feature dev,	  1427598627.0,	  user2,	  v0.6 Cleanup
+75,labeled,	  1. feature request,	  1427575923.0,	  user1,	  v0.6 Cleanup
  76,  unlabeled,	  2a. feature dev,	  1427721751.0,	  user1,	  v0.6 Cleanup
-,labeled,	  4. feature complete,	  1427721751.0,	  user1,	  v0.6 Cleanup
-,labeled,	  2a. feature dev,	  1427576115.0,	  user4,	  v0.6 Cleanup
+76,labeled,	  4. feature complete,	  1427721751.0,	  user1,	  v0.6 Cleanup
+76,labeled,	  2a. feature dev,	  1427576115.0,	  user4,	  v0.6 Cleanup
  77,  unlabeled,	  1. feature request,	  1428108978.0,	  user1,	  v0.6 Cleanup
-,labeled,	  4. feature complete,	  1428108978.0,	  user1,	  v0.6 Cleanup
-,labeled,	  1. feature request,	  1427578252.0,	  user1,	  v0.6 Cleanup
+77,labeled,	  4. feature complete,	  1428108978.0,	  user1,	  v0.6 Cleanup
+77,labeled,	  1. feature request,	  1427578252.0,	  user1,	  v0.6 Cleanup
  78,  labeled,	  5. bug,	  1427578240.0,	  user1,	  v0.6 Cleanup
  79,  unlabeled,	  2a. feature dev,	  1427590162.0,	  user1
-,labeled,	  4. feature complete,	  1427590162.0,	  user1
-,labeled,	  2a. feature dev,	  1427589070.0,	  user3
+79,labeled,	  4. feature complete,	  1427590162.0,	  user1
+79,labeled,	  2a. feature dev,	  1427589070.0,	  user3
  80,  labeled,	  5. bug,	  1427594731.0,	  user3
  81,  unlabeled,	  2a. feature dev,	  1427804193.0,	  user1,	  v0.6 Cleanup
-,labeled,	  4. feature complete,	  1427804193.0,	  user1,	  v0.6 Cleanup
-,labeled,	  2a. feature dev,	  1427599971.0,	  user4,	  v0.6 Cleanup
+81,labeled,	  4. feature complete,	  1427804193.0,	  user1,	  v0.6 Cleanup
+81,labeled,	  2a. feature dev,	  1427599971.0,	  user4,	  v0.6 Cleanup
  82,  unlabeled,	  3. feature QA,	  1427675607.0,	  user2
-,labeled,	  4. feature complete,	  1427675607.0,	  user2
-,unlabeled,	  2a. feature dev,	  1427649429.0,	  user2
-,labeled,	  3. feature QA,	  1427649429.0,	  user2
-,unlabeled,	  1. feature request,	  1427649063.0,	  user2
-,labeled,	  2a. feature dev,	  1427649063.0,	  user2
-,labeled,	  1. feature request,	  1427641457.0,	  user1
+82,labeled,	  4. feature complete,	  1427675607.0,	  user2
+82,unlabeled,	  2a. feature dev,	  1427649429.0,	  user2
+82,labeled,	  3. feature QA,	  1427649429.0,	  user2
+82,unlabeled,	  1. feature request,	  1427649063.0,	  user2
+82,labeled,	  2a. feature dev,	  1427649063.0,	  user2
+82,labeled,	  1. feature request,	  1427641457.0,	  user1
  83,  labeled,	  5. bug,	  1427661438.0,	  user1,	  v0.6 Cleanup
  84,  labeled,	  4. feature complete,	  1427804231.0,	  user1,	  v0.6 Cleanup
 ,unlabeled,	  2a. feature dev,	  1427804202.0,	  user1,	  v0.6 Cleanup
-,labeled,	  2a. feature dev,	  1427777926.0,	  user4,	  v0.6 Cleanup
+84,labeled,	  2a. feature dev,	  1427777926.0,	  user4,	  v0.6 Cleanup
  85,  labeled,	  4. feature complete,	  1427804231.0,	  user1,	  v0.6 Cleanup
-,unlabeled,	  2a. feature dev,	  1427804202.0,	  user1,	  v0.6 Cleanup
-,labeled,	  2a. feature dev,	  1427782840.0,	  user4,	  v0.6 Cleanup
+85,unlabeled,	  2a. feature dev,	  1427804202.0,	  user1,	  v0.6 Cleanup
+85,labeled,	  2a. feature dev,	  1427782840.0,	  user4,	  v0.6 Cleanup
  86,  labeled,	  4. feature complete,	  1427804231.0,	  user1,	  v0.6 Cleanup
 ,unlabeled,	  2a. feature dev,	  1427804202.0,	  user1,	  v0.6 Cleanup
-,labeled,	  2a. feature dev,	  1427782955.0,	  user4,	  v0.6 Cleanup
+86,labeled,	  2a. feature dev,	  1427782955.0,	  user4,	  v0.6 Cleanup
  87,  unlabeled,	  1. feature request,	  1427825587.0,	  user1
-,labeled,	  4. feature complete,	  1427825587.0,	  user1
-,labeled,	  1. feature request,	  1427810196.0,	  user2
+87,labeled,	  4. feature complete,	  1427825587.0,	  user1
+87,labeled,	  1. feature request,	  1427810196.0,	  user2
  88,  unlabeled,	  2a. feature dev,	  1427990766.0,	  user1,	  v0.6 Cleanup
-,labeled,	  4. feature complete,	  1427990766.0,	  user1,	  v0.6 Cleanup
-,labeled,	  2a. feature dev,	  1427838875.0,	  user4,	  v0.6 Cleanup
+88,labeled,	  4. feature complete,	  1427990766.0,	  user1,	  v0.6 Cleanup
+88,labeled,	  2a. feature dev,	  1427838875.0,	  user4,	  v0.6 Cleanup
  89,  unlabeled,	  3. feature QA,	  1428013869.0,	  user1,	  v0.6 Cleanup
-,labeled,	  4. feature complete,	  1428013869.0,	  user1,	  v0.6 Cleanup
-,unlabeled,	  2a. feature dev,	  1428002987.0,	  user1,	  v0.6 Cleanup
-,labeled,	  3. feature QA,	  1428002987.0,	  user1,	  v0.6 Cleanup
-,labeled,	  2a. feature dev,	  1427990844.0,	  user1,	  v0.6 Cleanup
+89,labeled,	  4. feature complete,	  1428013869.0,	  user1,	  v0.6 Cleanup
+89,unlabeled,	  2a. feature dev,	  1428002987.0,	  user1,	  v0.6 Cleanup
+89,labeled,	  3. feature QA,	  1428002987.0,	  user1,	  v0.6 Cleanup
+89,labeled,	  2a. feature dev,	  1427990844.0,	  user1,	  v0.6 Cleanup
  90,  labeled,	  4. feature complete,	  1428026300.0,	  user1
-,unlabeled,	  3. feature QA,	  1428026294.0,	  user1
-,unlabeled,	  2a. feature dev,	  1428025843.0,	  user1
-,labeled,	  3. feature QA,	  1428025843.0,	  user1
-,labeled,	  2a. feature dev,	  1427991077.0,	  user3
+90,unlabeled,	  3. feature QA,	  1428026294.0,	  user1
+90,unlabeled,	  2a. feature dev,	  1428025843.0,	  user1
+90,labeled,	  3. feature QA,	  1428025843.0,	  user1
+90,labeled,	  2a. feature dev,	  1427991077.0,	  user3
  91,  labeled,	  5. bug,	  1428075488.0,	  user2
  92,  unlabeled,	  3. feature QA,	  1428119476.0,	  user2
-,labeled,	  4. feature complete,	  1428119476.0,	  user2
-,labeled,	  3. feature QA,	  1428110892.0,	  user2
+92,labeled,	  4. feature complete,	  1428119476.0,	  user2
+92,labeled,	  3. feature QA,	  1428110892.0,	  user2
  93,  labeled,	  5. bug,	  1428325462.0,	  user2
