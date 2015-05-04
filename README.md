@@ -92,7 +92,7 @@ Number of issues:
 
 We also want to know how many issues are actually no comments below. This feature goes deeper comparing to the first feature. And according to this feature, we can find out which issue actually makes the difference.
 
-<b>Scripts are found here</b>
+[Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
 
 #####Result
 We also counted the number of issues without comments.
@@ -108,7 +108,7 @@ Number of issues without comments:
 
 This issue is quite interesting.  We want to find out that which period is most likely to create issues, beginning or near the deadline. And we can analyse the results, which will help to optimize the development schedule.
 
-<b>Scripts are found here</b>
+[Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
 
 #####Result
 We divided the total number of issues monthly, and get an array for each project.
@@ -130,7 +130,7 @@ We divided the total number of issues monthly, and get an array for each project
 
 We want to know the total number of labels each team created. Different number of labels reflect different kinds of situations and different levels of priorities each team will set.
 
-<b>Scripts are found here</b>
+[Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
 
 #####Result
 We counted the total number of labels for each project.
@@ -146,7 +146,7 @@ Total number of labels:
 
 We can figure out which kind of label was used a lot of times, and which kind of label was seldom used. And the results will reflect whether the quantity and the setting of labels are reasonable or not.
 
-<b>Scripts are found here</b>
+[Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
 
 #####Result
 We also counted the number of times each label was used.
@@ -206,7 +206,7 @@ We also counted the number of times each label was used.
 
 This feature will show us mean and standard deviation of times spending in each issue. And it will help us to analyse in depth. 
 
-<b>Scripts are found here</b>
+[Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
 
 #####Result
 We calculated mean and standard deviation of time spent in each issue.
@@ -228,7 +228,7 @@ Mean and standard deviation of time spent in each issue:
 
 "Unusually long" time means 1.5 or 2 standard deviations time in a label. In normal distribution, 1.5 or 2 standard deviations means the data point is quite far away from the mean value. In this case, unusually long time a label may indicate team do little stuff during this time period.
 
-<b>Scripts are found here</b>
+[Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
 
 #####Result
 We counted number of labels with unusually long time, which means 1.5 or 2 standard deviations time compatring to mean value.
@@ -244,7 +244,7 @@ Number of issues with "unusually long" time:
 
 This feature will show us mean and standard deviation of number of labels assigned to each issue. And in this feature, we consider label and issue together, we want to find out the reasonable of the setting of labels. Also, we want to find out whether team members used to add corresponding labels to issues or not.
 
-<b>Scripts are found here</b>
+[Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter2.py)
 
 #####Result
 We calculated mean and standard deviation number of labels assigned to each issue.
@@ -266,7 +266,7 @@ Mean and standard deviation number of labels assigned to each issue:
 
 We are interesting in number of milestones. And each milestone usually represents one stage in development cycle. We can analyse which software development method each team used.
 
-<b>Scripts are found here</b>
+[Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
 
 #####Result
 We counted the number of times each milestone was used.
@@ -306,7 +306,7 @@ We counted the number of times each milestone was used.
 
 We want to see how many issues used labels.
 
-<b>Scripts are found here</b>
+[Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
 
 #####Result
 We calculated percentage of issues using labels.
@@ -322,7 +322,7 @@ Percentage of issues using labels:
 
 We want to see how many issues used milestones.
 
-<b>Scripts are found here</b>
+[Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter2.py)
 
 #####Result
 We calculated percentage of issues using milestones.
@@ -338,7 +338,7 @@ Percentage of issues using milestones:
 
 We are interested in how many issues used assignees. And if the percentage of issues using assignees is high, which means responsibility distribution is clear.
 
-<b>Scripts are found here</b>
+[Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter2.py)
 
 #####Result
 We also calculated percentage of issues using assignees.
@@ -354,7 +354,7 @@ Percentage of issues using milestones:
 
 We define number of commits made by one person less than certain percentage of total commits indicates this person is a "passenger". And the number of commits made by one person more than certain percentage of total commits indicates this person is a "great dictator".The result can also indicate whether responsibility distribution of this team is uneven or not.
 
-<b>Scripts are found here</b>
+[Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter2.py)
 
 #####Result
 We count the number of commits each user made, and calaulate the percentage.
@@ -381,7 +381,7 @@ Unusually small or large" number of issues handled only by one person:
 
 This feature calculates each user's frequency of attendency.
 
-<b>Scripts are found here</b>
+[Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter2.py)
 
 #####Result
 We calculated issue participating times of each user.
