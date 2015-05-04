@@ -90,7 +90,7 @@
  42, labeled,	  Solved,	  1427054867.0,	  user2,	  V2
 42,labeled,	  design,	  1426217996.0,	  user1,	  V2
  43, labeled,	  bug,	  1426218781.0,	  user1,	  V2
- 44, labeled,	  Solved,	  1427249095.0,	  user2
+ 44, labeled,	  Solved,	  1427249095.0,	  user2,
  45, labeled,	  Solved,	  1427054767.0,	  user2,	  V2
 45,labeled,	  bug,	  1426393450.0,	  user1,	  V2
  47, labeled,	  Solved,	  1427249139.0,	  user2,	  System test and Report
@@ -115,7 +115,7 @@
  64, labeled,	  bug,	  1428170848.0,	  user1,
 64,labeled,	  enhancement,	  1428170840.0,	  user1,
  65, labeled,	  enhancement,	  1428200086.0,	  user2,	  Final release
- 66, labeled,	  develop,	  1428250364.0,	  user1
- 67, labeled,	  help wanted,	  1428264547.0,	  user1
- 68, labeled,	  question,	  1428343293.0,	  user1
- 69, labeled,	  enhancement,	  1428440030.0,	  user2
+ 66, labeled,	  develop,	  1428250364.0,	  user1,
+ 67, labeled,	  help wanted,	  1428264547.0,	  user1,
+ 68, labeled,	  question,	  1428343293.0,	  user1,
+ 69, labeled,	  enhancement,	  1428440030.0,	  user2,
