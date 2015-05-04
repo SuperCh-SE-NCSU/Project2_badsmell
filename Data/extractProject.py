@@ -22,7 +22,7 @@ python gitable.py
 from __future__ import print_function
 import matplotlib.pyplot as plt
 import urllib2
-import json
+import json,csv
 import re,datetime
 import sys
 import math
@@ -51,8 +51,16 @@ def secs(d0):
     delta = d - epoch
     return delta.total_seconds()
 
+def csv_writer(data, path):
+   
+    with open(path, 'wb') as f:
+        w = csv.writer(f, delimiter='\t')
+        w.writerow([''] + data.keys())
+        for key in data.keys():
+            w.writerow([key] + [subdct.get(key, '') for subdct in data.values()])
+
 def dump1(u,issues):
-    token = "6e4365962f9775f361884881f22c646a32c19f49" 
+    token = "" 
     request = urllib2.Request(u, headers={"Authorization" : "token "+token})
     v = urllib2.urlopen(request).read()
     w = json.loads(v)
@@ -110,6 +118,7 @@ def launchDump():
 
     page = 1
     issues = dict()
+    username=dict()
     while(True):
         doNext = dump('https://api.github.com/repos/SuperCh-SE-NCSU/ProjectScraping/issues/events?page=' + str(page), issues)
         #doNext=dump('https://api.github.com/repos/CSC510/SQLvsNOSQL/issues/events?page=' + str(page),issues)
@@ -124,11 +133,11 @@ def launchDump():
         newevents=list()
         for event in events:
             newevents.append(event.__dict__)
-            print(event.__dict__)
+            #print(event.__dict__)
         newissues[issue]=newevents
     with open('project1.json', 'w') as outfile:
-        json.dump(newissues, outfile)
-
+            json.dump(newissues, outfile)
+    #csv_writer(newissues,'project1.csv')
     
         
  
