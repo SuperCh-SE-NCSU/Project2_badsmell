@@ -52,12 +52,10 @@ def secs(d0):
     return delta.total_seconds()
 
 def csv_writer(data, path):
-   
-    with open(path, 'wb') as f:
-        w = csv.writer(f, delimiter='\t')
-        w.writerow([''] + data.keys())
-        for key in data.keys():
-            w.writerow([key] + [subdct.get(key, '') for subdct in data.values()])
+   with open(path, "wb") as csv_file:
+       writer = csv.writer(csv_file, delimiter=',')
+       for line in data:
+           writer.writerow([line])
 
 def dump1(u,issues):
     token = "" 
@@ -119,25 +117,61 @@ def launchDump():
     page = 1
     issues = dict()
     username=dict()
+    issueinfo=list()
     while(True):
-        doNext = dump('https://api.github.com/repos/SuperCh-SE-NCSU/ProjectScraping/issues/events?page=' + str(page), issues)
+        #doNext = dump('https://api.github.com/repos/SuperCh-SE-NCSU/ProjectScraping/issues/events?page=' + str(page), issues)
         #doNext=dump('https://api.github.com/repos/CSC510/SQLvsNOSQL/issues/events?page=' + str(page),issues)
-        #doNext=dump('https://api.github.com/repos/CSC510-2015-Axitron/maze/issues/events?page=' + str(page), issues)
+        doNext=dump('https://api.github.com/repos/CSC510-2015-Axitron/maze/issues/events?page=' + str(page), issues)
         print("page" + str(page))
         page += 1
         if not doNext : break
-
+    
     newissues=dict()
+    mapuser=dict()
+ 
+    currentuser=1
     for issue, events in issues.iteritems():
         print("ISSUE " + str(issue)+"\n")
         newevents=list()
+        new_eventdict=dict()
+        new_eventdict['issue_id']=issue
         for event in events:
-            newevents.append(event.__dict__)
+            eventdict=event.__dict__
+            if eventdict['user'] in mapuser.keys():
+                new_eventdict['user']='user'+str(mapuser[eventdict['user']])
+            else:
+                mapuser[eventdict['user']]=currentuser
+                currentuser=currentuser+1
+                new_eventdict['user']='user'+str(mapuser[eventdict['user']])
+            new_eventdict['createtime']=eventdict['issuecreated_at']
+            new_eventdict['durationtime']=eventdict['duration']
+
+            #print(eventdict['assignee'])
+            if eventdict['assignee'] is None:
+                new_eventdict['assignee']='None'
+            else:
+                if eventdict['assignee'] in mapuser.keys():
+                    new_eventdict['assignee']='user'+str(mapuser[eventdict['assignee']])
+                else:
+                    mapuser[eventdict['assignee']]=currentuser
+                    currentuser=currentuser+1
+                    new_eventdict['assignee']='user'+str(mapuser[eventdict['assignee']])
+
+            new_eventdict['commentsnumber']=eventdict['comments']
+
+            eventdict['user']=new_eventdict['user']
+            eventdict['assignee']=new_eventdict['assignee']
+            newevents.append(eventdict)
             #print(event.__dict__)
         newissues[issue]=newevents
-    with open('project1.json', 'w') as outfile:
+        issueinfo.append(new_eventdict)
+    print(mapuser)
+    #print(issueinfo)
+    with open('project3.json', 'w') as outfile:
             json.dump(newissues, outfile)
-    #csv_writer(newissues,'project1.csv')
+    with open('project3_issueinfo.json', 'w') as outfile:
+            json.dump(issueinfo, outfile)
+    csv_writer(issueinfo,'project3_issueinfo.csv')
     
         
  
