@@ -74,13 +74,13 @@
 35,labeled,	  help wanted,	  1425248248.0,	  user1,	  V2
 35,labeled,	  enhancement,	  1425248248.0,	  user1,	  V2
  36, labeled,	  Solved,	  1427054428.0,	  user2,
-36,unlabeled,	  Solved,	  1425348913.0,	  user2
-36,labeled,	  Solved,	  1425348906.0,	  user2
-36,labeled,	  question,	  1425345174.0,	  user1
+36,unlabeled,	  Solved,	  1425348913.0,	  user2,
+36,labeled,	  Solved,	  1425348906.0,	  user2,
+36,labeled,	  question,	  1425345174.0,	  user1,
  37, labeled,	  Solved,	  1427054565.0,	  user2,	  System test and Report
 37,labeled,	  question,	  1425401250.0,	  user2,	  System test and Report
  38, labeled,	  Solved,	  1427054593.0,	  user2
-38,labeled,	  bug,	  1425417428.0,	  user1
+38,labeled,	  bug,	  1425417428.0,	  user1,
  39, labeled,	  bug,	  1425757620.0,	  user1,	  V1
  40, labeled,	  Solved,	  1427054665.0,	  user2,	  V2
 40,labeled,	  design,	  1425962491.0,	  user1,	  V2
