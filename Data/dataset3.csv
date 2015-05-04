@@ -172,8 +172,8 @@
 44,labeled,	  1. feature request,	  1426374012.0,	  user2,	  v0.4
  45,  labeled,	  5. bug,	  1426377803.0,	  user3,
  46,  labeled,	  5. bug,	  1426442570.0,	  user3,
- 47,  unlabeled,	  3. feature QA,	  1427575008.0,	  user1
-47,labeled,	  4. feature complete,	  1427575008.0,	  user1
+ 47,  unlabeled,	  3. feature QA,	  1427575008.0,	  user1,
+47,labeled,	  4. feature complete,	  1427575008.0,	  user1,
 47,unlabeled,	  1. feature request,	  1427568225.0,	  user1,
 47,labeled,	  3. feature QA,	  1427568225.0,	  user1,
 47,labeled,	  1. feature request,	  1426449036.0,	  user2,
