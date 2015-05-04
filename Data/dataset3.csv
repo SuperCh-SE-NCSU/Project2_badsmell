@@ -148,8 +148,8 @@
 40,unlabeled,	  2a. feature dev,	  1426459366.0,	  user1,	  v0.3
 40,labeled,	  3. feature QA,	  1426459366.0,	  user1,	  v0.3
 ,labeled,	  feature dev,	  1425419333.0,	  user3,	  v0.3
-41,  unlabeled,	  3. feature QA,	  1426449238.0,	  user2
-41,labeled,	  4. feature complete,	  1426449238.0,	  user2
+41,  unlabeled,	  3. feature QA,	  1426449238.0,	  user2,
+41,labeled,	  4. feature complete,	  1426449238.0,	  user2,
 41,unlabeled,	  2a. feature dev,	  1426287566.0,	  user2,
 41,labeled,	  3. feature QA,	  1426287566.0,	  user2,
 41,unlabeled,	  1. feature request,	  1426253823.0,	  user2,
