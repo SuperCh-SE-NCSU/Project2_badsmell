@@ -41,16 +41,34 @@ Then we extracted 16 features that we defined from the issues for these three pr
 ##Data samples
 
 ####1. Issue info
-id | user | create time | duration time | comments number
----- | ---- | ---- | ---- | ---- | ---- | ----
-3 | user1 | 1425291744 | 12536 | 0
-8 | user2 | 1473654743 | 1426211865 | 6
+issue_id | user | create time | duration time | assignee_id | comments number |
+---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+3 | user1 | 1425291744 | 12536 | user2| 0 |
+8 | user2 | 1473654743 | 1426211865 | none| 6 |
 
 ####2. Issue number per week
 week 1 | week 2 | week 3 | week 4 | week 5 | week 6 | week 7 | week 8 | week 9 |
 ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | 
 10 | 12 | 4 | 1 | 1 | 1 | 1 | 37 | 2 |  
 21 | 8 | 9 | 2 | 9 | 10 | 27 | 26 | 5 |
+
+####3. Label info
+label_id | name | number of use |
+---- | ---- | ---- |
+1 | develop | 15 |
+4 | Solved | 36 |
+
+####4. Commit info
+username | number of commit | percentage of use |
+---- | ---- | ---- |
+user1 | 193 | 42.4% |
+user3 | 82 |18.1% |
+
+####5. Milestone info
+milestone_id | name | number of use |
+---- | ---- | ---- |
+1 | Beta Launch | 15 |
+3 | V2 | 8 |
 
 ## Feature detection & Result
 
