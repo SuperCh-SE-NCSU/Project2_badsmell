@@ -321,7 +321,7 @@
 90,unlabeled,	  2a. feature dev,	  1428025843.0,	  user1,
 90,labeled,	  3. feature QA,	  1428025843.0,	  user1,
 90,labeled,	  2a. feature dev,	  1427991077.0,	  user3,
- 91,  labeled,	  5. bug,	  1428075488.0,	  user2
+ 91,  labeled,	  5. bug,	  1428075488.0,	  user2,
  92,  unlabeled,	  3. feature QA,	  1428119476.0,	  user2,
 92,labeled,	  4. feature complete,	  1428119476.0,	  user2,
 92,labeled,	  3. feature QA,	  1428110892.0,	  user2,
