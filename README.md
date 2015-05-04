@@ -76,7 +76,7 @@ Then we extracted 16 features that we defined from the issues for these three pr
 
 This feature is quite straightforward. We decide to find the total number of issues of each team. And this feature can reflect briefly how team members communicate during the development period.
 
-<b>Scripts are found here</b>
+[Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
 
 #####Result
 We counted total number of issues of each project. And here is the result.
