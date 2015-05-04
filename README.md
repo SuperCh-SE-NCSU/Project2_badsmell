@@ -329,8 +329,8 @@ We calculated percentage of issues using milestones.
 
 ```  
 Percentage of issues using milestones:
-  Project1: 83.6% in 69 issues
-  Project2: 82.6% in 93 issues
+  Project1: 86.1% in 67 issues
+  Project2: 79.9% in 80 issues
   Project3: 52.1% in 93 issues
 ```
 
@@ -345,8 +345,8 @@ We also calculated percentage of issues using assignees.
 
 ```  
 Percentage of issues using milestones:
-  Project1: 19.1% in 69 issues
-  Project2: 60.3% in 93 issues
+  Project1: 19.7% in 67 issues
+  Project2: 70.1% in 80 issues
   Project3: 72.2% in 93 issues
 ```
 
