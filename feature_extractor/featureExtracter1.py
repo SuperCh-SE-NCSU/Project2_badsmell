@@ -28,85 +28,16 @@ import sys
 import math
 import numpy as np
 
-def showFigure(x):
-    plt.plot(range(len(x)), x, 'ro-')   
-    plt.show()
-
-class L():
-    "Anonymous container"
-    def __init__(i,**fields) :
-        i.override(fields)
-    def override(i,d): i.__dict__.update(d); return i
-    def __repr__(i):
-        d = i.__dict__
-        name = i.__class__.__name__
-        return name+'{'+' '.join([':%s %s' % (k,pretty(d[k])) for k in i.show()])+ '}'
-    def show(i):
-        lst = [str(k)+" : "+str(v) for k,v in i.__dict__.iteritems() if v != None]
-        return ',\t'.join(map(str,lst))
- 
-def secs(d0):
-    d = datetime.datetime(*map(int, re.split('[^\d]', d0)[:-1]))
-    epoch = datetime.datetime.utcfromtimestamp(0)
-    delta = d - epoch
-    return delta.total_seconds()
-
-def dump1(u,issues):
-    token = "" 
-    request = urllib2.Request(u, headers={"Authorization" : "token "+token})
-    v = urllib2.urlopen(request).read()
-    w = json.loads(v)
-    if not w: return False
-    for event in w:
-        #print(type(event))
-        issue_id = event['issue']['number']
-        #label_name=None
-        if not event.get('label'):
-            continue
-            
-        #continue
-        #   
-        #else:
-        #    label_name='null'
-        created_at = secs(event['created_at'])
-        action = event['event']
-        label_name=event['label']['name']
-        user = event['actor']['login']
-        milestone = event['issue']['milestone']
-        assignea=event['issue']['assignee']
-        comments=event['issue']['comments']
-        issuecreated_at=secs(event['issue']['created_at'])
-        issueclosed_at=secs(event['issue']['closed_at'])
-        duration=issueclosed_at-issuecreated_at
-        assignee=None
-        
-        if assignea!=None: assignee=assignea['login']
-        if milestone != None : milestone = milestone['title']
-        eventObj = L(when=created_at,
-                    action = action,
-                    what = label_name,
-                    user = user,
-                    milestone = milestone,
-                    assignee=assignee,
-                    comments=comments,
-                    issuecreated_at=issuecreated_at,
-                    issueclosed_at=issueclosed_at,
-                    duration=duration)
-        all_events = issues.get(issue_id)
-        if not all_events: all_events = []
-        all_events.append(eventObj)
-        issues[issue_id] = all_events
-    return True
- 
-def dump(u,issues):
-    try:
-        return dump1(u, issues)
-    except Exception as e:
-        print(e)
-        print("Contact TA")
-    return False
- 
-def launchDump():
+def ascii_encode_dict(data):
+    ascii_encode = lambda x: x.encode('ascii') if isinstance(x, unicode) else x 
+    return dict(map(ascii_encode, pair) for pair in data.items())
+def ascii_equal(data,string):
+    if unicode(data, 'ascii')  == unicode(string, 'utf-8'):
+        return True
+    else:
+        return False
+    
+def featureExtracter():
     page = 1
     issues = dict()
     #feature1: Number of issues
@@ -124,30 +55,17 @@ def launchDump():
     
     numofissuenotlabeled=0
 
-    
-    f=open("Group6.txt","w")
-    
+    with open('../Data/project1.json') as data_file:    
+        issues = json.load(data_file,object_hook=ascii_encode_dict)
+
  
-    #issues2=dict()
-    while(True):
-        doNext = dump('https://api.github.com/repos/SuperCh-SE-NCSU/ProjectScraping/issues/events?page=' + str(page), issues)
-        #doNext=dump('https://api.github.com/repos/CSC510/SQLvsNOSQL/issues/events?page=' + str(page),issues)
-        #doNext=dump('https://api.github.com/repos/CSC510-2015-Axitron/maze/issues/events?page=' + str(page), issues)
-        print("page" + str(page))
-        page += 1
-        if not doNext : break
-    #print issues
-    #with open('ProjectScraping.json','wb') as fp:
-    #    json.dump(issues,fp,skipkeys=False, ensure_ascii=False)
-    #rint json.dumps(issues)
-    #with open('ProjectScraping.json','wb') as fp:
-    #    json.dump(issues,fp)
+    keylist=map(int,issues.keys())
+    keylist.sort()
     
-    #with open('project1.json', 'w') as outfile:
-    #      json.dump(issues, outfile)
-    for issue, events in issues.iteritems():
+    for issue in keylist:
+        events=issues[str(issue)]
         print("ISSUE " + str(issue)+"\n")
-        f.write("ISSUE "+str(issue)+"\n")
+ 
         milestonetrue=True
         commentsi=True
         createat=True
@@ -156,14 +74,14 @@ def launchDump():
         tduration=True
         numofIssues=issue
         for event in events:
-            for k,v in event.__dict__.iteritems():
-                if str(k) is 'what':
-                    if str(v) in labelnum.keys():
-                        labelnum[str(v)]=labelnum[str(v)]+1
+            for k,v in event.iteritems():
+                if ascii_equal(k,'what'):
+                    if v in labelnum.keys():
+                        labelnum[v]=labelnum[str(v)]+1
                     else:
-                        labelnum[str(v)]=1
+                        labelnum[v]=1
                     labelt=False
-                if str(k) is 'assignee':
+                if ascii_equal(k,'assignee'):
                     if assigneet==True:
                         if str(v) in assignques.keys():
                             assignques[str(v)]=assignques[str(v)]+1
@@ -171,40 +89,30 @@ def launchDump():
                             assignques[str(v)]=1
                         assigneet=False
                     
-                if str(k) is 'milestone':
+                if ascii_equal(k,'milestone'):
                     if str(v) in milestonenum.keys():
                         if milestonetrue==True:
                             milestonenum[str(v)]=milestonenum[str(v)]+1
                             milestonetrue=False
                     else:
                         milestonenum[str(v)]=1
-                if str(k) is 'comments':
+                if ascii_equal(k,'comments'):
                     if commentsi==True:
                         if v==0:
                             numofiss_nocomments=numofiss_nocomments+1
                         commentsi=False
-                if str(k) is 'issuecreated_at':
+                if ascii_equal(k,'issuecreated_at'):
                     if createat==True:
                         createtime[issue]=v
                         createat=False
-                if str(k) is 'duration':
+                if ascii_equal(k,'duration'):
                     if tduration==True:
                         timeduration.append(v)
-                #if v != None:
-                #    print(str(k)+" : "+str(v)) 
-            #print(type(event))
-            #print(event['issue']['number'])
-            #if event.get('label'):
-            #    print(event['label']['name'])
-            f.write(event.show()+"\n")
-            f.write('\n')
-            print(event.show())
-            print('')
         if labelt==True:
             numofissuenotlabeled=numofissuenotlabeled+1
         if createat==True:
             createtime[issue]=0
-        
+    print(labelnum)
     numoflabels=len(labelnum)
     print('feature 1')
     print('Num of issues:',numofIssues)
@@ -300,39 +208,6 @@ def launchDump():
         sumassign=sumassign+telem
     print('Percentage of issues using assignees:',1-nonassign/sumassign)
 
-    f.close()
-        #issues2[str(issue)]=events
-    #with open('ProjectScraping.json','wb') as fp:
-    #    json.dump(issues2,fp)
-
-    #badsmell
-    #badsmell 1: the distribution of number of issues distributed each week is not well
-    plt.figure()
-    
-    n_groups=len(numberofissueWeek)
-    meansone=range(1,n_groups,1)
-    weekcount=numberofissueWeek
-
-    fig,ax=plt.subplots()
-    index = np.arange(n_groups)  
-    bar_width = 0.35  
  
-    opacity = 0.4  
-    rects1 = plt.bar(index+bar_width, weekcount, bar_width,alpha=opacity, color='b',label=    'Number of issues')  
-    #rects2 = fbadsmell1.bar(index + bar_width, means_women, bar_width,alpha=opacity,col    or='r',label='Women')  
  
-    plt.xlabel('Week')  
-    plt.ylabel('Number of Issues')  
-    plt.title('Number of Issues Every Week')  
-    #fbadsmell1.xticks(index + bar_width, ('A', 'B', 'C', 'D', 'E'))  
-    #fbadsmell1.ylim(0,40)  
-    plt.legend()  
-       
- 
-    plt.show()
-
-    #early warning
-    fearly=plt.figure()
-    plt.plot(createtime.keys(),createtime.values(),'ro-')
-    plt.show()
-launchDump() 
+featureExtracter() 
