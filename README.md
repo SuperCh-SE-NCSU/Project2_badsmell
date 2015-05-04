@@ -51,6 +51,10 @@ issue_id | user | create time | duration time | assignee_id | comments number |
 3 | user1 | 1425291744 | 12536 | user2| 0 |
 8 | user2 | 1473654743 | 1426211865 | none| 6 |
 
+[project1] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project1/project1_issueinfo.csv) |
+[project2] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project2/project2_issueinfo.csv) |
+[project3] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project3/project3_issueinfo.csv)
+
 ####2. Issue number per week
 week 1 | week 2 | week 3 | week 4 | week 5 | week 6 | week 7 | week 8 | week 9 |
 ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | 
