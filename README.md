@@ -17,7 +17,7 @@ Then the Statistical measures like the min, max, accumulation, mean and standard
 ##Data
 
 We extracted all the issues from the three projects by running code from the given file ```gitable.py```.
-Then we extracted 16 features that we defined from the issues for these three projects.
+Then we extracted 14 features that we defined from the issues for these three projects.
 
 #### Features
 
@@ -51,6 +51,10 @@ week 1 | week 2 | week 3 | week 4 | week 5 | week 6 | week 7 | week 8 | week 9 |
 ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | 
 10 | 12 | 4 | 1 | 1 | 1 | 1 | 37 | 2 |  
 21 | 8 | 9 | 2 | 9 | 10 | 27 | 26 | 5 |
+
+[project1] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project1/issueNumberPerWeek1.csv)
+[project2] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project2/issueNumberPerWeek2.csv)
+[project3] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project3/issueNumberPerWeek3.csv)
 
 ####3. Label info
 label_id | name | number of use |
