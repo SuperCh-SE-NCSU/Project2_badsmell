@@ -52,7 +52,7 @@ def secs(d0):
     return delta.total_seconds()
 
 def dump1(u,issues):
-    token = "8174633dcc5c8379a557af139c8589ec63b37327" 
+    token = "6e4365962f9775f361884881f22c646a32c19f49" 
     request = urllib2.Request(u, headers={"Authorization" : "token "+token})
     v = urllib2.urlopen(request).read()
     w = json.loads(v)
@@ -124,6 +124,7 @@ def launchDump():
         newevents=list()
         for event in events:
             newevents.append(event.__dict__)
+            print(event.__dict__)
         newissues[issue]=newevents
     with open('project1.json', 'w') as outfile:
         json.dump(newissues, outfile)
