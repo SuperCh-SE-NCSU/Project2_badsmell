@@ -24,6 +24,7 @@ import json
 import re,datetime
 import math
 import sys
+import numpy as np
 class L():
     "Anonymous container"
     def __init__(i,**fields) :
@@ -97,13 +98,15 @@ def launchDump():
     #feature15,16: time interval between two issues' creation
     timeInterval=[]
     issueStartTime=[]
+    #new feature 15: Mean and standard deviation number of labels assigned to each issue
+    numOfLabelAssignToIssue=dict()
 
     f=open("Group6.txt","w")
     #issues2=dict()
     while(True):
-        #doNext = dump('https://api.github.com/repos/SuperCh-SE-NCSU/ProjectScraping/issues/events?page=' + str(page), issues)
+        doNext = dump('https://api.github.com/repos/SuperCh-SE-NCSU/ProjectScraping/issues/events?page=' + str(page), issues)
         #doNext=dump('https://api.github.com/repos/CSC510/SQLvsNOSQL/issues/events?page=' + str(page),issues)
-        doNext=dump('https://api.github.com/repos/CSC510-2015-Axitron/maze/issues/events?page=' + str(page), issues)
+        #doNext=dump('https://api.github.com/repos/CSC510-2015-Axitron/maze/issues/events?page=' + str(page), issues)
         #print("page" + str(page))
         page += 1
         if not doNext : break
@@ -121,6 +124,15 @@ def launchDump():
         for event in events:
             iterator+=1
             for k,v in event.__dict__.iteritems():
+    #new feature 15: Mean and standard deviation number of labels assigned to each issue
+                if str(k) is 'action':
+                    if iterator==0:
+                        numOfLabelAssignToIssue["ISSUE " + str(issue)]=1
+                    if str(v) == 'labeled' and iterator!=0:
+                        numOfLabelAssignToIssue["ISSUE " + str(issue)]+=1
+                    if str(v) == 'unlabeled':
+                        numOfLabelAssignToIssue["ISSUE " + str(issue)]-=1
+
                 if str(k) is 'what':
                     if str(v) in labelnum.keys():
                         labelnum[str(v)]=labelnum[str(v)]+1
@@ -195,7 +207,15 @@ def launchDump():
     print('Issue participating times of each user')
     for key, value in userParticipateInIssue.items():
         print(key, value)
-   
+    print('-----------------------------')
+    print('new feature 15')
+    print('Mean and standard deviation number of labels assigned to each issue')
+    arrayOfLabelAssignToIssue=[]
+    for key, value in numOfLabelAssignToIssue.items():
+        arrayOfLabelAssignToIssue.append(int(value))
+    print (arrayOfLabelAssignToIssue)
+    print('mean:',np.mean(arrayOfLabelAssignToIssue))
+    print('std_dev:',np.std(arrayOfLabelAssignToIssue))
     f.close()
      
     
