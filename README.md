@@ -82,6 +82,10 @@ milestone_id | name | number of use |
 1 | Beta Launch | 15 |
 3 | V2 | 8 |
 
+[project1] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project1/milestoneInfo1.csv) |
+[project2] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project2/milestoneInfo2.csv) |
+[project3] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project3/milestoneInfo3.csv)
+
 ## Feature detection & Result
 
 ####1. Total number of issues
