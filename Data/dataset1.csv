@@ -1,121 +1,121 @@
  Issue,action,what,when, user,milestone
 2, labeled,	  develop,	  1423975189.0,	  user1,	  V1
  3, labeled,	  Solved,	  1424987553.0,	  user2,	  V1
-,labeled,	  develop,	  1423975359.0,	  user1,	  V1
+3,labeled,	  develop,	  1423975359.0,	  user1,	  V1
  4, labeled,	  test,	  1424019915.0,	  user1,	  V1
  5, labeled,	  Solved,	  1424107334.0,	  user2,	  Beta Launch 
-,unlabeled,	  Solved,	  1424103079.0,	  user3,	  Beta Launch 
-,labeled,	  Solved,	  1424103075.0,	  user3,	  Beta Launch 
-,unlabeled,	  Solved,	  1424103075.0,	  user3,	  Beta Launch 
-,unlabeled,	  bug,	  1424103074.0,	  user3,	  Beta Launch 
-,labeled,	  bug,	  1424103074.0,	  user3,	  Beta Launch 
-,unlabeled,	  help wanted,	  1424100813.0,	  user2,	  Beta Launch 
-,labeled,	  Solved,	  1424100810.0,	  user2,	  Beta Launch 
-,labeled,	  help wanted,	  1424019988.0,	  user1,	  Beta Launch 
+5,unlabeled,	  Solved,	  1424103079.0,	  user3,	  Beta Launch 
+5,labeled,	  Solved,	  1424103075.0,	  user3,	  Beta Launch 
+5,unlabeled,	  Solved,	  1424103075.0,	  user3,	  Beta Launch 
+5,unlabeled,	  bug,	  1424103074.0,	  user3,	  Beta Launch 
+5,labeled,	  bug,	  1424103074.0,	  user3,	  Beta Launch 
+5,unlabeled,	  help wanted,	  1424100813.0,	  user2,	  Beta Launch 
+5,labeled,	  Solved,	  1424100810.0,	  user2,	  Beta Launch 
+5,labeled,	  help wanted,	  1424019988.0,	  user1,	  Beta Launch 
  6, labeled,	  develop,	  1424035745.0,	  user1,	  V1
  7, labeled,	  Solved,	  1427054321.0,	  user2,	  V2
-,labeled,	  design,	  1424035852.0,	  user1,	  V2
+7,labeled,	  design,	  1424035852.0,	  user1,	  V2
  8, labeled,	  design,	  1424100702.0,	  user2,	  V1
-,labeled,	  develop,	  1424100702.0,	  user2,	  V1
+8,labeled,	  develop,	  1424100702.0,	  user2,	  V1
  9, labeled,	  Solved,	  1424107425.0,	  user2,	  Beta Launch 
-,labeled,	  develop,	  1424102059.0,	  user2,	  Beta Launch 
-,labeled,	  help wanted,	  1424102059.0,	  user2,	  Beta Launch 
+9,labeled,	  develop,	  1424102059.0,	  user2,	  Beta Launch 
+9,labeled,	  help wanted,	  1424102059.0,	  user2,	  Beta Launch 
  10, labeled,	  Solved,	  1424106054.0,	  user2,	  Beta Launch 
-,labeled,	  help wanted,	  1424104507.0,	  user2,	  Beta Launch 
+10,labeled,	  help wanted,	  1424104507.0,	  user2,	  Beta Launch 
  11, labeled,	  help wanted,	  1424107098.0,	  user3,	  Beta Launch 
  12, labeled,	  Solved,	  1425077391.0,	  user2,	  Beta Launch 
-,labeled,	  design,	  1424107315.0,	  user2,	  Beta Launch 
+12,labeled,	  design,	  1424107315.0,	  user2,	  Beta Launch 
  13, labeled,	  Solved,	  1424987482.0,	  user2,	  V1
-,labeled,	  help wanted,	  1424109447.0,	  user1,	  V1
+13,labeled,	  help wanted,	  1424109447.0,	  user1,	  V1
  14, labeled,	  design,	  1424109925.0,	  user1,	  V1
  15, unlabeled,	  duplicate,	  1424110098.0,	  user1,	  V1
-,labeled,	  duplicate,	  1424110095.0,	  user1,	  V1
-,labeled,	  test,	  1424110083.0,	  user1,	  V1
+15,labeled,	  duplicate,	  1424110095.0,	  user1,	  V1
+15,labeled,	  test,	  1424110083.0,	  user1,	  V1
  16, labeled,	  Solved,	  1424300904.0,	  user2,	  Beta Launch 
-,labeled,	  question,	  1424110107.0,	  user3,	  Beta Launch 
+16,labeled,	  question,	  1424110107.0,	  user3,	  Beta Launch 
  17, labeled,	  design,	  1424110751.0,	  user1,	  V1
  18, labeled,	  design,	  1424111949.0,	  user2,	  V1
  19, labeled,	  design,	  1424112021.0,	  user1,	  V1
  20, labeled,	  Solved,	  1424987082.0,	  user2,	  V1
-,labeled,	  design,	  1424112426.0,	  user3,	  V1
+20,labeled,	  design,	  1424112426.0,	  user3,	  V1
  21, labeled,	  Solved,	  1424667676.0,	  user2,	  Beta Launch 
-,labeled,	  design,	  1424146832.0,	  user2,	  Beta Launch 
-,labeled,	  help wanted,	  1424146832.0,	  user2,	  Beta Launch 
+21,labeled,	  design,	  1424146832.0,	  user2,	  Beta Launch 
+21,labeled,	  help wanted,	  1424146832.0,	  user2,	  Beta Launch 
  22, labeled,	  Solved,	  1424300786.0,	  user2,	  Beta Launch 
-,labeled,	  bug,	  1424203690.0,	  user1,	  Beta Launch 
+22,labeled,	  bug,	  1424203690.0,	  user1,	  Beta Launch 
  23, labeled,	  Solved,	  1424300626.0,	  user2,	  Beta Launch 
-,labeled,	  develop,	  1424297794.0,	  user2,	  Beta Launch 
+23,labeled,	  develop,	  1424297794.0,	  user2,	  Beta Launch 
  24, labeled,	  Solved,	  1424711748.0,	  user2,	  Beta Launch 
-,labeled,	  design,	  1424301155.0,	  user2,	  Beta Launch 
-,labeled,	  develop,	  1424301155.0,	  user2,	  Beta Launch 
+24,labeled,	  design,	  1424301155.0,	  user2,	  Beta Launch 
+24,labeled,	  develop,	  1424301155.0,	  user2,	  Beta Launch 
  25, labeled,	  Solved,	  1424627992.0,	  user2,	  Beta Launch 
-,labeled,	  design,	  1424383209.0,	  user2,	  Beta Launch 
-,labeled,	  develop,	  1424383209.0,	  user2,	  Beta Launch 
+25,labeled,	  design,	  1424383209.0,	  user2,	  Beta Launch 
+25,labeled,	  develop,	  1424383209.0,	  user2,	  Beta Launch 
  26, labeled,	  Solved,	  1424641742.0,	  user2,	  Beta Launch 
-,labeled,	  help wanted,	  1424473810.0,	  user1,	  Beta Launch 
+26,labeled,	  help wanted,	  1424473810.0,	  user1,	  Beta Launch 
  27, labeled,	  Solved,	  1424711644.0,	  user2,	  Beta Launch 
-,labeled,	  develop,	  1424641844.0,	  user2,	  Beta Launch 
+27,labeled,	  develop,	  1424641844.0,	  user2,	  Beta Launch 
  28, labeled,	  Solved,	  1424707744.0,	  user2,	  Beta Launch 
-,labeled,	  help wanted,	  1424667627.0,	  user2,	  Beta Launch 
-,labeled,	  design,	  1424642322.0,	  user2,	  Beta Launch 
-,labeled,	  develop,	  1424642322.0,	  user2,	  Beta Launch 
+28,labeled,	  help wanted,	  1424667627.0,	  user2,	  Beta Launch 
+28,labeled,	  design,	  1424642322.0,	  user2,	  Beta Launch 
+28,labeled,	  develop,	  1424642322.0,	  user2,	  Beta Launch 
  29, labeled,	  Solved,	  1424986061.0,	  user2,	  V1
-,labeled,	  design,	  1424711973.0,	  user2,	  V1
-,labeled,	  develop,	  1424711973.0,	  user2,	  V1
+29,labeled,	  design,	  1424711973.0,	  user2,	  V1
+29,labeled,	  develop,	  1424711973.0,	  user2,	  V1
  30, labeled,	  test,	  1424897983.0,	  user1,	  V1
  31, labeled,	  develop,	  1424904573.0,	  user1,	  V1
  32, labeled,	  Solved,	  1424970458.0,	  user2,	  V1
-,labeled,	  help wanted,	  1424924116.0,	  user1,	  V1
+32,labeled,	  help wanted,	  1424924116.0,	  user1,	  V1
  33, labeled,	  design,	  1424925791.0,	  user1,	  V1
-,labeled,	  develop,	  1424925791.0,	  user1,	  V1
+33,labeled,	  develop,	  1424925791.0,	  user1,	  V1
  34, labeled,	  help wanted,	  1424987404.0,	  user1,	  V1
-,labeled,	  bug,	  1424987404.0,	  user1,	  V1
+34,labeled,	  bug,	  1424987404.0,	  user1,	  V1
  35, labeled,	  Solved,	  1427054408.0,	  user2,	  V2
-,labeled,	  help wanted,	  1425248248.0,	  user1,	  V2
-,labeled,	  enhancement,	  1425248248.0,	  user1,	  V2
+35,labeled,	  help wanted,	  1425248248.0,	  user1,	  V2
+35,labeled,	  enhancement,	  1425248248.0,	  user1,	  V2
  36, labeled,	  Solved,	  1427054428.0,	  user2,
-,unlabeled,	  Solved,	  1425348913.0,	  user2
-,labeled,	  Solved,	  1425348906.0,	  user2
-,labeled,	  question,	  1425345174.0,	  user1
+36,unlabeled,	  Solved,	  1425348913.0,	  user2,
+36,labeled,	  Solved,	  1425348906.0,	  user2,
+36,labeled,	  question,	  1425345174.0,	  user1,
  37, labeled,	  Solved,	  1427054565.0,	  user2,	  System test and Report
-,labeled,	  question,	  1425401250.0,	  user2,	  System test and Report
- 38, labeled,	  Solved,	  1427054593.0,	  user2
-,labeled,	  bug,	  1425417428.0,	  user1
+37,labeled,	  question,	  1425401250.0,	  user2,	  System test and Report
+ 38, labeled,	  Solved,	  1427054593.0,	  user2,
+38,labeled,	  bug,	  1425417428.0,	  user1,
  39, labeled,	  bug,	  1425757620.0,	  user1,	  V1
  40, labeled,	  Solved,	  1427054665.0,	  user2,	  V2
-,labeled,	  design,	  1425962491.0,	  user1,	  V2
-,labeled,	  enhancement,	  1425962491.0,	  user1,	  V2
+40,labeled,	  design,	  1425962491.0,	  user1,	  V2
+40,labeled,	  enhancement,	  1425962491.0,	  user1,	  V2
  41, labeled,	  help wanted,	  1427054691.0,	  user2,	  V2
-,labeled,	  bug,	  1426211865.0,	  user1,	  V2
+41,labeled,	  bug,	  1426211865.0,	  user1,	  V2
  42, labeled,	  Solved,	  1427054867.0,	  user2,	  V2
-,labeled,	  design,	  1426217996.0,	  user1,	  V2
+42,labeled,	  design,	  1426217996.0,	  user1,	  V2
  43, labeled,	  bug,	  1426218781.0,	  user1,	  V2
- 44, labeled,	  Solved,	  1427249095.0,	  user2
+ 44, labeled,	  Solved,	  1427249095.0,	  user2,
  45, labeled,	  Solved,	  1427054767.0,	  user2,	  V2
-,labeled,	  bug,	  1426393450.0,	  user1,	  V2
+45,labeled,	  bug,	  1426393450.0,	  user1,	  V2
  47, labeled,	  Solved,	  1427249139.0,	  user2,	  System test and Report
-,labeled,	  bug,	  1427131511.0,	  user1,	  System test and Report
+47,labeled,	  bug,	  1427131511.0,	  user1,	  System test and Report
  48, labeled,	  design,	  1427255223.0,	  user1,	  System test and Report
-,labeled,	  test,	  1427255223.0,	  user1,	  System test and Report
+48,labeled,	  test,	  1427255223.0,	  user1,	  System test and Report
  49, labeled,	  help wanted,	  1427255354.0,	  user1,	  System test and Report
  50, labeled,	  bug,	  1427308924.0,	  user1,	  System test and Report
  51, labeled,	  design,	  1427311328.0,	  user1,	  System test and Report
-,labeled,	  develop,	  1427311328.0,	  user1,	  System test and Report
+51,labeled,	  develop,	  1427311328.0,	  user1,	  System test and Report
  52, labeled,	  design,	  1427311388.0,	  user1,	  System test and Report
-,labeled,	  duplicate,	  1427311388.0,	  user1,	  System test and Report
+52,labeled,	  duplicate,	  1427311388.0,	  user1,	  System test and Report
  54, labeled,	  design,	  1427763094.0,	  user1,	  Final release
  55, labeled,	  design,	  1427763408.0,	  user1,	  Final release
  56, labeled,	  Solved,	  1427938886.0,	  user2,	  Final release
-,labeled,	  bug,	  1427834397.0,	  user1,	  Final release
+57,labeled,	  bug,	  1427834397.0,	  user1,	  Final release
  57, labeled,	  bug,	  1427834482.0,	  user1,	  Final release
  61, labeled,	  Solved,	  1427937597.0,	  user1,	  Final release
-,labeled,	  invalid,	  1427937597.0,	  user1,	  Final release
- 62, labeled,	  test,	  1428158030.0,	  user1
- 63, labeled,	  question,	  1428158809.0,	  user1
- 64, labeled,	  bug,	  1428170848.0,	  user1
-,labeled,	  enhancement,	  1428170840.0,	  user1
+64,labeled,	  invalid,	  1427937597.0,	  user1,	  Final release
+ 62, labeled,	  test,	  1428158030.0,	  user1,
+ 63, labeled,	  question,	  1428158809.0,	  user1,
+ 64, labeled,	  bug,	  1428170848.0,	  user1,
+64,labeled,	  enhancement,	  1428170840.0,	  user1,
  65, labeled,	  enhancement,	  1428200086.0,	  user2,	  Final release
- 66, labeled,	  develop,	  1428250364.0,	  user1
- 67, labeled,	  help wanted,	  1428264547.0,	  user1
- 68, labeled,	  question,	  1428343293.0,	  user1
- 69, labeled,	  enhancement,	  1428440030.0,	  user2
+ 66, labeled,	  develop,	  1428250364.0,	  user1,
+ 67, labeled,	  help wanted,	  1428264547.0,	  user1,
+ 68, labeled,	  question,	  1428343293.0,	  user1,
+ 69, labeled,	  enhancement,	  1428440030.0,	  user2,
