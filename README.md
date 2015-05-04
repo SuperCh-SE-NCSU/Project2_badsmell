@@ -252,14 +252,14 @@ We calculated mean and standard deviation number of labels assigned to each issu
 ```  
 Mean and standard deviation number of labels assigned to each issue:
   Project1:
-          Mean value          84452.1587302
-          Standard deviation  173010.600703
+          Mean value          1.73015873016
+          Standard deviation  0.717277684298
   Project2:
-          Mean value          90650.6617647
-          Standard deviation  252940.849578
+          Mean value          1.42647058824
+          Standard deviation  0.648894455086
   Project3:
-          Mean value          65775.3888889
-          Standard deviation  159966.183254
+          Mean value          1.62222222222
+          Standard deviation  0.569166598883
 ```
 
 ####9. Number of times each milestone was used
