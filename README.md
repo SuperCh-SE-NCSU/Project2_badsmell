@@ -72,6 +72,10 @@ username | number of commit | percentage of use |
 user1 | 193 | 42.4% |
 user3 | 82 |18.1% |
 
+[project1] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project1/commitInfo1.csv) |
+[project2] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project2/commitInfo2.csv) |
+[project3] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project3/commitInfo3.csv)
+
 ####5. Milestone info
 milestone_id | name | number of use |
 ---- | ---- | ---- |
