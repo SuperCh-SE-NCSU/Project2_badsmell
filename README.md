@@ -40,6 +40,11 @@ Then we extracted 14 features that we defined from the issues for these three pr
 
 ##Data samples
 
+###Raw data
+[project1] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project1/dataset1.csv) |
+[project2] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project2/dataset2.csv) |
+[project3] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project3/dataset3.csv)
+
 ####1. Issue info
 issue_id | user | create time | duration time | assignee_id | comments number |
 ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
