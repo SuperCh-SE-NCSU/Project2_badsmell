@@ -40,35 +40,17 @@ Then we extracted 16 features that we defined from the issues for these three pr
 
 ##Data samples
 
-#### Features
+####1. Issue info
+id | user | create time | duration time | comments number
+---- | ---- | ---- | ---- | ---- | ---- | ----
+3 | user1 | 1425291744 | 12536 | 0
+8 | user2 | 1473654743 | 1426211865 | 6
 
-**1. Total number of issues**
-
-**2. Number of issues without comments**
-
-**3. Number of issues each week**
-
-**4. Total number of labels**
-
-**5. Number of times each label was used**
-
-**6. Mean and standard deviation of time spent in each issue**
-
-**7. Number of issues with "unusually long" time**
-
-**8. Mean and standard deviation number of labels assigned to each issue**
-
-**9. Number of times each milestone was used**
-
-**10. Percentage of issues using labels**
-
-**11. Percentage of issues using milestones**
-
-**12. Percentage of issues using assignees**
-
-**13. "Unusually small or large" number of commits made by one person**
-
-**14. Issue participating times of each user**
+####2. Issue number per week
+week 1 | week 2 | week 3 | week 4 | week 5 | week 6 | week 7 | week 8 | week 9 |
+---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | 
+10 | 12 | 4 | 1 | 1 | 1 | 1 | 37 | 2 |  
+21 | 8 | 9 | 2 | 9 | 10 | 27 | 26 | 5 |
 
 ## Feature detection & Result
 
