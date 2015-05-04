@@ -1,0 +1,11 @@
+label_id, name, number of use
+1,develop, 15
+2,question, 5
+3,invalid, 1
+4,Solved, 36
+5,duplicate, 3
+6,design, 21
+7,help wanted, 15
+8,test, 5
+9,bug, 14
+10,enhancement, 5
