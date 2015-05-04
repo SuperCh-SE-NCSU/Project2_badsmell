@@ -17,7 +17,7 @@ Then the Statistical measures like the min, max, accumulation, mean and standard
 ##Data
 
 We extracted all the issues from the three projects by running code from the given file ```gitable.py```.
-Then we extracted 16 features that we defined from the issues for these three projects.
+Then we extracted 14 features that we defined from the issues for these three projects.
 
 #### Features
 
@@ -52,11 +52,19 @@ week 1 | week 2 | week 3 | week 4 | week 5 | week 6 | week 7 | week 8 | week 9 |
 10 | 12 | 4 | 1 | 1 | 1 | 1 | 37 | 2 |  
 21 | 8 | 9 | 2 | 9 | 10 | 27 | 26 | 5 |
 
+[project1] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project1/issueNumberPerWeek1.csv) |
+[project2] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project2/issueNumberPerWeek2.csv) |
+[project3] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project3/issueNumberPerWeek3.csv)
+
 ####3. Label info
 label_id | name | number of use |
 ---- | ---- | ---- |
 1 | develop | 15 |
 4 | Solved | 36 |
+
+[project1] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project1/labelInfo1.csv) |
+[project2] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project2/labelInfo2.csv) |
+[project3] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project3/labelInfo3.csv)
 
 ####4. Commit info
 username | number of commit | percentage of use |
@@ -64,11 +72,19 @@ username | number of commit | percentage of use |
 user1 | 193 | 42.4% |
 user3 | 82 |18.1% |
 
+[project1] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project1/commitInfo1.csv) |
+[project2] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project2/commitInfo2.csv) |
+[project3] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project3/commitInfo3.csv)
+
 ####5. Milestone info
 milestone_id | name | number of use |
 ---- | ---- | ---- |
 1 | Beta Launch | 15 |
 3 | V2 | 8 |
+
+[project1] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project1/milestoneInfo1.csv) |
+[project2] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project2/milestoneInfo2.csv) |
+[project3] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project3/milestoneInfo3.csv)
 
 ## Feature detection & Result
 

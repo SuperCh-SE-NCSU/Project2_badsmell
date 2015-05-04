@@ -1,0 +1,22 @@
+label_id, name, number of use
+1,feature dev,27
+2,feature complete,42
+3,2a. feature dev,58
+4,5. bug,12
+5,wontfix,1
+6,2b. help wanted,1
+7,feature QA,22
+8,testing,4
+9,question,3
+10,backtrack.JS,1
+11,1. feature request,51
+12,feature request,33
+13,trailModel.JS,1
+14,3. feature QA,40
+15,help wanted,8
+16,branch,2
+17,deployment,3
+18,branch list,1
+19,feature complete,11
+20,bug,5
+21,resources,1
