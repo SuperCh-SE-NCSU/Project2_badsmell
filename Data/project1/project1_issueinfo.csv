@@ -1,63 +1,64 @@
-"{'commentsnumber': 3, 'durationtime': 2328305.0, 'assignee': 'None', 'issue_id': 2, 'user': 'user1', 'createtime': 1423779397.0}"
-"{'commentsnumber': 3, 'durationtime': 1012209.0, 'assignee': 'None', 'issue_id': 3, 'user': 'user1', 'createtime': 1423975340.0}"
-"{'commentsnumber': 2, 'durationtime': 2087830.0, 'assignee': 'None', 'issue_id': 4, 'user': 'user1', 'createtime': 1424019915.0}"
-"{'commentsnumber': 1, 'durationtime': 82098.0, 'assignee': 'None', 'issue_id': 5, 'user': 'user1', 'createtime': 1424019988.0}"
-"{'commentsnumber': 0, 'durationtime': 2072034.0, 'assignee': 'None', 'issue_id': 6, 'user': 'user1', 'createtime': 1424035745.0}"
-"{'commentsnumber': 3, 'durationtime': 3018518.0, 'assignee': 'None', 'issue_id': 7, 'user': 'user1', 'createtime': 1424035829.0}"
-"{'commentsnumber': 1, 'durationtime': 2007166.0, 'assignee': 'None', 'issue_id': 8, 'user': 'user2', 'createtime': 1424100702.0}"
-"{'commentsnumber': 1, 'durationtime': 5370.0, 'assignee': 'None', 'issue_id': 9, 'user': 'user2', 'createtime': 1424102059.0}"
-"{'commentsnumber': 2, 'durationtime': 1555.0, 'assignee': 'None', 'issue_id': 10, 'user': 'user2', 'createtime': 1424104507.0}"
-"{'commentsnumber': 1, 'durationtime': 795809.0, 'assignee': 'None', 'issue_id': 11, 'user': 'user3', 'createtime': 1424106054.0}"
-"{'commentsnumber': 1, 'durationtime': 794524.0, 'assignee': 'None', 'issue_id': 12, 'user': 'user2', 'createtime': 1424107315.0}"
-"{'commentsnumber': 1, 'durationtime': 878029.0, 'assignee': 'None', 'issue_id': 13, 'user': 'user1', 'createtime': 1424109447.0}"
-"{'commentsnumber': 2, 'durationtime': 1997961.0, 'assignee': 'None', 'issue_id': 14, 'user': 'user1', 'createtime': 1424109925.0}"
-"{'commentsnumber': 1, 'durationtime': 1997849.0, 'assignee': 'None', 'issue_id': 15, 'user': 'user1', 'createtime': 1424110067.0}"
-"{'commentsnumber': 1, 'durationtime': 190791.0, 'assignee': 'None', 'issue_id': 16, 'user': 'user3', 'createtime': 1424110107.0}"
-"{'commentsnumber': 1, 'durationtime': 1997189.0, 'assignee': 'None', 'issue_id': 17, 'user': 'user1', 'createtime': 1424110743.0}"
-"{'commentsnumber': 2, 'durationtime': 1995992.0, 'assignee': 'user2', 'issue_id': 18, 'user': 'user2', 'createtime': 1424111949.0}"
-"{'commentsnumber': 1, 'durationtime': 1995942.0, 'assignee': 'None', 'issue_id': 19, 'user': 'user1', 'createtime': 1424112021.0}"
-"{'commentsnumber': 1, 'durationtime': 874651.0, 'assignee': 'None', 'issue_id': 20, 'user': 'user3', 'createtime': 1424112426.0}"
-"{'commentsnumber': 1, 'durationtime': 520847.0, 'assignee': 'user2', 'issue_id': 21, 'user': 'user2', 'createtime': 1424146832.0}"
-"{'commentsnumber': 3, 'durationtime': 438020.0, 'assignee': 'user2', 'issue_id': 22, 'user': 'user1', 'createtime': 1424203690.0}"
-"{'commentsnumber': 1, 'durationtime': 2937.0, 'assignee': 'user2', 'issue_id': 23, 'user': 'user2', 'createtime': 1424297794.0}"
-"{'commentsnumber': 5, 'durationtime': 410599.0, 'assignee': 'None', 'issue_id': 24, 'user': 'user2', 'createtime': 1424301155.0}"
-"{'commentsnumber': 2, 'durationtime': 244774.0, 'assignee': 'user2', 'issue_id': 25, 'user': 'user2', 'createtime': 1424383209.0}"
-"{'commentsnumber': 1, 'durationtime': 167932.0, 'assignee': 'None', 'issue_id': 26, 'user': 'user1', 'createtime': 1424473810.0}"
-"{'commentsnumber': 0, 'durationtime': 69812.0, 'assignee': 'None', 'issue_id': 27, 'user': 'user2', 'createtime': 1424641844.0}"
-"{'commentsnumber': 2, 'durationtime': 65762.0, 'assignee': 'None', 'issue_id': 28, 'user': 'user2', 'createtime': 1424641984.0}"
-"{'commentsnumber': 3, 'durationtime': 274090.0, 'assignee': 'user2', 'issue_id': 29, 'user': 'user2', 'createtime': 1424711973.0}"
-"{'commentsnumber': 2, 'durationtime': 1313615.0, 'assignee': 'None', 'issue_id': 30, 'user': 'user1', 'createtime': 1424897983.0}"
-"{'commentsnumber': 3, 'durationtime': 1307063.0, 'assignee': 'None', 'issue_id': 31, 'user': 'user1', 'createtime': 1424904573.0}"
-"{'commentsnumber': 1, 'durationtime': 46371.0, 'assignee': 'None', 'issue_id': 32, 'user': 'user1', 'createtime': 1424924115.0}"
-"{'commentsnumber': 2, 'durationtime': 1285860.0, 'assignee': 'None', 'issue_id': 33, 'user': 'user1', 'createtime': 1424925791.0}"
-"{'commentsnumber': 2, 'durationtime': 1224321.0, 'assignee': 'None', 'issue_id': 34, 'user': 'user1', 'createtime': 1424987389.0}"
-"{'commentsnumber': 2, 'durationtime': 1806161.0, 'assignee': 'None', 'issue_id': 35, 'user': 'user1', 'createtime': 1425248248.0}"
-"{'commentsnumber': 2, 'durationtime': 1709259.0, 'assignee': 'None', 'issue_id': 36, 'user': 'user1', 'createtime': 1425345174.0}"
-"{'commentsnumber': 3, 'durationtime': 1655536.0, 'assignee': 'None', 'issue_id': 37, 'user': 'user2', 'createtime': 1425399032.0}"
-"{'commentsnumber': 2, 'durationtime': 794363.0, 'assignee': 'None', 'issue_id': 38, 'user': 'user1', 'createtime': 1425417428.0}"
-"{'commentsnumber': 4, 'durationtime': 454158.0, 'assignee': 'None', 'issue_id': 39, 'user': 'user1', 'createtime': 1425757602.0}"
-"{'commentsnumber': 1, 'durationtime': 1092175.0, 'assignee': 'None', 'issue_id': 40, 'user': 'user1', 'createtime': 1425962491.0}"
-"{'commentsnumber': 12, 'durationtime': 1037100.0, 'assignee': 'None', 'issue_id': 41, 'user': 'user1', 'createtime': 1426211865.0}"
-"{'commentsnumber': 1, 'durationtime': 836874.0, 'assignee': 'None', 'issue_id': 42, 'user': 'user1', 'createtime': 1426217995.0}"
-"{'commentsnumber': 1, 'durationtime': 835102.0, 'assignee': 'None', 'issue_id': 43, 'user': 'user1', 'createtime': 1426218781.0}"
-"{'commentsnumber': 3, 'durationtime': 965432.0, 'assignee': 'None', 'issue_id': 44, 'user': 'user2', 'createtime': 1426283683.0}"
-"{'commentsnumber': 1, 'durationtime': 661319.0, 'assignee': 'None', 'issue_id': 45, 'user': 'user1', 'createtime': 1426393450.0}"
-"{'commentsnumber': 2, 'durationtime': 117642.0, 'assignee': 'None', 'issue_id': 47, 'user': 'user1', 'createtime': 1427131511.0}"
-"{'commentsnumber': 1, 'durationtime': 237020.0, 'assignee': 'None', 'issue_id': 48, 'user': 'user1', 'createtime': 1427255172.0}"
-"{'commentsnumber': 1, 'durationtime': 236807.0, 'assignee': 'None', 'issue_id': 49, 'user': 'user1', 'createtime': 1427255354.0}"
-"{'commentsnumber': 1, 'durationtime': 21101.0, 'assignee': 'None', 'issue_id': 50, 'user': 'user1', 'createtime': 1427308924.0}"
-"{'commentsnumber': 1, 'durationtime': 266086.0, 'assignee': 'None', 'issue_id': 51, 'user': 'user1', 'createtime': 1427311328.0}"
-"{'commentsnumber': 1, 'durationtime': 266015.0, 'assignee': 'None', 'issue_id': 52, 'user': 'user1', 'createtime': 1427311368.0}"
-"{'commentsnumber': 4, 'durationtime': 394622.0, 'assignee': 'user2', 'issue_id': 54, 'user': 'user1', 'createtime': 1427763094.0}"
-"{'commentsnumber': 0, 'durationtime': 440278.0, 'assignee': 'user1', 'issue_id': 55, 'user': 'user1', 'createtime': 1427763408.0}"
-"{'commentsnumber': 1, 'durationtime': 104484.0, 'assignee': 'user2', 'issue_id': 56, 'user': 'user1', 'createtime': 1427834397.0}"
-"{'commentsnumber': 1, 'durationtime': 371162.0, 'assignee': 'user1', 'issue_id': 57, 'user': 'user1', 'createtime': 1427834482.0}"
-"{'commentsnumber': 0, 'durationtime': 268173.0, 'assignee': 'user1', 'issue_id': 61, 'user': 'user1', 'createtime': 1427937597.0}"
-"{'commentsnumber': 2, 'durationtime': 171637.0, 'assignee': 'None', 'issue_id': 62, 'user': 'user1', 'createtime': 1428158030.0}"
-"{'commentsnumber': 0, 'durationtime': 178076.0, 'assignee': 'None', 'issue_id': 63, 'user': 'user1', 'createtime': 1428158809.0}"
-"{'commentsnumber': 2, 'durationtime': 166252.0, 'assignee': 'None', 'issue_id': 64, 'user': 'user1', 'createtime': 1428170682.0}"
-"{'commentsnumber': 1, 'durationtime': 5722.0, 'assignee': 'None', 'issue_id': 65, 'user': 'user2', 'createtime': 1428200078.0}"
-"{'commentsnumber': 1, 'durationtime': 122784.0, 'assignee': 'None', 'issue_id': 66, 'user': 'user1', 'createtime': 1428250364.0}"
-"{'commentsnumber': 2, 'durationtime': 103773.0, 'assignee': 'user2', 'issue_id': 67, 'user': 'user1', 'createtime': 1428264547.0}"
-"{'commentsnumber': 5, 'durationtime': 95909.0, 'assignee': 'None', 'issue_id': 68, 'user': 'user1', 'createtime': 1428343282.0}"
-"{'commentsnumber': 1, 'durationtime': 95869.0, 'assignee': 'None', 'issue_id': 69, 'user': 'user2', 'createtime': 1428344167.0}"
+commentsnumber,durationtime,assignee,issue_id,user,createtime
+3,2328305.0,None,2,user1,1423779397.0
+3,1012209.0,None,3,user1,1423975340.0
+2,2087830.0,None,4,user1,1424019915.0
+1,82098.0,None,5,user1,1424019988.0
+0,2072034.0,None,6,user1,1424035745.0
+3,3018518.0,None,7,user1,1424035829.0
+1,2007166.0,None,8,user2,1424100702.0
+1,5370.0,None,9,user2,1424102059.0
+2,1555.0,None,10,user2,1424104507.0
+1,795809.0,None,11,user3,1424106054.0
+1,794524.0,None,12,user2,1424107315.0
+1,878029.0,None,13,user1,1424109447.0
+2,1997961.0,None,14,user1,1424109925.0
+1,1997849.0,None,15,user1,1424110067.0
+1,190791.0,None,16,user3,1424110107.0
+1,1997189.0,None,17,user1,1424110743.0
+2,1995992.0,user2,18,user2,1424111949.0
+1,1995942.0,None,19,user1,1424112021.0
+1,874651.0,None,20,user3,1424112426.0
+1,520847.0,user2,21,user2,1424146832.0
+3,438020.0,user2,22,user1,1424203690.0
+1,2937.0,user2,23,user2,1424297794.0
+5,410599.0,None,24,user2,1424301155.0
+2,244774.0,user2,25,user2,1424383209.0
+1,167932.0,None,26,user1,1424473810.0
+0,69812.0,None,27,user2,1424641844.0
+2,65762.0,None,28,user2,1424641984.0
+3,274090.0,user2,29,user2,1424711973.0
+2,1313615.0,None,30,user1,1424897983.0
+3,1307063.0,None,31,user1,1424904573.0
+1,46371.0,None,32,user1,1424924115.0
+2,1285860.0,None,33,user1,1424925791.0
+2,1224321.0,None,34,user1,1424987389.0
+2,1806161.0,None,35,user1,1425248248.0
+2,1709259.0,None,36,user1,1425345174.0
+3,1655536.0,None,37,user2,1425399032.0
+2,794363.0,None,38,user1,1425417428.0
+4,454158.0,None,39,user1,1425757602.0
+1,1092175.0,None,40,user1,1425962491.0
+12,1037100.0,None,41,user1,1426211865.0
+1,836874.0,None,42,user1,1426217995.0
+1,835102.0,None,43,user1,1426218781.0
+3,965432.0,None,44,user2,1426283683.0
+1,661319.0,None,45,user1,1426393450.0
+2,117642.0,None,47,user1,1427131511.0
+1,237020.0,None,48,user1,1427255172.0
+1,236807.0,None,49,user1,1427255354.0
+1,21101.0,None,50,user1,1427308924.0
+1,266086.0,None,51,user1,1427311328.0
+1,266015.0,None,52,user1,1427311368.0
+4,394622.0,user2,54,user1,1427763094.0
+0,440278.0,user1,55,user1,1427763408.0
+1,104484.0,user2,56,user1,1427834397.0
+1,371162.0,user1,57,user1,1427834482.0
+0,268173.0,user1,61,user1,1427937597.0
+2,171637.0,None,62,user1,1428158030.0
+0,178076.0,None,63,user1,1428158809.0
+2,166252.0,None,64,user1,1428170682.0
+1,5722.0,None,65,user2,1428200078.0
+1,122784.0,None,66,user1,1428250364.0
+2,103773.0,user2,67,user1,1428264547.0
+5,95909.0,None,68,user1,1428343282.0
+1,95869.0,None,69,user2,1428344167.0
