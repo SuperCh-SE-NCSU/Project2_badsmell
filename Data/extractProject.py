@@ -56,9 +56,16 @@ def csv_writer(data, path):
        writer = csv.writer(csv_file, delimiter=',')
        for line in data:
            writer.writerow([line])
+           
+def csv_writer2(data,path):
+    writer = csv.writer(outcsv, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL, lineterminator='\n')
+    writer.writerow(['issue_id', 'user', 'createtime','durationtime','assignee','commentsnumber'])
+    for line in data:
+        #Write item to outcsv
+        writer.writerow(data['issue_id'],data['user'],data['createtime'],data['durationtime'],data['assignee'],data['commentsnumber'])
 
 def dump1(u,issues):
-    token = "" 
+    token = "8aa06a0790955fddeef54729e6ab30cb1b3a5a8f" 
     request = urllib2.Request(u, headers={"Authorization" : "token "+token})
     v = urllib2.urlopen(request).read()
     w = json.loads(v)
@@ -119,9 +126,9 @@ def launchDump():
     username=dict()
     issueinfo=list()
     while(True):
-        #doNext = dump('https://api.github.com/repos/SuperCh-SE-NCSU/ProjectScraping/issues/events?page=' + str(page), issues)
+        doNext = dump('https://api.github.com/repos/SuperCh-SE-NCSU/ProjectScraping/issues/events?page=' + str(page), issues)
         #doNext=dump('https://api.github.com/repos/CSC510/SQLvsNOSQL/issues/events?page=' + str(page),issues)
-        doNext=dump('https://api.github.com/repos/CSC510-2015-Axitron/maze/issues/events?page=' + str(page), issues)
+        #doNext=dump('https://api.github.com/repos/CSC510-2015-Axitron/maze/issues/events?page=' + str(page), issues)
         print("page" + str(page))
         page += 1
         if not doNext : break
@@ -167,12 +174,12 @@ def launchDump():
         issueinfo.append(new_eventdict)
     print(mapuser)
     #print(issueinfo)
-    with open('project3.json', 'w') as outfile:
+    with open('project1.json', 'w') as outfile:
             json.dump(newissues, outfile)
-    with open('project3_issueinfo.json', 'w') as outfile:
+    with open('project1_issueinfo.json', 'w') as outfile:
             json.dump(issueinfo, outfile)
-    csv_writer(issueinfo,'project3_issueinfo.csv')
-    
+    csv_writer(issueinfo,'project1_issueinfo.csv')
+    csv_writer2(issueinfo,'project1_issueinfo2.csv')
         
  
 launchDump() 
