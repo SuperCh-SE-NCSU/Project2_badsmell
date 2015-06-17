@@ -65,7 +65,7 @@ def csv_writer2(data,path):
         writer.writerow(data['issue_id'],data['user'],data['createtime'],data['durationtime'],data['assignee'],data['commentsnumber'])
 
 def dump1(u,issues):
-    token = "" 
+    token = "8aa06a0790955fddeef54729e6ab30cb1b3a5a8f" 
     request = urllib2.Request(u, headers={"Authorization" : "token "+token})
     v = urllib2.urlopen(request).read()
     w = json.loads(v)
@@ -179,7 +179,7 @@ def launchDump():
     with open('project1_issueinfo.json', 'w') as outfile:
             json.dump(issueinfo, outfile)
     csv_writer(issueinfo,'project1_issueinfo.csv')
-    csv_writer(issueinfo,'project1_issueinfo2.csv')
+    csv_writer2(issueinfo,'project1_issueinfo2.csv')
         
  
 launchDump() 
