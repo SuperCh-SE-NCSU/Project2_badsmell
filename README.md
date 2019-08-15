@@ -42,20 +42,20 @@ Then we extracted 14 features that we defined from the issues for these three pr
 
 ### Raw data
 
-[project1] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project1/dataset1.csv) |
-[project2] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project2/dataset2.csv) |
-[project3] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project3/dataset3.csv)
+[project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project1/dataset1.csv) |
+[project2](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project2/dataset2.csv) |
+[project3](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project3/dataset3.csv)
 
 #### 1. Issue info
 
 issue_id | user | create time | duration time | assignee_id | comments number |
----- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+---- | ---- | ---- | ---- | ---- | ---- |
 3 | user1 | 1425291744 | 12536 | user2| 0 |
 8 | user2 | 1473654743 | 1426211865 | none| 6 |
 
-[project1] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project1/project1_issueinfo.csv) |
-[project2] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project2/project2_issueinfo.csv) |
-[project3] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project3/project3_issueinfo.csv)
+[project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project1/project1_issueinfo.csv) |
+[project2](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project2/project2_issueinfo.csv) |
+[project3](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project3/project3_issueinfo.csv)
 
 #### 2. Issue number per week
 week 1 | week 2 | week 3 | week 4 | week 5 | week 6 | week 7 | week 8 | week 9 |
@@ -63,9 +63,9 @@ week 1 | week 2 | week 3 | week 4 | week 5 | week 6 | week 7 | week 8 | week 9 |
 10 | 12 | 4 | 1 | 1 | 1 | 1 | 37 | 2 |  
 21 | 8 | 9 | 2 | 9 | 10 | 27 | 26 | 5 |
 
-[project1] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project1/issueNumberPerWeek1.csv) |
-[project2] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project2/issueNumberPerWeek2.csv) |
-[project3] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project3/issueNumberPerWeek3.csv)
+[project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project1/issueNumberPerWeek1.csv) |
+[project2](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project2/issueNumberPerWeek2.csv) |
+[project3](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project3/issueNumberPerWeek3.csv)
 
 #### 3. Label info
 label_id | name | number of use |
@@ -73,9 +73,9 @@ label_id | name | number of use |
 1 | develop | 15 |
 4 | Solved | 36 |
 
-[project1] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project1/labelInfo1.csv) |
-[project2] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project2/labelInfo2.csv) |
-[project3] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project3/labelInfo3.csv)
+[project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project1/labelInfo1.csv) |
+[project2](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project2/labelInfo2.csv) |
+[project3](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project3/labelInfo3.csv)
 
 #### 4. Commit info
 username | number of commit | percentage of use |
@@ -83,9 +83,9 @@ username | number of commit | percentage of use |
 user1 | 193 | 42.4% |
 user3 | 82 |18.1% |
 
-[project1] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project1/commitInfo1.csv) |
-[project2] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project2/commitInfo2.csv) |
-[project3] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project3/commitInfo3.csv)
+[project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project1/commitInfo1.csv) |
+[project2](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project2/commitInfo2.csv) |
+[project3](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project3/commitInfo3.csv)
 
 #### 5. Milestone info
 milestone_id | name | number of use |
@@ -93,9 +93,9 @@ milestone_id | name | number of use |
 1 | Beta Launch | 15 |
 3 | V2 | 8 |
 
-[project1] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project1/milestoneInfo1.csv) |
-[project2] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project2/milestoneInfo2.csv) |
-[project3] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project3/milestoneInfo3.csv)
+[project1](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project1/milestoneInfo1.csv) |
+[project2](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project2/milestoneInfo2.csv) |
+[project3](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project3/milestoneInfo3.csv)
 
 ## Feature detection & Result
 
@@ -103,7 +103,7 @@ milestone_id | name | number of use |
 
 This feature is quite straightforward. We decide to find the total number of issues of each team. And this feature can reflect briefly how team members communicate during the development period.
 
-[Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
+[Script Link](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
 
 ##### Result
 We counted total number of issues of each project. And here is the result.
@@ -119,7 +119,7 @@ Number of issues:
 
 We also want to know how many issues are actually no comments below. This feature goes deeper comparing to the first feature. And according to this feature, we can find out which issue actually makes the difference.
 
-[Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
+[Script Link](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
 
 ##### Result
 We also counted the number of issues without comments.
@@ -135,7 +135,7 @@ Number of issues without comments:
 
 This issue is quite interesting.  We want to find out that which period is most likely to create issues, beginning or near the deadline. And we can analyse the results, which will help to optimize the development schedule.
 
-[Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
+[Script Link](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
 
 ##### Result
 We divided the total number of issues monthly, and get an array for each project.
@@ -157,7 +157,7 @@ We divided the total number of issues monthly, and get an array for each project
 
 We want to know the total number of labels each team created. Different number of labels reflect different kinds of situations and different levels of priorities each team will set.
 
-[Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
+[Script Link](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
 
 ##### Result
 We counted the total number of labels for each project.
@@ -173,7 +173,7 @@ Total number of labels:
 
 We can figure out which kind of label was used a lot of times, and which kind of label was seldom used. And the results will reflect whether the quantity and the setting of labels are reasonable or not.
 
-[Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
+[Script Link](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
 
 ##### Result
 We also counted the number of times each label was used.
@@ -233,7 +233,7 @@ We also counted the number of times each label was used.
 
 This feature will show us mean and standard deviation of times spending in each issue. And it will help us to analyse in depth. 
 
-[Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
+[Script Link](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
 
 #####Result
 We calculated mean and standard deviation of time spent in each issue.
@@ -255,7 +255,7 @@ Mean and standard deviation of time spent in each issue:
 
 "Unusually long" time means 1.5 or 2 standard deviations time in a label. In normal distribution, 1.5 or 2 standard deviations means the data point is quite far away from the mean value. In this case, unusually long time a label may indicate team do little stuff during this time period.
 
-[Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
+[Script Link](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
 
 ##### Result
 We counted number of labels with unusually long time, which means 1.5 or 2 standard deviations time compatring to mean value.
@@ -271,7 +271,7 @@ Number of issues with "unusually long" time:
 
 This feature will show us mean and standard deviation of number of labels assigned to each issue. And in this feature, we consider label and issue together, we want to find out the reasonable of the setting of labels. Also, we want to find out whether team members used to add corresponding labels to issues or not.
 
-[Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter2.py)
+[Script Link](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter2.py)
 
 ##### Result
 We calculated mean and standard deviation number of labels assigned to each issue.
@@ -293,7 +293,7 @@ Mean and standard deviation number of labels assigned to each issue:
 
 We are interesting in number of milestones. And each milestone usually represents one stage in development cycle. We can analyse which software development method each team used.
 
-[Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
+[Script Link](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
 
 ##### Result
 We counted the number of times each milestone was used.
@@ -333,7 +333,7 @@ We counted the number of times each milestone was used.
 
 We want to see how many issues used labels.
 
-[Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
+[Script Link](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
 
 ##### Result
 We calculated percentage of issues using labels.
@@ -349,7 +349,7 @@ Percentage of issues using labels:
 
 We want to see how many issues used milestones.
 
-[Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter2.py)
+[Script Link](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter2.py)
 
 ##### Result
 We calculated percentage of issues using milestones.
@@ -365,7 +365,7 @@ Percentage of issues using milestones:
 
 We are interested in how many issues used assignees. And if the percentage of issues using assignees is high, which means responsibility distribution is clear.
 
-[Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter2.py)
+[Script Link](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter2.py)
 
 ##### Result
 We also calculated percentage of issues using assignees.
@@ -381,7 +381,7 @@ Percentage of issues using milestones:
 
 We define number of commits made by one person less than certain percentage of total commits indicates this person is a "passenger". And the number of commits made by one person more than certain percentage of total commits indicates this person is a "great dictator".The result can also indicate whether responsibility distribution of this team is uneven or not.
 
-[Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter2.py)
+[Script Link](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter2.py)
 
 ##### Result
 We count the number of commits each user made, and calaulate the percentage.
@@ -408,7 +408,7 @@ Unusually small or large" number of issues handled only by one person:
 
 This feature calculates each user's frequency of attendency.
 
-[Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter2.py)
+[Script Link](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter2.py)
 
 ##### Result
 We calculated issue participating times of each user.
@@ -837,7 +837,7 @@ for i in range(0,len(interval)-1):
         print('the team may be falling behind the schedule before issue',i)
         upinterval=0
 ```
-[Code Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/earlywarning/earlyWarningExtractorInterval.py)
+[Code Link](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/earlywarning/earlyWarningExtractorInterval.py)
 
 **Issue Duration Early Warning**
 Issue Duration early Warning is based on the trend of duration of issue. If the team spend much more time in closing the issue than before, the team may be struggling or waiting. TIt means we should notify the team to work harder. There are two methods to implement it. The first detecting method is also based on threshold, the second detecting method is based on the increasing trend of issue duration time in which we need linear regression to fit the trend. We implement the issue duration early warning in the code below:
