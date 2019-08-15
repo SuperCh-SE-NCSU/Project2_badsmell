@@ -1,20 +1,20 @@
 # Project2_badsmell
 Bad smells 
 
-##Collection
+## Collection
 We selected three projects (our project is one of them), and extracted all the issues from these projects. <br/>
 1. Projects with more issues are preferred.<br/>
 2. Projects with more labels are proferred.<br/>
 Then the gitable.py file is used to extract the issues, labels, milestones for each project.
 
-##Anonymization
+## Anonymization
 We labelled these three projects as Project1, Project2, Project3 or group1, group2, group3 (not the real group numbers).In the dataset that we extracted from these projects, we replace the specific usernames with user1,user2,etc. And there is no clue telling about the the content of these projects in the features we extracted.<br/>
 
-##Tables
+## Tables
 Data extracted from issues are stored in a CSV file.
 Then the Statistical measures like the min, max, accumulation, mean and standard deviation of the data set were extracted, which are the features that we want. All the features are represented by numbers, then Some values are set to detect bad smells based on the comparison of the results and these values.
 
-##Data
+## Data
 
 We extracted all the issues from the three projects by running code from the given file ```gitable.py```.
 Then we extracted 14 features that we defined from the issues for these three projects.
@@ -38,14 +38,16 @@ Then we extracted 14 features that we defined from the issues for these three pr
 |13|"Unusually small or large" number of commits made by one person|
 |14|Issue participating times of each user|
 
-##Data samples
+## Data samples
 
-###Raw data
+### Raw data
+
 [project1] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project1/dataset1.csv) |
 [project2] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project2/dataset2.csv) |
 [project3] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project3/dataset3.csv)
 
-####1. Issue info
+#### 1. Issue info
+
 issue_id | user | create time | duration time | assignee_id | comments number |
 ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 3 | user1 | 1425291744 | 12536 | user2| 0 |
@@ -55,7 +57,7 @@ issue_id | user | create time | duration time | assignee_id | comments number |
 [project2] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project2/project2_issueinfo.csv) |
 [project3] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project3/project3_issueinfo.csv)
 
-####2. Issue number per week
+#### 2. Issue number per week
 week 1 | week 2 | week 3 | week 4 | week 5 | week 6 | week 7 | week 8 | week 9 |
 ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | 
 10 | 12 | 4 | 1 | 1 | 1 | 1 | 37 | 2 |  
@@ -65,7 +67,7 @@ week 1 | week 2 | week 3 | week 4 | week 5 | week 6 | week 7 | week 8 | week 9 |
 [project2] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project2/issueNumberPerWeek2.csv) |
 [project3] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project3/issueNumberPerWeek3.csv)
 
-####3. Label info
+#### 3. Label info
 label_id | name | number of use |
 ---- | ---- | ---- |
 1 | develop | 15 |
@@ -75,7 +77,7 @@ label_id | name | number of use |
 [project2] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project2/labelInfo2.csv) |
 [project3] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project3/labelInfo3.csv)
 
-####4. Commit info
+#### 4. Commit info
 username | number of commit | percentage of use |
 ---- | ---- | ---- |
 user1 | 193 | 42.4% |
@@ -85,7 +87,7 @@ user3 | 82 |18.1% |
 [project2] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project2/commitInfo2.csv) |
 [project3] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/Data/project3/commitInfo3.csv)
 
-####5. Milestone info
+#### 5. Milestone info
 milestone_id | name | number of use |
 ---- | ---- | ---- |
 1 | Beta Launch | 15 |
@@ -97,13 +99,13 @@ milestone_id | name | number of use |
 
 ## Feature detection & Result
 
-####1. Total number of issues
+#### 1. Total number of issues
 
 This feature is quite straightforward. We decide to find the total number of issues of each team. And this feature can reflect briefly how team members communicate during the development period.
 
 [Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
 
-#####Result
+##### Result
 We counted total number of issues of each project. And here is the result.
 
 ```
@@ -113,13 +115,13 @@ Number of issues:
   Project3: 93
 ```
 
-####2. Number of issues without comments
+#### 2. Number of issues without comments
 
 We also want to know how many issues are actually no comments below. This feature goes deeper comparing to the first feature. And according to this feature, we can find out which issue actually makes the difference.
 
 [Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
 
-#####Result
+##### Result
 We also counted the number of issues without comments.
 
 ```  
@@ -129,13 +131,13 @@ Number of issues without comments:
   Project3: 6
 ```
 
-####3. Number of issues each week
+#### 3. Number of issues each week
 
 This issue is quite interesting.  We want to find out that which period is most likely to create issues, beginning or near the deadline. And we can analyse the results, which will help to optimize the development schedule.
 
 [Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
 
-#####Result
+##### Result
 We divided the total number of issues monthly, and get an array for each project.
 
 ```
@@ -157,7 +159,7 @@ We want to know the total number of labels each team created. Different number o
 
 [Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
 
-#####Result
+##### Result
 We counted the total number of labels for each project.
 
 ```  
@@ -167,13 +169,13 @@ Total number of labels:
   Project3: 21
 ```
 
-####5. Number of times each label was used
+#### 5. Number of times each label was used
 
 We can figure out which kind of label was used a lot of times, and which kind of label was seldom used. And the results will reflect whether the quantity and the setting of labels are reasonable or not.
 
 [Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
 
-#####Result
+##### Result
 We also counted the number of times each label was used.
 
 ```  
@@ -227,7 +229,7 @@ We also counted the number of times each label was used.
 ```
 ![Project3](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project3_labels.png)
 
-####6. Mean and standard deviation of time spent in each issue
+#### 6. Mean and standard deviation of time spent in each issue
 
 This feature will show us mean and standard deviation of times spending in each issue. And it will help us to analyse in depth. 
 
@@ -249,13 +251,13 @@ Mean and standard deviation of time spent in each issue:
           standard:   458374.563866
 ```
 
-####7. Number of issues with "unusually long" time
+#### 7. Number of issues with "unusually long" time
 
 "Unusually long" time means 1.5 or 2 standard deviations time in a label. In normal distribution, 1.5 or 2 standard deviations means the data point is quite far away from the mean value. In this case, unusually long time a label may indicate team do little stuff during this time period.
 
 [Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
 
-#####Result
+##### Result
 We counted number of labels with unusually long time, which means 1.5 or 2 standard deviations time compatring to mean value.
 
 ```  
@@ -265,13 +267,13 @@ Number of issues with "unusually long" time:
   Project3: 29
 ```
 
-####8. Mean and standard deviation number of labels assigned to each issue
+#### 8. Mean and standard deviation number of labels assigned to each issue
 
 This feature will show us mean and standard deviation of number of labels assigned to each issue. And in this feature, we consider label and issue together, we want to find out the reasonable of the setting of labels. Also, we want to find out whether team members used to add corresponding labels to issues or not.
 
 [Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter2.py)
 
-#####Result
+##### Result
 We calculated mean and standard deviation number of labels assigned to each issue.
 
 ```  
@@ -287,13 +289,13 @@ Mean and standard deviation number of labels assigned to each issue:
           Standard deviation  0.569166598883
 ```
 
-####9. Number of times each milestone was used
+#### 9. Number of times each milestone was used
 
 We are interesting in number of milestones. And each milestone usually represents one stage in development cycle. We can analyse which software development method each team used.
 
 [Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
 
-#####Result
+##### Result
 We counted the number of times each milestone was used.
 
 ``` 
@@ -327,13 +329,13 @@ We counted the number of times each milestone was used.
 ```
 ![Project3](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project3_milestone.png)
 
-####10. Percentage of issues using labels
+#### 10. Percentage of issues using labels
 
 We want to see how many issues used labels.
 
 [Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter1.py)
 
-#####Result
+##### Result
 We calculated percentage of issues using labels.
 
 ```  
@@ -343,13 +345,13 @@ Percentage of issues using labels:
   Project3: 96.8% in 93 issues
 ```
 
-####11. Percentage of issues using milestones
+#### 11. Percentage of issues using milestones
 
 We want to see how many issues used milestones.
 
 [Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter2.py)
 
-#####Result
+##### Result
 We calculated percentage of issues using milestones.
 
 ```  
@@ -359,13 +361,13 @@ Percentage of issues using milestones:
   Project3: 52.1% in 93 issues
 ```
 
-####12. Percentage of issues using assignees
+#### 12. Percentage of issues using assignees
 
 We are interested in how many issues used assignees. And if the percentage of issues using assignees is high, which means responsibility distribution is clear.
 
 [Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter2.py)
 
-#####Result
+##### Result
 We also calculated percentage of issues using assignees.
 
 ```  
@@ -375,13 +377,13 @@ Percentage of issues using milestones:
   Project3: 72.2% in 93 issues
 ```
 
-####13. "Unusually small or large" number of commits made by one person
+#### 13. "Unusually small or large" number of commits made by one person
 
 We define number of commits made by one person less than certain percentage of total commits indicates this person is a "passenger". And the number of commits made by one person more than certain percentage of total commits indicates this person is a "great dictator".The result can also indicate whether responsibility distribution of this team is uneven or not.
 
 [Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter2.py)
 
-#####Result
+##### Result
 We count the number of commits each user made, and calaulate the percentage.
 
 ```  
@@ -402,13 +404,13 @@ Unusually small or large" number of issues handled only by one person:
           user 4: 38	10.1%
 ```
 
-####14. Issue participating times of each user
+#### 14. Issue participating times of each user
 
 This feature calculates each user's frequency of attendency.
 
 [Script Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/feature_extractor/featureExtracter2.py)
 
-#####Result
+##### Result
 We calculated issue participating times of each user.
 
 ```  
@@ -431,7 +433,7 @@ Issue participating times of each user:
 
 ## Bad smells detector & Result 
 
-###1. Issue Time Duration Detector
+### 1. Issue Time Duration Detector
 During the development cycle, team members will post some issues in order to communicate other members. However, the time duration between two issue creation may vary dramatically. This detector can analyse time duration to decide whether it is too long or too short. The result can reflect the process of each team. And we named it [issueTimeDurationDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/bad_smell_detector/issueTimeDurationDetector.py) Below are pseudocode of algorithm we use to detect bad smells.
 ```
 if issueTimeDuration > mean + 2*std_dev:
@@ -444,7 +446,7 @@ Otherwise:
     This issue duration time is normal.
 ```
 
-####Result
+#### Result
 Because the result are too long, we eliminate some normal results and leave some bad smells.
 
 Project 1
@@ -559,7 +561,7 @@ otherwise:
     The number of issues without comments is normal.
 ```
 
-####Result
+#### Result
 
 Project 1
 ```
@@ -580,7 +582,7 @@ Project 3
 Normal
 ```
 
-###3. Label Usage Detector
+### 3. Label Usage Detector
 We can add one or more labels to each issue or each pull request in order to remind other team members. We found that some teams have many labels, but some labels were used only one or two times. So we consider this is another kind of bad smell. We named it [labelUsageDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/bad_smell_detector/labelUsageDetector.py) The cause of this bad smell may be the setting of a label is not reasonable. Team members should rename it, merge it into another label or delete it. Below are pseudocode of algorithm we use to detect bad smells.(We do not detect whether a label was used too many times or not. Since label like "Solved" can be used almost every issue. And we think it is fine to do so.)
 ```
 if labelUsage < mean - std_dev:
@@ -589,7 +591,7 @@ otherwise:
     The usage of this label is normal.
 ```
 
-####Result
+#### Result
 
 Project 1
 ```
@@ -654,7 +656,7 @@ The usage of [bug] is normal.
 The usage of [resources] is normal.
 ```
 
-###4. User Participate Detector
+### 4. User Participate Detector
 In a good team, the difference of each member's degree of participation, in other words, the difference of each member's contribution should not be too large. Otherwise, there must be "great dictator" or "passenger" in this team, which can become another bad smell. We named it [userParticipateDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/bad_smell_detector/userParticipateDetector.py) Below are pseudocode of algorithm we use to detect bad smells. <b>(We consider not only commit times of each member, but also the issue participant times of each member.)</b>
 ```
 ratio1=eachMemberIssueParticipateTimes[i]*1.0/sumOfIssueParticipateTimes
@@ -667,7 +669,7 @@ otherwise:
 	The participant of this user is normal.
 ```
 
-####Result
+#### Result
 
 Project 1
 ```
@@ -699,7 +701,7 @@ Badsmell: This user is likely to be a 'passenger'.
 Badsmell: This user is likely to be a 'passenger'.
 ```
 
-###5. Weekly Issue Detector
+### 5. Weekly Issue Detector
 We are also interesting in the amount of weekly issues of each team. And the result can reflect which period is the most active period of each team. If one week had too many or too little issues been created, we consider it can be a bad smell. Since one team may catch up the schedule in one week. We named it [weeklyIssueDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/bad_smell_detector/weeklyIssueDetector.py) Below are pseudocode of algorithm we use to detect bad smells.
 ```
 if weeklyIssue > mean + std_dev:
@@ -710,7 +712,7 @@ otherwise:
 	Issue number is normal in this week.
 ```
 
-####Result
+#### Result
 
 Project 1
 ```
@@ -759,7 +761,7 @@ Badsmell: Too many issues in this week.
 Issue number is normal in this week.
 ```
 
-###6. Issue Assignee Detector
+### 6. Issue Assignee Detector
 According to the ```Issue Without Comment Detector```, we found that there are many issues without having comments below. So if issue creator assigned the issue to himself/herself or other team members, we think this situation will be better. Since assignee means who this issue is assigned to, and he/she have to handle it. If one team member is assigned to too many or too few issues, another bad smell will occur. We named it [issueAssigneeDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/57672e3292594dc22788de81a6f06d887bbca0fb/bad_smell_detector/issueAssigneeDetector.py) Below are pseudocode of algorithm we use to detect bad smells.
 ```
 if userName == 'None': 
@@ -870,7 +872,7 @@ for i in range(8,len(xa)-1,1):
 ```
 [Code Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/earlywarning/earlyWarningExtractorDuration.py)
 
-##Early Warning Results
+## Early Warning Results
 
 **Issue Interval Early Warning Results**
 
