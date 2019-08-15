@@ -153,7 +153,7 @@ We divided the total number of issues monthly, and get an array for each project
 ```
 ![Project3](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/project3_numberofissues_week.png)
 
-####4. Total number of labels
+#### 4. Total number of labels
 
 We want to know the total number of labels each team created. Different number of labels reflect different kinds of situations and different levels of priorities each team will set.
 
@@ -552,7 +552,7 @@ Project 3
 89. This issue duration time is normal.
 ```
 
-###2. Issue Without Comment Detector
+### 2. Issue Without Comment Detector
 We found that some issues were created without comment. If the radio of issues without comments out of total issues is higher than certain threshold, we claim it is a bad smell. We named it [issueWithoutCommentDetector.](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/zhewei/bad_smell_detector/issueWithoutCommentDetector.py) Since issue can help team member to communicate with each other. So many issues without comment may indicate that writing issues only aims to deal with professor's rubrics. Below are pseudocode of algorithm we use to detect bad smells.
 ```
 if the radio of issueWithoutComment out of totalNumOfIssue > 20%:
@@ -774,7 +774,7 @@ otherwise:
  	The assigned times of this user is normal.
 ``` 	
  	
-####Result
+#### Result
 
 Project 1
 ```
@@ -800,7 +800,7 @@ The assigned times of user3 is normal.
 Badsmell: user4 assigned too few times.
 ```
 
-##Early Warning
+## Early Warning
 
 **Issue Interval Early Warning**
 
@@ -870,7 +870,7 @@ for i in range(8,len(xa)-1,1):
     km.append(m)
 
 ```
-[Code Link] (https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/earlywarning/earlyWarningExtractorDuration.py)
+[Code Link](https://github.com/SuperCh-SE-NCSU/Project2_badsmell/blob/liang/earlywarning/earlyWarningExtractorDuration.py)
 
 ## Early Warning Results
 
